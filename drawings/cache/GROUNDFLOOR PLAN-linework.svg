@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ifc="http://www.ifcopenshell.org/ns" width="500mm" height="500mm" viewBox="0 0 500 500">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ifc="http://www.ifcopenshell.org/ns" width="366.6mm" height="296.804mm" viewBox="0 0 366.6 296.804">
     <defs>
         <marker id="arrowend" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
           <polygon points="0 0, 10 3.5, 0 7"/>
@@ -7,4 +7,30 @@
           <polygon points="10 0, 0 3.5, 10 7"/>
         </marker>
     </defs>
+    <g ifc:name="Elevation GROUNDFLOOR PLAN" class="section" ifc:plane="[[1.000000,0.000000,0.000000,0.000000],[0.000000,1.000000,0.000000,0.000000],[0.000000,0.000000,1.000000,0.000000],[0.000000,0.000000,0.000000,1.000000]]" ifc:matrix3="[[10.000000,0.000000,27.380629],[0.000000,10.000000,235.022390],[0.000000,0.000000,1.000000]]">
+        <g id="product-e1490478-8d87-4000-80b1-55d730e8b1b9" class="IfcWall material-concrete projection" ifc:name="Wall" ifc:guid="3XIGHuZOT0082nLTSmwB6v">
+            <path d="M246.035,92.0388 L236.035,92.0388"/>
+            <path d="M246.035,91.0388 L246.035,92.0388"/>
+            <path d="M236.035,91.0388 L246.035,91.0388"/>
+            <path d="M236.035,92.0388 L236.035,91.0388"/>
+        </g>
+    <g id="product-33622963-8756-4c64-971c-e5cb959fdae1" class="IfcWall material-concrete projection" ifc:name="Wall" ifc:guid="0pOYbZXrPCP9SSvSkLdzhX">
+            <path d="M357.458,152.198 L347.458,152.198"/>
+            <path d="M357.458,151.198 L357.458,152.198"/>
+            <path d="M347.458,151.198 L357.458,151.198"/>
+            <path d="M347.458,152.198 L347.458,151.198"/>
+        </g>
+        <g id="product-cbe158fa-f74f-44c4-8130-31533b33fd1c" class="IfcWall material-concrete projection" ifc:name="Wall" ifc:guid="3BuLZwzqz4n84mCLCxC$qS">
+            <path d="M266.4,166.477 L256.4,166.477"/>
+            <path d="M266.4,165.477 L266.4,166.477"/>
+            <path d="M256.4,165.477 L266.4,165.477"/>
+            <path d="M256.4,166.477 L256.4,165.477"/>
+        </g>
+        <g id="product-cfac12af-6304-4975-bc17-213477d10285" class="IfcWall material-concrete projection" ifc:name="Wall" ifc:guid="3Fh1AlOmH9TRmN8JHtqGA5">
+            <path d="M315.323,205.101 L305.323,205.101"/>
+            <path d="M315.323,204.101 L315.323,205.101"/>
+            <path d="M305.323,204.101 L315.323,204.101"/>
+            <path d="M305.323,205.101 L305.323,204.101"/>
+        </g>
+        <g class="3XIGHuZOT0082nLTSmwB6v cut 0pOYbZXrPCP9SSvSkLdzhX IfcWall 3BuLZwzqz4n84mCLCxC$qS 3Fh1AlOmH9TRmN8JHtqGA5 material-concrete"><path d="M246.035,91.0388 L236.035,91.0388 L236.035,92.0388 L246.035,92.0388 Z"/></g><g class="3XIGHuZOT0082nLTSmwB6v cut 0pOYbZXrPCP9SSvSkLdzhX IfcWall 3BuLZwzqz4n84mCLCxC$qS 3Fh1AlOmH9TRmN8JHtqGA5 material-concrete"><path d="M357.458,151.198 L347.458,151.198 L347.458,152.198 L357.458,152.198 Z"/></g><g class="3XIGHuZOT0082nLTSmwB6v cut 0pOYbZXrPCP9SSvSkLdzhX IfcWall 3BuLZwzqz4n84mCLCxC$qS 3Fh1AlOmH9TRmN8JHtqGA5 material-concrete"><path d="M266.4,165.477 L256.4,165.477 L256.4,166.477 L266.4,166.477 Z"/></g><g class="3XIGHuZOT0082nLTSmwB6v cut 0pOYbZXrPCP9SSvSkLdzhX IfcWall 3BuLZwzqz4n84mCLCxC$qS 3Fh1AlOmH9TRmN8JHtqGA5 material-concrete"><path d="M315.323,204.101 L305.323,204.101 L305.323,205.101 L315.323,205.101 Z"/></g></g>
 </svg>

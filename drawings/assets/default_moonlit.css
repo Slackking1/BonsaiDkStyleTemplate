@@ -1,0 +1,167 @@
+/*
+ * BlenderBIM Add-on - OpenBIM Blender Add-on
+ * Copyright (C) 2020, 2021 Dion Moult <dion@thinkmoult.com>
+ *
+ * This file is part of BlenderBIM Add-on.
+ *
+ * BlenderBIM Add-on is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * BlenderBIM Add-on is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with BlenderBIM Add-on.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+* { stroke-linecap: round; stroke-linejoin: round; }
+text, tspan { /* 2.5mm */ fill: black; stroke: none; font-family: 'Arial'; font-size: 4.13px; }
+.cut { fill: black; stroke: black; stroke-linecap: 'round'; stroke-width: 0.35; fill-rule: evenodd; }
+.projection { fill: white; stroke: black; stroke-linecap: 'round'; stroke-width: 0.1; }
+.surface { stroke: none; fill: #fff; fill-rule: evenodd; }
+.annotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 0.25; }
+.IfcAnnotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 0.25; }
+.IfcGeographicElement { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 1; }
+.PredefinedType-LINEWORK { stroke: black; stroke-width: 0.25; }
+.PredefinedType-BACKGROUND { stroke: black; stroke-width: 0.18; }
+.PredefinedType-GRID { marker-start: url(#grid-marker); marker-end: url(#grid-marker); }
+.PredefinedType-SECTION { stroke-dasharray: 12.5, 3, 3, 3; }
+.PredefinedType-SECTIONLEVEL { marker-start: url(#section-level-marker); stroke-dasharray: 12.5, 3, 3, 3; }
+.PredefinedType-PLANLEVEL { marker-end: url(#plan-level-marker); }
+.PredefinedType-DIMENSION { marker-start: url(#dimension-marker-start); marker-end: url(#dimension-marker-end); }
+.PredefinedType-ANGLE { marker-start: url(#angle-marker-start); marker-end: url(#angle-marker-end); }
+.PredefinedType-RADIUS { marker-end: url(#fall-marker-end); }
+.PredefinedType-FALL { marker-end: url(#radius-marker-end); }
+.PredefinedType-SLOPEANGLE { marker-end: url(#radius-marker-end); }
+.PredefinedType-SLOPEPERCENT { marker-end: url(#radius-marker-end); }
+.PredefinedType-SLOPEFRACTION { marker-end: url(#radius-marker-end); }
+.PredefinedType-DIAMETER { marker-start: url(#diameter-marker-start); marker-end: url(#diameter-marker-end); }
+.PredefinedType-HIDDENLINE { stroke-dasharray: 3, 2; }
+.PredefinedType-STAIRARROW { marker-start: url(#stair-marker-start); marker-end: url(#stair-marker-end); }
+.PredefinedType-BOUNDARY { fill: none; stroke: red; stroke-width: 1; stroke-dasharray: 12, 4, 3, 4, 3, 4; }
+.PredefinedType-SEALANT { fill: url(#crosshatch1); stroke-width: 0.25; }
+.PredefinedType-FILLAREA { fill: white; stroke: black; }
+.PredefinedType-BREAKLINE { fill: none; stroke: black; stroke-width: 0.25; marker-mid: url(#breakline-marker); }
+.PredefinedType-TEXT { fill: black; stroke: none; }
+path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
+text.PredefinedType-TEXTLEADER, tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
+text.title, tspan.title { /* 7mm */ font-size: 11.55px; }
+text.header, tspan.header { /* 5mm */ font-size: 8.25px; }
+text.large, tspan.large { /* 3.5mm */ font-size: 5.78px; }
+text.regular, tspan.regular { /* 2.5mm */ font-size: 4.13px; }
+text.small, tspan.small { /* 1.8mm */ font-size: 2.97px; }
+text.small, tspan.little { /* 1mm */ font-size: 2px; }
+text.small, tspan.tiny { /* 0.5mm */ font-size: 1px; }
+text.GRID, tspan.GRID { /* 5mm */ font-size: 8.25px; }
+.material-blank { fill: white; }
+.material-diagonal1 { fill: url(#diagonal1); }
+.material-diagonal2 { fill: url(#diagonal2); }
+.material-diagonal3 { fill: url(#diagonal3); }
+.material-crosshatch1 { fill: url(#crosshatch1); }
+.material-crosshatch2 { fill: url(#crosshatch2); }
+.material-crosshatch3 { fill: url(#crosshatch3); }
+.material-brick { fill: url(#brick); }
+.material-earth { fill: url(#earth); }
+.material-glass { fill: url(#glass); }
+.material-liquid { fill: url(#liquid); }
+.material-grass { fill: url(#grass); }
+.material-honeycomb { fill: url(#honeycomb); }
+.material-sand { fill: url(#sand); }
+.material-concrete { fill: url(#concrete); stroke-width: 0.5; }
+.material-concgreen { fill: url(#concretegreen); stroke: black; stroke-width: .5; }
+.IfcSpace { fill: none; stroke: none; }
+.PredefinedType-STUD { stroke: black; stroke-width: 1; }
+.PredefinedType-WOOD { fill: url(#wood); stroke: black; stroke-width: 0.5; }
+.PredefinedType-STEEL { fill: url(#steel); stroke: black; stroke-width: 0.5; }
+.PredefinedType-CONCRETE { fill: url(#concrete); stroke: black; stroke-width: 0.5; }
+.PredefinedType-PLASTERBOARD { fill: url(#sand); stroke: black; stroke-width: 0.25; }
+.PredefinedType-SOLIDBLACK { fill: black; stroke: black; stroke-linecap: 'round'; stroke-width: 0.35; fill-rule: evenodd; }
+.PredefinedType-SOLIDRED { fill: red; stroke: red; stroke-linecap: 'round'; stroke-width: 0.35; fill-rule: evenodd; }
+.PredefinedType-HALFTONE { stroke: grey; stroke-width: 0.1; }
+.PredefinedType-GREYWATER { fill: none; stroke: green; stroke-width: .35; stroke-dasharray: 1.5, 1, 0.5, 1; }
+.PredefinedType-BLACKWATER { fill: none; stroke: brown; stroke-width: .35; stroke-dasharray: 1.5, 1, 0.5, 1; }
+.PredefinedType-DEMO { fill: white; stroke: grey; stroke-width: 0.1; stroke-dasharray: 1.5, 1; }
+.PredefinedType-DEMOLISH { fill: white; stroke: grey; stroke-width: 0.1; stroke-dasharray: 1.5, 1; }
+.PredefinedType-EXGREY { fill: grey; stroke: black; stroke-linecap: 'round'; stroke-width: 0.18; fill-rule: evenodd; }
+.material-existing { fill: grey; stroke: grey; stroke-linecap: 'round'; stroke-width: 0.18; fill-rule: evenodd; }
+.PredefinedType-FILLAREALINE { fill: white; stroke: black; stroke-linecap: 'round'; stroke-width: 0.18; fill-rule: evenodd; }
+.PredefinedType-FILLAREA25 { fill: white; stroke: black; stroke-linecap: 'round'; stroke-width: 0.25; fill-rule: evenodd; }
+.PredefinedType-FILLAREA35 { fill: white; stroke: black; stroke-linecap: 'round'; stroke-width: 0.35; fill-rule: evenodd; }
+.PredefinedType-FILLAREA100 { fill: white; stroke: black; stroke-linecap: 'round'; stroke-width: 1; fill-rule: evenodd; }
+.PredefinedType-REDHATCH { fill: url(#diagonal4); stroke: red; stroke-linecap: 'round'; stroke-width: 0.35; }
+.PredefinedType-REDHATCHSOLID { fill: url(#diagonalred); }
+.PredefinedType-REDDIAGONAL { fill: url(#diagonalred); }
+.PredefinedType-REDHATCHLINE { fill: url(#diagonal4); stroke: pink; stroke-linecap: 'round'; stroke-width: 0.35; }
+.material-blankgrey { fill: white; stroke: grey; stroke-linecap: 'round'; stroke-width: 0.18; }
+.PredefinedType-REDTRANS50 { fill: red; opacity: 50%; stroke: red; stroke-linecap: 'round'; stroke-width: 0.35; fill-rule: evenodd; }
+.PredefinedType-REDTRANS25 { fill: red; opacity: 25%; stroke: red; stroke-linecap: 'round'; stroke-width: 0.35; fill-rule: evenodd; }
+.PredefinedType-EARTH { fill: url(#earth45); stroke: none; }
+.PredefinedType-EARTH45 { fill: url(#earth45); stroke: none; }
+.PredefinedType-FLOODLINE { fill: none; stroke: purple; stroke-width: .5; }
+.PredefinedType-CONTOURLINE { fill: none; stroke: grey; stroke-width: .25; stroke-dasharray: 1.5, 1, 0.5, 1; }
+.PredefinedType-CONTOUR { fill: none; stroke: grey; stroke-width: .25; stroke-dasharray: 1.5, 1, 0.5, 1; }
+.PredefinedType-BOUNDARYSDP { fill: none; stroke: red; stroke-width: .5; stroke-dasharray: 6, 3, 1.5, 2, 1.5, 2; }
+.PredefinedType-BUILDINGLINE { stroke-dasharray: 1.5, 1; }
+.PredefinedType-STORMWATER { fill: none; stroke: green; stroke-width: 1; stroke-dasharray: 1.5, 1, 0.5, 1; }
+.PredefinedType-GREENLINE { fill: none; stroke: green; stroke-width: .5; }
+.material-newbricksolid { fill: url(#redbricksolid); }
+.PredefinedType-NEWBRICKSOLID { fill: url(#redbricksolid); }
+.PredefinedType-EXGREYSDP { fill: url(#diagonal3); }
+.PredefinedType-GREYWATEREX { fill: none; stroke: green; stroke-width: .35; }
+.PredefinedType-EXGREYWATER { fill: none; stroke: green; stroke-width: .35; }
+.PredefinedType-BLACKWATEREX { fill: none; stroke: brown; stroke-width: .35; }
+.PredefinedType-EXBLACKWATER { fill: none; stroke: brown; stroke-width: .35; }
+.PredefinedType-MUNICIPALWATER { fill: none; stroke: brown; stroke-width: 1; stroke-dasharray: 1.5, 1, 0.5, 1;  }
+.material-existing { fill: grey; stroke: grey; stroke-linecap: 'round'; stroke-width: 0.18; fill-rule: evenodd; }
+.PredefinedType-YELLOW { fill: yellow; stroke: black; stroke-width: 0.1; }
+.PredefinedType-YELLOWTIMBER { fill: yellow; stroke: black; stroke-width: 0.1; }
+.PredefinedType-YELLOW50 { fill: yellow; opacity: 50%; stroke: black; stroke-width: 0.1; }
+.PredefinedType-HIDDENLINE05 { stroke: grey; stroke-width: 0.1; stroke-dasharray: 1.5, 1; }
+.PredefinedType-HIDDENLINE10 { stroke: grey; stroke-width: 0.1; stroke-dasharray: 1.5, 1; }
+.PredefinedType-HIDDENLINE18 { stroke: grey; stroke-width: 0.18; stroke-dasharray: 1.5, 1; }
+.PredefinedType-HIDDENLINE35 { stroke: grey; stroke-width: 0.35; stroke-dasharray: 1.5, 1; }
+.PredefinedType-OVERHEAD35 { stroke: black; stroke-width: 0.35; stroke-dasharray: 1.5, 1; }
+.PredefinedType-OVERHEAD { stroke: grey; stroke-width: 0.25; stroke-dasharray: 1.5, 1; }
+.PredefinedType-OVERHEAD25GREY { stroke: grey; stroke-width: 0.25; stroke-dasharray: 1.5, 1; }
+.PredefinedType-LINE05GREY { stroke: grey; stroke-width: 0.05; }
+.PredefinedType-LINE10GREY { stroke: grey; stroke-width: 0.10; }
+.PredefinedType-LINE10 { stroke: black; stroke-width: 0.10; }
+.PredefinedType-LINE18 { stroke: black; stroke-width: 0.18; }
+.PredefinedType-LINE35 { stroke: black; stroke-width: 0.35; }
+.PredefinedType-LINE50 { stroke: black; stroke-width: 0.50; }
+.PredefinedType-ELEC18 { stroke: red; stroke-width: 0.18; }
+.PredefinedType-ELECDASH { stroke: red; stroke-width: 0.18; stroke-dasharray: 1.5, 1; }
+.PredefinedType-PLASTERNEW35 { stroke: yellow; stroke-width: 0.35; }
+.PredefinedType-ROOFLINE { stroke: black; stroke-width: 0.2; stroke-dasharray: 1.5, 1; }
+.material-white { fill: white; }
+.material-newred { fill: pink; }
+.material-newpink { fill: pink; }
+.material-greydark { fill: grey; }
+.material-red { fill: red; }
+.material-redhatch { fill: url(#diagonalred); }
+.PredefinedType-COMPACT { fill: url(#compact45); }
+.PredefinedType-NGL { stroke: black; stroke-width: 1; }
+.PredefinedType-CONCGREEN { fill: url(#concretegreen); stroke: black; stroke-width: .5; }
+.PredefinedType-GREENCONCRETE { fill: url(#concretegreen); stroke: black; stroke-width: .5; }
+.PredefinedType-COLDWATER { fill: none; stroke: blue; stroke-width: .35; stroke-dasharray: 1.5, 1; }
+.PredefinedType-HOTWATER { fill: none; stroke: red; stroke-width: .35; stroke-dasharray: 1.5, 1; }
+.PredefinedType-ELEC18 { stroke: red; stroke-width: 0.18; }
+.PredefinedType-ELECDASH { stroke: red; stroke-width: 0.18; stroke-dasharray: 1.5, 1; }
+.PredefinedType-ELECTRICAL { stroke: red; stroke-width: 0.18; stroke-dasharray: 1.5, 1; }
+.PredefinedType-NEWBRICK { fill: url(#redbricksolid); }
+.PredefinedType-NEWBRICKTRANS { fill: url(#redbrick); }
+.PredefinedType-NEW { stroke: red; stroke-width: 0.18; }
+.PredefinedType-01mmLINE { stroke: black; stroke-width: 0.1; }
+.PredefinedType-02mmLINE { stroke: black; stroke-width: 0.2; }
+.PredefinedType-05mmLINE { stroke: black; stroke-width: 0.5; }
+.PredefinedType-1mmLINE { stroke: black; stroke-width: 1; }
+.PredefinedType-NEWPINK { fill: pink; }
+.PredefinedType-NEWRED { fill: red; }
+.PredefinedType-GREYDIAGONAL { fill: url(#diagonal1); }
+.PredefinedType-BLUESTEEL { fill: blue;}
+.PredefinedType-BLUEWATER { fill: lightblue; }
+.PredefinedType-GREENGRASS { fill: green; }
