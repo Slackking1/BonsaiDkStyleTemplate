@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
+            <!-- Tip: https://svg-path-visualizer.netlify.app/ -->
+        <!-- Tip: https://www.svgviewer.dev/ -->
 <svg baseProfile="full" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="rectangle-tag">
         <rect x="-6" y="-2.5" width="12" height="5" fill="white" stroke="black" style="stroke-width: 0.25;" />
@@ -38,11 +40,12 @@
         <line x1="-5" y1="0" x2="5" y2="0" style="stroke: black; stroke-width: 0.25;" />
     </g>
     <g id="section-arrow">
-        <path style="fill: black;" d="M -7.07106 0 0 -7.07106 7.07106 0" />
+        <!-- <path style="fill: black;" d="M -7.07106 0 0 -7.07106 7.07106 0" /> -->
+                <path style="fill: white; stroke: black; stroke-width: 0.175; " d="M 0,0 0,-3 -1.25,-3 0,-4.25 1.25,-3 0,-3" />
     </g>
     <g id="section-tag">
-        <circle r="5" fill="white" stroke="black" style="stroke-width: 0.25;" />
-        <line x1="-5" y1="0" x2="5" y2="0" style="stroke: black; stroke-width: 0.25;" />
+        <!-- <circle r="5" fill="white" style="stroke-width: 0.25;" /> -->
+        <line x1="0" y1="0" x2="3" y2="0" style="stroke: black; stroke-width: 0.175;" />
     </g>
     <g id="dot">
         <circle r="1" fill="black" stroke="black" style="stroke-width: 0.25;" />
