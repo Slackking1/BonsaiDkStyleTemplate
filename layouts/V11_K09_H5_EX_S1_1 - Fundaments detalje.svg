@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="root"
+   version="1.1"
+   width="210.0mm"
+   height="297.0mm"
+   viewBox="0 0 210.0 297.0"
+   sodipodi:docname="V11_K09_H5_EX_S1_1 - Fundaments detalje.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.654314"
+     inkscape:cx="397.14347"
+     inkscape:cy="513.5059"
+     inkscape:window-width="3840"
+     inkscape:window-height="2071"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="root" />
+  <g
+     data-type="titleblock"
+     id="g1">
+    <image
+       xlink:href="titleblocks%5CA4_portrait_DK.svg"
+       x="0"
+       y="0"
+       width="210.0"
+       height="297.0"
+       id="image1" />
+  </g>
+  <g
+     data-type="drawing"
+     data-id="358079"
+     data-drawing="2x40be_lr11hDS3g9O4PGx"
+     id="g3"
+     transform="translate(-48.620356,-45.421648)">
+    <image
+       data-type="foreground"
+       xlink:href="..%5Cdrawings%5CFundaments%20detalje.svg"
+       x="57.5"
+       y="53.955379"
+       width="194"
+       height="171.95454"
+       id="image2" />
+    <image
+       data-type="view-title"
+       xlink:href="assets%5Cview-title.svg"
+       x="57.5"
+       y="230.90993"
+       width="50.222462"
+       height="10"
+       id="image3" />
+  </g>
+</svg>

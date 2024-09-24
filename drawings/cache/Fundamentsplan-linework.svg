@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ifc="http://www.ifcopenshell.org/ns" width="247.3mm" height="242.557mm" viewBox="0 0 247.3 242.557">
+    <defs>
+        <marker id="arrowend" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7"/>
+        </marker>
+        <marker id="arrowstart" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="10 0, 0 3.5, 10 7"/>
+        </marker>
+    </defs>
+    <g ifc:name="Elevation Fundamentsplan" class="section" ifc:plane="[[1.000000,0.000000,0.000000,0.000000],[0.000000,1.000000,0.000000,0.000000],[0.000000,0.000000,1.000000,0.000000],[0.000000,0.000000,0.000000,1.000000]]" ifc:matrix3="[[10.000000,0.000000,34.697685],[0.000000,10.000000,165.784751],[0.000000,0.000000,1.000000]]">
+        <g id="product-37a6d2b1-141c-40b8-9091-c53654dd73fb" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="0tfjAn51n0k92HnJPKtNFx">
+            <path d="M142.19,90.4666 L140.69,91.9666"/>
+            <path d="M24.0162,90.4666 L142.19,90.4666"/>
+            <path d="M22.5162,91.9666 L24.0162,90.4666"/>
+            <path d="M140.69,91.9666 L22.5162,91.9666"/>
+        </g>
+    <g id="product-e8a314fd-8eb5-46c6-b873-5c5577d36d28" class="IfcReinforcingBar material-null projection" ifc:name="ReinforcingBar" ifc:guid="3eenJzZhL6nhXpN5Ltqsqe">
+            <path d="M40.9386,90.4666 L40.8252,89.9666"/>
+            <path d="M40.8253,89.9666 L40.9387,90.4666"/>
+            <path d="M40.9388,90.4666 L40.8254,89.9666"/>
+            <path d="M40.8259,89.9666 L40.9394,90.4666"/>
+            <path d="M40.9396,90.4666 L40.8263,89.9666"/>
+            <path d="M40.8274,89.9666 L40.941,90.4666"/>
+            <path d="M40.828,89.9666 L40.9413,90.4666"/>
+            <path d="M40.8307,89.9666 L40.9442,90.4666"/>
+            <path d="M40.9448,90.4666 L40.8317,89.9666"/>
+            <path d="M40.8346,89.9666 L40.9484,90.4666"/>
+            <path d="M40.9493,90.4666 L40.8361,89.9666"/>
+            <path d="M40.8396,89.9666 L40.9537,90.4666"/>
+            <path d="M40.9549,90.4666 L40.8416,89.9666"/>
+            <path d="M40.8456,89.9666 L40.9599,90.4666"/>
+            <path d="M40.9611,90.4666 L40.8478,89.9666"/>
+            <path d="M40.8521,89.9666 L40.9665,90.4666"/>
+            <path d="M40.9682,90.4666 L40.8552,89.9666"/>
+            <path d="M40.8595,89.9666 L40.9737,90.4666"/>
+            <path d="M40.8671,89.9666 L40.9808,90.4666"/>
+            <path d="M40.863,89.9666 L40.9756,90.4666"/>
+            <path d="M40.9826,90.4666 L40.8703,89.9666"/>
+            <path d="M40.8768,89.9666 L40.9909,90.4666"/>
+            <path d="M40.874,89.9666 L40.9873,90.4666"/>
+            <path d="M40.8809,89.9666 L40.9945,90.4666"/>
+            <path d="M40.8791,89.9666 L40.9923,90.4666"/>
+            <path d="M40.9952,90.4666 L40.8822,89.9666"/>
+            <path d="M40.8846,89.9666 L40.9983,90.4666"/>
+            <path d="M40.8836,89.9666 L40.997,90.4666"/>
+            <path d="M40.886,89.9666 L40.9996,90.4666"/>
+            <path d="M40.8854,89.9666 L40.9988,90.4666"/>
+            <path d="M40.9998,90.4666 L40.8864,89.9666"/>
+            <path d="M40.8867,89.9666 L41.0001,90.4666"/>
+            <path d="M40.8866,89.9666 L41,90.4666"/>
+        </g>
+        <g id="product-d2378c24-66d2-408d-a96a-ee73847322e9" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="3IDumaPj90ZQbgxdE4SoBf">
+            <path d="M142.19,217.26 L140.69,218.76"/>
+            <path d="M142.19,90.4666 L142.19,217.26"/>
+            <path d="M140.69,91.9666 L142.19,90.4666"/>
+            <path d="M140.69,218.76 L140.69,91.9666"/>
+        </g>
+        <g id="product-c2da64bf-8783-4ca5-af85-74e2ccbe15fc" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="32scI$XuDCfQ_5TEBClXNy">
+            <path d="M24.0162,90.4666 L22.5162,91.9666"/>
+            <path d="M24.0162,28.1666 L24.0162,90.4666"/>
+            <path d="M22.5162,26.6666 L24.0162,28.1666"/>
+            <path d="M22.5162,91.9666 L22.5162,26.6666"/>
+        </g>
+        <g id="product-3728f14e-f507-4aa9-8b21-ee74ad4dd28b" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="0tAF5EzGTAgOiXxdIjJTAB">
+            <path d="M204.49,217.26 L205.99,218.76"/>
+            <path d="M142.19,217.26 L204.49,217.26"/>
+            <path d="M140.69,218.76 L142.19,217.26"/>
+            <path d="M205.99,218.76 L140.69,218.76"/>
+        </g>
+        <g id="product-c3c8797a-5dfd-4e15-b373-04e529d1c287" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="33o7bwNVrE5RDp1EKfqSA7">
+            <path d="M24.0162,28.1666 L22.5162,26.6666"/>
+            <path d="M217.245,28.1666 L24.0162,28.1666"/>
+            <path d="M218.745,26.6666 L217.245,28.1666"/>
+            <path d="M218.745,26.6666 L218.745,26.6666"/>
+            <path d="M22.5162,26.6666 L218.745,26.6666"/>
+        </g>
+        <g id="product-3e690443-792e-41cc-8cc0-f9f3a6fc5f2a" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="0_QGH3UIv1p8p0_VEc$5yg">
+            <path d="M218.745,26.6666 L218.745,73.9615"/>
+            <path d="M217.245,28.1666 L218.745,26.6666"/>
+            <path d="M217.245,72.4616 L217.245,28.1666"/>
+            <path d="M218.745,73.9615 L217.245,72.4616"/>
+            <path d="M218.745,73.9615 L218.745,73.9615"/>
+        </g>
+        <g id="product-19893e01-f95a-4bb7-9064-7977d707d6a4" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="0PYJu1_LfBjv1aUNVN1zQa">
+            <path d="M205.99,73.9615 L204.49,72.4615"/>
+            <path d="M218.745,73.9615 L205.99,73.9615"/>
+            <path d="M217.245,72.4615 L218.745,73.9615"/>
+            <path d="M204.49,72.4615 L217.245,72.4615"/>
+        </g>
+        <g id="product-5ce7a8e9-4d2a-44cf-b3cb-0ca60ebea214" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="1SvwZfJIf4pxFB3AOElg8K">
+            <path d="M204.49,72.4616 L205.99,73.9616"/>
+            <path d="M204.49,217.26 L204.49,72.4616"/>
+            <path d="M205.99,218.76 L204.49,217.26"/>
+            <path d="M205.99,73.9616 L205.99,218.76"/>
+        </g>
+        <g id="product-256a069c-c609-41b3-b74e-eca59b8c5f29" class="IfcSlab material-concreteInsitu projection" ifc:name="Slab" ifc:guid="0bQWQSnWb1ixTExAMRZ5yf">
+            <path d="M142.69,89.9666 L24.5162,89.9666"/>
+            <path d="M142.69,216.76 L142.69,89.9666"/>
+            <path d="M203.99,216.76 L142.69,216.76"/>
+            <path d="M203.99,71.9616 L203.99,216.76"/>
+            <path d="M216.745,71.9616 L203.99,71.9616"/>
+            <path d="M216.745,28.6666 L216.745,71.9616"/>
+            <path d="M24.5162,28.6666 L216.745,28.6666"/>
+            <path d="M24.5162,89.9666 L24.5162,28.6666"/>
+        </g>
+        <g class="IfcSlab material-concreteInsitu 0bQWQSnWb1ixTExAMRZ5yf cut"><path d="M24.5162,89.9666 L24.5162,28.6666 L216.745,28.6666 L216.745,71.9616 L203.99,71.9616 L203.99,216.76 L142.69,216.76 L142.69,89.9666 Z"/></g><g class="0PYJu1_LfBjv1aUNVN1zQa material-concreteInsitu 3IDumaPj90ZQbgxdE4SoBf 1SvwZfJIf4pxFB3AOElg8K IfcWall 33o7bwNVrE5RDp1EKfqSA7 0tfjAn51n0k92HnJPKtNFx 32scI$XuDCfQ_5TEBClXNy cut 0_QGH3UIv1p8p0_VEc$5yg 0tAF5EzGTAgOiXxdIjJTAB"><path d="M217.245,72.4615 L204.49,72.4615 L205.99,73.9615 L218.745,73.9615 L218.745,26.6666 L22.5162,26.6666 L22.5162,91.9666 L140.69,91.9666 L140.69,218.76 L205.99,218.76 L205.99,73.9616 L204.49,72.4616 L204.49,217.26 L142.19,217.26 L142.19,90.4666 L24.0162,90.4666 L24.0162,28.1666 L217.245,28.1666 Z"/></g></g>
+</svg>

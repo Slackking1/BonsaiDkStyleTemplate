@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ifc="http://www.ifcopenshell.org/ns" width="194mm" height="171.955mm" viewBox="0 0 194 171.955">
+    <defs>
+        <marker id="arrowend" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7"/>
+        </marker>
+        <marker id="arrowstart" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="10 0, 0 3.5, 10 7"/>
+        </marker>
+    </defs>
+    <g ifc:name="Elevation Fundaments detalje" class="section" ifc:plane="[[1.000000,0.000000,0.000000,0.000000],[0.000000,1.000000,0.000000,0.000000],[0.000000,0.000000,1.000000,0.000000],[0.000000,0.000000,0.000000,1.000000]]" ifc:matrix3="[[100.000001,0.000000,-668.019972],[0.000000,100.000001,119.650698],[0.000000,0.000000,1.000000]]">
+        <g id="product-37a6d2b1-141c-40b8-9091-c53654dd73fb" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="0tfjAn51n0k92HnJPKtNFx">
+            <path d="M85.1619,106.151 L70.1619,106.151"/>
+            <path d="M85.1619,76.1507 L85.1619,106.151"/>
+            <path d="M85.1619,76.1507 L70.1619,76.1507"/>
+            <path d="M70.1619,106.151 L70.1619,76.1507"/>
+        </g>
+    <g id="product-ef7ba474-4310-4cfc-a61d-86f5835d1182" class="IfcBeam material-wood projection" ifc:name="RemBund" ifc:guid="3lUwHqGn1C$AOTXlM3NH62">
+            <path d="M70.1619,71.6506 L70.1619,76.1506"/>
+            <path d="M70.1619,76.1506 L94.6619,76.1506"/>
+            <path d="M94.6619,76.1506 L94.6619,71.6506"/>
+            <path d="M94.6619,71.6506 L70.1619,71.6506"/>
+        </g>
+        <g id="product-7bc7d63b-f140-4b74-865b-cb5d67b2dea0" class="IfcColumn material-wood projection" ifc:name="C18 45x245 SiderD&#248;reVinduer" ifc:guid="1xnzOxyK1BT8PRorrdijwW">
+            <path d="M94.6618,-148.049 L94.6618,-148.049"/>
+            <path d="M94.6618,71.6505 L94.6618,71.6505"/>
+            <path d="M94.6618,71.6505 L94.6618,-148.049"/>
+        </g>
+        <g id="product-ab190f0d-4a20-4be0-9723-f789015c313a" class="IfcColumn material-wood projection" ifc:name="C18 45x245 normalS&#248;jle" ifc:guid="2h6GyDIY1Bu9SZzua1N34w">
+            <path d="M94.6618,-199.349 L94.6618,-199.349"/>
+        </g>
+        <g id="product-c65b3d5d-1309-4f01-a0f8-e5a3b1ef919b" class="IfcColumn material-wood projection" ifc:name="C18 45x245 normalS&#248;jle" ifc:guid="36MprT4mbF0Q3uvQEnxv6R">
+            <path d="M70.1618,-199.349 L94.6618,-199.349"/>
+            <path d="M70.1618,71.6506 L70.1619,71.6506"/>
+            <path d="M94.6618,71.6506 L94.6618,-199.349"/>
+            <path d="M70.1618,71.6506 L70.1618,-199.349"/>
+        </g>
+        <g id="product-256a069c-c609-41b3-b74e-eca59b8c5f29" class="IfcSlab material-concreteInsitu projection" ifc:name="Slab" ifc:guid="0bQWQSnWb1ixTExAMRZ5yf">
+            <path d="M703.162,76.1506 L90.1619,76.1506"/>
+            <path d="M90.1619,86.1506 L90.1619,76.1506"/>
+            <path d="M703.162,86.1506 L90.1619,86.1506"/>
+            <path d="M703.162,76.1506 L703.162,86.1506"/>
+        </g>
+        <g id="product-7ede2261-61ee-42e1-87fa-f924a570290c" class="IfcDoor material-null projection" ifc:name="Doer b910 h2200.004" ifc:guid="1_tY9XOUv2uOVw_IIbS2aC">
+            <path d="M70.1618,71.6506 L70.1618,74.9507"/>
+            <path d="M70.1618,74.9507 L70.1619,74.9507"/>
+        </g>
+        <g id="product-ef7ba474-4310-4cfc-a61d-86f5835d1182-body" class="IfcBeam material-wood cut" ifc:name="RemBund" ifc:guid="3lUwHqGn1C$AOTXlM3NH62">
+            <path d="M70.1619,71.6506 L70.1619,76.1506 L94.6619,76.1506 L94.6619,71.6506 L70.1619,71.6506"/>
+        </g>
+        <g class="0bQWQSnWb1ixTExAMRZ5yf material-concreteInsitu cut IfcSlab"><path d="M703.162,76.1506 L703.162,86.1506 L90.1619,86.1506 L90.1619,76.1506 Z"/></g><g class="material-concreteInsitu 0tfjAn51n0k92HnJPKtNFx cut IfcWall"><path d="M70.1619,106.151 L70.1619,76.1507 L85.1619,76.1507 L85.1619,106.151 Z"/></g></g>
+</svg>
