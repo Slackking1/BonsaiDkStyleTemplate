@@ -346,7 +346,7 @@
             "scene.render.use_stamp_sequencer_strip": false,
             "scene.render.use_stamp_time": true,
             "scene.render.views_format": "STEREO_3D",
-            "scene.view_settings.exposure": 0.0,
+            "scene.view_settings.exposure": 1.0,
             "scene.view_settings.gamma": 1.0,
             "scene.view_settings.look": "None",
             "scene.view_settings.use_curve_mapping": false,
