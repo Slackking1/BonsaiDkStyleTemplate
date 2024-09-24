@@ -352,3 +352,4 @@ attributes in the instance of the fill area  */
 .PredefinedType-GREEN { fill: green; stroke: black; stroke-width: 0.09; }
 .PredefinedType-YELLOW { fill: yellow; stroke: black; stroke-width: 0.09; }
 .PredefinedType-BLACK { fill: black; stroke: black; stroke-width: 0.09; }
+.PredefinedType-WHITE { fill: white; stroke: black; stroke-width: 0.09; }

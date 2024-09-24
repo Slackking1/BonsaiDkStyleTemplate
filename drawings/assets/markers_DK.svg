@@ -91,7 +91,7 @@
     </marker>
     <marker id="section-level-marker" markerHeight="11" markerWidth="90" refX="20" refY="10" orient="auto-start-reverse">
         <g>
-            <path d="M 0 1 L 10 1 L 5 6 Z" fill="black" />
+            <path d="M 0 1 L 20 1 L 10 11 Z" fill="black" />
             <path d="M 0 1 L 90 1" class="annotation" style="stroke-width:1;" />
         </g>
     </marker>

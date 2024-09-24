@@ -33,11 +33,13 @@
         <text y="5" class="regular" text-anchor="middle" dominant-baseline="middle" data-type="text-template"></text>
     </g>
     <g id="elevation-arrow">
-        <path style="fill: black;" d="M -7.07106 0 0 -7.07106 7.07106 0" />
+        <!-- <path style="fill: black;" d="M -7.07106,0 0,-7.07106 7.07106,0" /> -->
+        <path style="fill: black; " d="M 12.5,0 8.25,-4 5,0 12.5,0" />
     </g>
+    <!-- THIS IS NOT THE CORRECT STYLE, but close. Implemented to workaround not being able to move text tags on sections and elevations -->
     <g id="elevation-tag">
-        <circle r="5" fill="white" stroke="black" style="stroke-width: 0.25;" />
-        <line x1="-5" y1="0" x2="5" y2="0" style="stroke: black; stroke-width: 0.25;" />
+        <!-- <circle r="5" fill="white" stroke="black" style="stroke-width: 0.25;" />-->
+        <line x1="0" y1="-0.08" x2="-12.5" y2="-0.08" style="stroke: black; stroke-width: 0.175;" /> 
     </g>
     <g id="section-arrow">
         <!-- <path style="fill: black;" d="M -7.07106 0 0 -7.07106 7.07106 0" /> -->
