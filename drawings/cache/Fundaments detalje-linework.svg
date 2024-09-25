@@ -47,5 +47,5 @@
         <g id="product-ef7ba474-4310-4cfc-a61d-86f5835d1182-body" class="IfcBeam material-wood cut" ifc:name="RemBund" ifc:guid="3lUwHqGn1C$AOTXlM3NH62">
             <path d="M70.1619,71.6506 L70.1619,76.1506 L94.6619,76.1506 L94.6619,71.6506 L70.1619,71.6506"/>
         </g>
-        <g class="0bQWQSnWb1ixTExAMRZ5yf material-concreteInsitu cut IfcSlab"><path d="M703.162,76.1506 L703.162,86.1506 L90.1619,86.1506 L90.1619,76.1506 Z"/></g><g class="material-concreteInsitu 0tfjAn51n0k92HnJPKtNFx cut IfcWall"><path d="M70.1619,106.151 L70.1619,76.1507 L85.1619,76.1507 L85.1619,106.151 Z"/></g></g>
+        <g class="IfcSlab 0bQWQSnWb1ixTExAMRZ5yf cut material-concreteInsitu"><path d="M703.162,76.1506 L703.162,86.1506 L90.1619,86.1506 L90.1619,76.1506 Z"/></g><g class="material-concreteInsitu cut IfcWall 0tfjAn51n0k92HnJPKtNFx"><path d="M70.1619,106.151 L70.1619,76.1507 L85.1619,76.1507 L85.1619,106.151 Z"/></g></g>
 </svg>

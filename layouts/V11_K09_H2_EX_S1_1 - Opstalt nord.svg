@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" id="root" version="1.1" width="420.0mm" height="297.0mm" viewBox="0 0 420.0 297.0">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="root" version="1.1" width="420.0mm" height="297.0mm" viewBox="0 0 420.0 297.0">
     <g data-type="titleblock">
-        <image ns1:href="titleblocks\A3_landscape_DK.svg" x="0" y="0" width="420.0" height="297.0" />
+        <image xlink:href="titleblocks\A3_landscape_DK.svg" x="0" y="0" width="420.0" height="297.0" />
     </g>
-</svg>
+<g data-type="drawing" data-id="363536" data-drawing="2dvI8Md_1C5x3VsK$6gdFb"><image data-type="foreground" xlink:href="..\drawings\Nord opstalt.svg" x="30.0" y="30.0" width="499.99999999999994" height="500.0" /><image data-type="view-title" xlink:href="assets\view-title.svg" x="30.0" y="535.0" width="50.222462" height="10.0" /></g></svg>

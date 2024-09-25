@@ -753,16 +753,19 @@ attributes in the instance of the fill area  */
         <g id="product-5814e3bf-0eef-4824-84d2-78dc4a3321ba" class="IfcBeam material-wood projection" ifc:name="OverliggerTop" ifc:guid="1O5EE$3kz898JIUDnACo6w">
             <path d="M103.465,135.138 L103.465,135.138"/>
         </g>
+        <g id="product-012de3cd-f0ff-4039-b2ad-40770523d6af" class="IfcBeam material-wood projection" ifc:name="OverliggerTop" ifc:guid="01BUFDyFz0ERAjG7S58zQl">
+            <path d="M103.465,130.238 L103.465,135.138"/>
+            <path d="M82.8067,130.238 L82.8067,135.138"/>
+            <path d="M82.8067,135.138 L98.5733,135.138"/>
+            <path d="M99.4733,135.138 L103.465,135.138"/>
+            <path d="M82.8067,130.238 L98.5733,130.238"/>
+            <path d="M99.4733,130.238 L103.465,130.238"/>
+        </g>
         <g id="product-2dabe1db-85b4-4468-8bbe-13c457d62c3a" class="IfcColumn material-wood projection" ifc:name="C18 45x245 normalS&#248;jle" ifc:guid="0jg_7RXRH4Q8k_4yHNrYmw">
             <path d="M148.573,90.2983 L148.573,65.2892"/>
             <path d="M148.573,65.2892 L149.473,66.1892"/>
             <path d="M149.473,90.2983 L149.473,66.1892"/>
             <path d="M148.573,90.2983 L149.473,90.2983"/>
-        </g>
-        <g id="product-eabb8e2b-f479-446a-95a7-6eca2c6697c4" class="IfcColumn material-wood projection" ifc:name="C18 45x245 SiderD&#248;reVinduer" ifc:guid="3gkuuhz7b4QfMdRieiPfV4">
-            <path d="M103.465,136.038 L104.365,136.038"/>
-            <path d="M104.365,136.038 L104.365,91.1983"/>
-            <path d="M103.465,135.138 L103.465,91.1983"/>
         </g>
         <g id="product-503d5431-a96f-4798-935d-b6f7aaa4f19a" class="IfcColumn material-wood projection" ifc:name="C18 45x245 normalS&#248;jle" ifc:guid="1GFLGngMz7c9DTjlUgfF6Q">
             <path d="M48.5735,135.138 L48.5735,74.9719"/>
@@ -796,13 +799,10 @@ attributes in the instance of the fill area  */
             <path d="M132.806,90.2983 L132.806,49.5226"/>
             <path d="M131.906,90.2983 L132.806,90.2983"/>
         </g>
-        <g id="product-012de3cd-f0ff-4039-b2ad-40770523d6af" class="IfcBeam material-wood projection" ifc:name="OverliggerTop" ifc:guid="01BUFDyFz0ERAjG7S58zQl">
-            <path d="M103.465,130.238 L103.465,135.138"/>
-            <path d="M82.8067,130.238 L82.8067,135.138"/>
-            <path d="M82.8067,135.138 L98.5733,135.138"/>
-            <path d="M99.4733,135.138 L103.465,135.138"/>
-            <path d="M82.8067,130.238 L98.5733,130.238"/>
-            <path d="M99.4733,130.238 L103.465,130.238"/>
+        <g id="product-eabb8e2b-f479-446a-95a7-6eca2c6697c4" class="IfcColumn material-wood projection" ifc:name="C18 45x245 SiderD&#248;reVinduer" ifc:guid="3gkuuhz7b4QfMdRieiPfV4">
+            <path d="M103.465,136.038 L104.365,136.038"/>
+            <path d="M104.365,136.038 L104.365,91.1983"/>
+            <path d="M103.465,135.138 L103.465,91.1983"/>
         </g>
         <g id="product-0b47842d-02ae-4bd2-bb6e-57519ebf3efd" class="IfcColumn material-wood projection" ifc:name="C18 45x245 normalS&#248;jle ENDER.004" ifc:guid="0BHuGj0gvBqhjkLr6Ulpxz">
             <path d="M102.565,20.5879 L103.465,20.5879"/>
@@ -818,16 +818,16 @@ attributes in the instance of the fill area  */
         </g>
         </g>
   <defs/>
+  <line class="GlobalId-0T6beZ8194$9uGhAHkz_iC IfcAnnotation PredefinedType-DIMENSION" x1="38.11466598510742" x2="38.11466598510742" y1="67.254150390625" y2="24.365015029907227"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(37.11466598510742, 45.8095817565918) rotate(-90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">2144</tspan>
+  </text>
   <line class="GlobalId-1WYTIe$5LDeuvizHPW28J6 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="168.71469116210938" x2="168.71469116210938" y1="178.0874786376953" y2="6.540971755981445"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="168.71469116210938" y="178.0874786376953">E</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="168.71469116210938" y="6.540971755981445">E</text>
   <line class="GlobalId-09Kq_fMM1DfOcOfKaQiogr IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="38.11466598510742" x2="38.11466598510742" y1="178.0874786376953" y2="6.540971755981445"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="38.11466598510742" y="178.0874786376953">F</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="38.11466598510742" y="6.540971755981445">F</text>
-  <line class="GlobalId-0T6beZ8194$9uGhAHkz_iC IfcAnnotation PredefinedType-DIMENSION" x1="38.11466598510742" x2="38.11466598510742" y1="67.254150390625" y2="24.365015029907227"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(37.11466598510742, 45.8095817565918) rotate(-90.00000250447816)">
-    <tspan class="DIMENSION" dy="0em" x="0" y="0">2144</tspan>
-  </text>
   <use transform="rotate(90.0000161648565, 10.914154052734375, 144.73828125)" x="10.914154052734375" xlink:href="#elevation-arrow" y="144.73828125"/>
   <use x="10.914154052734375" xlink:href="#elevation-tag" y="144.73828125"/>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="10.914154052734375" y="142.23828125">-</text>
@@ -836,15 +836,15 @@ attributes in the instance of the fill area  */
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(69.3780517578125, 96.27178955078125) rotate(-90.00000250447816)">
     <tspan class="DIMENSION" dy="0em" x="0" y="0">3887</tspan>
   </text>
-  <path class="GlobalId-1cx59lrxHEZRK4YD5ecOOc IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 186.078857421875 136.03826904296875 L 0.0 136.03826904296875"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(186.078857421875, 132.53826904296875) rotate(0.0)">
-    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">Stueplan</tspan>
-    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +435</tspan>
-  </text>
   <path class="GlobalId-2i4_r6rK9F$Bvz5FnHE_8e IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 186.078857421875 82.03826141357422 L 0.0 82.03826141357422"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(186.078857421875, 78.53826141357422) rotate(0.0)">
     <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">OK stern</tspan>
     <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +3135</tspan>
+  </text>
+  <path class="GlobalId-1cx59lrxHEZRK4YD5ecOOc IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 186.078857421875 136.03826904296875 L 0.0 136.03826904296875"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(186.078857421875, 132.53826904296875) rotate(0.0)">
+    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">Stueplan</tspan>
+    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +435</tspan>
   </text>
   <use transform="rotate(-90.0000161648565, 316.3510437011719, 144.73826599121094)" x="316.3510437011719" xlink:href="#elevation-arrow" y="144.73826599121094"/>
   <use x="316.3510437011719" xlink:href="#elevation-tag" y="144.73826599121094"/>
