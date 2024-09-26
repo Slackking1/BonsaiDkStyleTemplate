@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.6404167"
-     inkscape:cx="793.70079"
-     inkscape:cy="561.13792"
+     inkscape:zoom="1.1599498"
+     inkscape:cx="1083.6676"
+     inkscape:cy="547.00643"
      inkscape:window-width="3840"
      inkscape:window-height="2071"
      inkscape:window-x="-9"
@@ -53,16 +53,16 @@
     <image
        data-type="foreground"
        xlink:href="..%5Cdrawings%5CFundamentsplan.svg"
-       x="30"
-       y="30.000542"
-       width="247.29999"
-       height="242.55725"
+       x="29.99999728881835"
+       y="30.000539107936905"
+       width="247.29999542236328"
+       height="242.5572557841262"
        id="image2" />
     <image
        data-type="view-title"
        xlink:href="assets%5Cview-title.svg"
-       x="30"
-       y="277.5578"
+       x="29.99999728881835"
+       y="277.5578028920631"
        width="50.222462"
        height="10"
        id="image3" />
@@ -76,26 +76,72 @@
     <image
        data-type="background"
        xlink:href="..%5Cdrawings%5CFundament%20ortografi-underlay.png"
-       x="13.841183"
-       y="17.309847"
-       width="161.58817"
-       height="127.03473"
+       x="13.841181543701166"
+       y="17.309848433727336"
+       width="161.58817291259766"
+       height="127.03472713254534"
        id="image4" />
     <image
        data-type="foreground"
        xlink:href="..%5Cdrawings%5CFundament%20ortografi.svg"
-       x="13.841183"
-       y="17.309847"
-       width="161.58817"
-       height="127.03473"
+       x="13.841181543701166"
+       y="17.309848433727336"
+       width="161.58817291259766"
+       height="127.03472713254534"
        id="image5" />
     <image
        data-type="view-title"
        xlink:href="assets%5Cview-title.svg"
-       x="13.841183"
-       y="149.34457"
+       x="13.841181543701166"
+       y="149.34456856627267"
        width="50.222462"
        height="10"
        id="image6" />
+  </g>
+  <g
+     data-type="drawing"
+     data-id="395597"
+     data-drawing="1s5Hi2DJfEjBtTNbvKX7kz"
+     id="g8"
+     transform="translate(346.45161,-21.804355)">
+    <image
+       data-type="foreground"
+       xlink:href="..%5Cdrawings%5CANN_NorthArrow.svg"
+       x="37.50130120197677"
+       y="37.50130120197677"
+       width="15.000000596046448"
+       height="15.000000596046448"
+       id="image7" />
+    <image
+       data-type="view-title"
+       xlink:href="assets%5Cview-title.svg"
+       x="107.52768020197678"
+       y="40.00130079802322"
+       width="50.222462"
+       height="10"
+       id="image8" />
+  </g>
+  <g
+     data-type="drawing"
+     data-id="400416"
+     data-drawing="2DJV8Kxs124hcYbjxasB6B"
+     id="g10"
+     transform="translate(284.99999,163.80766)">
+    <image
+       data-type="foreground"
+       xlink:href="..%5Cdrawings%5CANN_NoteGeneral.svg"
+       x="30"
+       y="30"
+       width="105.00001"
+       height="44.709679"
+       id="image9" />
+    <image
+       data-type="view-title"
+       xlink:href="assets%5Cview-title.svg"
+       x="187.61638"
+       y="52.354839"
+       width="50.222462"
+       height="10"
+       id="image10" />
   </g>
 </svg>

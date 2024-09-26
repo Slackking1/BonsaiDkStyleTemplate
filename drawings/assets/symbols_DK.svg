@@ -74,4 +74,13 @@
     <g id="spot-elevation">
         <path style="fill: white; stroke: black; stroke-width: 0.5;" d="M 0,-2 0,2 M -2,0 2,0" />
     </g>
+    <g id="north-arrow">
+        <circle fill="white" stroke="black" style="stroke-width: 0.25;" r="5"/>
+        <path stroke="black" style="stroke-width: 0.25;" fill="black" d="M -0.0475315,-4.0678233 V 4.7364671" />
+        <path fill="black" d="M -0.03466736,-4.7750984 -2.3543012,0.19472085 -0.03874063,-1.4646019 2.2089581,0.17385414 Z" />
+    </g>
+
+
+
+
 </svg>

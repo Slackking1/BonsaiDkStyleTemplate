@@ -286,6 +286,11 @@ text, tspan { /* 2.0mm */ fill: black; stroke: none; font-family: 'Arial'; font-
 .PredefinedType-BREAKLINE { fill: none; stroke: black; stroke-width: 0.125; marker-mid: url(#breakline-marker); }
 .PredefinedType-TEXT { fill: black; stroke: none; }
 path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
+
+/*Symbols*/
+/* These are defined directly in the symbols_xx.svg file, referenced in ifc file using the id as the ObjectType */
+
+
 /* Underneath Doesnt seem to be supported, or needs more than just CSS implementation: */
 path.PredefinedType-TEXTLEADERDOT { marker-end: url(#leader-marker-dot); }
 text.PredefinedType-TEXTLEADER, tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
