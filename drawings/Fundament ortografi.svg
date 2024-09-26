@@ -286,6 +286,11 @@ text, tspan { /* 2.0mm */ fill: black; stroke: none; font-family: 'Arial'; font-
 .PredefinedType-BREAKLINE { fill: none; stroke: black; stroke-width: 0.125; marker-mid: url(#breakline-marker); }
 .PredefinedType-TEXT { fill: black; stroke: none; }
 path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
+
+/*Symbols*/
+/* These are defined directly in the symbols_xx.svg file, referenced in ifc file using the id as the ObjectType */
+
+
 /* Underneath Doesnt seem to be supported, or needs more than just CSS implementation: */
 path.PredefinedType-TEXTLEADERDOT { marker-end: url(#leader-marker-dot); }
 text.PredefinedType-TEXTLEADER, tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
@@ -532,6 +537,15 @@ attributes in the instance of the fill area  */
     <g id="spot-elevation">
         <path style="fill: white; stroke: black; stroke-width: 0.5;" d="M 0,-2 0,2 M -2,0 2,0" />
     </g>
+    <g id="north-arrow">
+        <circle fill="white" stroke="black" style="stroke-width: 0.25;" r="5" />
+        <path stroke="black" style="stroke-width: 0.25;" fill="black" d="M -0.0475315,-4.0678233 V 4.7364671" />
+        <path fill="black" d="M -0.03466736,-4.7750984 -2.3543012,0.19472085 -0.03874063,-1.4646019 2.2089581,0.17385414 Z" />
+    </g>
+
+
+
+
 <pattern id="demolish" width="1" height="1" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
     <line x1="0" y1="0" x2="0" y2="1" style="stroke:red; stroke-width:0.25" />
 </pattern>
@@ -785,16 +799,12 @@ attributes in the instance of the fill area  */
         </g>
         </g>
   <defs/>
-  <use transform="rotate(125.26439896284823, 37.983707427978516, 37.162376403808594)" x="37.983707427978516" xlink:href="#elevation-arrow" y="37.162376403808594"/>
-  <use x="37.983707427978516" xlink:href="#elevation-tag" y="37.162376403808594"/>
-  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="37.983707427978516" y="34.662376403808594">-</text>
-  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="37.983707427978516" y="39.662376403808594">-</text>
-  <line class="GlobalId-1AAAohE819awDfV70r53QB IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="37.09220504760742" x2="116.19205474853516" y1="88.62835693359375" y2="32.696319580078125"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="37.09220504760742" y="88.62835693359375">D</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="116.19205474853516" y="32.696319580078125">D</text>
   <line class="GlobalId-2wrucmUBPBQ9cn18w$2QQx IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="141.46096801757812" x2="64.50436401367188" y1="74.06441497802734" y2="19.647876739501953"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="141.46096801757812" y="74.06441497802734">04</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="64.50436401367188" y="19.647876739501953">04</text>
+  <line class="GlobalId-0nI0deg9z4le67uQ171uyK IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="74.9571533203125" x2="154.0570068359375" y1="115.40292358398438" y2="59.47087860107422"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="74.9571533203125" y="115.40292358398438">A</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="154.0570068359375" y="59.47087860107422">A</text>
   <line class="GlobalId-1XteSPBUzAaQUMNUe7Au_D IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="47.41596221923828" x2="126.51581573486328" y1="95.92835998535156" y2="39.99631118774414"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="47.41596221923828" y="95.92835998535156">C</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="126.51581573486328" y="39.99631118774414">C</text>
@@ -813,9 +823,6 @@ attributes in the instance of the fill area  */
   <line class="GlobalId-2ui8UCkvzBEh_FCQxR5nIN IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="30.128971099853516" x2="109.22882080078125" y1="83.7046127319336" y2="27.772563934326172"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="30.128971099853516" y="83.7046127319336">E</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="109.22882080078125" y="27.772563934326172">E</text>
-  <line class="GlobalId-0nI0deg9z4le67uQ171uyK IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="74.9571533203125" x2="154.0570068359375" y1="115.40292358398438" y2="59.47087860107422"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="74.9571533203125" y="115.40292358398438">A</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="154.0570068359375" y="59.47087860107422">A</text>
   <line class="GlobalId-1EiyiA8w9CUOoQb7QGazBU IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="7.041926383972168" x2="86.14178466796875" y1="67.37960815429688" y2="11.447561264038086"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="7.041926383972168" y="67.37960815429688">F</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="86.14178466796875" y="11.447561264038086">F</text>
@@ -825,4 +832,11 @@ attributes in the instance of the fill area  */
   <line class="GlobalId-3S3GIqCaL5LPit_qngEkEO IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="152.92494201660156" x2="75.96833801269531" y1="65.95816802978516" y2="11.5416259765625"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="152.92494201660156" y="65.95816802978516">06</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="75.96833801269531" y="11.5416259765625">06</text>
+  <use transform="rotate(125.26439896284823, 37.983707427978516, 37.162376403808594)" x="37.983707427978516" xlink:href="#elevation-arrow" y="37.162376403808594"/>
+  <use x="37.983707427978516" xlink:href="#elevation-tag" y="37.162376403808594"/>
+  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="37.983707427978516" y="34.662376403808594">1</text>
+  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="37.983707427978516" y="39.662376403808594">V11_K09_H2_EX_S1_4</text>
+  <line class="GlobalId-1AAAohE819awDfV70r53QB IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="37.09220504760742" x2="116.19205474853516" y1="88.62835693359375" y2="32.696319580078125"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="37.09220504760742" y="88.62835693359375">D</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="116.19205474853516" y="32.696319580078125">D</text>
 </svg>

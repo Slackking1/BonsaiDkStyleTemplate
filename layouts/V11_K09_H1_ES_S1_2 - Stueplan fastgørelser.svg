@@ -1,5 +1,147 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="root" version="1.1" width="420.0mm" height="297.0mm" viewBox="0 0 420.0 297.0">
-    <g data-type="titleblock">
-        <image xlink:href="titleblocks\A3_landscape_DK.svg" x="0" y="0" width="420.0" height="297.0" />
-    </g>
-<g data-type="drawing" data-id="367409" data-drawing="2UCW3x4Bz8Rgs3LIad8FXn"><image data-type="background" xlink:href="..\drawings\Stueplan fastg&#248;relse v&#230;gge-underlay.png" x="30.0" y="30.0" width="375.8000183105469" height="233.81606188843762" /><image data-type="foreground" xlink:href="..\drawings\Stueplan fastg&#248;relse v&#230;gge.svg" x="30.0" y="30.0" width="375.8000183105469" height="233.81606188843762" /><image data-type="view-title" xlink:href="assets\view-title.svg" x="30.0" y="268.8160618884376" width="50.222462" height="10.0" /></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="root"
+   version="1.1"
+   width="420.0mm"
+   height="297.0mm"
+   viewBox="0 0 420.0 297.0"
+   sodipodi:docname="V11_K09_H1_ES_S1_2 - Stueplan fastgørelser.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.82020833"
+     inkscape:cx="919.27864"
+     inkscape:cy="430.98806"
+     inkscape:window-width="3840"
+     inkscape:window-height="2071"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="root" />
+  <g
+     data-type="titleblock"
+     id="g1">
+    <image
+       xlink:href="titleblocks%5CA3_landscape_DK.svg"
+       x="0"
+       y="0"
+       width="420.0"
+       height="297.0"
+       id="image1" />
+  </g>
+  <g
+     data-type="drawing"
+     data-id="367409"
+     data-drawing="2UCW3x4Bz8Rgs3LIad8FXn"
+     id="g4"
+     transform="translate(-24.596543,-24.083037)">
+    <image
+       data-type="background"
+       xlink:href="..%5Cdrawings%5CStueplan%20fastg%C3%B8relse%20v%C3%A6gge-underlay.png"
+       x="30"
+       y="30"
+       width="375.80002"
+       height="233.81606"
+       id="image2" />
+    <image
+       data-type="foreground"
+       xlink:href="..%5Cdrawings%5CStueplan%20fastg%C3%B8relse%20v%C3%A6gge.svg"
+       x="30"
+       y="30"
+       width="375.80002"
+       height="233.81606"
+       id="image3" />
+    <image
+       data-type="view-title"
+       xlink:href="assets%5Cview-title.svg"
+       x="30"
+       y="268.81607"
+       width="50.222462"
+       height="10"
+       id="image4" />
+  </g>
+  <g
+     data-type="drawing"
+     data-id="402120"
+     data-drawing="2DJV8Kxs124hcYbjxasB6B"
+     id="g6"
+     transform="translate(284.99999,160.58167)">
+    <image
+       data-type="foreground"
+       xlink:href="..%5Cdrawings%5CANN_NoteGeneral.svg"
+       x="30"
+       y="30"
+       width="105.00001"
+       height="44.709679"
+       id="image5" />
+    <image
+       data-type="view-title"
+       xlink:href="assets%5Cview-title.svg"
+       x="148.38336"
+       y="51.197308"
+       width="50.222462"
+       height="10"
+       id="image6" />
+  </g>
+  <g
+     data-type="drawing"
+     data-id="402121"
+     data-drawing="1s5Hi2DJfEjBtTNbvKX7kz"
+     id="g8"
+     transform="translate(370.32258,-15.000001)">
+    <image
+       data-type="foreground"
+       xlink:href="..%5Cdrawings%5CANN_NorthArrow.svg"
+       x="30"
+       y="30"
+       width="15.000001"
+       height="15.000001"
+       id="image7" />
+    <image
+       data-type="view-title"
+       xlink:href="assets%5Cview-title.svg"
+       x="60.161289"
+       y="31.451612"
+       width="50.222462"
+       height="10"
+       id="image8" />
+  </g>
+  <g
+     data-type="drawing"
+     data-id="402519"
+     data-drawing="1bRmJpP4r8cxrvj0L4QMQz"
+     id="g10"
+     transform="translate(221.73912,-23.534729)">
+    <image
+       data-type="foreground"
+       xlink:href="..%5Cdrawings%5CStuen%20ortografi.svg"
+       x="30"
+       y="30"
+       width="161.58817"
+       height="127.03473"
+       id="image9" />
+    <image
+       data-type="view-title"
+       xlink:href="assets%5Cview-title.svg"
+       x="141.36571"
+       y="138.08434"
+       width="50.222462"
+       height="10"
+       id="image10" />
+  </g>
+</svg>

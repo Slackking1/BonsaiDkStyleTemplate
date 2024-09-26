@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ifc="http://www.ifcopenshell.org/ns" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" data-scale="1:1" height="15.000000596046448mm" id="root" version="1.1" viewBox="0 0 15.000000596046448 15.000000596046448" width="15.000000596046448mm">
   <defs/>
-  <line class="GlobalId-1VGXB5HdrEYwnuvGz2jKeR IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-83280.84375" x2="-60908.0234375" y1="-7356.22900390625" y2="-7356.22900390625"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-83280.84375" y="-7356.22900390625">E</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-60908.0234375" y="-7356.22900390625">E</text>
   <line class="GlobalId-2bY3hcKtLAzAto8gjbNX5c IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-83280.84375" x2="-60908.0234375" y1="453.27044677734375" y2="453.27044677734375"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-83280.84375" y="453.27044677734375">B</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-60908.0234375" y="453.27044677734375">B</text>
@@ -28,6 +25,9 @@
   <line class="GlobalId-0MIV47UA922fviIq0JrcX4 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-70171.078125" x2="-70171.078125" y1="6460.455078125" y2="-15306.16015625"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-70171.078125" y="6460.455078125">03</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-70171.078125" y="-15306.16015625">03</text>
+  <line class="GlobalId-2PmMHM9v58hPw2emsTjXrX IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-83280.84375" x2="-60908.0234375" y1="-13886.23046875" y2="-13886.23046875"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-83280.84375" y="-13886.23046875">F</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-60908.0234375" y="-13886.23046875">F</text>
   <use transform="rotate(-90.00000250447816, -80770.3515625, 25.589487075805664)" x="-80770.3515625" xlink:href="#elevation-arrow" y="25.589487075805664"/>
   <use x="-80770.3515625" xlink:href="#elevation-tag" y="25.589487075805664"/>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="-80770.3515625" y="23.089487075805664">1</text>
@@ -60,9 +60,9 @@
   <line class="GlobalId-0skss$2M13ePAKlaXUnvVV IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-77204.109375" x2="-77204.109375" y1="6460.455078125" y2="-15306.16015625"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-77204.109375" y="6460.455078125">02</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-77204.109375" y="-15306.16015625">02</text>
-  <line class="GlobalId-2PmMHM9v58hPw2emsTjXrX IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-83280.84375" x2="-60908.0234375" y1="-13886.23046875" y2="-13886.23046875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-83280.84375" y="-13886.23046875">F</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-60908.0234375" y="-13886.23046875">F</text>
+  <line class="GlobalId-1VGXB5HdrEYwnuvGz2jKeR IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-83280.84375" x2="-60908.0234375" y1="-7356.22900390625" y2="-7356.22900390625"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-83280.84375" y="-7356.22900390625">E</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-60908.0234375" y="-7356.22900390625">E</text>
   <line class="GlobalId-1fL1hyrnT1l8yRGD4npZmv IfcAnnotation PredefinedType-SECTION" x1="-77510.796875" x2="-77510.796875" y1="-4624.6103515625" y2="-10624.611328125"/>
   <use transform="rotate(-90.00000250447816, -77510.796875, -4624.6103515625)" x="-77510.796875" xlink:href="#section-arrow" y="-4624.6103515625"/>
   <use x="-77510.796875" xlink:href="#section-tag" y="-4624.6103515625"/>

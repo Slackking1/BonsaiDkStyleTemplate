@@ -1,45 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ifc="http://www.ifcopenshell.org/ns" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" data-scale="1:100" height="500.0mm" id="root" version="1.1" viewBox="0 0 499.99999999999994 500.0" width="499.99999999999994mm">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ifc="http://www.ifcopenshell.org/ns" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" data-scale="1:50" height="161.57446336039385mm" id="root" version="1.1" viewBox="0 0 445.60001373291016 161.57446336039385" width="445.60001373291016mm">
   <defs/>
-  <use transform="rotate(90.00000250447816, 250.0, 250.0)" x="250.0" xlink:href="#elevation-arrow" y="250.0"/>
-  <use x="250.0" xlink:href="#elevation-tag" y="250.0"/>
-  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="250.0" y="247.5">-</text>
-  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="250.0" y="252.5">-</text>
-  <line class="GlobalId-0mQcEYyUrDFAM7xiUvacUq IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="274.9231872558594" x2="274.9231872558594" y1="499.99847412109375" y2="0.001506805419921875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="274.9231872558594" y="499.99847412109375">C</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="274.9231872558594" y="0.001506805419921875">C</text>
-  <line class="GlobalId-2NGjUmpOTEk91ZKN_U1rdR IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="304.1231994628906" x2="304.1231994628906" y1="499.99847412109375" y2="0.001506805419921875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="304.1231994628906" y="499.99847412109375">D</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="304.1231994628906" y="0.001506805419921875">D</text>
-  <line class="GlobalId-30fyJtVD5Ace1HBgZE_ujF IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="245.7231903076172" x2="245.7231903076172" y1="499.99847412109375" y2="0.001506805419921875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="245.7231903076172" y="499.99847412109375">B</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="245.7231903076172" y="0.001506805419921875">B</text>
-  <line class="GlobalId-0$60ipVA9FQeybK0UbaHPj IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="197.02491760253906" x2="197.02491760253906" y1="499.99847412109375" y2="0.001506805419921875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="197.02491760253906" y="499.99847412109375">A</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="197.02491760253906" y="0.001506805419921875">A</text>
-  <line class="GlobalId-2jNoxKaEXA6OMY8xT_RL_l IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="323.81817626953125" x2="323.81817626953125" y1="499.99847412109375" y2="0.001506805419921875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="323.81817626953125" y="499.99847412109375">E</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="323.81817626953125" y="0.001506805419921875">E</text>
-  <path class="GlobalId-2Ztta6nGL7X9ULTL57Qrac IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 500.0 251.65000915527344 L 0.0 251.65000915527344"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(500.0, 248.15000915527344) rotate(0.0)">
+  <path class="GlobalId-3hAxf8Z4fEeO7uOdXhmOZx IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 420.31768798828125 158.46337890625 L 0.0 158.46337890625"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(420.31768798828125, 154.96337890625) rotate(0.0)">
     <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">UK Fundament</tspan>
     <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL -165</tspan>
   </text>
-  <path class="GlobalId-3UCm4R0LT6QPX0bUUf$S$s IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 500.0 245.65000915527344 L 0.0 245.65000915527344"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(500.0, 242.15000915527344) rotate(0.0)">
+  <path class="GlobalId-3r_KL$Gsf8ThE3NABw1$yB IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 420.31768798828125 146.46337890625 L 0.0 146.46337890625"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(420.31768798828125, 142.96337890625) rotate(0.0)">
     <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">Stueplan</tspan>
     <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +435</tspan>
   </text>
-  <line class="GlobalId-25iGpPIQXCae1E95SCU_sf IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="389.1181945800781" x2="389.1181945800781" y1="499.99847412109375" y2="0.001506805419921875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="389.1181945800781" y="499.99847412109375">F</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="389.1181945800781" y="0.001506805419921875">F</text>
-  <path class="GlobalId-0oX9EdXmH8O8o8TsIF$0wx IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 500.0 218.64999389648438 L 0.0 218.64999389648438"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(500.0, 215.14999389648438) rotate(0.0)">
-    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">OK stern</tspan>
-    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +3135</tspan>
+  <line class="GlobalId-3KJIIe77D9DRX9QzhB32V4 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="270.5321960449219" x2="270.5321960449219" y1="165.7846221923828" y2="8.607271194458008"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="270.5321960449219" y="165.7846221923828">E</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="270.5321960449219" y="8.607271194458008">E</text>
+  <line class="GlobalId-1wimSzc_v8dOywbG801K$_ IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="172.7421875" x2="172.7421875" y1="165.7846221923828" y2="8.607271194458008"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="172.7421875" y="165.7846221923828">C</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="172.7421875" y="8.607271194458008">C</text>
+  <line class="GlobalId-2mLTHgD8v2SwFgb2QX1qM9 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="401.1322021484375" x2="401.1322021484375" y1="165.7846221923828" y2="8.607271194458008"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="401.1322021484375" y="165.7846221923828">F</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="401.1322021484375" y="8.607271194458008">F</text>
+  <path class="GlobalId-2yn3o$rBzBVPWaEvUrMKTf IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 420.31768798828125 90.46337890625 L 0.0 90.46337890625"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(420.31768798828125, 86.96337890625) rotate(0.0)">
+    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">OK rem</tspan>
+    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +3235</tspan>
   </text>
-  <use transform="rotate(-90.00000250447816, 402.71844482421875, 220.1236114501953)" x="402.71844482421875" xlink:href="#elevation-arrow" y="220.1236114501953"/>
-  <use x="402.71844482421875" xlink:href="#elevation-tag" y="220.1236114501953"/>
-  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="402.71844482421875" y="217.6236114501953">-</text>
-  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="402.71844482421875" y="222.6236114501953">-</text>
+  <line class="GlobalId-1KZVxoA0T6MR3zY2cna46R IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="16.945667266845703" x2="16.945667266845703" y1="165.7846221923828" y2="8.607271194458008"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="16.945667266845703" y="165.7846221923828">A</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="16.945667266845703" y="8.607271194458008">A</text>
+  <line class="GlobalId-2BuEGN005AMODlBujUDFr5 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="114.34220123291016" x2="114.34220123291016" y1="165.7846221923828" y2="8.607271194458008"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="114.34220123291016" y="165.7846221923828">B</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="114.34220123291016" y="8.607271194458008">B</text>
+  <line class="GlobalId-0v7XQAh852qwbasPqc3$99 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="231.14219665527344" x2="231.14219665527344" y1="165.7846221923828" y2="8.607271194458008"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="231.14219665527344" y="165.7846221923828">D</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="231.14219665527344" y="8.607271194458008">D</text>
 </svg>

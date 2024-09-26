@@ -25,14 +25,14 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.654314"
-     inkscape:cx="397.14347"
-     inkscape:cy="513.5059"
+     inkscape:cx="308.58712"
+     inkscape:cy="728.70084"
      inkscape:window-width="3840"
      inkscape:window-height="2071"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="root" />
+     inkscape:current-layer="g5" />
   <g
      data-type="titleblock"
      id="g1">
@@ -53,18 +53,41 @@
     <image
        data-type="foreground"
        xlink:href="..%5Cdrawings%5CFundaments%20detalje.svg"
-       x="57.5"
-       y="53.955379"
-       width="194"
-       height="171.95454"
+       x="57.49999713897705"
+       y="53.955373736820555"
+       width="194.0000057220459"
+       height="171.95455052635887"
        id="image2" />
     <image
        data-type="view-title"
        xlink:href="assets%5Cview-title.svg"
-       x="57.5"
-       y="230.90993"
+       x="57.49999713897705"
+       y="230.90993526317945"
        width="50.222462"
        height="10"
        id="image3" />
+  </g>
+  <g
+     data-type="drawing"
+     data-id="402113"
+     data-drawing="2DJV8Kxs124hcYbjxasB6B"
+     id="g5"
+     transform="translate(74.999992,157.05654)">
+    <image
+       data-type="foreground"
+       xlink:href="..%5Cdrawings%5CANN_NoteGeneral.svg"
+       x="30"
+       y="30"
+       width="105.00001"
+       height="44.709679"
+       id="image4" />
+    <image
+       data-type="view-title"
+       xlink:href="assets%5Cview-title.svg"
+       x="154.10985"
+       y="48.362347"
+       width="50.222462"
+       height="10"
+       id="image5" />
   </g>
 </svg>

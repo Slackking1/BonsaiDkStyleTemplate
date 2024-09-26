@@ -728,17 +728,24 @@ attributes in the instance of the fill area  */
             <path d="M205.99,218.76 L204.49,217.26"/>
             <path d="M205.99,73.9616 L205.99,218.76"/>
         </g>
+        <g id="product-3728f14e-f507-4aa9-8b21-ee74ad4dd28b" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="0tAF5EzGTAgOiXxdIjJTAB">
+            <path d="M204.49,217.26 L205.99,218.76"/>
+            <path d="M142.19,217.26 L204.49,217.26"/>
+            <path d="M140.69,218.76 L142.19,217.26"/>
+            <path d="M205.99,218.76 L140.69,218.76"/>
+        </g>
         <g id="product-c2da64bf-8783-4ca5-af85-74e2ccbe15fc" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="32scI$XuDCfQ_5TEBClXNy">
             <path d="M24.0162,90.4666 L22.5162,91.9666"/>
             <path d="M24.0162,28.1666 L24.0162,90.4666"/>
             <path d="M22.5162,26.6666 L24.0162,28.1666"/>
             <path d="M22.5162,91.9666 L22.5162,26.6666"/>
         </g>
-        <g id="product-3728f14e-f507-4aa9-8b21-ee74ad4dd28b" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="0tAF5EzGTAgOiXxdIjJTAB">
-            <path d="M204.49,217.26 L205.99,218.76"/>
-            <path d="M142.19,217.26 L204.49,217.26"/>
-            <path d="M140.69,218.76 L142.19,217.26"/>
-            <path d="M205.99,218.76 L140.69,218.76"/>
+        <g id="product-c3c8797a-5dfd-4e15-b373-04e529d1c287" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="33o7bwNVrE5RDp1EKfqSA7">
+            <path d="M24.0162,28.1666 L22.5162,26.6666"/>
+            <path d="M217.245,28.1666 L24.0162,28.1666"/>
+            <path d="M218.745,26.6666 L217.245,28.1666"/>
+            <path d="M218.745,26.6666 L218.745,26.6666"/>
+            <path d="M22.5162,26.6666 L218.745,26.6666"/>
         </g>
         <g id="product-3e690443-792e-41cc-8cc0-f9f3a6fc5f2a" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="0_QGH3UIv1p8p0_VEc$5yg">
             <path d="M218.745,26.6666 L218.745,73.9615"/>
@@ -747,12 +754,40 @@ attributes in the instance of the fill area  */
             <path d="M218.745,73.9615 L217.245,72.4616"/>
             <path d="M218.745,73.9615 L218.745,73.9615"/>
         </g>
-        <g id="product-c3c8797a-5dfd-4e15-b373-04e529d1c287" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="33o7bwNVrE5RDp1EKfqSA7">
-            <path d="M24.0162,28.1666 L22.5162,26.6666"/>
-            <path d="M217.245,28.1666 L24.0162,28.1666"/>
-            <path d="M218.745,26.6666 L217.245,28.1666"/>
-            <path d="M218.745,26.6666 L218.745,26.6666"/>
-            <path d="M22.5162,26.6666 L218.745,26.6666"/>
+        <g id="product-e8a314fd-8eb5-46c6-b873-5c5577d36d28" class="IfcReinforcingBar material-null projection" ifc:name="ReinforcingBar" ifc:guid="3eenJzZhL6nhXpN5Ltqsqe">
+            <path d="M40.9386,90.4666 L40.8252,89.9666"/>
+            <path d="M40.8253,89.9666 L40.9387,90.4666"/>
+            <path d="M40.9388,90.4666 L40.8254,89.9666"/>
+            <path d="M40.8259,89.9666 L40.9394,90.4666"/>
+            <path d="M40.9396,90.4666 L40.8263,89.9666"/>
+            <path d="M40.8274,89.9666 L40.941,90.4666"/>
+            <path d="M40.828,89.9666 L40.9413,90.4666"/>
+            <path d="M40.8307,89.9666 L40.9442,90.4666"/>
+            <path d="M40.9448,90.4666 L40.8317,89.9666"/>
+            <path d="M40.8346,89.9666 L40.9484,90.4666"/>
+            <path d="M40.9493,90.4666 L40.8361,89.9666"/>
+            <path d="M40.8396,89.9666 L40.9537,90.4666"/>
+            <path d="M40.9549,90.4666 L40.8416,89.9666"/>
+            <path d="M40.8456,89.9666 L40.9599,90.4666"/>
+            <path d="M40.9611,90.4666 L40.8478,89.9666"/>
+            <path d="M40.8521,89.9666 L40.9665,90.4666"/>
+            <path d="M40.9682,90.4666 L40.8552,89.9666"/>
+            <path d="M40.8595,89.9666 L40.9737,90.4666"/>
+            <path d="M40.8671,89.9666 L40.9808,90.4666"/>
+            <path d="M40.863,89.9666 L40.9756,90.4666"/>
+            <path d="M40.9826,90.4666 L40.8703,89.9666"/>
+            <path d="M40.8768,89.9666 L40.9909,90.4666"/>
+            <path d="M40.874,89.9666 L40.9873,90.4666"/>
+            <path d="M40.8809,89.9666 L40.9945,90.4666"/>
+            <path d="M40.8791,89.9666 L40.9923,90.4666"/>
+            <path d="M40.9952,90.4666 L40.8822,89.9666"/>
+            <path d="M40.8846,89.9666 L40.9983,90.4666"/>
+            <path d="M40.8836,89.9666 L40.997,90.4666"/>
+            <path d="M40.886,89.9666 L40.9996,90.4666"/>
+            <path d="M40.8854,89.9666 L40.9988,90.4666"/>
+            <path d="M40.9998,90.4666 L40.8864,89.9666"/>
+            <path d="M40.8867,89.9666 L41.0001,90.4666"/>
+            <path d="M40.8866,89.9666 L41,90.4666"/>
         </g>
         <g id="product-d2378c24-66d2-408d-a96a-ee73847322e9" class="IfcWall material-concreteInsitu projection" ifc:name="Wall" ifc:guid="3IDumaPj90ZQbgxdE4SoBf">
             <path d="M142.19,217.26 L140.69,218.76"/>
@@ -782,12 +817,9 @@ attributes in the instance of the fill area  */
   <use x="34.69768524169922" xlink:href="#elevation-tag" y="165.78475952148438"/>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="34.69768524169922" y="163.28475952148438">1</text>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="34.69768524169922" y="168.28475952148438">V11_K09_H2_EX_S1_2</text>
-  <use transform="translate(59.6312141418457, 119.77818298339844) rotate(-0.0) scale(1.0)" xlink:href="#NorthArrow"/>
-  <use transform="translate(80.7802734375, 124.27949523925781) rotate(0.0) scale(1.0)" xlink:href="#NorthArrow"/>
   <line class="GlobalId-09Zv3l77192QxqtAPMKtIr IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="205.9904327392578" x2="205.9904327392578" y1="230.13339233398438" y2="12.467268943786621"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="205.9904327392578" y="230.13339233398438">05</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="205.9904327392578" y="12.467268943786621">05</text>
-  <use transform="translate(88.63094329833984, 133.0631103515625) rotate(-0.0) scale(1.0)" xlink:href="#setout-point"/>
   <path class="GlobalId-2nFftKS$nDPvmfvCIlyzeJ IfcAnnotation PredefinedType-INSULATIONRIGID" d="M 217.24544525146484 28.166559715793564 L 216.74545288085938 28.66657115988536 L 216.74545288085938 71.96154930167003 L 217.24544525146484 72.46156074576183 L 217.24544525146484 28.166559715793564"/>
   <path class="GlobalId-2nFftKS$nDPvmfvCIlyzeJ IfcAnnotation PredefinedType-INSULATIONRIGID" d="M 204.49047088623047 217.25980617575453 L 203.99044036865234 216.75979473166274 L 142.69042015075684 216.75979473166274 L 142.1904182434082 217.25980617575453 L 204.49047088623047 217.25980617575453"/>
   <path class="GlobalId-2nFftKS$nDPvmfvCIlyzeJ IfcAnnotation PredefinedType-INSULATIONRIGID" d="M 142.69042015075684 89.96656276755138 L 142.1904182434082 90.46655513815685 L 142.1904182434082 217.25980617575453 L 142.69042015075684 216.75979473166274 L 142.69042015075684 89.96656276755138"/>
@@ -797,8 +829,6 @@ attributes in the instance of the fill area  */
   <path class="GlobalId-2nFftKS$nDPvmfvCIlyzeJ IfcAnnotation PredefinedType-INSULATIONRIGID" d="M 217.24544525146484 28.166559715793564 L 54.335832595825195 28.166559715793564 L 54.335832595825195 28.66657115988536 L 216.74545288085938 28.66657115988536 L 217.24544525146484 28.166559715793564"/>
   <path class="GlobalId-2nFftKS$nDPvmfvCIlyzeJ IfcAnnotation PredefinedType-INSULATIONRIGID" d="M 216.74545288085938 71.96154930167003 L 203.99044036865234 71.96154930167003 L 204.49047088623047 72.46156074576183 L 217.24544525146484 72.46156074576183 L 216.74545288085938 71.96154930167003"/>
   <path class="GlobalId-2nFftKS$nDPvmfvCIlyzeJ IfcAnnotation PredefinedType-INSULATIONRIGID" d="M 24.516162872314453 89.96656276755138 L 24.51618194580078 28.66657115988536 L 24.01618003845215 28.166559715793564 L 24.01616096496582 90.46655513815685 L 24.516162872314453 89.96656276755138"/>
-  <use transform="translate(60.72650146484375, 145.5594482421875) rotate(-45.00000125223908) scale(1.0)" xlink:href="#north-arrow"/>
-  <use transform="translate(81.87554931640625, 150.06076049804688) rotate(0.0) scale(1.0)" xlink:href="#NorthArrow2"/>
   <line class="GlobalId-0DcDvZgizEvuQKFtQYoQQ$ IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="22.516183853149414" x2="22.516183853149414" y1="230.13339233398438" y2="12.467268943786621"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="22.516183853149414" y="230.13339233398438">01</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="22.516183853149414" y="12.467268943786621">01</text>
