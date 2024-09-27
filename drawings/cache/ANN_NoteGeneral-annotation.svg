@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ifc="http://www.ifcopenshell.org/ns" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" data-scale="1:1" height="44.709679195957804mm" id="root" version="1.1" viewBox="0 0 105.00000417232513 44.709679195957804" width="105.00000417232513mm">
   <defs/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 23.643142700195312) rotate(-0.0)">
-    <tspan class="GlobalId-38bX_x8I92BgbHMLPHgVgS IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">- Alle mål skal altid kontrolleres op mod faktiske forhold, tegninger er ikke produktionstegninger</tspan>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 6.251897811889648) rotate(-0.0)">
+    <tspan class="GlobalId-0syvoXUej2xgJ8NZE1aq5Q IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">- Skraveringer mm. angives minimum en gang på tegninger</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 14.489596366882324) rotate(-0.0)">
     <tspan class="GlobalId-2FXp2d6Zr6mAAHEZMgN0lO IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">- De vist snit, detaljer og henvisninger samt afledte henvisninger heraf udgør den samlede tegning.</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 3.3137316703796387) rotate(-0.0)">
-    <tspan class="GlobalId-1p69XQRQj1EPIl5lPDh7ML IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">SIGNATUR</tspan>
-  </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 11.551430702209473) rotate(-0.0)">
     <tspan class="GlobalId-2xwOLcHCjDHOnZJL$Y6t80 IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">HENVISNINGER</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 6.251897811889648) rotate(-0.0)">
-    <tspan class="GlobalId-0syvoXUej2xgJ8NZE1aq5Q IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">- Skraveringer mm. angives minimum en gang på tegninger</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 33.0233154296875) rotate(-0.0)">
     <tspan class="GlobalId-1Rqx6jqsTCxAkXrZ7eXAFP IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">- Producent-, SBI-, Bygerfa-anvisninger samt BR18 følges.</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 43.194576263427734) rotate(-0.0)">
-    <tspan class="GlobalId-0Ou$$xQBz1BAcVLrm6FCZs IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">- Målestok er anvist på de individuelle elementer/views. Nordpil gælder kun for plantegninger</tspan>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 3.3137316703796387) rotate(-0.0)">
+    <tspan class="GlobalId-1p69XQRQj1EPIl5lPDh7ML IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">SIGNATUR</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 29.85892677307129) rotate(-0.0)">
     <tspan class="GlobalId-3LYRPcupHAO8Guev3jJorG IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">- For specifikationer mm. henvises til generel noten.</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 43.194576263427734) rotate(-0.0)">
+    <tspan class="GlobalId-0Ou$$xQBz1BAcVLrm6FCZs IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">- Målestok er anvist på de individuelle elementer/views. Nordpil gælder kun for plantegninger</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 20.704978942871094) rotate(-0.0)">
     <tspan class="GlobalId-0huabsRhbBaAUBxrO4uqNQ IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">NOTE GENERELT</tspan>
@@ -33,6 +30,9 @@
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 39.80421829223633) rotate(-0.0)">
     <tspan class="GlobalId-3OjqxaNd140Q_$E4TTQVu$ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">- Arkitekt model danner grundlag for geometrien på tegninger.</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 23.643142700195312) rotate(-0.0)">
+    <tspan class="GlobalId-38bX_x8I92BgbHMLPHgVgS IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">- Alle mål skal altid kontrolleres op mod faktiske forhold, tegninger er ikke produktionstegninger</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(0.9558126330375671, 36.413761138916016) rotate(-0.0)">
     <tspan class="GlobalId-1SlaNhqvLF5A5wAsEEXEBL IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">- Nærværende er konstruktionstegninger og dækker ikke over byggeriet generelle byggeteknik.</tspan>

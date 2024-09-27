@@ -1,147 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   id="root"
-   version="1.1"
-   width="420.0mm"
-   height="297.0mm"
-   viewBox="0 0 420.0 297.0"
-   sodipodi:docname="V11_K09_H1_EF_S1_1 - Fundamentsplan.svg"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs6" />
-  <sodipodi:namedview
-     id="namedview6"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     inkscape:zoom="1.1599498"
-     inkscape:cx="1083.6676"
-     inkscape:cy="547.00643"
-     inkscape:window-width="3840"
-     inkscape:window-height="2071"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="root" />
-  <g
-     data-type="titleblock"
-     id="g1">
-    <image
-       xlink:href="titleblocks%5CA3_landscape_DK.svg"
-       x="0"
-       y="0"
-       width="420.0"
-       height="297.0"
-       id="image1" />
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ns1="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns2="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" id="root" version="1.1" width="420.0mm" height="297.0mm" viewBox="0 0 420.0 297.0" ns1:docname="V11_K09_H1_EF_S1_1 - Fundamentsplan.svg" ns2:version="1.3.2 (091e20e, 2023-11-25, custom)">
+  <defs id="defs6" />
+  <ns1:namedview id="namedview6" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" ns2:showpageshadow="2" ns2:pageopacity="0.0" ns2:pagecheckerboard="0" ns2:deskcolor="#d1d1d1" ns2:document-units="mm" ns2:zoom="1.1599498" ns2:cx="1084.5297" ns2:cy="547.00643" ns2:window-width="3840" ns2:window-height="2071" ns2:window-x="-9" ns2:window-y="-9" ns2:window-maximized="1" ns2:current-layer="root" />
+  <g data-type="titleblock" id="g1">
+    <image xlink:href="titleblocks%5CA3_landscape_DK.svg" x="0" y="0" width="420.0" height="297.0" id="image1" />
   </g>
-  <g
-     data-type="drawing"
-     data-id="329403"
-     data-drawing="0xzLOklp9DJeRbvvYo12A7"
-     id="g3"
-     transform="translate(-25.394285,-28.387097)">
-    <image
-       data-type="foreground"
-       xlink:href="..%5Cdrawings%5CFundamentsplan.svg"
-       x="29.99999728881835"
-       y="30.000539107936905"
-       width="247.29999542236328"
-       height="242.5572557841262"
-       id="image2" />
-    <image
-       data-type="view-title"
-       xlink:href="assets%5Cview-title.svg"
-       x="29.99999728881835"
-       y="277.5578028920631"
-       width="50.222462"
-       height="10"
-       id="image3" />
+  <g data-type="drawing" data-id="329403" data-drawing="0xzLOklp9DJeRbvvYo12A7" id="g3" transform="translate(-25.394285,-28.387097)">
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CFundamentsplan.svg" x="29.99999728881835" y="30.010539107713388" width="247.3" height="242.54" id="image2" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="29.99999728881835" y="277.5478028922866" width="50.222462" height="10" id="image3" />
   </g>
-  <g
-     data-type="drawing"
-     data-id="355185"
-     data-drawing="2YsSwSfNv9HRL5B7LbGXU8"
-     id="g6"
-     transform="translate(238.06452,-1.6129032)">
-    <image
-       data-type="background"
-       xlink:href="..%5Cdrawings%5CFundament%20ortografi-underlay.png"
-       x="13.841181543701166"
-       y="17.309848433727336"
-       width="161.58817291259766"
-       height="127.03472713254534"
-       id="image4" />
-    <image
-       data-type="foreground"
-       xlink:href="..%5Cdrawings%5CFundament%20ortografi.svg"
-       x="13.841181543701166"
-       y="17.309848433727336"
-       width="161.58817291259766"
-       height="127.03472713254534"
-       id="image5" />
-    <image
-       data-type="view-title"
-       xlink:href="assets%5Cview-title.svg"
-       x="13.841181543701166"
-       y="149.34456856627267"
-       width="50.222462"
-       height="10"
-       id="image6" />
+  <g data-type="drawing" data-id="355185" data-drawing="2YsSwSfNv9HRL5B7LbGXU8" id="g6" transform="translate(247.87277,-31.265767)">
+    <image data-type="background" xlink:href="..%5Cdrawings%5CFundament%20ortografi-underlay.png" x="25.791182" y="44.434849" width="137.69" height="72.779999" id="image4" />
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CFundament%20ortografi.svg" x="25.791182" y="44.434849" width="137.69" height="72.779999" id="image5" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="70.954773" y="117.21484" width="50.222462" height="10" id="image6" />
   </g>
-  <g
-     data-type="drawing"
-     data-id="395597"
-     data-drawing="1s5Hi2DJfEjBtTNbvKX7kz"
-     id="g8"
-     transform="translate(346.45161,-21.804355)">
-    <image
-       data-type="foreground"
-       xlink:href="..%5Cdrawings%5CANN_NorthArrow.svg"
-       x="37.50130120197677"
-       y="37.50130120197677"
-       width="15.000000596046448"
-       height="15.000000596046448"
-       id="image7" />
-    <image
-       data-type="view-title"
-       xlink:href="assets%5Cview-title.svg"
-       x="107.52768020197678"
-       y="40.00130079802322"
-       width="50.222462"
-       height="10"
-       id="image8" />
+  <g data-type="drawing" data-id="395597" data-drawing="1s5Hi2DJfEjBtTNbvKX7kz" id="g8" transform="translate(346.45161,-21.804355)">
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CANN_NorthArrow.svg" x="37.50130120197677" y="37.50130120197677" width="15.000000596046448" height="15.000000596046448" id="image7" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="107.52768020197678" y="40.00130079802322" width="50.222462" height="10" id="image8" />
   </g>
-  <g
-     data-type="drawing"
-     data-id="400416"
-     data-drawing="2DJV8Kxs124hcYbjxasB6B"
-     id="g10"
-     transform="translate(284.99999,163.80766)">
-    <image
-       data-type="foreground"
-       xlink:href="..%5Cdrawings%5CANN_NoteGeneral.svg"
-       x="30"
-       y="30"
-       width="105.00001"
-       height="44.709679"
-       id="image9" />
-    <image
-       data-type="view-title"
-       xlink:href="assets%5Cview-title.svg"
-       x="187.61638"
-       y="52.354839"
-       width="50.222462"
-       height="10"
-       id="image10" />
+  <g data-type="drawing" data-id="400416" data-drawing="2DJV8Kxs124hcYbjxasB6B" id="g10" transform="translate(284.99999,163.80766)">
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CANN_NoteGeneral.svg" x="30" y="30" width="105.00001" height="44.709679" id="image9" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="187.61638" y="52.354839" width="50.222462" height="10" id="image10" />
   </g>
 </svg>

@@ -17,259 +17,137 @@
  * You should have received a copy of the GNU General Public License
  * long with Bonsai.  If not, see <http://www.gnu.org/licenses/>.
  */
- /* This is the default stylesheet for Danish technical drawings. font are scale wihth eg. 1.0px*1,15, giving about 2mm text for small and 2,5mm for regular*/
- /* for lines we toughly divide with 2 to get proper thickness eg. 0.35/2=0.175, else the lines looks clunky and thick. */
- /* standard stroke width */
- /* 0.06mm = 0.06/2 = 0.03 */
-/* 0.12mm = 0.12/2 = 0.06 */
-/* 0.18mm = 0.18/2 = 0.09 */
-/* 0.25mm = 0.25/2 = 0.125 */
-/* 0.35mm = 0.35/2 = 0.175 */
-/* 0.50mm = 0.50/2 = 0.25 */
-/* 0.70mm = 0.70/2 = 0.35 */
-/* 1.00mm = 1.00/2 = 0.5 */
+ /* This is the default stylesheet for Danish technical drawings. Based on BIPS standards, could be updated to latest MOLIO*/
+
+ 
+ :root {
+    /* VARIABLES, are added here. This means you can adjust appearence and styling fast, all the following css can 
+    then be considered relative to each other. Eg. if you change t5 you change all line types, cuts etc. with a slightly thicker
+    line than normal, and --green you change for all concrete insitu materials. */
+
+    /* VARIABLES, DK STANDARD COLORS */
+    --green: rgb(0, 255, 0); /* Concrete insitu */
+    --cyan: rgb(0, 255, 255); /* Concrete precast */
+    --green-toned: rgb(0, 200, 0); /* Concrete light */
+    --brown-red: rgb(129, 64, 0); /* Masonry */
+    --yellow: rgb(255, 191, 0); /* Insulation soft, The color is actually curry, but the closest one to yellow in the system. */
+    --orange: rgb(255, 128, 0); /* Insulation hard */
+    --gray: rgb(195, 175, 165); /* Expanded clay, eg. leca og letklinker */
+    --brown-dark: rgb(129, 96, 0); /* Wood element, color is actually called curry 3 */
+    --brown: rgb(153, 102, 0); /* Wood, both structural and laminated timber */
+    --red: rgb(255, 0, 0); /* Steel */
+    --brown-light: rgb(189, 173, 126); /* Gypsum, color is actually called curry 4 */
+    --brown-black: rgb(97, 75, 62); /* Terrain */
+    --yellow-toned: rgb(204, 153, 0); /* Filling eg. sand etc. */
+    
+    /* VARIABLES, DK STANDARD LINE THICKNESS / STROKE WIDTH */
+    /* for lines we toughly divide with 2 to get proper thickness eg. 0.35/2=0.175, else the lines looks clunky and thick. */
+    --t1: 0.03px; /* t1 0.06mm = 0.06/2 = 0.03 VERY THIN*/
+    --t2: 0.06px; /* t2 0.12mm = 0.12/2 = 0.06 */
+    --t3: 0.09px; /* t3 0.18mm = 0.18/2 = 0.09 USED for eg. cuts on secondary materials*/
+    --t4: 0.125px; /* t4 0.25mm = 0.25/2 = 0.125 GENERAL LINE TYPE*/
+    --t5: 0.175px; /* t5 0.35mm = 0.35/2 = 0.175 USED for eg. cuts on main materials*/
+    --t6: 0.25px; /* t6 0.50mm = 0.50/2 = 0.25 */
+    --t7: 0.35px; /* t7 0.70mm = 0.70/2 = 0.35 */
+    --t8: 0.5px; /* t8 1.00mm = 1.00/2 = 0.5 VERY THICK*/
+}
 
 * { stroke-linecap: round; stroke-linejoin: round; }
-/*Arial is set to comply with DK standards, but can be changed to any font, we make the general size for detailed drawings*/
-text, tspan { /* 2.0mm */ fill: black; stroke: none; font-family: 'Arial'; font-size: 2.3px}
 
-/* .cut { fill: black; stroke: black; stroke-linecap: 'round'; stroke-width: 0.35; fill-rule: evenodd; } */
-.cut { stroke: black; stroke-linecap: 'round'; stroke-width: 0.175; fill-rule: evenodd; }
+/* FONTS */
+/* Arial is set to comply with DK standards, but can be changed to any font, we make the general size for detailed drawings*/
+/* font are scale wihth eg. 1.0px*1,15, giving about 2mm text for small and 2,5mm for regular */
+text, tspan { /* 2.0mm */ fill: black; stroke: none; font-family: 'Arial'; font-size: 2.875px} /* THIS IS USED IN GENERAL */
+path.PredefinedType-TEXTLEADERDOT { marker-end: url(#leader-marker-dot); }
+text.PredefinedType-TEXTLEADER, tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
+text.title, tspan.title { /* 7mm, should not be used, very big */ font-size: 8.05px; }
+text.header, tspan.header { /* 5mm, should not be used, very big */ font-size: 5.75px; }
+text.large, tspan.large { /* 3.5mm, headers etc. */ font-size: 4.025px; }
+text.regular, tspan.regular { /* 2.5mm, for all general text on drawing */ font-size: 2.875px; }
+text.small, tspan.small { /* 2.0mm uses the 1.8 setting in ui, for all general text and explenations on detailed drawing */ font-size: 2.3px }
+text.GRID, tspan.GRID { /* 2,5mm, size of grid text */ font-size: 2.875px; }
 
-.projection { fill: white; stroke: black; stroke-linecap: 'round'; stroke-width: 0.175; }
+/* DIFFERENT STUFF */
+/* we don't make standard "fill: black" when cutting elements, either show the element as is, or assign hatch or the material color*/
+.cut { stroke: black; stroke-linecap: 'round'; stroke-width: var(--t5); fill-rule: evenodd; }
+.projection { fill: white; stroke: black; stroke-linecap: 'round'; stroke-width: var(--t3); }
 .surface { stroke: none; fill: #fff; fill-rule: evenodd; }
-.annotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 0.175; }
-.IfcAnnotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 0.175; }
-.IfcGeographicElement { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 0.175; }
-.PredefinedType-LINEWORK { stroke: black; stroke-width: 0.175; }
-.PredefinedType-LINEWORK.dashed { stroke-dasharray: 3, 2; }
-.PredefinedType-LINEWORK.fine { stroke-width: 0.06; stroke: #777777; }
-.PredefinedType-LINEWORK.thin { stroke-width: 0.09; }
-.PredefinedType-LINEWORK.medium { stroke-width: 0.175; }
-.PredefinedType-LINEWORK.thick { stroke-width: 0.25; }
-.PredefinedType-LINEWORK.strong { stroke-width: 1; }
-.PredefinedType-Cont1 { stroke-width: 0.03; }
-.PredefinedType-Cont2 { stroke-width: 0.06; }
-.PredefinedType-ContT3 { stroke-width: 0.09; }
-.PredefinedType-ContT4 { stroke-width: 0.125; }
-.PredefinedType-ContT5 { stroke-width: 0.175; }
-.PredefinedType-ContT6 { stroke-width: 0.250; }
-.PredefinedType-ContT7 { stroke-width: 0.35; }
-.PredefinedType-ContT8 { stroke-width: 0.5; }
-.PredefinedType-DotDash1T1 { stroke-width: 0.03; stroke-dasharray: 1.7,0.5,0.2,0.5; }
-.PredefinedType-DotDash1T2 { stroke-width: 0.06; stroke-dasharray: 1.7,0.5,0.2,0.5; }
-.PredefinedType-DotDash1T3 { stroke-width: 0.09; stroke-dasharray: 1.7,0.5,0.2,0.5; }
-.PredefinedType-DotDash1T4 { stroke-width: 0.125; stroke-dasharray: 1.7,0.5,0.2,0.5; }
-.PredefinedType-DotDash1T5 { stroke-width: 0.175; stroke-dasharray: 1.7,0.5,0.2,0.5; }
-.PredefinedType-DotDash1T6 { stroke-width: 0.250; stroke-dasharray: 1.7,0.5,0.2,0.5; }
-.PredefinedType-DotDash1T7 { stroke-width: 0.35; stroke-dasharray: 1.7,0.5,0.2,0.5; }
-.PredefinedType-DotDash1T8 { stroke-width: 0.5; stroke-dasharray: 1.7,0.5,0.2,0.5; }
-.PredefinedType-DotDash2T1 { stroke-width: 0.03; stroke-dasharray: 2.2,0.7,0.2,0.7; }
-.PredefinedType-DotDash2T2 { stroke-width: 0.06; stroke-dasharray: 2.2,0.7,0.2,0.7; }
-.PredefinedType-DotDash2T3 { stroke-width: 0.09; stroke-dasharray: 2.2,0.7,0.2,0.7; }
-.PredefinedType-DotDash2T4 { stroke-width: 0.125; stroke-dasharray: 2.2,0.7,0.2,0.7; }
-.PredefinedType-DotDash2T5 { stroke-width: 0.175; stroke-dasharray: 2.2,0.7,0.2,0.7; }
-.PredefinedType-DotDash2T6 { stroke-width: 0.250; stroke-dasharray: 2.2,0.7,0.2,0.7; }
-.PredefinedType-DotDash2T7 { stroke-width: 0.35; stroke-dasharray: 2.2,0.7,0.2,0.7; }
-.PredefinedType-DotDash2T8 { stroke-width: 0.5; stroke-dasharray: 2.2,0.7,0.2,0.7; }
-.PredefinedType-DotDash3T1 { stroke-width: 0.03; stroke-dasharray: 3.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash3T2 { stroke-width: 0.06; stroke-dasharray: 3.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash3T3 { stroke-width: 0.09; stroke-dasharray: 3.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash3T4 { stroke-width: 0.125; stroke-dasharray: 3.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash3T5 { stroke-width: 0.175; stroke-dasharray: 3.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash3T6 { stroke-width: 0.250; stroke-dasharray: 3.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash3T7 { stroke-width: 0.35; stroke-dasharray: 3.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash3T8 { stroke-width: 0.5; stroke-dasharray: 3.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash4T1 { stroke-width: 0.03; stroke-dasharray: 4.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash4T2 { stroke-width: 0.06; stroke-dasharray: 4.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash4T3 { stroke-width: 0.09; stroke-dasharray: 4.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash4T4 { stroke-width: 0.125; stroke-dasharray: 4.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash4T5 { stroke-width: 0.175; stroke-dasharray: 4.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash4T6 { stroke-width: 0.250; stroke-dasharray: 4.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash4T7 { stroke-width: 0.35; stroke-dasharray: 4.0,0.9,0.2,0.9; }
-.PredefinedType-DotDash4T8 { stroke-width: 0.5; stroke-dasharray: 4.0,0.9,0.2,0.9; }
-.PredefinedType-Dash04T1 { stroke-width: 0.03; stroke-dasharray: 0.4,0.4; }
-.PredefinedType-Dash04T2 { stroke-width: 0.06; stroke-dasharray: 0.4,0.4; }
-.PredefinedType-Dash04T3 { stroke-width: 0.09; stroke-dasharray: 0.4,0.4; }
-.PredefinedType-Dash04T4 { stroke-width: 0.125; stroke-dasharray: 0.4,0.4; }
-.PredefinedType-Dash04T5 { stroke-width: 0.175; stroke-dasharray: 0.4,0.4; }
-.PredefinedType-Dash04T6 { stroke-width: 0.250; stroke-dasharray: 0.4,0.4; }
-.PredefinedType-Dash04T7 { stroke-width: 0.35; stroke-dasharray: 0.4,0.4; }
-.PredefinedType-Dash04T8 { stroke-width: 0.5; stroke-dasharray: 0.4,0.4; }
-.PredefinedType-Dash10T1 { stroke-width: 0.03; stroke-dasharray: 1.0,1.0; }
-.PredefinedType-Dash10T2 { stroke-width: 0.06; stroke-dasharray: 1.0,1.0; }
-.PredefinedType-Dash10T3 { stroke-width: 0.09; stroke-dasharray: 1.0,1.0; }
-.PredefinedType-Dash10T4 { stroke-width: 0.125; stroke-dasharray: 1.0,1.0; }
-.PredefinedType-Dash10T5 { stroke-width: 0.175; stroke-dasharray: 1.0,1.0; }
-.PredefinedType-Dash10T6 { stroke-width: 0.250; stroke-dasharray: 1.0,1.0; }
-.PredefinedType-Dash10T7 { stroke-width: 0.35; stroke-dasharray: 1.0,1.0; }
-.PredefinedType-Dash10T8 { stroke-width: 0.5; stroke-dasharray: 1.0,1.0; }
-.PredefinedType-Dash20T1 { stroke-width: 0.03; stroke-dasharray: 2.0,1.0; }
-.PredefinedType-Dash20T2 { stroke-width: 0.06; stroke-dasharray: 2.0,1.0; }
-.PredefinedType-Dash20T3 { stroke-width: 0.09; stroke-dasharray: 2.0,1.0; }
-.PredefinedType-Dash20T4 { stroke-width: 0.125; stroke-dasharray: 2.0,1.0; }
-.PredefinedType-Dash20T5 { stroke-width: 0.175; stroke-dasharray: 2.0,1.0; }
-.PredefinedType-Dash20T6 { stroke-width: 0.250; stroke-dasharray: 2.0,1.0; }
-.PredefinedType-Dash20T7 { stroke-width: 0.35; stroke-dasharray: 2.0,1.0; }
-.PredefinedType-Dash20T8 { stroke-width: 0.5; stroke-dasharray: 2.0,1.0; }
-.PredefinedType-Dash30T1 { stroke-width: 0.03; stroke-dasharray: 3.0,2.0; }
-.PredefinedType-Dash30T2 { stroke-width: 0.06; stroke-dasharray: 3.0,2.0; }
-.PredefinedType-Dash30T3 { stroke-width: 0.09; stroke-dasharray: 3.0,2.0; }
-.PredefinedType-Dash30T4 { stroke-width: 0.125; stroke-dasharray: 3.0,2.0; }
-.PredefinedType-Dash30T5 { stroke-width: 0.175; stroke-dasharray: 3.0,2.0; }
-.PredefinedType-Dash30T6 { stroke-width: 0.250; stroke-dasharray: 3.0,2.0; }
-.PredefinedType-Dash30T7 { stroke-width: 0.35; stroke-dasharray: 3.0,2.0; }
-.PredefinedType-Dash30T8 { stroke-width: 0.5; stroke-dasharray: 3.0,2.0; }
-.PredefinedType-Dash40T1 { stroke-width: 0.03; stroke-dasharray: 4.0,3.0; }
-.PredefinedType-Dash40T2 { stroke-width: 0.06; stroke-dasharray: 4.0,3.0; }
-.PredefinedType-Dash40T3 { stroke-width: 0.09; stroke-dasharray: 4.0,3.0; }
-.PredefinedType-Dash40T4 { stroke-width: 0.125; stroke-dasharray: 4.0,3.0; }
-.PredefinedType-Dash40T5 { stroke-width: 0.175; stroke-dasharray: 4.0,3.0; }
-.PredefinedType-Dash40T6 { stroke-width: 0.250; stroke-dasharray: 4.0,3.0; }
-.PredefinedType-Dash40T7 { stroke-width: 0.35; stroke-dasharray: 4.0,3.0; }
-.PredefinedType-Dash40T8 { stroke-width: 0.5; stroke-dasharray: 4.0,3.0; }
-.PredefinedType-Dot07T1 { stroke-width: 0.03; stroke-dasharray: 0.1,0.7; }
-.PredefinedType-Dot07T2 { stroke-width: 0.06; stroke-dasharray: 0.1,0.7; }
-.PredefinedType-Dot07T3 { stroke-width: 0.09; stroke-dasharray: 0.1,0.7; }
-.PredefinedType-Dot07T4 { stroke-width: 0.125; stroke-dasharray: 0.1,0.7; }
-.PredefinedType-Dot07T5 { stroke-width: 0.175; stroke-dasharray: 0.1,0.7; }
-.PredefinedType-Dot07T6 { stroke-width: 0.250; stroke-dasharray: 0.1,0.7; }
-.PredefinedType-Dot07T7 { stroke-width: 0.35; stroke-dasharray: 0.1,0.7; }
-.PredefinedType-Dot07T8 { stroke-width: 0.5; stroke-dasharray: 0.1,0.7; }
-.PredefinedType-Dot10T1 { stroke-width: 0.03; stroke-dasharray: 0.1,1.0; }
-.PredefinedType-Dot10T2 { stroke-width: 0.06; stroke-dasharray: 0.1,1.0; }
-.PredefinedType-Dot10T3 { stroke-width: 0.09; stroke-dasharray: 0.1,1.0; }
-.PredefinedType-Dot10T4 { stroke-width: 0.125; stroke-dasharray: 0.1,1.0; }
-.PredefinedType-Dot10T5 { stroke-width: 0.175; stroke-dasharray: 0.1,1.0; }
-.PredefinedType-Dot10T6 { stroke-width: 0.250; stroke-dasharray: 0.1,1.0; }
-.PredefinedType-Dot10T7 { stroke-width: 0.35; stroke-dasharray: 0.1,1.0; }
-.PredefinedType-Dot10T8 { stroke-width: 0.5; stroke-dasharray: 0.1,1.0; }
-.PredefinedType-Dot15T1 { stroke-width: 0.03; stroke-dasharray: 0.1,1.5; }
-.PredefinedType-Dot15T2 { stroke-width: 0.06; stroke-dasharray: 0.1,1.5; }
-.PredefinedType-Dot15T3 { stroke-width: 0.09; stroke-dasharray: 0.1,1.5; }
-.PredefinedType-Dot15T4 { stroke-width: 0.125; stroke-dasharray: 0.1,1.5; }
-.PredefinedType-Dot15T5 { stroke-width: 0.175; stroke-dasharray: 0.1,1.5; }
-.PredefinedType-Dot15T6 { stroke-width: 0.250; stroke-dasharray: 0.1,1.5; }
-.PredefinedType-Dot15T7 { stroke-width: 0.35; stroke-dasharray: 0.1,1.5; }
-.PredefinedType-Dot15T8 { stroke-width: 0.5; stroke-dasharray: 0.1,1.5; }
-.PredefinedType-Dot20T1 { stroke-width: 0.03; stroke-dasharray: 0.1,2.0; }
-.PredefinedType-Dot20T2 { stroke-width: 0.06; stroke-dasharray: 0.1,2.0; }
-.PredefinedType-Dot20T3 { stroke-width: 0.09; stroke-dasharray: 0.1,2.0; }
-.PredefinedType-Dot20T4 { stroke-width: 0.125; stroke-dasharray: 0.1,2.0; }
-.PredefinedType-Dot20T5 { stroke-width: 0.175; stroke-dasharray: 0.1,2.0; }
-.PredefinedType-Dot20T6 { stroke-width: 0.250; stroke-dasharray: 0.1,2.0; }
-.PredefinedType-Dot20T7 { stroke-width: 0.35; stroke-dasharray: 0.1,2.0; }
-.PredefinedType-Dot20T8 { stroke-width: 0.5; stroke-dasharray: 0.1,2.0; }
-.PredefinedType-DashDoubleDotT1 { stroke-width: 0.03; stroke-dasharray: 13,2,0.2,2,0.2,2; }
-.PredefinedType-DashDoubleDotT2 { stroke-width: 0.06; stroke-dasharray: 13,2,0.2,2,0.2,2; }
-.PredefinedType-DashDoubleDotT3 { stroke-width: 0.09; stroke-dasharray: 13,2,0.2,2,0.2,2; }
-.PredefinedType-DashDoubleDotT4 { stroke-width: 0.125; stroke-dasharray: 13,2,0.2,2,0.2,2; }
-.PredefinedType-DashDoubleDotT5 { stroke-width: 0.175; stroke-dasharray: 13,2,0.2,2,0.2,2; }
-.PredefinedType-DashDoubleDotT6 { stroke-width: 0.250; stroke-dasharray: 13,2,0.2,2,0.2,2; }
-.PredefinedType-DashDoubleDotT7 { stroke-width: 0.35; stroke-dasharray: 13,2,0.2,2,0.2,2; }
-.PredefinedType-DashDoubleDotT8 { stroke-width: 0.5; stroke-dasharray: 13,2,0.2,2,0.2,2; }
-.PredefinedType-LongdashDashT1 { stroke-width: 0.03; stroke-dasharray: 13,2,1,2; }
-.PredefinedType-LongdashDashT2 { stroke-width: 0.06; stroke-dasharray: 13,2,1,2; }
-.PredefinedType-LongdashDashT3 { stroke-width: 0.09; stroke-dasharray: 13,2,1,2; }
-.PredefinedType-LongdashDashT4 { stroke-width: 0.125; stroke-dasharray: 13,2,1,2; }
-.PredefinedType-LongdashDashT5 { stroke-width: 0.175; stroke-dasharray: 13,2,1,2; }
-.PredefinedType-LongdashDashT6 { stroke-width: 0.250; stroke-dasharray: 13,2,1,2; }
-.PredefinedType-LongdashDashT7 { stroke-width: 0.35; stroke-dasharray: 13,2,1,2; }
-.PredefinedType-LongdashDashT8 { stroke-width: 0.5; stroke-dasharray: 13,2,1,2; }
-.PredefinedType-CenterT1 { stroke-width: 0.03; stroke-dasharray: 20,1.5,0.2,1.5; }
-.PredefinedType-CenterT2 { stroke-width: 0.06; stroke-dasharray: 20,1.5,0.2,1.5; }
-.PredefinedType-CenterT3 { stroke-width: 0.09; stroke-dasharray: 20,1.5,0.2,1.5; }
-.PredefinedType-CenterT4 { stroke-width: 0.125; stroke-dasharray: 20,1.5,0.2,1.5; }
-.PredefinedType-CenterT5 { stroke-width: 0.175; stroke-dasharray: 20,1.5,0.2,1.5; }
-.PredefinedType-CenterT6 { stroke-width: 0.250; stroke-dasharray: 20,1.5,0.2,1.5; }
-.PredefinedType-CenterT7 { stroke-width: 0.35; stroke-dasharray: 20,1.5,0.2,1.5; }
-.PredefinedType-CenterT8 { stroke-width: 0.5; stroke-dasharray: 20,1.5,0.2,1.5; }
-.PredefinedType-Dash80T1 { stroke-width: 0.03; stroke-dasharray: 8,1; }
-.PredefinedType-Dash80T2 { stroke-width: 0.06; stroke-dasharray: 8,1; }
-.PredefinedType-Dash80T3 { stroke-width: 0.09; stroke-dasharray: 8,1; }
-.PredefinedType-Dash80T4 { stroke-width: 0.125; stroke-dasharray: 8,1; }
-.PredefinedType-Dash80T5 { stroke-width: 0.175; stroke-dasharray: 8,1; }
-.PredefinedType-Dash80T6 { stroke-width: 0.250; stroke-dasharray: 8,1; }
-.PredefinedType-Dash80T7 { stroke-width: 0.35; stroke-dasharray: 8,1; }
-.PredefinedType-Dash80T8 { stroke-width: 0.5; stroke-dasharray: 8,1; }
-.PredefinedType-Dash80LongT1 { stroke-width: 0.03; stroke-dasharray: 8,1.6; }
-.PredefinedType-Dash80LongT2 { stroke-width: 0.06; stroke-dasharray: 8,1.6; }
-.PredefinedType-Dash80LongT3 { stroke-width: 0.09; stroke-dasharray: 8,1.6; }
-.PredefinedType-Dash80LongT4 { stroke-width: 0.125; stroke-dasharray: 8,1.6; }
-.PredefinedType-Dash80LongT5 { stroke-width: 0.175; stroke-dasharray: 8,1.6; }
-.PredefinedType-Dash80LongT6 { stroke-width: 0.250; stroke-dasharray: 8,1.6; }
-.PredefinedType-Dash80LongT7 { stroke-width: 0.35; stroke-dasharray: 8,1.6; }
-.PredefinedType-Dash80LongT8 { stroke-width: 0.5; stroke-dasharray: 8,1.6; }
-.PredefinedType-LongdashDoubledashT1 { stroke-width: 0.03; stroke-dasharray: 10,2,2,2,2,2; }
-.PredefinedType-LongdashDoubledashT2 { stroke-width: 0.06; stroke-dasharray: 10,2,2,2,2,2; }
-.PredefinedType-LongdashDoubledashT3 { stroke-width: 0.09; stroke-dasharray: 10,2,2,2,2,2; }
-.PredefinedType-LongdashDoubledashT4 { stroke-width: 0.125; stroke-dasharray: 10,2,2,2,2,2; }
-.PredefinedType-LongdashDoubledashT5 { stroke-width: 0.175; stroke-dasharray: 10,2,2,2,2,2; }
-.PredefinedType-LongdashDoubledashT6 { stroke-width: 0.250; stroke-dasharray: 10,2,2,2,2,2; }
-.PredefinedType-LongdashDoubledashT7 { stroke-width: 0.35; stroke-dasharray: 10,2,2,2,2,2; }
-.PredefinedType-LongdashDoubledashT8 { stroke-width: 0.5; stroke-dasharray: 10,2,2,2,2,2; }
-.PredefinedType-Dash100T1 { stroke-width: 0.03; stroke-dasharray: 10,10; }
-.PredefinedType-Dash100T2 { stroke-width: 0.06; stroke-dasharray: 10,10; }
-.PredefinedType-Dash100T3 { stroke-width: 0.09; stroke-dasharray: 10,10; }
-.PredefinedType-Dash100T4 { stroke-width: 0.125; stroke-dasharray: 10,10; }
-.PredefinedType-Dash100T5 { stroke-width: 0.175; stroke-dasharray: 10,10; }
-.PredefinedType-Dash100T6 { stroke-width: 0.250; stroke-dasharray: 10,10; }
-.PredefinedType-Dash100T7 { stroke-width: 0.35; stroke-dasharray: 10,10; }
-.PredefinedType-Dash100T8 { stroke-width: 0.5; stroke-dasharray: 10,10; }
-.PredefinedType-LongdashDotT1 { stroke-width: 0.03; stroke-dasharray: 12.8,1.6,0.3,1.6; }
-.PredefinedType-LongdashDotT2 { stroke-width: 0.06; stroke-dasharray: 12.8,1.6,0.3,1.6; }
-.PredefinedType-LongdashDotT3 { stroke-width: 0.09; stroke-dasharray: 12.8,1.6,0.3,1.6; }
-.PredefinedType-LongdashDotT4 { stroke-width: 0.125; stroke-dasharray: 12.8,1.6,0.3,1.6; }
-.PredefinedType-LongdashDotT5 { stroke-width: 0.175; stroke-dasharray: 12.8,1.6,0.3,1.6; }
-.PredefinedType-LongdashDotT6 { stroke-width: 0.250; stroke-dasharray: 12.8,1.6,0.3,1.6; }
-.PredefinedType-LongdashDotT7 { stroke-width: 0.35; stroke-dasharray: 12.8,1.6,0.3,1.6; }
-.PredefinedType-LongdashDotT8 { stroke-width: 0.5; stroke-dasharray: 12.8,1.6,0.3,1.6; }
-.PredefinedType-LongdashDoubledotT1 { stroke-width: 0.03; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashDoubledotT2 { stroke-width: 0.06; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashDoubledotT3 { stroke-width: 0.09; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashDoubledotT4 { stroke-width: 0.125; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashDoubledotT5 { stroke-width: 0.175; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashDoubledotT6 { stroke-width: 0.250; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashDoubledotT7 { stroke-width: 0.35; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashDoubledotT8 { stroke-width: 0.5; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashTripledotT1 { stroke-width: 0.03; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashTripledotT2 { stroke-width: 0.06; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashTripledotT3 { stroke-width: 0.09; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashTripledotT4 { stroke-width: 0.125; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashTripledotT5 { stroke-width: 0.175; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashTripledotT6 { stroke-width: 0.250; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashTripledotT7 { stroke-width: 0.35; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-LongdashTripledotT8 { stroke-width: 0.5; stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashDotT1 { stroke-width: 0.03; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6; }
-.PredefinedType-DashDashDotT2 { stroke-width: 0.06; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6; }
-.PredefinedType-DashDashDotT3 { stroke-width: 0.09; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6; }
-.PredefinedType-DashDashDotT4 { stroke-width: 0.125; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6; }
-.PredefinedType-DashDashDotT5 { stroke-width: 0.175; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6; }
-.PredefinedType-DashDashDotT6 { stroke-width: 0.250; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6; }
-.PredefinedType-DashDashDotT7 { stroke-width: 0.35; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6; }
-.PredefinedType-DashDashDotT8 { stroke-width: 0.5; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6; }
-.PredefinedType-DashDashDoubleDotT1 { stroke-width: 0.03; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashDoubleDotT2 { stroke-width: 0.06; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashDoubleDotT3 { stroke-width: 0.09; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashDoubleDotT4 { stroke-width: 0.125; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashDoubleDotT5 { stroke-width: 0.175; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashDoubleDotT6 { stroke-width: 0.250; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashDoubleDotT7 { stroke-width: 0.35; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashDoubleDotT8 { stroke-width: 0.5; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashTripleDotT1 { stroke-width: 0.03; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashTripleDotT2 { stroke-width: 0.06; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashTripleDotT3 { stroke-width: 0.09; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashTripleDotT4 { stroke-width: 0.125; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashTripleDotT5 { stroke-width: 0.175; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashTripleDotT6 { stroke-width: 0.250; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashTripleDotT7 { stroke-width: 0.35; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-DashDashTripleDotT8 { stroke-width: 0.5; stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
-.PredefinedType-Cut { stroke-width: 0.09; stroke-dasharray: 20,1.5,0.2,1.5; }
+.annotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: var(--t4); }
+.IfcAnnotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: var(--t4); }
+.IfcGeographicElement { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: var(--t5); }
+.IfcSpace { fill: none; stroke: none; }
 
-.PredefinedType-BACKGROUND { stroke: black; stroke-width: 0.175; }
-.PredefinedType-GRID { marker-start: url(#grid-marker); marker-end: url(#grid-marker); stroke-dasharray: 25.0, 1.5, 1.5, 1.5; stroke-width: 0.175; }
-.PredefinedType-SECTION { stroke-width: 0.175; stroke-dasharray: 2.0,1.0; }
-.PredefinedType-SECTIONLEVEL { marker-start: url(#section-level-marker); stroke-width: 0.175; stroke-dasharray: 2.0,1.0; }
+/* LINES */
+/* -------------------- Default lines, but modified------------------------ */
+.PredefinedType-LINEWORK { stroke-width: var(--t4); stroke: black }
+.PredefinedType-LINEWORK.dashed { stroke-width: var(--t4); stroke-dasharray: 3, 2 }
+.PredefinedType-LINEWORK.fine { stroke-width: var(--t2); stroke: #777777; }
+.PredefinedType-LINEWORK.thin { stroke-width: var(--t3); }
+.PredefinedType-LINEWORK.medium { stroke-width: var(--t5); }
+.PredefinedType-LINEWORK.thick { stroke-width: var(--t6); }
+.PredefinedType-LINEWORK.strong { stroke-width: var(--t7); }
+/*Defining line thickness for different types of lines, based on root styling, make a class so it can be changed inside EPset_Annotation bonsai*/
+.T1 { stroke-width: var(--t1) }
+.T2 { stroke-width: var(--t2); }
+.T3 { stroke-width: var(--t3); }
+.T4 { stroke-width: var(--t4); }
+.T5 { stroke-width: var(--t5); }
+.T6 { stroke-width: var(--t6); }
+.T7 { stroke-width: var(--t7); }
+.T8 { stroke-width: var(--t8); }
+/*We also define some colors that can be reused across different types of lines*/
+/*In DK standards we can choose to represent different materials in standard colors, related material is written here for context*/
+/* when we are making strokes we name .Scolor*/
+.Sgreen { stroke: var(--green); } /* Concrete insitu */
+.Scyan { stroke: var(--cyan); } /* Concrete precast */
+.SgreenToned { stroke: var(--green-toned); } /* Concrete light */
+.SbrownRed { stroke: var(--brown-red); } /* Masonry */
+.Syellow { stroke: var(--yellow); } /* Insulation soft */
+.Sorange { stroke: var(--orange); } /* Insulation hard */
+.Sgray { stroke: var(--gray); } /* Expanded clay, eg. leca og letklinker */
+.SbrownDark { stroke: var(--brown-dark); } /* Wood element*/
+.Sbrown { stroke: var(--brown); } /* Wood, both structural and laminated timber */
+.Sred { stroke: var(--red); } /* Steel */
+.SbrownLight { stroke: var(--brown-light); } /* Gypsum */
+.SbrownBlack { stroke: var(--brown-black); } /* Terrain */
+.SyellowToned { stroke: var(--yellow-toned); } /* Filling eg. sand etc. */
+/*Now we make the standard DK line types. In bonsai these are combined with thickness and color using */
+/* EPset_Annotations, this way we can make typeProducts for the lines the class could be "Cont T4 Cred*/
+.PredefinedType-LINEWORK.Cont { }
+.PredefinedType-LINEWORK.DotDash1 {stroke-dasharray: 1.7,0.5,0.2,0.5; }
+.PredefinedType-LINEWORK.DotDash2 {stroke-dasharray: 2.2,0.7,0.2,0.7; }
+.PredefinedType-LINEWORK.DotDash3 {stroke-dasharray: 3.0,0.9,0.2,0.9; }
+.PredefinedType-LINEWORK.DotDash4 {stroke-dasharray: 4.0,0.9,0.2,0.9; }
+.PredefinedType-LINEWORK.Dash04 {stroke-dasharray: 0.4,0.4; }
+.PredefinedType-LINEWORK.Dash10 {stroke-dasharray: 1.0,1.0; }
+.PredefinedType-LINEWORK.Dash20 {stroke-dasharray: 2.0,1.0; }
+.PredefinedType-LINEWORK.Dash30 {stroke-dasharray: 3.0,2.0; }
+.PredefinedType-LINEWORK.Dash40 {stroke-dasharray: 4.0,3.0; }
+.PredefinedType-LINEWORK.Dash80 {stroke-dasharray: 8,1; }
+.PredefinedType-LINEWORK.Dash80Long {stroke-dasharray: 8,1.6; }
+.PredefinedType-LINEWORK.Dash100 {stroke-dasharray: 10,10; }
+.PredefinedType-LINEWORK.Dot07 {stroke-dasharray: 0.1,0.7; }
+.PredefinedType-LINEWORK.Dot10 {stroke-dasharray: 0.1,1.0; }
+.PredefinedType-LINEWORK.Dot15 {stroke-dasharray: 0.1,1.5; }
+.PredefinedType-LINEWORK.Dot20 {stroke-dasharray: 0.1,2.0; }
+.PredefinedType-LINEWORK.LongdashDash {stroke-dasharray: 13,2,1,2; }
+.PredefinedType-LINEWORK.LongdashDoubledash {stroke-dasharray: 10,2,2,2,2,2; }
+.PredefinedType-LINEWORK.LongdashDot { stroke-dasharray: 12.8,1.6,0.3,1.6; }
+.PredefinedType-LINEWORK.LongdashDoubledot { stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6; }
+.PredefinedType-LINEWORK.LongdashTripledot { stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
+.PredefinedType-LINEWORK.DashDashDot { stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6; }
+.PredefinedType-LINEWORK.DashDashDoubleDot { stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
+.PredefinedType-LINEWORK.DashDashTripleDot { stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
+.PredefinedType-LINEWORK.DashDoubleDot {stroke-dasharray: 13,2,0.2,2,0.2,2; }
+.PredefinedType-LINEWORK.Center {stroke-dasharray: 20,1.5,0.2,1.5; }
+.PredefinedType-LINEWORK.Cut { stroke-width: var(--t3); stroke-dasharray: 20,1.5,0.2,1.5; }
+
+/* Markers, symbols etc. */
+/* ---------------------- DEFAULT TYPES, but modified ---------------------- */
+.PredefinedType-BACKGROUND { stroke: black; stroke-width: var(--t4); }
+.PredefinedType-GRID { marker-start: url(#grid-marker); marker-end: url(#grid-marker); stroke-dasharray: 20.0, 1.5, 1.5, 1.5; stroke-width: var(--t3); }
+.PredefinedType-SECTION { stroke-width: var(--t4); stroke-dasharray: 2.0,1.0; }
+.PredefinedType-SECTIONLEVEL { marker-start: url(#section-level-marker); stroke-width: var(--t4); stroke-dasharray: 2.0,1.0; }
 .PredefinedType-PLANLEVEL { marker-end: url(#plan-level-marker); }
 .PredefinedType-DIMENSION { marker-start: url(#dimension-marker-start); marker-end: url(#dimension-marker-end); }
 .PredefinedType-ANGLE { marker-start: url(#angle-marker-start); marker-end: url(#angle-marker-end); }
@@ -281,80 +159,121 @@ text, tspan { /* 2.0mm */ fill: black; stroke: none; font-family: 'Arial'; font-
 .PredefinedType-DIAMETER { marker-start: url(#diameter-marker-start); marker-end: url(#diameter-marker-end); }
 .PredefinedType-STAIRARROW { marker-start: url(#stair-marker-start); marker-end: url(#stair-marker-end); }
 .PredefinedType-BOUNDARY { fill: none; stroke: red; stroke-width: 1; stroke-dasharray: 12, 4, 3, 4, 3, 4; }
-.PredefinedType-SEALANT { fill: url(#crosshatch1); stroke-width: 0.125; }
+.PredefinedType-SEALANT { fill: url(#crosshatch1); stroke-width: var(--t3); }
 .PredefinedType-FILLAREA { fill: white; stroke: black; }
-.PredefinedType-BREAKLINE { fill: none; stroke: black; stroke-width: 0.125; marker-mid: url(#breakline-marker); }
+.PredefinedType-BREAKLINE { fill: none; stroke: black; stroke-width: var(--t3); marker-mid: url(#breakline-marker); }
 .PredefinedType-TEXT { fill: black; stroke: none; }
 path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 
 /*Symbols*/
-/* These are defined directly in the symbols_xx.svg file, referenced in ifc file using the id as the ObjectType */
+/* These are defined directly in the symbols_xx.svg file, referenced in ifc file using the id under symbols in EPset_Annotation, like before this allows for making TypeProducts. */ 
+
+/* MATERIALS */
+/* Materials are defined on the ifc object or type, and appears when an object is cut. The Name is the material used */
+/* stroke width defines the edge line thicknees of the material, since materials appear when cut, this is the cut-line thickness*/
+/* when materials are cut with a hatch we want black lines, and with a solid fill we want the material color */
+/* ------------------------ SOME BASIC COLORS ----------------------- */
+.material-blank { fill: white; stroke-width: var(--t4); }
+.material-red { fill: red; stroke-width: var(--t4);}
+.material-blue { fill: blue; stroke-width: var(--t4); }
+.material-green { fill: green; stroke-width: var(--t4); }
+.material-yellow { fill: yellow; stroke-width: var(--t4); }
+.material-black { fill: black; stroke-width: var(--t4); }
+/* ------------------------ FROM DEFAULT ----------------------- */
+.material-diagonal1 { fill: url(#diagonal1); stroke-width: var(--t4); }
+.material-diagonal2 { fill: url(#diagonal2); stroke-width: var(--t4); }
+.material-diagonal3 { fill: url(#diagonal3); stroke-width: var(--t4); }
+.material-crosshatch1 { fill: url(#crosshatch1); stroke-width: var(--t4); }
+.material-crosshatch2 { fill: url(#crosshatch2); stroke-width: var(--t4); }
+.material-crosshatch3 { fill: url(#crosshatch3); stroke-width: var(--t4); }
+.material-glass { fill: url(#glass); stroke-width: var(--t4); }
+.material-grass { fill: url(#grass); stroke-width: var(--t4); }
+.material-liquid { fill: url(#liquid); stroke-width: var(--t4); }
+.material-concrete { fill: url(#concrete); stroke-width: var(--t5); }
+/* ------------------------ DK ----------------------- */
+.material-steel { fill: url(#steel); stroke-width: var(--t5); }
+.material-steelColor { fill: var(--red); stroke-width: var(--t5); stroke: var(--red); }
+.material-masonry { fill: url(#masonry); stroke-width: var(--t5); }
+.material-masonryColor { fill: var(--brown-red); stroke-width: var(--t5); stroke: var(--brown-red); }
+.material-earth { fill: url(#earth); stroke-width: var(--t4); }
+.material-earthColor { fill: var(--brown-black); stroke-width: var(--t4); stroke: var(--brown-black); }
+.material-expandedClay { fill: url(#expandedClay); stroke-width: var(--t3); }
+.material-expandedClayColor { fill: var(--gray); stroke-width: var(--t3); stroke: var(--gray); }
+.material-sand { fill: url(#sand); stroke-width: var(--t4); }
+.material-sandColor { fill: var(--yellow-toned); stroke-width: var(--t4); stroke: var(--yellow-toned); }
+.material-concreteInsitu { fill: url(#concreteInsitu); stroke-width: var(--t5); }
+.material-concreteInsituColor { fill: var(--green); stroke-width: var(--t5); stroke: var(--green); }
+.material-concretePrecast { fill: url(#concretePrecast); stroke-width: var(--t5); }
+.material-concretePrecastColor { fill: var(--cyan); stroke-width: var(--t5); stroke: var(--cyan); }
+.material-concreteLight { fill: url(#concreteLight); stroke-width: var(--t5); }
+.material-concreteLightColor { fill: var(--green-toned); stroke-width: var(--t5); stroke: var(--green-toned); }
+.material-insulationSoft { fill: url(#insulationSoft); stroke-width:var(--t3); }
+.material-insulationSoftColor { fill: var(--yellow); stroke-width: var(--t3); stroke: var(--yellow); }
+.material-insulationRigid { fill: url(#insulationRigid); stroke-width: var(--t3); }
+.material-insulationRigidColor { fill: var(--orange); stroke-width: var(--t3); stroke: var(--orange); }
+.material-wood { fill: url(#wood); stroke-width: var(--t5); }
+.material-woodColor { fill: var(--brown-dark); stroke-width: var(--t5); stroke: var(--brown-dark); }
+.material-woodStructural { fill: url(#woodStructural); stroke-width: var(--t5); }
+.material-woodStructuralColor { fill: var(--brown); stroke-width: var(--t5); stroke: var(--brown); }
+.material-woodLaminiated { fill: url(#woodLaminiated); stroke-width: var(--t5); }
+.material-woodLaminiatedColor { fill: var(--brown); stroke-width: var(--t5); stroke: var(--brown); }
+.material-gypsum { fill: none; stroke-width: var(--t3); }
+.material-gypsumColor { fill: var(--brown-light); stroke-width: var(--t3); stroke: var(--brown-light); }
 
 
-/* Underneath Doesnt seem to be supported, or needs more than just CSS implementation: */
-path.PredefinedType-TEXTLEADERDOT { marker-end: url(#leader-marker-dot); }
-text.PredefinedType-TEXTLEADER, tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
-text.title, tspan.title { /* 7mm, should not be used, very big */ font-size: 8.05px; }
-text.header, tspan.header { /* 5mm, should not be used, very big */ font-size: 5.75px; }
-text.large, tspan.large { /* 3.5mm, headers etc. */ font-size: 4.025px; }
-text.regular, tspan.regular { /* 2.5mm, for all general text on drawing */ font-size: 2.875px; }
-text.small, tspan.small { /* 2.0mm uses the 1.8 setting in ui, for all general text on detailed drawing */ font-size: 2.3px }
-text.GRID, tspan.GRID { /* 2,5mm, size of grid text */ font-size: 2.875px; }
+
+.Masking { fill: white; }
 
 
-/* Materials are defined on the ifc object, and appears when an object is cut. The Name is the material used */
-/* stroke width defines the edge line thicknees of the material. */
-.material-blank { fill: white; }
-.material-red { fill: red; stroke-width: 0.09;}
-.material-blue { fill: blue; stroke-width: 0.09; }
-.material-green { fill: green; stroke-width: 0.09; }
-.material-yellow { fill: yellow; stroke-width: 0.09; }
-.material-black { fill: black; stroke-width: 0.09; }
-.material-steel { fill: url(#steel); }
-.material-diagonal1 { fill: url(#diagonal1); }
-.material-diagonal2 { fill: url(#diagonal2); }
-.material-diagonal3 { fill: url(#diagonal3); }
-.material-crosshatch1 { fill: url(#crosshatch1); }
-.material-crosshatch2 { fill: url(#crosshatch2); }
-.material-crosshatch3 { fill: url(#crosshatch3); }
-.material-masonry { fill: url(#masonry); }
-.material-earth { fill: url(#earth); }
-.material-glass { fill: url(#glass); }
-.material-liquid { fill: url(#liquid); }
-.material-grass { fill: url(#grass); }
-.material-expandedClay { fill: url(#expandedClay); stroke-width: 0.09; }
-.material-sand { fill: url(#sand); }
-.material-concrete { fill: url(#concrete); stroke-width: 0.175; }
-.material-concreteInsitu { fill: url(#concreteInsitu); stroke-width: 0.175; }
-.material-concretePrecast { fill: url(#concretePrecast); stroke-width: 0.175; }
-.material-concreteLight { fill: url(#concreteLight); stroke-width: 0.175; }
-.material-insulationSoft { fill: url(#insulationSoft); stroke-width: 0.09; }
-.material-insulationRigid { fill: url(#insulationRigid); stroke-width: 0.09; }
-.material-wood { fill: url(#wood); stroke-width: 0.175; }
-.material-woodLaminiated { fill: url(#woodLaminiated); stroke-width: 0.175; }
-
-.IfcSpace { fill: none; stroke: none; }
-/* Hatches, Patterns, and Textures. used for fill-areas etc. define Name in ObjectType under 
-attributes in the instance of the fill area  */
-.PredefinedType-STUD { stroke: black; stroke-width: 0.175; }
-.PredefinedType-WOOD { fill: url(#wood); stroke: black; stroke-width: 0.175; }
-.PredefinedType-WOODLAMINATED { fill: url(#woodLaminiated); stroke: black; stroke-width: 0.175; }
-.PredefinedType-STEEL { fill: url(#steel); stroke: black; stroke-width: 0.175; }
-.PredefinedType-CONCRETE { fill: url(#concrete); stroke: black; stroke-width: 0.175; }
-.PredefinedType-CONCRETEINSITU { fill: url(#concreteInsitu); stroke: black; stroke-width: 0.175; }
-.PredefinedType-CONCRETEPRECAST { fill: url(#concretePrecast); stroke: black; stroke-width: 0.175; }
-.PredefinedType-CONCRETELIGHT { fill: url(#concreteLight); stroke: black; stroke-width: 0.175; }
-.PredefinedType-PLASTERBOARD { fill: white; stroke: black; stroke-width: 0.09; }
-.PredefinedType-GLASS { fill: url(#glass); stroke: black; stroke-width: 0.09; }
-.PredefinedType-EARTH { fill: url(#earth); stroke: black; stroke-width: 0.09; }
-.PredefinedType-EXPANDEDCLAY { fill: url(#expandedClay); stroke: black; stroke-width: 0.09; }
-.PredefinedType-SAND { fill: url(#sand); stroke: black; stroke-width: 0.09; }
-.PredefinedType-INSULATIONSOFT { fill: url(#insulationSoft); stroke: black; stroke-width: 0.09; }
-.PredefinedType-INSULATIONRIGID { fill: url(#insulationRigid); stroke: black; stroke-width: 0.09; }
-.PredefinedType-MASONRY { fill: url(#masonry); stroke: black; stroke-width: 0.09; }
-.PredefinedType-RED { fill: red; stroke: black; stroke-width: 0.09; }
-.PredefinedType-BLUE { fill: blue; stroke: black; stroke-width: 0.09; }
-.PredefinedType-GREEN { fill: green; stroke: black; stroke-width: 0.09; }
-.PredefinedType-YELLOW { fill: yellow; stroke: black; stroke-width: 0.09; }
-.PredefinedType-BLACK { fill: black; stroke: black; stroke-width: 0.09; }
-.PredefinedType-WHITE { fill: white; stroke: black; stroke-width: 0.09; }
+/* FILL_AREA */
+/* classes are define for each Fill area type, class name is added in EPset_Annotation */
+/* Fill areas areas are the same as materials, eg. so the can be used to detail drawings we use big letters*/
+/* ------------------------ SOME BASIC COLORS ----------------------- */
+.BLANK { fill: white; stroke: black; stroke-width: var(--t4); }
+.RED { fill: red; stroke: black; stroke-width: var(--t4); }
+.BLUE { fill: blue; stroke: black; stroke-width: var(--t4); }
+.GREEN { fill: green; stroke: black; stroke-width: var(--t4); }
+.YELLOW { fill: yellow; stroke: black; stroke-width: var(--t4); }
+.BLACK { fill: black; stroke: black; stroke-width: var(--t4); }
+/* ------------------------ FROM DEFAULT ----------------------- */
+.DIAGONAL1 { fill: url(#diagonal1); stroke-width: var(--t4); }
+.DIAGONAL2 { fill: url(#diagonal2); stroke-width: var(--t4); }
+.DIAGONAL3 { fill: url(#diagonal3); stroke-width: var(--t4); }
+.CROSSHATCH1 { fill: url(#crosshatch1); stroke-width: var(--t4); }
+.CROSSHATCH2 { fill: url(#crosshatch2); stroke-width: var(--t4); }
+.CROSSHATCH3 { fill: url(#crosshatch3); stroke-width: var(--t4); }
+.GLASS { fill: url(#glass); stroke-width: var(--t4); }
+.GRASS { fill: url(#grass); stroke-width: var(--t4); }
+.LIQUID { fill: url(#liquid); stroke-width: var(--t4); }
+.CONCRETE { fill: url(#concrete); stroke-width: var(--t5); }
+.PredefinedType-STUD { stroke: black; stroke-width: var(--t5); }
+.STUD { stroke: black; stroke-width: var(--t5); }
+/* ------------------------ DK ----------------------- */
+.STEEL { fill: url(#steel); stroke-width: var(--t5); }
+.STEELCOLOR { fill: var(--red); stroke-width: var(--t5); stroke: var(--red); }
+.MASONRY { fill: url(#masonry); stroke-width: var(--t5); } 
+.MASONRYCOLOR { fill: var(--brown-red); stroke-width: var(--t5); stroke: var(--brown-red); }
+.EARTH { fill: url(#earth); stroke-width: var(--t4); }
+.EARTHCOLOR { fill: var(--brown-black); stroke-width: var(--t4); stroke: var(--brown-black); }
+.EXPANDEDCLAY { fill: url(#expandedClay); stroke-width: var(--t3); }
+.EXPANDEDCLAYCOLOR { fill: var(--gray); stroke-width: var(--t3); stroke: var(--gray); }
+.SAND { fill: url(#sand); stroke-width: var(--t4); }
+.SANDCOLOR { fill: var(--yellow-toned); stroke-width: var(--t4); stroke: var(--yellow-toned); }
+.CONCRETEINSITU { fill: white, url(#concreteInsitu); stroke-width: var(--t5); }
+.CONCRETEINSITUCOLOR { fill: var(--green); stroke-width: var(--t5); stroke: var(--green); }
+.CONCRETEPRECAST { fill: url(#concretePrecast); stroke-width: var(--t5); }
+.CONCRETEPRECASTCOLOR { fill: var(--cyan); stroke-width: var(--t5); stroke: var(--cyan); }
+.CONCRETELIGHT { fill: url(#concreteLight); stroke-width: var(--t5); }
+.CONCRETELIGHTCOLOR { fill: var(--green-toned); stroke-width: var(--t5); stroke: var(--green-toned); }
+.INSULATIONSOFT { fill: url(#insulationSoft); stroke-width:var(--t3); }
+.INSULATIONSOFTCOLOR { fill: var(--yellow); stroke-width: var(--t3); stroke: var(--yellow); }
+.INSULATIONRIGID { fill: url(#insulationRigid); stroke-width: var(--t3); }
+.INSULATIONRIGIDCOLOR { fill: var(--orange); stroke-width: var(--t3); stroke: var(--orange); }
+.WOOD { fill: url(#wood); stroke-width: var(--t5); }
+.WOODCOLOR { fill: var(--brown-dark); stroke-width: var(--t5); stroke: var(--brown-dark); }
+.WOODSTRUCTURAL { fill: url(#woodStructural); stroke-width: var(--t5); }
+.WOODSTRUCTURALCOLOR { fill: var(--brown); stroke-width: var(--t5); stroke: var(--brown); }
+.WOODLAMINATED { fill: url(#woodLaminiated); stroke-width: var(--t5); }
+.WOODLAMINATEDCOLOR { fill: var(--brown); stroke-width: var(--t5); stroke: var(--brown); }
+.GYPSUM { fill: none; stroke-width: var(--t3); }
+.GYPSUMCOLOR { fill: var(--brown-light); stroke-width: var(--t3); stroke: var(--brown-light); }

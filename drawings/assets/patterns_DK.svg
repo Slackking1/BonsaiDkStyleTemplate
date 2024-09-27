@@ -81,11 +81,11 @@
             <line x1="1" y1="0" x2="1" y2="3" style="stroke:black; stroke-width:0.12" />
             <line x1="2.5" y1="0" x2="2.5" y2="3" style="stroke:black; stroke-width:0.12" />
 </pattern>
-    <pattern id="insulationSoft" width="3" height="3" patternTransform="rotate(0 0 0)" patternUnits="userSpaceOnUse">
+<pattern id="insulationSoft" width="3" height="3" patternTransform="rotate(0 0 0)" patternUnits="userSpaceOnUse">
                 <path style="fill: white;" d="M 0 0 3 0 3 3 0 3" />
                 <line x1="1" y1="1.5" x2="1" y2="3" style="stroke:black; stroke-width:0.12" />
                 <line x1="2.5" y1="0" x2="2.5" y2="1.5" style="stroke:black; stroke-width:0.12" />
-    </pattern>
+</pattern>
 <pattern id="insulationRigid" width="3" height="3" patternTransform="rotate(0 0 0)" patternUnits="userSpaceOnUse">
                 <path style="fill: white;" d="M 0 0 3 0 3 3 0 3" />
                 <line x1="1" y1="0" x2="1" y2="3" style="stroke:black; stroke-width:0.12" />
@@ -103,6 +103,17 @@
                 <line x1="1" y1="1.0" x2="1" y2="2" style="stroke:black; stroke-width:0.12" />
                 <line x1="3" y1="1" x2="3" y2="2" style="stroke:black; stroke-width:0.12" />
 </pattern>
+<!-- TODO; FIX THIS PATTERN, should be better in relation to line thickness of different scaled drawings -->
+<!-- <pattern id="woodStructural" width="1" height="1" patternUnits="userSpaceOnUse">
+                <path style="fill: white;" d="M 0 0 1 0 1 1 0 1" />
+                <line x1="0" y1="0" x2="1" y2="1" style="stroke:black; stroke-width:0.12" />
+                <line x1="1" y1="0" x2="0" y2="1" style="stroke:black; stroke-width:0.12" />
+</pattern> -->
+        <pattern id="woodStructural" width="1" height="1" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox">    
+            <rect x="0" y="0" width="1" height="1" fill="white" />
+            <line x1="0" y1="0" x2="1" y2="1" style="stroke:black; stroke-width:0.125" vector-effect="non-scaling-stroke" />
+            <line x1="1" y1="0" x2="0" y2="1" style="stroke:black; stroke-width:0.125" vector-effect="non-scaling-stroke" />
+        </pattern>
 <pattern id="woodLaminated" width="3" height="3" patternTransform="rotate(90 0 0)" patternUnits="userSpaceOnUse">
             <path style="fill: white;" d="M 0 0 3 0 3 3 0 3" />
             
@@ -149,7 +160,7 @@
      style="stroke:#000000;stroke-width:0.35;stroke-linecap:round" />
 </pattern>
 <pattern id="concreteInsitu" width="3" height="3" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
-    
+    <!-- <path style="fill: white;" d="M 0 0 3 0 3 3 0 3" /> -->
     <line x1="0" y1="0" x2="0" y2="3" style="stroke:black; stroke-width:0.12" />
     <line x1="0" y1="0" x2="3" y2="0" style="stroke:black; stroke-width:0.12" />
 </pattern>
