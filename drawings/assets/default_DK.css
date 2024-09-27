@@ -259,7 +259,8 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 .EXPANDEDCLAYCOLOR { fill: var(--gray); stroke-width: var(--t3); stroke: var(--gray); }
 .SAND { fill: url(#sand); stroke-width: var(--t4); }
 .SANDCOLOR { fill: var(--yellow-toned); stroke-width: var(--t4); stroke: var(--yellow-toned); }
-.CONCRETEINSITU { fill: white, url(#concreteInsitu); stroke-width: var(--t5); }
+/* .CONCRETEINSITU { fill: url(#concreteInsitu); stroke-width: var(--t5); } */
+.CONCRETEINSITU { background-color: white; fill: url(#concreteInsitu); fill-rule: nonzero; stroke-width: var(--t5); }
 .CONCRETEINSITUCOLOR { fill: var(--green); stroke-width: var(--t5); stroke: var(--green); }
 .CONCRETEPRECAST { fill: url(#concretePrecast); stroke-width: var(--t5); }
 .CONCRETEPRECASTCOLOR { fill: var(--cyan); stroke-width: var(--t5); stroke: var(--cyan); }
