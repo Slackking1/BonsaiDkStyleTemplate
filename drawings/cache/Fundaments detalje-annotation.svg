@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ifc="http://www.ifcopenshell.org/ns" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" data-scale="1:10" height="171.95455052635887mm" id="root" version="1.1" viewBox="0 0 194.0000057220459 171.95455052635887" width="194.0000057220459mm">
   <defs/>
-  <path class="GlobalId-1akOU9czb2kAJB9lJTaf1z IfcAnnotation PredefinedType-TEXTLEADER small" d="M 56.216248869895935 87.0902883481573 L 72.83326089382172 103.01927883516657"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(56.216251373291016, 87.09028625488281) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-1akOU9czb2kAJB9lJTaf1z IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">2 stk Y12 bunden</tspan>
-  </text>
   <path class="GlobalId-3QjaPvx2X9TuSZ_VmYkGRS IfcAnnotation PredefinedType-TEXTLEADER small" d="M 55.80836236476898 70.63799310814251 L 69.98001039028168 84.42326063628902"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(55.80836486816406, 70.63799285888672) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-3QjaPvx2X9TuSZ_VmYkGRS IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">C25 svindfri beton, 150x300 bjælke</tspan>
@@ -135,6 +131,10 @@
   <path class="GlobalId-2ZhesYYd9DvvYhPLkP56Ku IfcAnnotation PredefinedType-TEXTLEADER small" d="M 56.216248869895935 63.35466314445842 L 72.83326089382172 79.28365353833546"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(56.216251373291016, 63.35466384887695) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-2ZhesYYd9DvvYhPLkP56Ku IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">2 stk Y12 i toppen</tspan>
+  </text>
+  <path class="GlobalId-1akOU9czb2kAJB9lJTaf1z IfcAnnotation PredefinedType-TEXTLEADER small" d="M 56.216248869895935 87.0902883481573 L 72.83326089382172 103.01927883516657"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(56.216251373291016, 87.09028625488281) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-1akOU9czb2kAJB9lJTaf1z IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">2 stk Y12 bunden</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(126.94755554199219, 123.1405029296875) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-29RYryy4T4beIWYv7WQyBb IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">Sandpude, middelkomprimering 98%</tspan>
