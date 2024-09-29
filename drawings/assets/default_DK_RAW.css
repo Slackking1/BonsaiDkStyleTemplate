@@ -1,0 +1,274 @@
+/*
+ * Bonsai - OpenBIM Blender Add-on
+ * Copyright (C) 2020, 2021 Dion Moult <dion@thinkmoult.com>
+ *
+ * This file is part of Bonsai.
+ *
+ * Bonsai is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Bonsai is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY, without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * long with Bonsai.  If not, see <http://www.gnu.org/licenses/>.
+ */
+ 
+ /* This is the default stylesheet for Danish technical drawings. Based on BIPS standards, should/could be updated to latest MOLIO standards, please contribute.
+ * want to extend it, or make it your own for architectural purpose? ask developers how to do it the best, maybe add a new one with 
+ * _arc in the the name. THIS STYLING IS INTENDED TO COMPLY 100% to DK drawing standard, no room for personal preferences.
+ * The styling is to be considered WIP, and should be updated as needed. and contributed to the project. 
+ * The methods explained in this file in relation to the UI, is pr. 28.09.2024.
+ * Since this file is one of the first a front end user might look at, it's commented a lot to explain for beginners and alike.*/
+ 
+/* preprocessing */
+/* we make the final .css using variables, these are defined in the preprocess.py script, 
+general sizes etc. are defined in that file, in this file hardcoded things can be changed or refences */
+
+
+/* FONTS */
+/* Arial is set to comply with DK standards, but can be changed to any font, we make the general size for normal drawings*/
+/* For detailed drawing we adjust the font size to 2.3px, for descriptions text, and dimensions, this can be managed through the UI in typeProduct and EPset_Annotations */
+/* font are scaled with 1.0px*1,15, giving about 2mm text for small and 2,5mm for regular, when printed */
+* { stroke-linecap: round; stroke-linejoin: round; }
+text, tspan { /* 2.0mm */ fill: black; stroke: none; font-family: 'Arial'; font-size: 2.875px} /* THIS IS USED IN GENERAL */
+text.PredefinedType-TEXTLEADER, tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
+text.title, tspan.title { font-size: 8.05px; } /* 7mm, should not be used, very big */
+text.header, tspan.header { font-size: 5.75px; } /* 5mm, should not be used, very big */
+text.large, tspan.large { font-size: 4.025px; } /* 3.5mm, headers etc. */
+text.regular, tspan.regular { font-size: 2.875px; } /* 2.5mm, for all general text on drawing */
+text.small, tspan.small { font-size: 2.3px } /* 2.0mm uses the 1.8 setting in ui, for all general text and explenations on detailed drawing */
+text.GRID, tspan.GRID { font-size: 2.875px; } /* 2,5mm, size of grid text */
+text.DIMENSION, tspan.DIMENSION { font-size: 2.3px; } /* 2,0mm, size of dimension text */
+text.ELEVATION, tspan.ELEVATION { font-size: 2.875px; } /* 2,5mm, size of elevation text */
+text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section text */
+
+/* DIFFERENT STUFF */
+/* we don't make standard "fill: black" when cutting elements, either show the element as is, or assign hatch or the material color*/
+.cut { stroke: black; stroke-linecap: 'round'; stroke-width: var(--t5); fill-rule: evenodd; }
+.projection { fill: white; stroke: black; stroke-linecap: 'round'; stroke-width: var(--t3); }
+.surface { stroke: none; fill: #fff; fill-rule: evenodd; }
+.annotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: var(--t4); }
+.IfcAnnotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: var(--t4); }
+.IfcGeographicElement { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: var(--t5); }
+.IfcSpace { fill: none; stroke: none; }
+
+/* LINES */
+/* -------------------- Default lines, but modified------------------------ */
+.PredefinedType-LINEWORK { stroke-width: var(--t4); stroke: black }
+.PredefinedType-LINEWORK.dashed { stroke-width: var(--t4); stroke-dasharray: 3, 2 }
+.PredefinedType-LINEWORK.fine { stroke-width: var(--t2); stroke: #777777; }
+.PredefinedType-LINEWORK.thin { stroke-width: var(--t3); }
+.PredefinedType-LINEWORK.medium { stroke-width: var(--t5); }
+.PredefinedType-LINEWORK.thick { stroke-width: var(--t6); }
+.PredefinedType-LINEWORK.strong { stroke-width: var(--t7); }
+/*Defining line thickness for different types of lines, based on root styling, make a class so it can be changed inside EPset_Annotation bonsai*/
+.T1 { stroke-width: var(--t1) }
+.T2 { stroke-width: var(--t2); }
+.T3 { stroke-width: var(--t3); }
+.T4 { stroke-width: var(--t4); }
+.T5 { stroke-width: var(--t5); }
+.T6 { stroke-width: var(--t6); }
+.T7 { stroke-width: var(--t7); }
+.T8 { stroke-width: var(--t8); }
+/*We also define some colors that can be reused across different types of lines*/
+/*In DK standards we can choose to represent different materials in standard colors, related material is written here for context*/
+/*Strokes are not nessesaryli connected to these colors, but we will use them if it makes sense. */
+/* when we are making strokes we name .Scolor*/
+.Sgreen { stroke: var(--concrete-color); } /* Concrete insitu */
+.Scyan { stroke: var(--concrete-precast-color); } /* Concrete precast */
+.SgreenToned { stroke: var(--concrete-light-color); } /* Concrete light */
+.SbrownRed { stroke: var(--masonry-color); } /* Masonry */
+.Syellow { stroke: var(--insulation-soft-color); } /* Insulation soft */
+.Sorange { stroke: var(--insulation-hard-color); } /* Insulation hard */
+.Sgray { stroke: var(--exspandedclay-color); } /* Expanded clay, eg. leca og letklinker */
+.SbrownDark { stroke: var(--wood-element-color); } /* Wood element*/
+.Sbrown { stroke: var(--wood-color); } /* Wood, both structural and laminated timber */
+.Sred { stroke: var(--steel-color); } /* Steel */
+.SbrownLight { stroke: var(--gypsom-color); } /* Gypsum */
+.SbrownBlack { stroke: var(--terrain-color); } /* Terrain */
+.SyellowToned { stroke: var(--filling-color); } /* Filling eg. sand etc. */
+/*Now we make the standard DK line types. In bonsai these are combined with thickness and color using */
+/* EPset_Annotations, this way we can make typeProducts for the lines the class could be "Cont T4 Cred" A continues thickness4 red line */
+.PredefinedType-LINEWORK.Cont { }
+.PredefinedType-LINEWORK.DotDash1 {stroke-dasharray: 1.7,0.5,0.2,0.5; }
+.PredefinedType-LINEWORK.DotDash2 {stroke-dasharray: 2.2,0.7,0.2,0.7; }
+.PredefinedType-LINEWORK.DotDash3 {stroke-dasharray: 3.0,0.9,0.2,0.9; }
+.PredefinedType-LINEWORK.DotDash4 {stroke-dasharray: 4.0,0.9,0.2,0.9; }
+.PredefinedType-LINEWORK.Dash04 {stroke-dasharray: 0.4,0.4; }
+.PredefinedType-LINEWORK.Dash10 {stroke-dasharray: 1.0,1.0; }
+.PredefinedType-LINEWORK.Dash20 {stroke-dasharray: 2.0,1.0; }
+.PredefinedType-LINEWORK.Dash30 {stroke-dasharray: 3.0,2.0; }
+.PredefinedType-LINEWORK.Dash40 {stroke-dasharray: 4.0,3.0; }
+.PredefinedType-LINEWORK.Dash80 {stroke-dasharray: 8,1; }
+.PredefinedType-LINEWORK.Dash80Long {stroke-dasharray: 8,1.6; }
+.PredefinedType-LINEWORK.Dash100 {stroke-dasharray: 10,10; }
+.PredefinedType-LINEWORK.Dot07 {stroke-dasharray: 0.1,0.7; }
+.PredefinedType-LINEWORK.Dot10 {stroke-dasharray: 0.1,1.0; }
+.PredefinedType-LINEWORK.Dot15 {stroke-dasharray: 0.1,1.5; }
+.PredefinedType-LINEWORK.Dot20 {stroke-dasharray: 0.1,2.0; }
+.PredefinedType-LINEWORK.LongdashDash {stroke-dasharray: 13,2,1,2; }
+.PredefinedType-LINEWORK.LongdashDoubledash {stroke-dasharray: 10,2,2,2,2,2; }
+.PredefinedType-LINEWORK.LongdashDot { stroke-dasharray: 12.8,1.6,0.3,1.6; }
+.PredefinedType-LINEWORK.LongdashDoubledot { stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6; }
+.PredefinedType-LINEWORK.LongdashTripledot { stroke-dasharray: 12.8,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
+.PredefinedType-LINEWORK.DashDashDot { stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6; }
+.PredefinedType-LINEWORK.DashDashDoubleDot { stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
+.PredefinedType-LINEWORK.DashDashTripleDot { stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
+.PredefinedType-LINEWORK.DashDoubleDot {stroke-dasharray: 13,2,0.2,2,0.2,2; }
+.PredefinedType-LINEWORK.Center {stroke-dasharray: 20,1.5,0.2,1.5; }
+.PredefinedType-LINEWORK.Cut { stroke-width: var(--t3); stroke-dasharray: 20,1.5,0.2,1.5; }
+
+/* Markers, symbols etc. */
+/* ---------------------- DEFAULT TYPES, but modified ---------------------- */
+.PredefinedType-BACKGROUND { stroke: black; stroke-width: var(--t4); }
+.PredefinedType-GRID { marker-start: url(#grid-marker); marker-end: url(#grid-marker); stroke-dasharray: 20.0, 1.5, 1.5, 1.5; stroke-width: 0.09; }
+.PredefinedType-SECTION { stroke-width: var(--t4); stroke-dasharray: 2.0,1.0; }
+.PredefinedType-SECTIONLEVEL { marker-start: url(#section-level-marker); stroke-width: var(--t4); stroke-dasharray: 2.0,1.0; }
+.PredefinedType-PLANLEVEL { marker-end: url(#plan-level-marker); }
+.PredefinedType-DIMENSION { marker-start: url(#dimension-marker-start); marker-end: url(#dimension-marker-end); }
+.PredefinedType-ANGLE { marker-start: url(#angle-marker-start); marker-end: url(#angle-marker-end); }
+.PredefinedType-RADIUS { marker-end: url(#fall-marker-end); }
+.PredefinedType-FALL { marker-end: url(#radius-marker-end); }
+.PredefinedType-SLOPEANGLE { marker-end: url(#radius-marker-end); }
+.PredefinedType-SLOPEPERCENT { marker-end: url(#radius-marker-end); }
+.PredefinedType-SLOPEFRACTION { marker-end: url(#radius-marker-end); }
+.PredefinedType-DIAMETER { marker-start: url(#diameter-marker-start); marker-end: url(#diameter-marker-end); }
+.PredefinedType-STAIRARROW { marker-start: url(#stair-marker-start); marker-end: url(#stair-marker-end); }
+.PredefinedType-BOUNDARY { fill: none; stroke: red; stroke-width: 1; stroke-dasharray: 12, 4, 3, 4, 3, 4; }
+.PredefinedType-SEALANT { fill: url(#crosshatch1); stroke-width: var(--t3); }
+.PredefinedType-FILLAREA { fill: white; stroke: black; }
+.PredefinedType-BREAKLINE { fill: none; stroke: black; stroke-width: var(--t3); marker-mid: url(#breakline-marker); }
+.PredefinedType-TEXT { fill: black; stroke: none; }
+/* TODO, MAKE A TEXT LEADER WITH A DOT, THAT WORKS */
+path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
+
+/*Symbols*/
+/* These are defined directly in the symbols_xx.svg file, referenced in ifc file using the id under symbols in EPset_Annotation, like before this allows for making TypeProducts. */ 
+
+/* MATERIALS */
+/* Materials are defined on the ifc object or type, and appears when an object is cut. The Name in object material in UI eg. steel is the material used as hatch when cut */
+/* stroke widths defines the edge line thickness of the material, since materials appear when cut, this is the cut-line thickness*/
+/* when materials are cut with a hatch we want black lines, and with a solid fill we want the material color, this is according to DK standards */
+/* in materials we don't include patterns with solid white background, when we cut an element, we still want to see underlying elements, hidden lines or whatever. */
+/* ------------------------ SOME BASIC COLORS ----------------------- */
+.material-blank { fill: white; stroke-width: var(--t4); }
+.material-red { fill: red; stroke-width: var(--t4);}
+.material-blue { fill: blue; stroke-width: var(--t4); }
+.material-green { fill: green; stroke-width: var(--t4); }
+.material-yellow { fill: yellow; stroke-width: var(--t4); }
+.material-black { fill: black; stroke-width: var(--t4); }
+/* ------------------------ FROM DEFAULT ----------------------- */
+.material-diagonal1 { fill: url(#diagonal1); stroke-width: var(--t4); }
+.material-diagonal2 { fill: url(#diagonal2); stroke-width: var(--t4); }
+.material-diagonal3 { fill: url(#diagonal3); stroke-width: var(--t4); }
+.material-crosshatch1 { fill: url(#crosshatch1); stroke-width: var(--t4); }
+.material-crosshatch2 { fill: url(#crosshatch2); stroke-width: var(--t4); }
+.material-crosshatch3 { fill: url(#crosshatch3); stroke-width: var(--t4); }
+.material-glass { fill: url(#glass); stroke-width: var(--t4); }
+.material-grass { fill: url(#grass); stroke-width: var(--t4); }
+.material-liquid { fill: url(#liquid); stroke-width: var(--t4); }
+.material-concrete { fill: url(#concrete); stroke-width: var(--t5); }
+/* ------------------------ DK ----------------------- */
+.material-steel { fill: url(#steel); stroke-width: var(--t5); }
+.material-steelColor { fill: var(--steel-color); stroke-width: var(--t5); stroke: var(--steel-color); }
+.material-masonry { fill: url(#masonry); stroke-width: var(--t5); }
+.material-masonryColor { fill: var(--masonry-color); stroke-width: var(--t5); stroke: var(--masonry-color); }
+.material-earth { fill: url(#earth); stroke-width: var(--t4); }
+.material-earthColor { fill: var(--terrain-color); stroke-width: var(--t4); stroke: var(--terrain-color); }
+.material-expandedClay { fill: url(#expandedClay); stroke-width: var(--t3); }
+.material-expandedClayColor { fill: var(--exspandedclay-color); stroke-width: var(--t3); stroke: var(--exspandedclay-color); }
+.material-sand { fill: url(#sand); stroke-width: var(--t4); }
+.material-sandColor { fill: var(--filling-color); stroke-width: var(--t4); stroke: var(--filling-color); }
+.material-concreteInsitu { fill: url(#concreteInsitu); stroke-width: var(--t5); }
+.material-concreteInsituColor { fill: var(--concrete-color); stroke-width: var(--t5); stroke: var(--concrete-color); }
+.material-concretePrecast { fill: url(#concretePrecast); stroke-width: var(--t5); }
+.material-concretePrecastColor { fill: var(--concrete-precast-color); stroke-width: var(--t5); stroke: var(--concrete-precast-color); }
+.material-concreteLight { fill: url(#concreteLight); stroke-width: var(--t5); }
+.material-concreteLightColor { fill: var(--concrete-light-color); stroke-width: var(--t5); stroke: var(--concrete-light-color); }
+.material-insulationSoft { fill: url(#insulationSoft); stroke-width:var(--t3); }
+.material-insulationSoftColor { fill: var(--insulation-soft-color); stroke-width: var(--t3); stroke: var(--insulation-soft-color); }
+.material-insulationRigid { fill: url(#insulationRigid); stroke-width: var(--t3); }
+.material-insulationRigidColor { fill: var(--insulation-hard-color); stroke-width: var(--t3); stroke: var(--insulation-hard-color); }
+.material-wood { fill: url(#wood); stroke-width: var(--t5); }
+.material-woodColor { fill: var(--wood-element-color); stroke-width: var(--t5); stroke: var(--wood-element-color); }
+.material-woodStructural { fill: url(#woodStructural); stroke-width: var(--t5); }
+.material-woodStructuralColor { fill: var(--wood-color); stroke-width: var(--t5); stroke: var(--wood-color); }
+.material-woodLaminiated { fill: url(#woodLaminiated); stroke-width: var(--t5); }
+.material-woodLaminiatedColor { fill: var(--wood-color); stroke-width: var(--t5); stroke: var(--wood-color); }
+.material-gypsum { fill: none; stroke-width: var(--t3); }
+.material-gypsumColor { fill: var(--gypsom-color); stroke-width: var(--t3); stroke: var(--gypsom-color); }
+
+/* FILL_AREA */
+/* classes are define for each Fill area type, class name is added in EPset_Annotation */
+/* Fill areas areas are the same as materials, so the can be used to detail drawings, but we use big letters, and there is a masked option, that covers anything behind*/
+/* IMPORTANT NOTE, IN THE UI AND EPset_Annotation, USE THE Z INDEX in your type to define which "layer" annotations appears in. */
+/* ------------------------ SOME BASIC COLORS ----------------------- */
+.BLANK { fill: white; stroke: black; stroke-width: var(--t4); }
+.RED { fill: red; stroke: black; stroke-width: var(--t4); }
+.BLUE { fill: blue; stroke: black; stroke-width: var(--t4); }
+.GREEN { fill: green; stroke: black; stroke-width: var(--t4); }
+.YELLOW { fill: yellow; stroke: black; stroke-width: var(--t4); }
+.BLACK { fill: black; stroke: black; stroke-width: var(--t4); }
+/* ------------------------ FROM DEFAULT ----------------------- */
+/* ---------------- NOTE: NOT ALL PATTERNS ARE USED, more in patterns_DK.svg ------------------- */
+.DIAGONAL1 { fill: url(#diagonal1); stroke-width: var(--t4); }
+.DIAGONAL2 { fill: url(#diagonal2); stroke-width: var(--t4); }
+.DIAGONAL3 { fill: url(#diagonal3); stroke-width: var(--t4); }
+.CROSSHATCH1 { fill: url(#crosshatch1); stroke-width: var(--t4); }
+.CROSSHATCH2 { fill: url(#crosshatch2); stroke-width: var(--t4); }
+.CROSSHATCH3 { fill: url(#crosshatch3); stroke-width: var(--t4); }
+.GLASS { fill: url(#glass); stroke-width: var(--t4); }
+.GRASS { fill: url(#grass); stroke-width: var(--t4); }
+.LIQUID { fill: url(#liquid); stroke-width: var(--t4); }
+.CONCRETE { fill: url(#concrete); stroke-width: var(--t5); }
+.PredefinedType-STUD { stroke: black; stroke-width: var(--t5); }
+.STUD { stroke: black; stroke-width: var(--t5); }
+/* ------------------------ DK ----------------------- */
+.STEEL { fill: url(#steel); stroke-width: var(--t5); }
+.STEELMASKED { fill: url(#steelMasked); stroke-width: var(--t5); }
+.STEELCOLOR { fill: var(--steel-color); stroke-width: var(--t5); stroke: var(--steel-color); }
+.MASONRY { fill: url(#masonry); stroke-width: var(--t5); }
+.MASONRYMASKED { fill: url(#masonryMasked); stroke-width: var(--t5); } 
+.MASONRYCOLOR { fill: var(--masonry-color); stroke-width: var(--t5); stroke: var(--masonry-color); }
+.EARTH { fill: url(#earth); stroke-width: var(--t4); }
+.EARTHMASKED { fill: url(#earthMasked); stroke-width: var(--t4); }
+.EARTHCOLOR { fill: var(--terrain-color); stroke-width: var(--t4); stroke: var(--terrain-color); }
+.EXPANDEDCLAY { fill: url(#expandedClay); stroke-width: var(--t3); }
+.EXPANDEDCLAYMASKED { fill: url(#expandedClayMasked); stroke-width: var(--t3); }
+.EXPANDEDCLAYCOLOR { fill: var(--exspandedclay-color); stroke-width: var(--t3); stroke: var(--exspandedclay-color); }
+.SAND { fill: url(#sand); stroke-width: var(--t4); }
+.SANDMASKED { fill: url(#sandMasked); stroke-width: var(--t4); }
+.SANDCOLOR { fill: var(--filling-color); stroke-width: var(--t4); stroke: var(--filling-color); }
+.CONCRETEINSITU { fill: url(#concreteInsitu); fill-rule: nonzero; stroke-width: var(--t5); }
+.CONCRETEINSITUMASKED { fill: url(#concreteInsituMasked); stroke-width: var(--t5); }
+.CONCRETEINSITUCOLOR { fill: var(--concrete-color); stroke-width: var(--t5); stroke: var(--concrete-color); }
+.CONCRETEPRECAST { fill: url(#concretePrecast); stroke-width: var(--t5); }
+.CONCRETEPRECASTMASKED { fill: url(#concretePrecastMasked); stroke-width: var(--t5); }
+.CONCRETEPRECASTCOLOR { fill: var(--concrete-precast-color); stroke-width: var(--t5); stroke: var(--concrete-precast-color); }
+.CONCRETELIGHT { fill: url(#concreteLight); stroke-width: var(--t5); }
+.CONCRETELIGHTMASKED { fill: url(#concreteLightMasked); stroke-width: var(--t5); }
+.CONCRETELIGHTCOLOR { fill: var(--concrete-light-color); stroke-width: var(--t5); stroke: var(--concrete-light-color); }
+.INSULATIONSOFT { fill: url(#insulationSoft); stroke-width:var(--t3); }
+.INSULATIONSOFTMASKED { fill: url(#insulationSoftMasked); stroke-width: var(--t3); }
+.INSULATIONSOFTCOLOR { fill: var(--insulation-soft-color); stroke-width: var(--t3); stroke: var(--insulation-soft-color); }
+.INSULATIONRIGID { fill: url(#insulationRigid); stroke-width: var(--t3); }
+.INSULATIONRIGIDMASKED { fill: url(#insulationRigidMasked); stroke-width: var(--t3); }
+.INSULATIONRIGIDCOLOR { fill: var(--insulation-hard-color); stroke-width: var(--t3); stroke: var(--insulation-hard-color); }
+.WOOD { fill: url(#wood); stroke-width: var(--t5); }
+.WOODMASKED { fill: url(#woodMasked); stroke-width: var(--t5); }
+.WOODCOLOR { fill: var(--wood-element-color); stroke-width: var(--t5); stroke: var(--wood-element-color); }
+.WOODSTRUCTURAL { fill: url(#woodStructural); stroke-width: var(--t5); }
+.WOODSTRUCTURALMASKED { fill: url(#woodStructuralMasked); stroke-width: var(--t5); }
+.WOODSTRUCTURALCOLOR { fill: var(--wood-color); stroke-width: var(--t5); stroke: var(--wood-color); }
+.WOODLAMINATED { fill: url(#woodLaminiated); stroke-width: var(--t5); }
+.WOODLAMINATEDMASKED { fill: url(#woodLaminiatedMasked); stroke-width: var(--t5); }
+.WOODLAMINATEDCOLOR { fill: var(--wood-color); stroke-width: var(--t5); stroke: var(--wood-color); }
+.GYPSUM { fill: none; stroke-width: var(--t3); }
+.GYPSUMMASKED { fill: white; stroke-width: var(--t3); }
+.GYPSUMCOLOR { fill: var(--gypsom-color); stroke-width: var(--t3); stroke: var(--gypsom-color); }
+  

@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ifc="http://www.ifcopenshell.org/ns" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" data-scale="1:10" height="171.95455052635887mm" id="root" version="1.1" viewBox="0 0 194.0000057220459 171.95455052635887" width="194.0000057220459mm">
   <defs/>
+  <path class="GlobalId-1J09UaEtf9UOnMX$N76$ub IfcAnnotation PredefinedType-TEXTLEADER small" d="M 138.4049028158188 49.467627297748216 L 116.91056191921234 82.5364458967339"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(138.4049072265625, 49.46762466430664) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-1J09UaEtf9UOnMX$N76$ub IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Y8/150 BR, stødzone net. minimum dæklag 25mm</tspan>
+  </text>
+  <path class="GlobalId-2ZWIQ0RNb9o9WYxcTaveeK IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 159.3014373779297 76.15066528320312 L -63.17466354370117 76.15066528320312"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(159.3014373779297, 72.65066528320312) rotate(0.0)">
+    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">Stueplan</tspan>
+    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +435</tspan>
+  </text>
+  <path class="GlobalId-2ZhesYYd9DvvYhPLkP56Ku IfcAnnotation PredefinedType-TEXTLEADER small" d="M 56.216248869895935 63.35466314445842 L 72.83326089382172 79.28365353833546"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(56.216251373291016, 63.35466384887695) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-2ZhesYYd9DvvYhPLkP56Ku IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">2 stk Y12 i toppen</tspan>
+  </text>
+  <line class="GlobalId-1hF0pRKQHDJRnxcDEDPD34 IfcAnnotation PredefinedType-ContT4" x1="70.16178131103516" x2="94.66181945800781" y1="71.65062713623047" y2="76.15050506591797"/>
+  <line class="GlobalId-1hF0pRKQHDJRnxcDEDPD34 IfcAnnotation PredefinedType-ContT4" x1="94.66181945800781" x2="94.66181945800781" y1="76.15050506591797" y2="71.6504898071289"/>
+  <line class="GlobalId-1hF0pRKQHDJRnxcDEDPD34 IfcAnnotation PredefinedType-ContT4" x1="94.66181945800781" x2="70.16188049316406" y1="71.6504898071289" y2="76.15050506591797"/>
+  <path class="GlobalId-1akOU9czb2kAJB9lJTaf1z IfcAnnotation PredefinedType-TEXTLEADER small" d="M 56.216248869895935 87.0902883481573 L 72.83326089382172 103.01927883516657"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(56.216251373291016, 87.09028625488281) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-1akOU9czb2kAJB9lJTaf1z IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">2 stk Y12 bunden</tspan>
+  </text>
+  <path class="GlobalId-3GRa4hLZv8Wx7IxosqYWvV IfcAnnotation PredefinedType-INSULATIONRIGID" d="M 235.77619791030884 101.1449169028889 L 235.77619791030884 86.14490801807155 L 100.16184821724892 86.14490801807155 L 100.16184821724892 101.1449169028889 L 235.77619791030884 101.1449169028889"/>
   <path class="GlobalId-3QjaPvx2X9TuSZ_VmYkGRS IfcAnnotation PredefinedType-TEXTLEADER small" d="M 55.80836236476898 70.63799310814251 L 69.98001039028168 84.42326063628902"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(55.80836486816406, 70.63799285888672) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-3QjaPvx2X9TuSZ_VmYkGRS IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">C25 svindfri beton, 150x300 bjælke</tspan>
   </text>
-  <path class="GlobalId-3GRa4hLZv8Wx7IxosqYWvV IfcAnnotation PredefinedType-INSULATIONRIGID" d="M 235.77619791030884 101.1449169028889 L 235.77619791030884 86.14490801807155 L 100.16184821724892 86.14490801807155 L 100.16184821724892 101.1449169028889 L 235.77619791030884 101.1449169028889"/>
   <use transform="rotate(-90.00000250447816, 859.16455078125, -179.11318969726562)" x="859.16455078125" xlink:href="#elevation-arrow" y="-179.11318969726562"/>
   <use x="859.16455078125" xlink:href="#elevation-tag" y="-179.11318969726562"/>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="859.16455078125" y="-181.61318969726562">1</text>
@@ -16,30 +36,26 @@
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(141.59103393554688, 57.686431884765625) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-22$sHobhvDePpThqzxDsu5 IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">C25 beton, terrændæk</tspan>
   </text>
+  <path class="GlobalId-2HYG3x8x59IeN8MjPj3onQ IfcAnnotation PredefinedType-INSULATIONRIGID" d="M 255.7761788368225 116.14491153847086 L 255.7761788368225 101.1449020017277 L 120.16182839870453 101.1449020017277 L 120.16182839870453 116.14491153847086 L 255.7761788368225 116.14491153847086"/>
+  <path class="GlobalId-073MQysBP4vvztxKe6tvaa IfcAnnotation PredefinedType-SAND" d="M -16.262948513031006 136.17854226719248 L 234.184992313385 136.17854226719248 L 234.184992313385 116.15067828785288 L 30.161821842193604 116.15067828785288 L -16.262948513031006 136.17854226719248"/>
   <path class="GlobalId-29GUTd4UjD5ulL5bw06pMz IfcAnnotation PredefinedType-TEXTLEADER small" d="M 120.11400163173676 40.89363623749126 L 98.61966148018837 80.4479289461266"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(120.11400604248047, 40.89363479614258) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-29GUTd4UjD5ulL5bw06pMz IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">z-binder rustfri Ø6, pr. 400mm</tspan>
   </text>
-  <path class="GlobalId-073MQysBP4vvztxKe6tvaa IfcAnnotation PredefinedType-SAND" d="M -16.262948513031006 136.17854226719248 L 234.184992313385 136.17854226719248 L 234.184992313385 116.15067828785288 L 30.161821842193604 116.15067828785288 L -16.262948513031006 136.17854226719248"/>
-  <path class="GlobalId-2HYG3x8x59IeN8MjPj3onQ IfcAnnotation PredefinedType-INSULATIONRIGID" d="M 255.7761788368225 116.14491153847086 L 255.7761788368225 101.1449020017277 L 120.16182839870453 101.1449020017277 L 120.16182839870453 116.14491153847086 L 255.7761788368225 116.14491153847086"/>
   <path class="GlobalId-1z4cdngZH3M9SmfzSmW_Kk IfcAnnotation PredefinedType-EARTH" d="M 216.38771295547485 136.17854822765696 L 216.38771295547485 180.6042741645466 L -3.7902235984802246 180.6042741645466 L -3.7902235984802246 136.17854822765696 L 216.38771295547485 136.17854822765696"/>
   <use transform="rotate(90.00000250447816, -668.0199584960938, 119.65067291259766)" x="-668.0199584960938" xlink:href="#elevation-arrow" y="119.65067291259766"/>
   <use x="-668.0199584960938" xlink:href="#elevation-tag" y="119.65067291259766"/>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="-668.0199584960938" y="117.15067291259766">1</text>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="-668.0199584960938" y="122.15067291259766">V11_K09_H2_EX_S1_3</text>
   <path class="GlobalId-1F2AqLpuv2yvZcgHzJmyKK IfcAnnotation PredefinedType-BREAKLINE" d="M 58.27957093715668 2.301336418498645 L 79.48971688747406 2.3554097522388795 L 100.6998635828495 2.409483085979114"/>
-  <path class="GlobalId-0z_1QDGJzBzRRqnTvLN23_ IfcAnnotation PredefinedType-TEXTLEADER small" d="M 122.14504182338715 17.963517795909535 L 94.66186538338661 71.65050316940655"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(122.1450424194336, 17.963518142700195) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-0z_1QDGJzBzRRqnTvLN23_ IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Træskelet, jf. detalje herom</tspan>
+  <path class="GlobalId-2KFYi2kCP4GvnHlO0h8HF7 IfcAnnotation PredefinedType-TEXTLEADER small" d="M 122.1449464559555 17.963517795909535 L 94.66177001595497 17.963517795909535"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(122.14495086669922, 17.963518142700195) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-2KFYi2kCP4GvnHlO0h8HF7 IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Træskelet, jf. detalje herom</tspan>
   </text>
   <path class="GlobalId-0ZmM6u0bL3jutUCe7NvexO IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 161.1671142578125 136.15066528320312 L -63.17466354370117 136.15066528320312"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(161.1671142578125, 132.65066528320312) rotate(0.0)">
     <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">UK Fundament</tspan>
     <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL -165</tspan>
-  </text>
-  <path class="GlobalId-2KFYi2kCP4GvnHlO0h8HF7 IfcAnnotation PredefinedType-TEXTLEADER small" d="M 122.1449464559555 17.963517795909535 L 94.66177001595497 17.963517795909535"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(122.14495086669922, 17.963518142700195) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-2KFYi2kCP4GvnHlO0h8HF7 IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Træskelet, jf. detalje herom</tspan>
   </text>
   <line class="GlobalId-0VVYPgRY1CsRUXeYRy7bR9 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="70.16183471679688" x2="70.16183471679688" y1="163.8922882080078" y2="9.982300758361816"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="70.16183471679688" y="163.8922882080078">E</text>
@@ -57,6 +73,25 @@
   <path class="GlobalId-2n$KvG1811V8EHB4sPZunZ IfcAnnotation PredefinedType-TEXTLEADER regular" d="M 78.41859757900238 130.84323514591563 L 78.3301442861557 136.17854226719248"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(78.4186019897461, 130.84323120117188) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-2n$KvG1811V8EHB4sPZunZ IfcAnnotation PredefinedType-TEXTLEADER regular" dy="0em" x="0" y="0">OSBL</tspan>
+  </text>
+  <path class="GlobalId-18KmnUioz0YQjWFWf2H8Vw IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 230.5186767578125 -193.84934997558594 L -18.481338500976562 -193.84934997558594"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(230.5186767578125, -197.34934997558594) rotate(0.0)">
+    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">OK rem</tspan>
+    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +3135</tspan>
+  </text>
+  <path class="GlobalId-34SKrHg911UQM$JJvfjpWF IfcAnnotation PredefinedType-EXPANDEDCLAY" d="M 100.16184821724892 101.14490349184382 L 100.16184821724892 86.14490801807155 L 90.16185775399208 76.15051750432362 L 85.16183868050575 76.15051750432362 L 85.16183868050575 106.15067739378321 L 30.161821842193604 106.15067739378321 L 30.161821842193604 116.15067828785288 L 120.16182839870453 116.15067828785288 L 120.16182839870453 101.14490349184382 L 100.16184821724892 101.14490349184382"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(126.94755554199219, 123.1405029296875) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-29RYryy4T4beIWYv7WQyBb IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">Sandpude, middelkomprimering 98%</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(75.13252258300781, 112.08843994140625) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-1ep_ch4XHF08C8P7noNCJo IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">Sundolit F-Sokkel</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(128.75930786132812, 109.17760467529297) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-3dZnivCi1BRxyTu32Kxi$D IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">Polystyren</tspan>
+  </text>
+  <path class="GlobalId-0z_1QDGJzBzRRqnTvLN23_ IfcAnnotation PredefinedType-TEXTLEADER small" d="M 122.14504182338715 17.963517795909535 L 94.66186538338661 71.65050316940655"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(122.1450424194336, 17.963518142700195) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-0z_1QDGJzBzRRqnTvLN23_ IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Træskelet, jf. detalje herom</tspan>
   </text>
   <line class="GlobalId-3gc7UW$1H5shAre5qNZY5v IfcAnnotation PredefinedType-DIMENSION" x1="85.1618423461914" x2="90.1464614868164" y1="95.8288345336914" y2="95.8288345336914"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(93.1464614868164, 94.8288345336914) rotate(0.0)">
@@ -109,40 +144,5 @@
   <line class="GlobalId-3gc7UW$1H5shAre5qNZY5v IfcAnnotation PredefinedType-DIMENSION" x1="70.16178131103516" x2="94.66181945800781" y1="46.22068786621094" y2="46.22068786621094"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(82.41180419921875, 45.22068786621094) rotate(0.0)">
     <tspan class="DIMENSION" dy="0em" x="0" y="0">245</tspan>
-  </text>
-  <path class="GlobalId-18KmnUioz0YQjWFWf2H8Vw IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 230.5186767578125 -193.84934997558594 L -18.481338500976562 -193.84934997558594"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(230.5186767578125, -197.34934997558594) rotate(0.0)">
-    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">OK rem</tspan>
-    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +3135</tspan>
-  </text>
-  <path class="GlobalId-1J09UaEtf9UOnMX$N76$ub IfcAnnotation PredefinedType-TEXTLEADER small" d="M 138.4049028158188 49.467627297748216 L 116.91056191921234 82.5364458967339"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(138.4049072265625, 49.46762466430664) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-1J09UaEtf9UOnMX$N76$ub IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Y8/150 BR, stødzone net. minimum dæklag 25mm</tspan>
-  </text>
-  <path class="GlobalId-34SKrHg911UQM$JJvfjpWF IfcAnnotation PredefinedType-EXPANDEDCLAY" d="M 100.16184821724892 101.14490349184382 L 100.16184821724892 86.14490801807155 L 90.16185775399208 76.15051750432362 L 85.16183868050575 76.15051750432362 L 85.16183868050575 106.15067739378321 L 30.161821842193604 106.15067739378321 L 30.161821842193604 116.15067828785288 L 120.16182839870453 116.15067828785288 L 120.16182839870453 101.14490349184382 L 100.16184821724892 101.14490349184382"/>
-  <path class="GlobalId-2ZWIQ0RNb9o9WYxcTaveeK IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 159.3014373779297 76.15066528320312 L -63.17466354370117 76.15066528320312"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(159.3014373779297, 72.65066528320312) rotate(0.0)">
-    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">Stueplan</tspan>
-    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +435</tspan>
-  </text>
-  <line class="GlobalId-1hF0pRKQHDJRnxcDEDPD34 IfcAnnotation PredefinedType-ContT4" x1="70.16178131103516" x2="94.66181945800781" y1="71.65062713623047" y2="76.15050506591797"/>
-  <line class="GlobalId-1hF0pRKQHDJRnxcDEDPD34 IfcAnnotation PredefinedType-ContT4" x1="94.66181945800781" x2="94.66181945800781" y1="76.15050506591797" y2="71.6504898071289"/>
-  <line class="GlobalId-1hF0pRKQHDJRnxcDEDPD34 IfcAnnotation PredefinedType-ContT4" x1="94.66181945800781" x2="70.16188049316406" y1="71.6504898071289" y2="76.15050506591797"/>
-  <path class="GlobalId-2ZhesYYd9DvvYhPLkP56Ku IfcAnnotation PredefinedType-TEXTLEADER small" d="M 56.216248869895935 63.35466314445842 L 72.83326089382172 79.28365353833546"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(56.216251373291016, 63.35466384887695) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-2ZhesYYd9DvvYhPLkP56Ku IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">2 stk Y12 i toppen</tspan>
-  </text>
-  <path class="GlobalId-1akOU9czb2kAJB9lJTaf1z IfcAnnotation PredefinedType-TEXTLEADER small" d="M 56.216248869895935 87.0902883481573 L 72.83326089382172 103.01927883516657"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(56.216251373291016, 87.09028625488281) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-1akOU9czb2kAJB9lJTaf1z IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">2 stk Y12 bunden</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(126.94755554199219, 123.1405029296875) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-29RYryy4T4beIWYv7WQyBb IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">Sandpude, middelkomprimering 98%</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(75.13252258300781, 112.08843994140625) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-1ep_ch4XHF08C8P7noNCJo IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">Sundolit F-Sokkel</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(128.75930786132812, 109.17760467529297) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-3dZnivCi1BRxyTu32Kxi$D IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">Polystyren</tspan>
   </text>
 </svg>
