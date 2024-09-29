@@ -1,40 +1,51 @@
+/* ---DEFAULT--- */
 /*
  * Bonsai - OpenBIM Blender Add-on
  * Copyright (C) 2020, 2021 Dion Moult <dion@thinkmoult.com>
  *
  * This file is part of Bonsai.
- *
  * Bonsai is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- *
  * Bonsai is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY, without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
  * You should have received a copy of the GNU General Public License
  * long with Bonsai.  If not, see <http://www.gnu.org/licenses/>.
  */
- 
+* { stroke-linecap: round; stroke-linejoin: round; }
+text, tspan { /* 2.5mm */ fill: black; stroke: none; font-family: 'OpenGost Type B TT', 'DejaVu Sans Condensed', 'Liberation Sans', 'Arial Narrow', 'Arial'; font-size: 4.13px; }
+.PredefinedType-LINEWORK
+path
+text.PredefinedType-TEXTLEADER, tspan
+text.title, tspan
+text.header, tspan
+text.large, tspan
+text.regular, tspan
+text.small, tspan
+text.GRID, tspan
+.material-brick { fill: url(#brick); }
+.material-honeycomb { fill: url(#honeycomb); }
+.PredefinedType-WOOD { fill: url(#wood); stroke: black; stroke-width: 0.5; }
+.PredefinedType-STEEL { fill: url(#steel); stroke: black; stroke-width: 0.5; }
+.PredefinedType-CONCRETE { fill: url(#concrete); stroke: black; stroke-width: 0.5; }
+.PredefinedType-PLASTERBOARD { fill: url(#sand); stroke: black; stroke-width: 0.25; }
+/* ---DK OVERRIDES--- */
  /* This is the default stylesheet for Danish technical drawings. Based on BIPS standards, should/could be updated to latest MOLIO standards, please contribute.
  * want to extend it, or make it your own for architectural purpose? ask developers how to do it the best, maybe add a new one with 
  * _arc in the the name. THIS STYLING IS INTENDED TO COMPLY 100% to DK drawing standard, no room for personal preferences.
  * The styling is to be considered WIP, and should be updated as needed. and contributed to the project. 
  * The methods explained in this file in relation to the UI, is pr. 28.09.2024.
  * Since this file is one of the first a front end user might look at, it's commented a lot to explain for beginners and alike.*/
- 
 /* preprocessing */
 /* we make the final .css using variables, these are defined in the preprocess.py script, 
 general sizes etc. are defined in that file, in this file hardcoded things can be changed or refences */
-
-
 /* FONTS */
 /* Arial is set to comply with DK standards, but can be changed to any font, we make the general size for normal drawings*/
 /* For detailed drawing we adjust the font size to 2.3px, for descriptions text, and dimensions, this can be managed through the UI in typeProduct and EPset_Annotations */
 /* font are scaled with 1.0px*1,15, giving about 2mm text for small and 2,5mm for regular, when printed */
-* { stroke-linecap: round; stroke-linejoin: round; }
 text, tspan { /* 2.0mm */ fill: black; stroke: none; font-family: 'Arial'; font-size: 2.875px} /* THIS IS USED IN GENERAL */
 text.PredefinedType-TEXTLEADER, tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
 text.title, tspan.title { font-size: 8.05px; } /* 7mm, should not be used, very big */
@@ -46,7 +57,6 @@ text.GRID, tspan.GRID { font-size: 2.875px; } /* 2,5mm, size of grid text */
 text.DIMENSION, tspan.DIMENSION { font-size: 2.3px; } /* 2,0mm, size of dimension text */
 text.ELEVATION, tspan.ELEVATION { font-size: 2.875px; } /* 2,5mm, size of elevation text */
 text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section text */
-
 /* DIFFERENT STUFF */
 /* we don't make standard "fill: black" when cutting elements, either show the element as is, or assign hatch or the material color*/
 .cut { stroke: black; stroke-linecap: 'round'; stroke-width: 0.175px; fill-rule: evenodd; }
@@ -56,7 +66,6 @@ text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section te
 .IfcAnnotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 0.125px; }
 .IfcGeographicElement { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 0.175px; }
 .IfcSpace { fill: none; stroke: none; }
-
 /* LINES */
 /* -------------------- Default lines, but modified------------------------ */
 .PredefinedType-LINEWORK { stroke-width: 0.125px; stroke: black }
@@ -94,7 +103,6 @@ text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section te
 .SyellowToned { stroke: rgb(204, 153, 0); } /* Filling eg. sand etc. */
 /*Now we make the standard DK line types. In bonsai these are combined with thickness and color using */
 /* EPset_Annotations, this way we can make typeProducts for the lines the class could be "Cont T4 Cred" A continues thickness4 red line */
-.PredefinedType-LINEWORK.Cont { }
 .PredefinedType-LINEWORK.DotDash1 {stroke-dasharray: 1.7,0.5,0.2,0.5; }
 .PredefinedType-LINEWORK.DotDash2 {stroke-dasharray: 2.2,0.7,0.2,0.7; }
 .PredefinedType-LINEWORK.DotDash3 {stroke-dasharray: 3.0,0.9,0.2,0.9; }
@@ -122,7 +130,6 @@ text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section te
 .PredefinedType-LINEWORK.DashDoubleDot {stroke-dasharray: 13,2,0.2,2,0.2,2; }
 .PredefinedType-LINEWORK.Center {stroke-dasharray: 20,1.5,0.2,1.5; }
 .PredefinedType-LINEWORK.Cut { stroke-width: 0.09px; stroke-dasharray: 20,1.5,0.2,1.5; }
-
 /* Markers, symbols etc. */
 /* ---------------------- DEFAULT TYPES, but modified ---------------------- */
 .PredefinedType-BACKGROUND { stroke: black; stroke-width: 0.125px; }
@@ -146,10 +153,8 @@ text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section te
 .PredefinedType-TEXT { fill: black; stroke: none; }
 /* TODO, MAKE A TEXT LEADER WITH A DOT, THAT WORKS */
 path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
-
 /*Symbols*/
 /* These are defined directly in the symbols_xx.svg file, referenced in ifc file using the id under symbols in EPset_Annotation, like before this allows for making TypeProducts. */ 
-
 /* MATERIALS */
 /* Materials are defined on the ifc object or type, and appears when an object is cut. The Name in object material in UI eg. steel is the material used as hatch when cut */
 /* stroke widths defines the edge line thickness of the material, since materials appear when cut, this is the cut-line thickness*/
@@ -202,19 +207,16 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 .material-woodLaminiatedColor { fill: rgb(153, 102, 0); stroke-width: 0.175px; stroke: rgb(153, 102, 0); }
 .material-gypsum { fill: none; stroke-width: 0.09px; }
 .material-gypsumColor { fill: rgb(189, 173, 126); stroke-width: 0.09px; stroke: rgb(189, 173, 126); }
-
 /* FILL_AREA */
 /* classes are define for each Fill area type, class name is added in EPset_Annotation */
 /* Fill areas areas are the same as materials, so the can be used to detail drawings, but we use big letters, and there is a masked option, that covers anything behind*/
 /* IMPORTANT NOTE, IN THE UI AND EPset_Annotation, USE THE Z INDEX in your type to define which "layer" annotations appears in. */
-/* ------------------------ SOME BASIC COLORS ----------------------- */
 .BLANK { fill: white; stroke: black; stroke-width: 0.125px; }
 .RED { fill: red; stroke: black; stroke-width: 0.125px; }
 .BLUE { fill: blue; stroke: black; stroke-width: 0.125px; }
 .GREEN { fill: green; stroke: black; stroke-width: 0.125px; }
 .YELLOW { fill: yellow; stroke: black; stroke-width: 0.125px; }
 .BLACK { fill: black; stroke: black; stroke-width: 0.125px; }
-/* ------------------------ FROM DEFAULT ----------------------- */
 /* ---------------- NOTE: NOT ALL PATTERNS ARE USED, more in patterns_DK.svg ------------------- */
 .DIAGONAL1 { fill: url(#diagonal1); stroke-width: 0.125px; }
 .DIAGONAL2 { fill: url(#diagonal2); stroke-width: 0.125px; }
@@ -228,7 +230,6 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 .CONCRETE { fill: url(#concrete); stroke-width: 0.175px; }
 .PredefinedType-STUD { stroke: black; stroke-width: 0.175px; }
 .STUD { stroke: black; stroke-width: 0.175px; }
-/* ------------------------ DK ----------------------- */
 .STEEL { fill: url(#steel); stroke-width: 0.175px; }
 .STEELMASKED { fill: url(#steelMasked); stroke-width: 0.175px; }
 .STEELCOLOR { fill: rgb(255, 0, 0); stroke-width: 0.175px; stroke: rgb(255, 0, 0); }
@@ -271,4 +272,3 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 .GYPSUM { fill: none; stroke-width: 0.09px; }
 .GYPSUMMASKED { fill: white; stroke-width: 0.09px; }
 .GYPSUMCOLOR { fill: rgb(189, 173, 126); stroke-width: 0.09px; stroke: rgb(189, 173, 126); }
-  

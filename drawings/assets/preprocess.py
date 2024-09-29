@@ -70,18 +70,61 @@ def replace_css_variables(css_content, variables):
     pattern = re.compile(r'var\(--([a-zA-Z0-9-]+)\)')
     return pattern.sub(replacer, css_content)
 
-def process_css_file(input_path, output_path, variables):
-    with open(input_path, 'r', encoding='utf-8') as file:
-        css_content = file.read()
+def remove_duplicate_classes(default_css, dk_css):
+    # Extract class names from DK CSS
+    dk_classes = set(re.findall(r'\.([a-zA-Z0-9-]+)\s*{', dk_css))
     
-    processed_css = replace_css_variables(css_content, variables)
+    # Remove classes from default CSS if they are present in DK CSS
+    def replacer(match):
+        class_name = match.group(1)
+        if class_name in dk_classes:
+            return ''
+        return match.group(0)
+    
+    pattern = re.compile(r'\.([a-zA-Z0-9-]+)\s*{[^}]*}')
+    return pattern.sub(replacer, default_css)
+
+def clean_css(css_content):
+    # Remove empty class definitions
+    css_content = re.sub(r'\.[a-zA-Z0-9-]+\s*{\s*}', '', css_content)
+    # Remove extra blank lines
+    css_content = re.sub(r'\n\s*\n', '\n', css_content)
+    # Remove duplicate lines
+    lines = css_content.split('\n')
+    seen = set()
+    cleaned_lines = []
+    for line in lines:
+        if line.strip() and line not in seen:
+            seen.add(line)
+            cleaned_lines.append(line)
+    return '\n'.join(cleaned_lines)
+
+def process_css_files(default_path, dk_path, output_path, variables):
+    with open(default_path, 'r', encoding='utf-8') as file:
+        default_css = file.read()
+    
+    with open(dk_path, 'r', encoding='utf-8') as file:
+        dk_css = file.read()
+    
+    # Remove duplicate classes from default CSS
+    default_css_no_duplicates = remove_duplicate_classes(default_css, dk_css)
+    
+    # Combine the CSS contents, ensuring DK-specific styles come last
+    combined_css = f"/* ---DEFAULT--- */\n{default_css_no_duplicates}\n/* ---DK OVERRIDES--- */\n{dk_css}"
+    
+    # Replace CSS variables with their actual values
+    processed_css = replace_css_variables(combined_css, variables)
+    
+    # Clean up the CSS content
+    cleaned_css = clean_css(processed_css)
     
     with open(output_path, 'w', encoding='utf-8') as file:
-        file.write(processed_css)
+        file.write(cleaned_css)
 
 # Example usage
 script_dir = os.path.dirname(os.path.abspath(__file__))
-input_css_path = os.path.join(script_dir, 'default_DK_RAW.css')
+default_css_path = os.path.join(script_dir, 'default_RAW.css')
+dk_css_path = os.path.join(script_dir, 'default_DK_RAW.css')
 output_css_path = os.path.join(script_dir, 'default_DK.css')
 
-process_css_file(input_css_path, output_css_path, css_variables)
+process_css_files(default_css_path, dk_css_path, output_css_path, css_variables)
