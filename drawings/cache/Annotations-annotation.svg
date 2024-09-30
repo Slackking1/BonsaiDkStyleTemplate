@@ -1,41 +1,96 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ifc="http://www.ifcopenshell.org/ns" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" data-scale="1:50" height="1000.0mm" id="root" version="1.1" viewBox="0 0 999.9999999999999 1000.0" width="999.9999999999999mm">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ifc="http://www.ifcopenshell.org/ns" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" data-scale="1:100" height="500.0mm" id="root" version="1.1" viewBox="0 0 499.99999999999994 500.0" width="499.99999999999994mm">
   <defs/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(149.07806396484375, 723.7330322265625) rotate(-89.999995674289)">
-    <tspan class="GlobalId-2vlWqIF4b0cfxl6Rdb7Sfe IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Center T2/T4/T6</tspan>
+  <path class="GlobalId-39R5XFJTn649my2iNgwz2g IfcAnnotation PredefinedType-FILLAREA BLACK_025" d="M 279.3894958496093 11.498260498046875 L 490.6732940673828 11.498260498046875 L 490.6732940673828 429.6548080444336 L 279.3894958496093 429.6548080444336 L 279.3894958496093 11.498260498046875"/>
+  <path class="GlobalId-12F4XBcB54dQEpH0Kft4qF IfcAnnotation PredefinedType-FILLAREA SANDCOLOR" d="M 431.6192626953125 304.46533203125 L 442.0970153808594 304.46533203125 L 442.0970153808594 294.6079635620117 L 431.6192626953125 294.6079635620117 L 431.6192626953125 304.46533203125"/>
+  <path class="GlobalId-3bqeQK7Uv729mhJX3l8inR IfcAnnotation PredefinedType-FILLAREA BLANK" d="M 287.61928558349604 396.8653869628906 L 298.0970382690429 396.8653869628906 L 298.0970382690429 387.00801849365234 L 287.61928558349604 387.00801849365234 L 287.61928558349604 396.8653869628906"/>
+  <path class="GlobalId-2VszhrjMr6rAdv1soAXmGy IfcAnnotation PredefinedType-FILLAREA CONCRETEINSITU" d="M 431.6192626953125 150.46531677246094 L 442.0970153808594 150.46531677246094 L 442.0970153808594 140.60791015625 L 431.6192626953125 140.60791015625 L 431.6192626953125 150.46531677246094"/>
+  <path class="GlobalId-2pdj$Dg_X6ivCQnxpHKKRo IfcAnnotation PredefinedType-FILLAREA STEELMASKED" d="M 359.6192932128906 335.2653503417969 L 370.0970458984375 335.2653503417969 L 370.0970458984375 325.4079818725586 L 359.6192932128906 325.4079818725586 L 359.6192932128906 335.2653503417969"/>
+  <path class="GlobalId-3A_onnoGX4vQRTo6Vqq2_X IfcAnnotation PredefinedType-FILLAREA GYPSUMMASKED" d="M 431.6192626953125 242.86537170410156 L 442.0970153808594 242.86537170410156 L 442.0970153808594 233.00796508789062 L 431.6192626953125 233.00796508789062 L 431.6192626953125 242.86537170410156"/>
+  <path class="GlobalId-0dt8BITq9B9xDjOm95KLpI IfcAnnotation PredefinedType-FILLAREA BLANK_025" d="M 467.61932373046875 27.26531982421875 L 478.0970764160156 27.26531982421875 L 478.0970764160156 17.407913208007812 L 467.61932373046875 17.407913208007812 L 467.61932373046875 27.26531982421875"/>
+  <path class="GlobalId-1zAyFifIP1dguZt5Zm6HIX IfcAnnotation PredefinedType-FILLAREA RED_050" d="M 431.6192626953125 119.66529846191406 L 442.0970153808594 119.66529846191406 L 442.0970153808594 109.80789184570312 L 431.6192626953125 109.80789184570312 L 431.6192626953125 119.66529846191406"/>
+  <path class="GlobalId-1qxJaUjrr3QwZehrE1zuwR IfcAnnotation PredefinedType-FILLAREA MASONRY" d="M 287.61928558349604 304.46533203125 L 298.0970382690429 304.46533203125 L 298.0970382690429 294.6079635620117 L 287.61928558349604 294.6079635620117 L 287.61928558349604 304.46533203125"/>
+  <path class="GlobalId-0j5eoJ2zz3bwjlyjpm2f14 IfcAnnotation PredefinedType-FILLAREA BLUE_050" d="M 431.6192626953125 58.065338134765625 L 442.0970153808594 58.065338134765625 L 442.0970153808594 48.20793151855469 L 431.6192626953125 48.20793151855469 L 431.6192626953125 58.065338134765625"/>
+  <path class="GlobalId-3Tc9JzhkXCewL6ydFvjE3G IfcAnnotation PredefinedType-FILLAREA EARTH" d="M 323.61927032470703 212.0653533935547 L 334.0970230102539 212.0653533935547 L 334.0970230102539 202.20794677734375 L 323.61927032470703 202.20794677734375 L 323.61927032470703 212.0653533935547"/>
+  <path class="GlobalId-2mTFgE59fEDh3$unIFVCAZ IfcAnnotation PredefinedType-FILLAREA GYPSUM" d="M 413.8775634765625 249.5366668701172 L 424.3553161621094 249.5366668701172 L 424.3553161621094 239.67926025390625 L 413.8775634765625 239.67926025390625 L 413.8775634765625 249.5366668701172"/>
+  <path class="GlobalId-0XSlC$gN57Fhj3l2fRUniI IfcAnnotation PredefinedType-FILLAREA MASONRYCOLOR" d="M 323.61927032470703 304.46533203125 L 334.0970230102539 304.46533203125 L 334.0970230102539 294.6079635620117 L 323.61927032470703 294.6079635620117 L 323.61927032470703 304.46533203125"/>
+  <path class="GlobalId-2_m5qp6SbDrRUPB8I7qdLC IfcAnnotation PredefinedType-FILLAREA WOODSTRUCTURAL" d="M 395.61927795410156 366.06536865234375 L 406.09703063964844 366.06536865234375 L 406.09703063964844 356.20800018310547 L 395.61927795410156 356.20800018310547 L 395.61927795410156 366.06536865234375"/>
+  <path class="GlobalId-2HUmiUMQr02hVV_z0qdqyu IfcAnnotation PredefinedType-FILLAREA GREEN_050" d="M 359.6192932128906 88.8653564453125 L 370.0970458984375 88.8653564453125 L 370.0970458984375 79.00794982910156 L 359.6192932128906 79.00794982910156 L 359.6192932128906 88.8653564453125"/>
+  <path class="GlobalId-0CJnkhMhrFbAS6ot0EYZQA IfcAnnotation PredefinedType-FILLAREA YELLOW_025" d="M 323.61927032470703 150.46531677246094 L 334.0970230102539 150.46531677246094 L 334.0970230102539 140.60791015625 L 323.61927032470703 140.60791015625 L 323.61927032470703 150.46531677246094"/>
+  <path class="GlobalId-0WhOIKB6j2XuzXIFnWGoe7 IfcAnnotation PredefinedType-FILLAREA BLANK" d="M 431.6192626953125 27.26531982421875 L 442.0970153808594 27.26531982421875 L 442.0970153808594 17.407913208007812 L 431.6192626953125 17.407913208007812 L 431.6192626953125 27.26531982421875"/>
+  <path class="GlobalId-2JADRF1P55ERhh6wLyPFZD IfcAnnotation PredefinedType-FILLAREA MASK_050" d="M 287.61928558349604 119.66529846191406 L 298.0970382690429 119.66529846191406 L 298.0970382690429 109.80789184570312 L 287.61928558349604 109.80789184570312 L 287.61928558349604 119.66529846191406"/>
+  <path class="GlobalId-0IVw79nmLF6eoNBDZ4ATBs IfcAnnotation PredefinedType-FILLAREA CONCRETEPRECASTMASKED" d="M 287.61928558349604 212.0653533935547 L 298.0970382690429 212.0653533935547 L 298.0970382690429 202.20794677734375 L 287.61928558349604 202.20794677734375 L 287.61928558349604 212.0653533935547"/>
+  <path class="GlobalId-3yIBOrt3n6w9IJUtdE4rTs IfcAnnotation PredefinedType-FILLAREA BLANK_050" d="M 287.61928558349604 58.065338134765625 L 298.0970382690429 58.065338134765625 L 298.0970382690429 48.20793151855469 L 287.61928558349604 48.20793151855469 L 287.61928558349604 58.065338134765625"/>
+  <path class="GlobalId-2VOMKhKa19i8FPUOUkvlNK IfcAnnotation PredefinedType-FILLAREA CONCRETELIGHTMASKED" d="M 395.61927795410156 181.2653350830078 L 406.09703063964844 181.2653350830078 L 406.09703063964844 171.40792846679688 L 395.61927795410156 171.40792846679688 L 395.61927795410156 181.2653350830078"/>
+  <path class="GlobalId-343WoRStH4k9DHKOgYq480 IfcAnnotation PredefinedType-FALL" d="M 31.284351348876918 353.3061218261719 L 54.03762817382809 355.17772674560547 L 65.84213256835935 362.0475769042969"/>
+  <text class="RADIUS" dominant-baseline="middle" text-anchor="middle" x="29.29108428955078" y="353.14215087890625">0°</text>
+  <path class="GlobalId-3f32QjXIXCFwoPQc8MPUOx IfcAnnotation PredefinedType-FILLAREA INSULATIONSOFTCOLOR" d="M 395.61927795410156 273.6653518676758 L 406.09703063964844 273.6653518676758 L 406.09703063964844 263.8079833984375 L 395.61927795410156 263.8079833984375 L 395.61927795410156 273.6653518676758"/>
+  <path class="GlobalId-1R8T1oo9r6GuRstu2BAjvY IfcAnnotation PredefinedType-FILLAREA BLANK_075" d="M 323.61927032470703 58.065338134765625 L 334.0970230102539 58.065338134765625 L 334.0970230102539 48.20793151855469 L 323.61927032470703 48.20793151855469 L 323.61927032470703 58.065338134765625"/>
+  <path class="GlobalId-2zMESIN2vEofyBNZjPq_u5 IfcAnnotation PredefinedType-FILLAREA SANDMASKED" d="M 467.61932373046875 304.46533203125 L 478.0970764160156 304.46533203125 L 478.0970764160156 294.6079635620117 L 467.61932373046875 294.6079635620117 L 467.61932373046875 304.46533203125"/>
+  <path class="GlobalId-3SSm_HqrT9s8nPYSHN__tO IfcAnnotation PredefinedType-FILLAREA GREEN_075" d="M 395.61927795410156 88.8653564453125 L 406.09703063964844 88.8653564453125 L 406.09703063964844 79.00794982910156 L 395.61927795410156 79.00794982910156 L 395.61927795410156 88.8653564453125"/>
+  <path class="GlobalId-0PuXtM31P6PwTT7Ftbzz7r IfcAnnotation PredefinedType-FILLAREA CONCRETEINSITUCOLOR" d="M 467.61932373046875 150.46531677246094 L 478.0970764160156 150.46531677246094 L 478.0970764160156 140.60791015625 L 467.61932373046875 140.60791015625 L 467.61932373046875 150.46531677246094"/>
+  <path class="GlobalId-3ls_jT57r65v$M2myy8vdf IfcAnnotation PredefinedType-FILLAREA INSULATIONRIGID" d="M 467.61932373046875 242.86537170410156 L 478.0970764160156 242.86537170410156 L 478.0970764160156 233.00796508789062 L 467.61932373046875 233.00796508789062 L 467.61932373046875 242.86537170410156"/>
+  <path class="GlobalId-2pDcivtL90mh4tmR3QJz1v IfcAnnotation PredefinedType-FILLAREA MASK_075" d="M 323.61927032470703 119.66529846191406 L 334.0970230102539 119.66529846191406 L 334.0970230102539 109.80789184570312 L 323.61927032470703 109.80789184570312 L 323.61927032470703 119.66529846191406"/>
+  <path class="GlobalId-0jY3c7pUj6nOLR$h8gqbRA IfcAnnotation PredefinedType-FILLAREA RED_075" d="M 467.61932373046875 119.66529846191406 L 478.0970764160156 119.66529846191406 L 478.0970764160156 109.80789184570312 L 467.61932373046875 109.80789184570312 L 467.61932373046875 119.66529846191406"/>
+  <path class="GlobalId-1AQDI1Ha94DAbyeER7F5lA IfcAnnotation PredefinedType-FILLAREA EXPANDEDCLAYCOLOR" d="M 467.61932373046875 212.0653533935547 L 478.0970764160156 212.0653533935547 L 478.0970764160156 202.20794677734375 L 467.61932373046875 202.20794677734375 L 467.61932373046875 212.0653533935547"/>
+  <path class="GlobalId-0GJLWxJMbBShesEG9jWA7l IfcAnnotation PredefinedType-FILLAREA WOODLAMINATED" d="M 287.61928558349604 366.06536865234375 L 298.0970382690429 366.06536865234375 L 298.0970382690429 356.20800018310547 L 287.61928558349604 356.20800018310547 L 287.61928558349604 366.06536865234375"/>
+  <path class="GlobalId-2PPqlZZuL5ixqLyCt_BLfs IfcAnnotation PredefinedType-FILLAREA BLUE_075" d="M 467.61932373046875 58.065338134765625 L 478.0970764160156 58.065338134765625 L 478.0970764160156 48.20793151855469 L 467.61932373046875 48.20793151855469 L 467.61932373046875 58.065338134765625"/>
+  <path class="GlobalId-16e9gCas9269p$qY_d7fGj IfcAnnotation PredefinedType-FILLAREA EARTHCOLOR" d="M 359.6192932128906 212.0653533935547 L 370.0970458984375 212.0653533935547 L 370.0970458984375 202.20794677734375 L 359.6192932128906 202.20794677734375 L 359.6192932128906 212.0653533935547"/>
+  <path class="GlobalId-1oB50Rhnj0d8thyVefDrFE IfcAnnotation PredefinedType-FILLAREA MASONRYMASKED" d="M 359.6192932128906 304.46533203125 L 370.0970458984375 304.46533203125 L 370.0970458984375 294.6079635620117 L 359.6192932128906 294.6079635620117 L 359.6192932128906 304.46533203125"/>
+  <path class="GlobalId-3Ybzi5s8X5u9b87tXkzplD IfcAnnotation PredefinedType-FILLAREA EXPANDEDCLAY" d="M 431.6192626953125 212.0653533935547 L 442.0970153808594 212.0653533935547 L 442.0970153808594 202.20794677734375 L 431.6192626953125 202.20794677734375 L 431.6192626953125 212.0653533935547"/>
+  <path class="GlobalId-0gvY7HJ7v779$txZMoG2rM IfcAnnotation PredefinedType-FILLAREA WOODSTRUCTURALCOLOR" d="M 431.6192626953125 366.06536865234375 L 442.0970153808594 366.06536865234375 L 442.0970153808594 356.20800018310547 L 431.6192626953125 356.20800018310547 L 431.6192626953125 366.06536865234375"/>
+  <path class="GlobalId-1XAoKIg5H6xu$6cW0SikBx IfcAnnotation PredefinedType-FILLAREA YELLOW_050" d="M 359.6192932128906 150.46531677246094 L 370.0970458984375 150.46531677246094 L 370.0970458984375 140.60791015625 L 359.6192932128906 140.60791015625 L 359.6192932128906 150.46531677246094"/>
+  <path class="GlobalId-3GwO18hvnAKgQZUk5H1PVV IfcAnnotation PredefinedType-FILLAREA GRASS" d="M 359.6192932128906 242.86537170410156 L 370.0970458984375 242.86537170410156 L 370.0970458984375 233.00796508789062 L 359.6192932128906 233.00796508789062 L 359.6192932128906 242.86537170410156"/>
+  <path class="GlobalId-3gNR4qsZfEkugrjC7mk05l IfcAnnotation PredefinedType-FILLAREA BLACK" d="M 287.61928558349604 27.26531982421875 L 298.0970382690429 27.26531982421875 L 298.0970382690429 17.407913208007812 L 287.61928558349604 17.407913208007812 L 287.61928558349604 27.26531982421875"/>
+  <path class="GlobalId-1klLOhAovCBR1JsK9kRtMu IfcAnnotation PredefinedType-FILLAREA WOODCOLOR" d="M 431.6192626953125 335.2653503417969 L 442.0970153808594 335.2653503417969 L 442.0970153808594 325.4079818725586 L 431.6192626953125 325.4079818725586 L 431.6192626953125 335.2653503417969"/>
+  <path class="GlobalId-3vBN1SFx96$BGGHUAD70Yu IfcAnnotation PredefinedType-FILLAREA INSULATIONRIGIDCOLOR" d="M 287.61928558349604 273.6653518676758 L 298.0970382690429 273.6653518676758 L 298.0970382690429 263.8079833984375 L 287.61928558349604 263.8079833984375 L 287.61928558349604 273.6653518676758"/>
+  <path class="GlobalId-0BtN6onln43wBcjunpU8y9 IfcAnnotation PredefinedType-FILLAREA RED" d="M 359.6192932128906 119.66529846191406 L 370.0970458984375 119.66529846191406 L 370.0970458984375 109.80789184570312 L 359.6192932128906 109.80789184570312 L 359.6192932128906 119.66529846191406"/>
+  <path class="GlobalId-2qP8tuhfX04evuzPP30ZBs IfcAnnotation PredefinedType-FILLAREA CONCRETEPRECAST" d="M 431.6192626953125 181.2653350830078 L 442.0970153808594 181.2653350830078 L 442.0970153808594 171.40792846679688 L 431.6192626953125 171.40792846679688 L 431.6192626953125 181.2653350830078"/>
+  <path class="GlobalId-14Uuz$5Iz4bvHt3eOxCkGN IfcAnnotation PredefinedType-FILLAREA INSULATIONSOFTMASKED" d="M 431.6192626953125 273.6653518676758 L 442.0970153808594 273.6653518676758 L 442.0970153808594 263.8079833984375 L 431.6192626953125 263.8079833984375 L 431.6192626953125 273.6653518676758"/>
+  <path class="GlobalId-1ucAQc8wTAfAOak3b0MxjW IfcAnnotation PredefinedType-FILLAREA WOOD" d="M 395.61927795410156 335.2653503417969 L 406.09703063964844 335.2653503417969 L 406.09703063964844 325.4079818725586 L 395.61927795410156 325.4079818725586 L 395.61927795410156 335.2653503417969"/>
+  <path class="GlobalId-1f1R4TrNX1_vMV28kPeUuc IfcAnnotation PredefinedType-FILLAREA BLUE" d="M 359.6192932128906 58.065338134765625 L 370.0970458984375 58.065338134765625 L 370.0970458984375 48.20793151855469 L 359.6192932128906 48.20793151855469 L 359.6192932128906 58.065338134765625"/>
+  <path class="GlobalId-38rXB8nm9AFQHhSvd2tovw IfcAnnotation PredefinedType-FILLAREA WOODLAMINATEDCOLOR" d="M 323.61927032470703 366.06536865234375 L 334.0970230102539 366.06536865234375 L 334.0970230102539 356.20800018310547 L 323.61927032470703 356.20800018310547 L 323.61927032470703 366.06536865234375"/>
+  <path class="GlobalId-2izhME_Oj76vV125pus7rm IfcAnnotation PredefinedType-FILLAREA BLACK_050" d="M 359.6192932128906 27.26531982421875 L 370.0970458984375 27.26531982421875 L 370.0970458984375 17.407913208007812 L 359.6192932128906 17.407913208007812 L 359.6192932128906 27.26531982421875"/>
+  <path class="GlobalId-3doO5cIxz708DZrZVXVCkC IfcAnnotation PredefinedType-FILLAREA CONCRETEINSITUMASKED" d="M 287.61928558349604 181.2653350830078 L 298.0970382690429 181.2653350830078 L 298.0970382690429 171.40792846679688 L 287.61928558349604 171.40792846679688 L 287.61928558349604 181.2653350830078"/>
+  <path class="GlobalId-0Ktdy2FKD2XgL9e_QAT8YN IfcAnnotation PredefinedType-FILLAREA STEEL" d="M 287.61928558349604 335.2653503417969 L 298.0970382690429 335.2653503417969 L 298.0970382690429 325.4079818725586 L 287.61928558349604 325.4079818725586 L 287.61928558349604 335.2653503417969"/>
+  <path class="GlobalId-0oiwTONjHELh3tFd_EfCRW IfcAnnotation PredefinedType-FILLAREA MASK" d="M 431.6192626953125 88.8653564453125 L 442.0970153808594 88.8653564453125 L 442.0970153808594 79.00794982910156 L 431.6192626953125 79.00794982910156 L 431.6192626953125 88.8653564453125"/>
+  <path class="GlobalId-32rbzTm5L46Aol1daxdRjT IfcAnnotation PredefinedType-FILLAREA GLASS" d="M 323.61927032470703 242.86537170410156 L 334.0970230102539 242.86537170410156 L 334.0970230102539 233.00796508789062 L 323.61927032470703 233.00796508789062 L 323.61927032470703 242.86537170410156"/>
+  <path class="GlobalId-1nEd1r4aHF7PMOql1wfdUe IfcAnnotation PredefinedType-FILLAREA WOODSTRUCTURALMASKED" d="M 467.61932373046875 366.06536865234375 L 478.0970764160156 366.06536865234375 L 478.0970764160156 356.20800018310547 L 467.61932373046875 356.20800018310547 L 467.61932373046875 366.06536865234375"/>
+  <path class="GlobalId-2BbJPNwyTFL9EgM7HzvoS_ IfcAnnotation PredefinedType-FILLAREA YELLOW_075" d="M 395.61927795410156 150.46531677246094 L 406.09703063964844 150.46531677246094 L 406.09703063964844 140.60791015625 L 395.61927795410156 140.60791015625 L 395.61927795410156 150.46531677246094"/>
+  <path class="GlobalId-3i$v3YkWHD5hdAdHgGusm2 IfcAnnotation PredefinedType-FILLAREA STEELCOLOR" d="M 323.61927032470703 335.2653503417969 L 334.0970230102539 335.2653503417969 L 334.0970230102539 325.4079818725586 L 323.61927032470703 325.4079818725586 L 323.61927032470703 335.2653503417969"/>
+  <path class="GlobalId-24Myoho7D5lvmrbTVEKHRQ IfcAnnotation PredefinedType-FILLAREA GYPSUMCOLOR" d="M 395.61927795410156 242.86537170410156 L 406.09703063964844 242.86537170410156 L 406.09703063964844 233.00796508789062 L 395.61927795410156 233.00796508789062 L 395.61927795410156 242.86537170410156"/>
+  <path class="GlobalId-16HX8ts4f4jhFPojstOtPH IfcAnnotation PredefinedType-FILLAREA CONCRETELIGHT" d="M 323.61927032470703 181.2653350830078 L 334.0970230102539 181.2653350830078 L 334.0970230102539 171.40792846679688 L 323.61927032470703 171.40792846679688 L 323.61927032470703 181.2653350830078"/>
+  <path class="GlobalId-2AREsgTCzCaeP5yEyZzkiY IfcAnnotation PredefinedType-FILLAREA INSULATIONRIGIDMASKED" d="M 323.61927032470703 273.6653518676758 L 334.0970230102539 273.6653518676758 L 334.0970230102539 263.8079833984375 L 323.61927032470703 263.8079833984375 L 323.61927032470703 273.6653518676758"/>
+  <path class="GlobalId-0kyrkPknH4mBoZC5bHmDTj IfcAnnotation PredefinedType-FILLAREA BLACK_025" d="M 323.61927032470703 27.26531982421875 L 334.0970230102539 27.26531982421875 L 334.0970230102539 17.407913208007812 L 323.61927032470703 17.407913208007812 L 323.61927032470703 27.26531982421875"/>
+  <path class="GlobalId-3srsZ$DVj2H8tKKnKdnBMK IfcAnnotation PredefinedType-FILLAREA YELLOW" d="M 287.61928558349604 150.46531677246094 L 298.0970382690429 150.46531677246094 L 298.0970382690429 140.60791015625 L 287.61928558349604 140.60791015625 L 287.61928558349604 150.46531677246094"/>
+  <path class="GlobalId-116jTyx2rEvAEfGu$5Ty4l IfcAnnotation PredefinedType-FILLAREA EXPANDEDCLAYMASKED" d="M 287.61928558349604 242.86537170410156 L 298.0970382690429 242.86537170410156 L 298.0970382690429 233.00796508789062 L 287.61928558349604 233.00796508789062 L 287.61928558349604 242.86537170410156"/>
+  <path class="GlobalId-3bgDl4WHr0wRyOPk3rDNzS IfcAnnotation PredefinedType-FILLAREA LIQUID" d="M 467.61932373046875 273.6653518676758 L 478.0970764160156 273.6653518676758 L 478.0970764160156 263.8079833984375 L 467.61932373046875 263.8079833984375 L 467.61932373046875 273.6653518676758"/>
+  <path class="GlobalId-2N$FqwCNH6fvu9SW8tv483 IfcAnnotation PredefinedType-FILLAREA GREEN" d="M 287.61928558349604 88.8653564453125 L 298.0970382690429 88.8653564453125 L 298.0970382690429 79.00794982910156 L 287.61928558349604 79.00794982910156 L 287.61928558349604 88.8653564453125"/>
+  <path class="GlobalId-0nK5fPf4b1QA5YGqR2IYDh IfcAnnotation PredefinedType-FILLAREA EARTHMASKED" d="M 395.61927795410156 212.0653533935547 L 406.09703063964844 212.0653533935547 L 406.09703063964844 202.20794677734375 L 395.61927795410156 202.20794677734375 L 395.61927795410156 212.0653533935547"/>
+  <path class="GlobalId-2A1l7KSGDE$RM1rFAJL4V4 IfcAnnotation PredefinedType-FILLAREA SAND" d="M 395.61927795410156 304.46533203125 L 406.09703063964844 304.46533203125 L 406.09703063964844 294.6079635620117 L 395.61927795410156 294.6079635620117 L 395.61927795410156 304.46533203125"/>
+  <path class="GlobalId-323Xvyoyz0aRXngLSMWXon IfcAnnotation PredefinedType-FILLAREA BLACK_075" d="M 395.61927795410156 27.26531982421875 L 406.09703063964844 27.26531982421875 L 406.09703063964844 17.407913208007812 L 395.61927795410156 17.407913208007812 L 395.61927795410156 27.26531982421875"/>
+  <path class="GlobalId-2q4g38eZv8Yv9U4ao2fNy0 IfcAnnotation PredefinedType-FILLAREA WOODLAMINATEDMASKED" d="M 359.6192932128906 366.06536865234375 L 370.0970458984375 366.06536865234375 L 370.0970458984375 356.20800018310547 L 359.6192932128906 356.20800018310547 L 359.6192932128906 366.06536865234375"/>
+  <path class="GlobalId-37Ib9MoC11NgEkFq_w6ehJ IfcAnnotation PredefinedType-FILLAREA GREEN_025" d="M 323.61927032470703 88.8653564453125 L 334.0970230102539 88.8653564453125 L 334.0970230102539 79.00794982910156 L 323.61927032470703 79.00794982910156 L 323.61927032470703 88.8653564453125"/>
+  <path class="GlobalId-19c6T1ZXLDbu7JUFyGtCPQ IfcAnnotation PredefinedType-FILLAREA MASK_025" d="M 467.61932373046875 88.8653564453125 L 478.0970764160156 88.8653564453125 L 478.0970764160156 79.00794982910156 L 467.61932373046875 79.00794982910156 L 467.61932373046875 88.8653564453125"/>
+  <path class="GlobalId-0q2i1aIUr8KR8ATH_ydP38 IfcAnnotation PredefinedType-FILLAREA CONCRETEPRECASTCOLOR" d="M 467.61932373046875 181.2653350830078 L 478.0970764160156 181.2653350830078 L 478.0970764160156 171.40792846679688 L 467.61932373046875 171.40792846679688 L 467.61932373046875 181.2653350830078"/>
+  <path class="GlobalId-2I6u9ues954hDFDEvqGeiP IfcAnnotation PredefinedType-FILLAREA WOODMASKED" d="M 467.61932373046875 335.2653503417969 L 478.0970764160156 335.2653503417969 L 478.0970764160156 325.4079818725586 L 467.61932373046875 325.4079818725586 L 467.61932373046875 335.2653503417969"/>
+  <path class="GlobalId-1h0HeqRFDC8gXuqpsmyhlU IfcAnnotation PredefinedType-FILLAREA RED_025" d="M 395.61927795410156 119.66529846191406 L 406.09703063964844 119.66529846191406 L 406.09703063964844 109.80789184570312 L 395.61927795410156 109.80789184570312 L 395.61927795410156 119.66529846191406"/>
+  <path class="GlobalId-0HZ4pvu7f9KuFJyLIvhxby IfcAnnotation PredefinedType-FILLAREA CONCRETELIGHTCOLOR" d="M 359.6192932128906 181.2653350830078 L 370.0970458984375 181.2653350830078 L 370.0970458984375 171.40792846679688 L 359.6192932128906 171.40792846679688 L 359.6192932128906 181.2653350830078"/>
+  <path class="GlobalId-1OtvylZuz1GuDYwY0sJluA IfcAnnotation PredefinedType-FILLAREA INSULATIONSOFT" d="M 359.6192932128906 273.6653518676758 L 370.0970458984375 273.6653518676758 L 370.0970458984375 263.8079833984375 L 359.6192932128906 263.8079833984375 L 359.6192932128906 273.6653518676758"/>
+  <path class="GlobalId-38pDI5_a14PvlBR2eRMekM IfcAnnotation PredefinedType-FILLAREA BLUE_025" d="M 395.61927795410156 58.065338134765625 L 406.09703063964844 58.065338134765625 L 406.09703063964844 48.20793151855469 L 395.61927795410156 48.20793151855469 L 395.61927795410156 58.065338134765625"/>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(364.858154296875, 368.6175231933594) rotate(-0.0)">
+    <tspan class="GlobalId-2cv_$fUI52FwJkaz0dI8UB IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_WoodLaminatedMasked</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(119.0631103515625, 722.863037109375) rotate(-89.999995674289)">
-    <tspan class="GlobalId-2HjMk0BSD5vwNnqwqYWt$F IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Cut</tspan>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 153.0175018310547) rotate(-0.0)">
+    <tspan class="GlobalId-3BarNwPa58Afew7jrGmiqP IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Yellow</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(162.70553588867188, 24.3670654296875) rotate(-0.0)">
-    <tspan class="GlobalId-3YgJjTPbr6vR0X2hIrLPZk IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">2mm</tspan>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(472.85821533203125, 60.617523193359375) rotate(-0.0)">
+    <tspan class="GlobalId-1sSvpSh1f3H8F2sucJcujv IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Blue_075</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(21.731948852539062, 721.7392578125) rotate(-89.999995674289)">
-    <tspan class="GlobalId-2NpTQY0of4zugC$422Ai5N IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Cont T1</tspan>
-  </text>
-  <use transform="translate(30.67779541015625, 395.79888916015625) rotate(-0.0) scale(1.0)" xlink:href="#rectangle-tag"/>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(30.67779541015625, 395.79888916015625) rotate(-0.0)">
-    <tspan class="GlobalId-1j4LgRdIP9cOXi_akAKDk7 IfcAnnotation PredefinedType-TEXT" dy="0em" x="0" y="0">None</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(68.87397766113281, 292.3065185546875) rotate(-0.0)">
-    <tspan class="GlobalId-3rGlZ2hAH2s9Y_AItiee03 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">dot-small</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(196.05804443359375, 724.385498046875) rotate(-89.999995674289)">
-    <tspan class="GlobalId-2Df7nM7Jr309vNdr7h1xa_ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Hidden T2/T4/T6</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(162.70553588867188, 33.07525634765625) rotate(-0.0)">
-    <tspan class="GlobalId-0ID$N62I9BWxkLEHYu_wxy IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">2.5mm</tspan>
-  </text>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(69.18754577636719, 394.250732421875) rotate(-0.0)">
-    <tspan class="GlobalId-0KJlYwD9DEwQAv08Ov9q_K IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">TAG_TYPE</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(68.47084045410156, 266.9273376464844) rotate(-0.0)">
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(57.76897430419922, 237.9625701904297) rotate(-0.0)">
     <tspan class="GlobalId-2zIGIOr9f7hAhN6I14hZ5X IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Traverse point</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(96.22566223144531, 722.6455078125) rotate(-89.999995674289)">
-    <tspan class="GlobalId-111NqI$vf8iAXY6jRGJ7gQ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Cont T8</tspan>
-  </text>
-  <g transform="translate(30.87127685546875, 454.43426513671875) rotate(-0.0) scale(1.0)">
+  <g transform="translate(38.96919250488281, 331.7160339355469) rotate(-0.0) scale(1.0)">
     
         
     <circle fill="white" stroke="black" r="2.5" style="stroke-width: 0.25"/>
@@ -56,13 +111,88 @@
   </g>
   
     
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(68.87397766113281, 321.0652160644531) rotate(-0.0)">
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(57.970542907714844, 265.031494140625) rotate(-0.0)">
     <tspan class="GlobalId-1_ukveO7D4xeUvnyty$UaE IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">dot-big</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(68.70307922363281, 230.20645141601562) rotate(-0.0)">
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(472.85821533203125, 337.8175048828125) rotate(-0.0)">
+    <tspan class="GlobalId-3SWqfgNZz3TgyCPq_wyJAA IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_WoodMasked</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(364.858154296875, 183.81752014160156) rotate(-0.0)">
+    <tspan class="GlobalId-3pHczW0oTBzeiWofzFsT5F IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_ConcreteLightColor</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(364.858154296875, 60.617523193359375) rotate(-0.0)">
+    <tspan class="GlobalId-1ZAgQBARvCMBdeDoQDCQjs IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Blue</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(57.885093688964844, 219.6021270751953) rotate(-0.0)">
     <tspan class="GlobalId-1lgFJuU5z3u95Ufdx2Xkii IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">North arrow</tspan>
   </text>
-  <g transform="translate(70.73562622070312, 366.5779113769531) rotate(-0.0) scale(1.0)">
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(61.802520751953125, 116.31706237792969) rotate(-0.0)">
+    <tspan class="GlobalId-1PyEGVmTX7zf13R4mjNCfO IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">DIM_2mm</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(472.85821533203125, 153.0175018310547) rotate(-0.0)">
+    <tspan class="GlobalId-2ttRy_Eyv5UwmYR4tBYFiF IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_ConcreteInsituColor</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(436.858154296875, 91.41754150390625) rotate(-0.0)">
+    <tspan class="GlobalId-02OE3xgxj1iQ8uyKD_yEJ3 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Mask</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(57.76897430419922, 257.16986083984375) rotate(-0.0)">
+    <tspan class="GlobalId-1vi7enHtv1_fDnMBDnCt7l IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">dot</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(364.858154296875, 214.61753845214844) rotate(-0.0)">
+    <tspan class="GlobalId-1tqVoND9XEmh$Qim255TXc IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_EarthColer</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(57.885093688964844, 230.41542053222656) rotate(-0.0)">
+    <tspan class="GlobalId-12MFwi6vPAiBN6SHzGQHik IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Setout point</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(472.85821533203125, 183.81752014160156) rotate(-0.0)">
+    <tspan class="GlobalId-1WMWUy5a5DuAi_X31dSe1Q IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_ConcretePrecastColor</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(231.2128448486328, 264.28369140625) rotate(-89.99998884409983)">
+    <tspan class="GlobalId-1yoO9_TZ930uYIsCK2hW4r IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">HiddenT4 Scolormodified</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(57.65289306640625, 210.0995635986328) rotate(-0.0)">
+    <tspan class="GlobalId-1qPUQCv810NRvsht$eFrQ0 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Control point</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(400.858154296875, 122.21748352050781) rotate(-0.0)">
+    <tspan class="GlobalId-3Kck2grnDBWA6seuKCBvd$ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Red_025</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(328.858154296875, 245.4175567626953) rotate(-0.0)">
+    <tspan class="GlobalId-37Im8bzcz2rAuuDCecDi9P IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_Glass</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(436.858154296875, 337.8175048828125) rotate(-0.0)">
+    <tspan class="GlobalId-01iCM42VXB8PQsg9hmPWwe IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_WoodColor</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(436.858154296875, 214.61753845214844) rotate(-0.0)">
+    <tspan class="GlobalId-1wPAgUDvX8K8sNOim2c8F1 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_Exspandedclay</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(400.858154296875, 276.2174987792969) rotate(-0.0)">
+    <tspan class="GlobalId-2_jQSxQLTAe8rE4Jmq1fh7 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_InsulationSoftColor</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 276.2174987792969) rotate(-0.0)">
+    <tspan class="GlobalId-36HHoOC9n6o99YUwhv5wvG IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_InsulationRigidColor</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(104.88632202148438, 121.03652954101562) rotate(-0.0)">
+    <tspan class="GlobalId-0ID$N62I9BWxkLEHYu_wxy IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">2.5mm</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(436.858154296875, 368.6175231933594) rotate(-0.0)">
+    <tspan class="GlobalId-3w3sbgAcX1mh_RDYg_TCbO IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_WoodStructuralColor</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(328.858154296875, 91.41754150390625) rotate(-0.0)">
+    <tspan class="GlobalId-2FEMuif3PCyOJZNjGp7ndP IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Green_025</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(364.858154296875, 307.0174865722656) rotate(-0.0)">
+    <tspan class="GlobalId-0tx25CYM9EZ8rJj6Es15_1 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_MasonryMasked</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(161.13555908203125, 266.81951904296875) rotate(-89.99998884409983)">
+    <tspan class="GlobalId-10YE3QrTLBsRbWjIEIUF3q IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">ContT4 Scolormodified</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(436.858154296875, 60.617523193359375) rotate(-0.0)">
+    <tspan class="GlobalId-1wHsS_Bi562hHMdsS_KXof IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Blue_050</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(472.85821533203125, 276.2174987792969) rotate(-0.0)">
+    <tspan class="GlobalId-2cMHKNVSr6MgDMlLTXaVmq IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_Liquid</tspan>
+  </text>
+  <g transform="translate(58.9013671875, 287.787841796875) rotate(-0.0) scale(1.0)">
     
         
     <text y="-5" class="GlobalId-192YTqGx98cAVHLebK9OxE IfcAnnotation PredefinedType-TEXT" text-anchor="middle" dominant-baseline="middle" data-type="text-template">TAG_SPACE</text>
@@ -80,23 +210,105 @@
   </g>
   
     
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(162.70553588867188, 43.77105712890625) rotate(-0.0)">
-    <tspan class="GlobalId-3D1NuPT5XD3R_NumB0H$rw IfcAnnotation PredefinedType-TEXT large" dy="0em" x="0" y="0">3.5mm</tspan>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 122.21748352050781) rotate(-0.0)">
+    <tspan class="GlobalId-3LzQA0Ewn7V860_IWubgqk IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Mask_050</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(68.47084045410156, 305.3419494628906) rotate(-0.0)">
-    <tspan class="GlobalId-1vi7enHtv1_fDnMBDnCt7l IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">dot</tspan>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(419.116455078125, 252.15049743652344) rotate(-0.0)">
+    <tspan class="GlobalId-0J89KTfGzEiPSIMb4$QWod IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_Gypsom</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(68.70307922363281, 251.83303833007812) rotate(-0.0)">
-    <tspan class="GlobalId-12MFwi6vPAiBN6SHzGQHik IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Setout point</tspan>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(400.858154296875, 91.41754150390625) rotate(-0.0)">
+    <tspan class="GlobalId-326XuFHiTDxBY$_F35wKqZ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Green_075</tspan>
   </text>
-  <use transform="translate(68.99406433105469, 423.08465576171875) rotate(-0.0) scale(1.0)" xlink:href="#window-tag"/>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(68.99406433105469, 423.08465576171875) rotate(-0.0)">
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(364.858154296875, 153.0175018310547) rotate(-0.0)">
+    <tspan class="GlobalId-0gO8qsZqX3295RZm9$oiU_ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Yellow_050</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(364.858154296875, 29.8175048828125) rotate(-0.0)">
+    <tspan class="GlobalId-0UY81qYBr0pe1D7IXhDNV4 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Black_050</tspan>
+  </text>
+  <use transform="translate(58.03058624267578, 316.0412292480469) rotate(-0.0) scale(1.0)" xlink:href="#window-tag"/>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(58.03058624267578, 316.0412292480469) rotate(-0.0)">
     <tspan class="GlobalId-2SgdeiBj1BUOh7SgsUBi21 IfcAnnotation PredefinedType-TEXT" dy="0em" x="0" y="0">TAG_WINDOW</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(68.23867797851562, 211.20132446289062) rotate(-0.0)">
-    <tspan class="GlobalId-1qPUQCv810NRvsht$eFrQ0 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Control point</tspan>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(328.858154296875, 368.6175231933594) rotate(-0.0)">
+    <tspan class="GlobalId-1tnMAVZuD488mv0oTNBTYY IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_WoodLaminatedColor</tspan>
   </text>
-  <g transform="translate(30.5206298828125, 367.11273193359375) rotate(-0.0) scale(1.0)">
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(472.85821533203125, 122.21748352050781) rotate(-0.0)">
+    <tspan class="GlobalId-0D68aYesvCHRo0W54kIT3I IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Red_075</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(400.858154296875, 245.4175567626953) rotate(-0.0)">
+    <tspan class="GlobalId-19EOJQPdf1AeZnzK7TuDU4 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_GypsomColor</tspan>
+  </text>
+  <use transform="translate(37.90489196777344, 315.6541748046875) rotate(-0.0) scale(1.0)" xlink:href="#capsule-tag"/>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(37.90489196777344, 315.6541748046875) rotate(-0.0)">
+    <tspan class="GlobalId-3u05uMNJX59xkcrRExNRtc IfcAnnotation PredefinedType-TEXT" dy="0em" x="0" y="0">TAG_NAME</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(364.858154296875, 122.21748352050781) rotate(-0.0)">
+    <tspan class="GlobalId-0rgucCQzjDwPFVHRrEw$n7 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Red</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(207.17562866210938, 112.513427734375) rotate(-89.99998884409983)">
+    <tspan class="GlobalId-2vlWqIF4b0cfxl6Rdb7Sfe IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Center T2/T4/T6</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(328.858154296875, 60.617523193359375) rotate(-0.0)">
+    <tspan class="GlobalId-04MYIHKVbF1B_xGjSZXpdy IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Blank_075</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 398.6368103027344) rotate(-0.0)">
+    <tspan class="GlobalId-3WFBK24pzDvgS3VI8nBjJK IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Blank</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(436.858154296875, 153.0175018310547) rotate(-0.0)">
+    <tspan class="GlobalId-3R1heMRa19c81mb2WWAV9X IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_ConcreteInsitu</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(364.858154296875, 276.2174987792969) rotate(-0.0)">
+    <tspan class="GlobalId-2_8X0ggOz4nui4flROO0Lr IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_InsulationSoft</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(328.858154296875, 214.61753845214844) rotate(-0.0)">
+    <tspan class="GlobalId-3BllUNnhL49Agd01C10Mov IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_Earth</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(247.96786499023438, 112.78366088867188) rotate(-89.99998884409983)">
+    <tspan class="GlobalId-3tzl4b1snD8BkNTVRKvRGo IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">HiddenDetailed T2/T4/T6</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(436.858154296875, 307.0174865722656) rotate(-0.0)">
+    <tspan class="GlobalId-3O9zh4HqTCx9cGZRKu4$sS IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_SandColor</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(436.858154296875, 183.81752014160156) rotate(-0.0)">
+    <tspan class="GlobalId-2JzocxqiPByuBi9Kqabsl8 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_ConcretePrecast</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(258.66278076171875, 112.78366088867188) rotate(-89.99998884409983)">
+    <tspan class="GlobalId-1UybhudoT63u6E9LHUI_Dd IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">HiddenRoughT2/T4/T6</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(328.858154296875, 307.0174865722656) rotate(-0.0)">
+    <tspan class="GlobalId-3Jz7n1QgnBrRnVLjMsf4AA IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_MasonryColor</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 245.4175567626953) rotate(-0.0)">
+    <tspan class="GlobalId-3VYT1r5g56n8kBWvEpfRe3 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_ExspandedclayMasked</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(400.858154296875, 337.8175048828125) rotate(-0.0)">
+    <tspan class="GlobalId-3vQ4KwwGj8NxvlxS8d2K5K IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_Wood</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(104.88632202148438, 126.38442993164062) rotate(-0.0)">
+    <tspan class="GlobalId-3D1NuPT5XD3R_NumB0H$rw IfcAnnotation PredefinedType-TEXT large" dy="0em" x="0" y="0">3.5mm</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(436.858154296875, 29.8175048828125) rotate(-0.0)">
+    <tspan class="GlobalId-05V86FtjD2EOwmgseJuP49 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Blank</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 337.8175048828125) rotate(-0.0)">
+    <tspan class="GlobalId-05DZ7nUJD2$wmTUDGbTNzs IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_Steel</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(472.85821533203125, 245.4175567626953) rotate(-0.0)">
+    <tspan class="GlobalId-04T31mqSX1QfzHRTkLuuZ2 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_InsulationRigid</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(400.858154296875, 368.6175231933594) rotate(-0.0)">
+    <tspan class="GlobalId-0umqVl8hrACv9EyiEZcd0f IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_WoodStructural</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(328.858154296875, 153.0175018310547) rotate(-0.0)">
+    <tspan class="GlobalId-2BgXU9w310UQZtikT9bg_7 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Yellow_025</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(180.6420135498047, 266.9588623046875) rotate(-89.99998884409983)">
+    <tspan class="GlobalId-2sybIH1tLEDw5fRzem0QLG IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">ContT8 Scolormodified</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 91.41754150390625) rotate(-0.0)">
+    <tspan class="GlobalId-3pj29cHSL6CvDkYH5llbei IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Green</tspan>
+  </text>
+  <g transform="translate(38.79386901855469, 288.0552673339844) rotate(-0.0) scale(1.0)">
     
         
     <circle r="5" fill="white" stroke="black" style="stroke-width: 0.25;"/>
@@ -114,71 +326,197 @@
   </g>
   
     
-  <use transform="translate(28.74267578125, 422.310546875) rotate(-0.0) scale(1.0)" xlink:href="#capsule-tag"/>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(28.74267578125, 422.310546875) rotate(-0.0)">
-    <tspan class="GlobalId-3u05uMNJX59xkcrRExNRtc IfcAnnotation PredefinedType-TEXT" dy="0em" x="0" y="0">TAG_NAME</tspan>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(400.858154296875, 60.617523193359375) rotate(-0.0)">
+    <tspan class="GlobalId-2Wm4vAE9f3Zufv_CGOUic3 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Blue_025</tspan>
   </text>
-  <line class="GlobalId-13b$JsDKb4QAA0Rk0SBDaO IfcAnnotation PredefinedType-LINEWORK Dash20 T4" x1="196.0303497314453" x2="196.0303497314453" y1="983.177978515625" y2="733.177978515625"/>
-  <line class="GlobalId-1EdHdZUgjA_hHO288k2Rf1 IfcAnnotation PredefinedType-LINEWORK Center T2" x1="139.37461853027344" x2="139.37461853027344" y1="983.1277465820312" y2="733.1277465820312"/>
-  <line class="GlobalId-0cD$J6u9H1Ixtnk$cfrLV0 IfcAnnotation PredefinedType-LINEWORK Cont T3" x1="46.9097900390625" x2="46.9097900390625" y1="983.84326171875" y2="733.84326171875"/>
-  <line class="GlobalId-2PE8SJYGT25Ql6eb5biVWD IfcAnnotation PredefinedType-LINEWORK Cont T1" x1="21.746597290039062" x2="21.746597290039062" y1="983.5430908203125" y2="733.5430908203125"/>
-  <line class="GlobalId-1tNYbnOxH6NwOw12udEQ2D IfcAnnotation PredefinedType-LINEWORK Cont T2" x1="34.06898498535156" x2="34.06898498535156" y1="983.44189453125" y2="733.44189453125"/>
-  <line class="GlobalId-3r1FHRv4H4PRkeiP3VK2HY IfcAnnotation PredefinedType-LINEWORK Cont T5" x1="67.43621826171875" x2="67.43621826171875" y1="983.7261962890625" y2="733.7261962890625"/>
-  <line class="GlobalId-0C56QOe3LD4gM_ssDKbAJj IfcAnnotation PredefinedType-LINEWORK Center T4" x1="149.37957763671875" x2="149.37957763671875" y1="983.5626831054688" y2="733.5626831054688"/>
-  <line class="GlobalId-1ysXXx4kT93f2WN4kyedCY IfcAnnotation PredefinedType-LINEWORK Cont T7" x1="87.22137451171875" x2="87.22137451171875" y1="984.2835083007812" y2="734.2835083007812"/>
-  <line class="GlobalId-0rm1eE45n2lu4SzeHnjhyK IfcAnnotation PredefinedType-LINEWORK Cont T4" x1="57.12562561035156" x2="57.12562561035156" y1="984.5621337890625" y2="734.5621337890625"/>
-  <line class="GlobalId-0Z5U75FcXE5fqjSQHiBY3F IfcAnnotation PredefinedType-LINEWORK Center T6" x1="158.73207092285156" x2="158.73207092285156" y1="983.1277465820312" y2="733.1277465820312"/>
-  <line class="GlobalId-04p7pShNzEiA_JlY8QlgEq IfcAnnotation PredefinedType-LINEWORK Cont T8" x1="96.13861083984375" x2="96.13861083984375" y1="984.562255859375" y2="734.562255859375"/>
-  <line class="GlobalId-18cNazf$96C807qznIyKQy IfcAnnotation PredefinedType-LINEWORK Cont T6" x1="76.63223266601562" x2="76.63223266601562" y1="983.4475708007812" y2="733.4475708007812"/>
-  <line class="GlobalId-1XGZn7L2T3WgmjsyxZjitJ IfcAnnotation PredefinedType-LINEWORK Dash20 T2" x1="184.9974822998047" x2="184.9974822998047" y1="983.5638427734375" y2="733.5638427734375"/>
-  <line class="GlobalId-2F7w$qZq11YhSULSlpCas9 IfcAnnotation PredefinedType-LINEWORK Cut" x1="118.86604309082031" x2="118.86604309082031" y1="982.9375610351562" y2="732.9375610351562"/>
-  <line class="GlobalId-1Ncj6Qiwr2iBrGZlHe5o6X IfcAnnotation PredefinedType-LINEWORK Dash20 T6" x1="207.88719177246094" x2="207.88719177246094" y1="983.3743286132812" y2="733.3743286132812"/>
-  <use transform="translate(33.50654602050781, 251.26022338867188) rotate(-0.0) scale(1.0)" xlink:href="#setout-point"/>
-  <line class="GlobalId-01HcLjxGb1kgtiDzBPS5q7 IfcAnnotation PredefinedType-DIMENSION" x1="23.326492309570312" x2="53.891143798828125" y1="23.636322021484375" y2="23.636322021484375"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(38.60881805419922, 22.636322021484375) rotate(0.0)">
-    <tspan class="DIMENSION" dy="0em" x="0" y="0">1528</tspan>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(192.16815185546875, 112.07839965820312) rotate(-89.99998884409983)">
+    <tspan class="GlobalId-2HjMk0BSD5vwNnqwqYWt$F IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Cut</tspan>
   </text>
-  <path class="GlobalId-2yV6v7R9z94BWWU28VkdZC IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 74.17556762695312 160.65780639648438 L 25.11993408203125 160.65780639648438"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(74.17556762695312, 157.15780639648438) rotate(0.0)">
-    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL -1000</tspan>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 183.81752014160156) rotate(-0.0)">
+    <tspan class="GlobalId-2E7h4vBav6cxRGydxK_bQo IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_ConcreteInsituMasked</tspan>
   </text>
-  <path class="GlobalId-1BxYWr8eP6_Ppl2m5hbxio IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 74.17556762695312 175.977783203125 L 23.35845947265625 175.977783203125"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(74.17556762695312, 172.477783203125) rotate(0.0)">
-    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">Add description</tspan>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(328.858154296875, 337.8175048828125) rotate(-0.0)">
+    <tspan class="GlobalId-2UUDfo2K5399xFCGDYLfjM IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_SteelColor</tspan>
   </text>
-  <path class="GlobalId-3hol87HDzE2h4PHYzdflxH IfcAnnotation PredefinedType-RADIUS" d="M 26.066513061523438 48.589324951171875 L 51.400299072265625 48.589324951171875"/>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(21.066513061523438, 48.589324951171875) rotate(0.0)">
-    <tspan class="RADIUS" dy="0em" x="0" y="0">R1267</tspan>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(472.85821533203125, 91.41754150390625) rotate(-0.0)">
+    <tspan class="GlobalId-24ows0Xaj0renpnuYD7oJd IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Mask_025</tspan>
   </text>
-  <use transform="translate(33.70002746582031, 230.63995361328125) rotate(-0.0) scale(1.0)" xlink:href="#north-arrow"/>
-  <line class="GlobalId-1X5jk_MfD858qWfeuBz64B IfcAnnotation PredefinedType-DIAMETER" x1="24.507598876953125" x2="56.694183349609375" y1="61.132049560546875" y2="61.132049560546875"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(40.60089111328125, 60.132049560546875) rotate(0.0)">
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(104.88632202148438, 116.68243408203125) rotate(-0.0)">
+    <tspan class="GlobalId-3YgJjTPbr6vR0X2hIrLPZk IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">2mm</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(143.50257873535156, 111.51657104492188) rotate(-89.99998884409983)">
+    <tspan class="GlobalId-2NpTQY0of4zugC$422Ai5N IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Cont T1</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(400.858154296875, 214.61753845214844) rotate(-0.0)">
+    <tspan class="GlobalId-1lWvYHjYXAzQ1sXkGhGfqi IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_EarthMasked</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(364.858154296875, 91.41754150390625) rotate(-0.0)">
+    <tspan class="GlobalId-0$0196ZCj5kh9VTz0vH$nI IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Green_050</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(328.858154296875, 29.8175048828125) rotate(-0.0)">
+    <tspan class="GlobalId-2aiI_DOlf0IwzIjDY_Swz1 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Black_025</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(230.66561889648438, 112.83966064453125) rotate(-89.99998884409983)">
+    <tspan class="GlobalId-2Df7nM7Jr309vNdr7h1xa_ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Hidden T2/T4/T6</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(58.12732696533203, 301.624267578125) rotate(-0.0)">
+    <tspan class="GlobalId-0KJlYwD9DEwQAv08Ov9q_K IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">TAG_TYPE</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 368.6175231933594) rotate(-0.0)">
+    <tspan class="GlobalId-1ywW2msmz1I8dUOExgAJJK IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_WoodLaminated</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(436.858154296875, 122.21748352050781) rotate(-0.0)">
+    <tspan class="GlobalId-0a79HGxcXCH8zyRXsj77k0 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Red_050</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(180.7494354248047, 111.96968078613281) rotate(-89.99998884409983)">
+    <tspan class="GlobalId-111NqI$vf8iAXY6jRGJ7gQ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Cont T8</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 29.8175048828125) rotate(-0.0)">
+    <tspan class="GlobalId-0DD_OSMT1A9OlnTMjvE$fP IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Black</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(364.858154296875, 245.4175567626953) rotate(-0.0)">
+    <tspan class="GlobalId-2OcftHUBb8EuOfXy9rxk2e IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_Grass</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(328.858154296875, 183.81752014160156) rotate(-0.0)">
+    <tspan class="GlobalId-3atiDNyp92Dud5VanoNQpq IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_ConcreteLight</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(436.858154296875, 276.2174987792969) rotate(-0.0)">
+    <tspan class="GlobalId-1f42J3uVnCvxBYg4euHB_l IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_InsulationSoftMasked</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(400.858154296875, 153.0175018310547) rotate(-0.0)">
+    <tspan class="GlobalId-0Z8P$gFl11QuSTqImxJJ9_ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Yellow_075</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(328.858154296875, 276.2174987792969) rotate(-0.0)">
+    <tspan class="GlobalId-2QUxiRjS522PI5a1VWvf4h IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_InsulationRigidMasked</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(472.85821533203125, 29.8175048828125) rotate(-0.0)">
+    <tspan class="GlobalId-3Zl6CF6FH7$hc9660A4CqM IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Blank_025</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 214.61753845214844) rotate(-0.0)">
+    <tspan class="GlobalId-2XXMhtNQL5F94fr0fhWZ3l IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_ConcretePrecastMasked</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(400.858154296875, 307.0174865722656) rotate(-0.0)">
+    <tspan class="GlobalId-0EJs1Dtdz4A9Gq_u1mAeEW IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_Sand</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(400.858154296875, 183.81752014160156) rotate(-0.0)">
+    <tspan class="GlobalId-1uKHHEsmr5ugeI1s_knvVg IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_ConcreteLightMasked</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 307.0174865722656) rotate(-0.0)">
+    <tspan class="GlobalId-2L5zS3mnnDkAkwlWJRhiKj IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_Masonry</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(472.85821533203125, 214.61753845214844) rotate(-0.0)">
+    <tspan class="GlobalId-0tJM670$z49vyyl82Biy9l IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_ExspandedclayColor</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(328.858154296875, 122.21748352050781) rotate(-0.0)">
+    <tspan class="GlobalId-0uEUcdhFv2JO1X33tfOuu6 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Mask_075</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(292.858154296875, 60.617523193359375) rotate(-0.0)">
+    <tspan class="GlobalId-0fD5vpyKjEVuVBdMSBvt2a IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Blank_050</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(364.858154296875, 337.8175048828125) rotate(-0.0)">
+    <tspan class="GlobalId-0lWTZTiLb5Y8CT0CUzfDhq IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_SteelMasked</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(252.9486083984375, 265.286865234375) rotate(-89.99998884409983)">
+    <tspan class="GlobalId-0_XKfKBnHDre2y$aWPbsId IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">HiddenT8 Scolormodified</tspan>
+  </text>
+  <use transform="translate(38.87245178222656, 302.3983459472656) rotate(-0.0) scale(1.0)" xlink:href="#rectangle-tag"/>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(38.87245178222656, 302.3983459472656) rotate(-0.0)">
+    <tspan class="GlobalId-1j4LgRdIP9cOXi_akAKDk7 IfcAnnotation PredefinedType-TEXT" dy="0em" x="0" y="0">None</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(57.970542907714844, 250.65216064453125) rotate(-0.0)">
+    <tspan class="GlobalId-3rGlZ2hAH2s9Y_AItiee03 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">dot-small</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(472.85821533203125, 368.6175231933594) rotate(-0.0)">
+    <tspan class="GlobalId-1hIxs5ljzEMObOqqLCR56G IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_WoodStructuralMasked</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(400.858154296875, 29.8175048828125) rotate(-0.0)">
+    <tspan class="GlobalId-0MDaU0ygPAmPk7$8bAyVSn IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL__Black_075</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(472.85821533203125, 307.0174865722656) rotate(-0.0)">
+    <tspan class="GlobalId-0n7QSFoDnExBUuBD2OsqYn IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_SandMasked</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(436.858154296875, 245.4175567626953) rotate(-0.0)">
+    <tspan class="GlobalId-0AbwIz$Gf4BR3CbBdaZ_GV IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">FILL_GypsomMasked</tspan>
+  </text>
+  <line class="GlobalId-1ysXXx4kT93f2WN4kyedCY IfcAnnotation PredefinedType-LINEWORK Cont T7" x1="176.24728393554688" x2="176.24728393554688" y1="242.7886199951172" y2="117.78861999511719"/>
+  <line class="GlobalId-0rm1eE45n2lu4SzeHnjhyK IfcAnnotation PredefinedType-LINEWORK Cont T4" x1="161.1994171142578" x2="161.1994171142578" y1="242.9279327392578" y2="117.92793273925781"/>
+  <line class="GlobalId-2J5aD7WVX24hffre9Q_ZeX IfcAnnotation PredefinedType-LINEWORK Dash20 T2" x1="256.46209716796875" x2="256.46209716796875" y1="242.41256713867188" y2="117.41256713867188"/>
+  <line class="GlobalId-1pGjOQG6n1HBTTf4l$2x14 IfcAnnotation PredefinedType-LINEWORK Dash04 T4" x1="247.99575805664062" x2="247.99575805664062" y1="242.9059600830078" y2="117.90596008300781"/>
+  <line class="GlobalId-1WVT7wOA15U9b8wqQSSDPV IfcAnnotation PredefinedType-LINEWORK Cont T4 Syellow" x1="161.65985107421875" x2="161.65985107421875" y1="394.0293884277344" y2="269.0293884277344"/>
+  <line class="GlobalId-2D0ASvveL7h9crTbxsBBN0 IfcAnnotation PredefinedType-LINEWORK Dash10 T4 Syellow" x1="234.27874755859375" x2="234.27874755859375" y1="397.365234375" y2="272.365234375"/>
+  <line class="GlobalId-13b$JsDKb4QAA0Rk0SBDaO IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="230.6517791748047" x2="230.6517791748047" y1="242.23587036132812" y2="117.23587036132812"/>
+  <line class="GlobalId-0foE0x8aHCwByanbtAnj4o IfcAnnotation PredefinedType-LINEWORK Dash04 T6" x1="251.0436248779297" x2="251.0436248779297" y1="242.21900939941406" y2="117.21900939941406"/>
+  <line class="GlobalId-1DjTw8Lgj6KAHuxttwKJJw IfcAnnotation PredefinedType-LINEWORK Dash10 T8 Syellow" x1="257.2877502441406" x2="257.2877502441406" y1="396.5566711425781" y2="271.5566711425781"/>
+  <line class="GlobalId-1tNYbnOxH6NwOw12udEQ2D IfcAnnotation PredefinedType-LINEWORK Cont T2" x1="149.6710968017578" x2="149.6710968017578" y1="242.36785888671875" y2="117.36785888671875"/>
+  <line class="GlobalId-0rYojvK1j1LOTb$VwEYh0P IfcAnnotation PredefinedType-LINEWORK Cont T4 Sred" x1="158.95062255859375" x2="158.95062255859375" y1="394.12615966796875" y2="269.126220703125"/>
+  <line class="GlobalId-0cuTvbJBH80hChTFiBnm9E IfcAnnotation PredefinedType-LINEWORK Dash10 T4 Sred" x1="229.23785400390625" x2="229.23785400390625" y1="397.03082275390625" y2="272.03082275390625"/>
+  <line class="GlobalId-0AmVppGQ94TwlTapcNhr1S IfcAnnotation PredefinedType-LINEWORK Dash10 T8 Sred" x1="252.9405975341797" x2="252.9405975341797" y1="396.0550537109375" y2="271.0550537109375"/>
+  <line class="GlobalId-1XGZn7L2T3WgmjsyxZjitJ IfcAnnotation PredefinedType-LINEWORK Dash10 T2" x1="225.13534545898438" x2="225.13534545898438" y1="242.42881774902344" y2="117.42881774902344"/>
+  <line class="GlobalId-0cD$J6u9H1Ixtnk$cfrLV0 IfcAnnotation PredefinedType-LINEWORK Cont T3" x1="156.09149169921875" x2="156.09149169921875" y1="242.56851196289062" y2="117.56851196289062"/>
+  <line class="GlobalId-2PE8SJYGT25Ql6eb5biVWD IfcAnnotation PredefinedType-LINEWORK Cont T1" x1="143.50990295410156" x2="143.50990295410156" y1="242.41844177246094" y2="117.41844177246094"/>
+  <line class="GlobalId-3RBvhVCpn6SgtIWkrzTyZd IfcAnnotation PredefinedType-LINEWORK Dash10 T4 Sgreen" x1="223.41091918945312" x2="223.41091918945312" y1="397.03082275390625" y2="272.03082275390625"/>
+  <line class="GlobalId-11AsJjCp17k8ue8Bt0L2nC IfcAnnotation PredefinedType-LINEWORK Dash10 T8 Sgreen" x1="248.1475830078125" x2="248.1475830078125" y1="395.19268798828125" y2="270.19268798828125"/>
+  <line class="GlobalId-3r1FHRv4H4PRkeiP3VK2HY IfcAnnotation PredefinedType-LINEWORK Cont T5" x1="166.35470581054688" x2="166.35470581054688" y1="242.50999450683594" y2="117.50999450683594"/>
+  <line class="GlobalId-0C56QOe3LD4gM_ssDKbAJj IfcAnnotation PredefinedType-LINEWORK Center T4" x1="207.32638549804688" x2="207.32638549804688" y1="242.42820739746094" y2="117.42820739746094"/>
+  <line class="GlobalId-2jMk18ZFr0Bhj53EN$uYZF IfcAnnotation PredefinedType-LINEWORK Cont T4 Sgreen" x1="156.61700439453125" x2="156.61700439453125" y1="393.88641357421875" y2="268.886474609375"/>
+  <line class="GlobalId-3B3BwrMTX0avq9OkfEjLOG IfcAnnotation PredefinedType-LINEWORK Dash04 T2" x1="245.00015258789062" x2="245.00015258789062" y1="242.58094787597656" y2="117.58094787597656"/>
+  <line class="GlobalId-1E86LgaqzAKP58bWbjaFG5 IfcAnnotation PredefinedType-LINEWORK Cont T8 Syellow" x1="181.6114044189453" x2="181.6114044189453" y1="395.70721435546875" y2="270.70721435546875"/>
+  <line class="GlobalId-2F7w$qZq11YhSULSlpCas9 IfcAnnotation PredefinedType-LINEWORK Cut" x1="192.0696258544922" x2="192.0696258544922" y1="242.11563110351562" y2="117.11563110351562"/>
+  <line class="GlobalId-08zhPf$P58NASg92o4ZHym IfcAnnotation PredefinedType-LINEWORK Dash20 T6" x1="261.78375244140625" x2="261.78375244140625" y1="242.1222686767578" y2="117.12226867675781"/>
+  <line class="GlobalId-1EuKmCULLCEfxNPBFR8hDY IfcAnnotation PredefinedType-LINEWORK Cont T8 Sred" x1="178.6854248046875" x2="178.6854248046875" y1="395.14984130859375" y2="270.14984130859375"/>
+  <line class="GlobalId-0Z5U75FcXE5fqjSQHiBY3F IfcAnnotation PredefinedType-LINEWORK Center T6" x1="212.0026397705078" x2="212.0026397705078" y1="242.2107696533203" y2="117.21076965332031"/>
+  <line class="GlobalId-04p7pShNzEiA_JlY8QlgEq IfcAnnotation PredefinedType-LINEWORK Cont T8" x1="180.70590209960938" x2="180.70590209960938" y1="242.9279327392578" y2="117.92793273925781"/>
+  <line class="GlobalId-18cNazf$96C807qznIyKQy IfcAnnotation PredefinedType-LINEWORK Cont T6" x1="170.95272827148438" x2="170.95272827148438" y1="242.37060546875" y2="117.37060546875"/>
+  <line class="GlobalId-1gdU2Dc2zD3uQ2$O0UqvTR IfcAnnotation PredefinedType-LINEWORK Dash20 T4" x1="258.9778137207031" x2="258.9778137207031" y1="242.02552795410156" y2="117.02552795410156"/>
+  <line class="GlobalId-1Ncj6Qiwr2iBrGZlHe5o6X IfcAnnotation PredefinedType-LINEWORK Dash10 T6" x1="236.5802001953125" x2="236.5802001953125" y1="242.3340606689453" y2="117.33406066894531"/>
+  <line class="GlobalId-1EdHdZUgjA_hHO288k2Rf1 IfcAnnotation PredefinedType-LINEWORK Center T2" x1="202.32391357421875" x2="202.32391357421875" y1="242.210693359375" y2="117.210693359375"/>
+  <line class="GlobalId-3x_JA7QEb0Cxs22FNR7pX_ IfcAnnotation PredefinedType-LINEWORK Cont T8 Sgreen" x1="176.87411499023438" x2="176.87411499023438" y1="395.0105285644531" y2="270.0105285644531"/>
+  <path class="GlobalId-3Ww0$VNgH1mAg141P0D4B6 IfcAnnotation PredefinedType-STAIRARROW small" d="M 35.83503723144528 155.5658721923828 L 59.13799285888668 155.5658721923828"/>
+  <text class="STAIR" dominant-baseline="middle" text-anchor="middle" x="30.835037231445312" y="155.5658721923828">UP</text>
+  <use transform="translate(39.71031188964844, 265.47662353515625) rotate(-0.0) scale(1.0)" xlink:href="#dot-big"/>
+  <use transform="translate(40.286827087402344, 230.12901306152344) rotate(-0.0) scale(1.0)" xlink:href="#setout-point"/>
+  <line class="GlobalId-1X5jk_MfD858qWfeuBz64B IfcAnnotation PredefinedType-DIAMETER" x1="35.787353515625" x2="51.880645751953125" y1="135.06492614746094" y2="135.06492614746094"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(43.83399963378906, 134.06492614746094) rotate(0.0)">
     <tspan class="DIMENSION" dy="0em" x="0" y="0">D1609</tspan>
   </text>
-  <use transform="translate(33.1195068359375, 267.12860107421875) rotate(-0.0) scale(1.0)" xlink:href="#traverse-point"/>
-  <path class="GlobalId-2EbOZDhHfDcv2sP2RRpIXN IfcAnnotation PredefinedType-TEXTLEADER small" d="M 40.73829650878899 73.79669189453125 L 24.188690185546804 73.79669189453125"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(40.73829650878906, 73.79669189453125) rotate(-0.0)">
-    <tspan class="GlobalId-2EbOZDhHfDcv2sP2RRpIXN IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">2mm leader</tspan>
-  </text>
-  <path class="GlobalId-3Ww0$VNgH1mAg141P0D4B6 IfcAnnotation PredefinedType-STAIRARROW small" d="M 24.60296630859368 102.13394165039062 L 71.20887756347649 102.13394165039062"/>
-  <text class="STAIR" dominant-baseline="middle" text-anchor="middle" x="19.60296630859375" y="102.13394165039062">UP</text>
-  <text class="ANGLE" dominant-baseline="middle" text-anchor="middle" x="52.8682975769043" y="34.08414077758789">13°</text>
-  <path class="GlobalId-3BWDg2d7rA3ueW$VUeaCRq IfcAnnotation PredefinedType-ANGLE" d="M 48.04954528808594 37.3931884765625 A 25.29769894234145 25.29769894234145 0 0 0 47.446014404296875 31.900325775146484"/>
-  <use transform="translate(34.087066650390625, 211.44134521484375) rotate(-0.0) scale(1.0)" xlink:href="#control-point"/>
-  <use transform="translate(32.34535217285156, 305.9303283691406) rotate(-0.0) scale(1.0)" xlink:href="#dot"/>
-  <path class="GlobalId-2rDnrrY9b7ze75gek9rnPT IfcAnnotation PredefinedType-PLANLEVEL small" d="M 73.96270751953125 122.83126831054688 L 25.39642333984375 122.83126831054688"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(73.96270751953125, 121.83126831054688) rotate(-0.0)">
-    <tspan class="PLANLEVEL" dy="0em" x="0" y="0">-1000</tspan>
-  </text>
-  <use transform="translate(32.353515625, 321.9554138183594) rotate(-0.0) scale(1.0)" xlink:href="#dot-big"/>
-  <path class="GlobalId-3NlifJ0WLE_B2uZ2q58_7u IfcAnnotation PredefinedType-PLANLEVEL small" d="M 75.87860107421875 141.64947509765625 L 25.11993408203125 141.64947509765625"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(75.87860107421875, 140.64947509765625) rotate(-0.0)">
+  <use transform="translate(40.09330749511719, 238.06320190429688) rotate(-0.0) scale(1.0)" xlink:href="#traverse-point"/>
+  <use transform="translate(40.57708740234375, 210.21957397460938) rotate(-0.0) scale(1.0)" xlink:href="#control-point"/>
+  <path class="GlobalId-3NlifJ0WLE_B2uZ2q58_7u IfcAnnotation PredefinedType-PLANLEVEL small" d="M 61.47285461425781 175.32363891601562 L 36.09352111816406 175.32363891601562"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(61.47285461425781, 174.32363891601562) rotate(-0.0)">
     <tspan class="PLANLEVEL" dy="0em" x="0" y="0">Add description</tspan>
   </text>
-  <path class="GlobalId-0KMj$oopvBwwmUnPq0DSGl IfcAnnotation PredefinedType-BREAKLINE" d="M 22.826766967773366 192.4627685546875 L 48.50116729736321 192.4627685546875 L 74.17556762695305 192.4627685546875"/>
-  <use transform="translate(32.21916198730469, 290.6434631347656) rotate(-0.0) scale(1.0)" xlink:href="#dot-small"/>
-  <path class="GlobalId-1FxeMqsov3RvRYKeji4c85 IfcAnnotation PredefinedType-TEXTLEADER regular" d="M 40.954742431640554 84.74258422851562 L 24.076690673828054 84.74258422851562"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(40.954742431640625, 84.74258422851562) rotate(-0.0)">
+  <path class="GlobalId-2yV6v7R9z94BWWU28VkdZC IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 60.621337890625 184.8278045654297 L 36.09352111816406 184.8278045654297"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(60.621337890625, 181.3278045654297) rotate(0.0)">
+    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL -1000</tspan>
+  </text>
+  <path class="GlobalId-1BxYWr8eP6_Ppl2m5hbxio IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 60.621337890625 192.48779296875 L 35.21278381347656 192.48779296875"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(60.621337890625, 188.98779296875) rotate(0.0)">
+    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">Add description</tspan>
+  </text>
+  <text class="ANGLE" dominant-baseline="middle" text-anchor="middle" x="52.4527473449707" y="121.26792907714844">13°</text>
+  <path class="GlobalId-3BWDg2d7rA3ueW$VUeaCRq IfcAnnotation PredefinedType-ANGLE" d="M 47.558326721191406 123.19549560546875 A 12.648849471170726 12.648849471170726 0 0 0 47.256561279296875 120.44906616210938"/>
+  <path class="GlobalId-2rDnrrY9b7ze75gek9rnPT IfcAnnotation PredefinedType-PLANLEVEL small" d="M 60.51490783691406 165.91453552246094 L 36.23176574707031 165.91453552246094"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(60.51490783691406, 164.91453552246094) rotate(-0.0)">
+    <tspan class="PLANLEVEL" dy="0em" x="0" y="0">-1000</tspan>
+  </text>
+  <line class="GlobalId-01HcLjxGb1kgtiDzBPS5q7 IfcAnnotation PredefinedType-DIMENSION" x1="35.196800231933594" x2="50.4791259765625" y1="116.31706237792969" y2="116.31706237792969"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(42.83796310424805, 115.31706237792969) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">1528</tspan>
+  </text>
+  <path class="GlobalId-3hol87HDzE2h4PHYzdflxH IfcAnnotation PredefinedType-RADIUS" d="M 36.566810607910156 128.79356384277344 L 49.23370361328125 128.79356384277344"/>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(31.566810607910156, 128.79356384277344) rotate(0.0)">
+    <tspan class="RADIUS" dy="0em" x="0" y="0">R1267</tspan>
+  </text>
+  <use transform="translate(40.383567810058594, 219.81887817382812) rotate(-0.0) scale(1.0)" xlink:href="#north-arrow"/>
+  <path class="GlobalId-2EbOZDhHfDcv2sP2RRpIXN IfcAnnotation PredefinedType-TEXTLEADER small" d="M 43.90270233154293 141.39724731445312 L 35.62789916992184 141.39724731445312"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(43.90270233154297, 141.39724731445312) rotate(-0.0)">
+    <tspan class="GlobalId-2EbOZDhHfDcv2sP2RRpIXN IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">2mm leader</tspan>
+  </text>
+  <use transform="translate(39.70623016357422, 257.46405029296875) rotate(-0.0) scale(1.0)" xlink:href="#dot"/>
+  <path class="GlobalId-0KMj$oopvBwwmUnPq0DSGl IfcAnnotation PredefinedType-BREAKLINE" d="M 34.94693756103512 200.73028564453125 L 47.78413772583004 200.73028564453125 L 60.621337890624964 200.73028564453125"/>
+  <use transform="translate(39.64313507080078, 249.8206329345703) rotate(-0.0) scale(1.0)" xlink:href="#dot-small"/>
+  <path class="GlobalId-1FxeMqsov3RvRYKeji4c85 IfcAnnotation PredefinedType-TEXTLEADER regular" d="M 44.010925292968714 146.8701934814453 L 35.571899414062464 146.8701934814453"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(44.01092529296875, 146.8701934814453) rotate(-0.0)">
     <tspan class="GlobalId-1FxeMqsov3RvRYKeji4c85 IfcAnnotation PredefinedType-TEXTLEADER regular" dy="0em" x="0" y="0">2,5mm leader</tspan>
   </text>
 </svg>

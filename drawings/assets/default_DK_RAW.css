@@ -36,12 +36,18 @@ general sizes etc. are defined in that file, in this file hardcoded things can b
 /* font are scaled with 1.0px*1,15, giving about 2mm text for small and 2,5mm for regular, when printed */
 * { stroke-linecap: round; stroke-linejoin: round; }
 text, tspan { /* 2.0mm */ fill: black; stroke: none; font-family: 'Arial'; font-size: 2.875px} /* THIS IS USED IN GENERAL */
-text.PredefinedType-TEXTLEADER, tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
-text.title, tspan.title { font-size: 8.05px; } /* 7mm, should not be used, very big */
-text.header, tspan.header { font-size: 5.75px; } /* 5mm, should not be used, very big */
-text.large, tspan.large { font-size: 4.025px; } /* 3.5mm, headers etc. */
-text.regular, tspan.regular { font-size: 2.875px; } /* 2.5mm, for all general text on drawing */
-text.small, tspan.small { font-size: 2.3px } /* 2.0mm uses the 1.8 setting in ui, for all general text and explenations on detailed drawing */
+text.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
+tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
+text.title, tspan.title { font-size: 8.05px; } 
+/* 7mm, should not be used, very big */
+text.header, tspan.header { font-size: 5.75px; } 
+/* 5mm, should not be used, very big */
+text.large, tspan.large { font-size: 4.025px; } 
+/* 3.5mm, headers etc. */
+text.regular, tspan.regular { font-size: 2.875px; } 
+/* 2.5mm, for all general text on drawing */
+text.small, tspan.small { font-size: 2.3px } 
+/* 2.0mm uses the 1.8 setting in ui, for all general text and explenations on detailed drawing */
 text.GRID, tspan.GRID { font-size: 2.875px; } /* 2,5mm, size of grid text */
 text.DIMENSION, tspan.DIMENSION { font-size: 2.3px; } /* 2,0mm, size of dimension text */
 text.ELEVATION, tspan.ELEVATION { font-size: 2.875px; } /* 2,5mm, size of elevation text */
@@ -94,7 +100,7 @@ text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section te
 .SyellowToned { stroke: var(--filling-color); } /* Filling eg. sand etc. */
 /*Now we make the standard DK line types. In bonsai these are combined with thickness and color using */
 /* EPset_Annotations, this way we can make typeProducts for the lines the class could be "Cont T4 Cred" A continues thickness4 red line */
-.PredefinedType-LINEWORK.Cont { }
+.PredefinedType-LINEWORK.Cont { stroke-opacity: 0; }
 .PredefinedType-LINEWORK.DotDash1 {stroke-dasharray: 1.7,0.5,0.2,0.5; }
 .PredefinedType-LINEWORK.DotDash2 {stroke-dasharray: 2.2,0.7,0.2,0.7; }
 .PredefinedType-LINEWORK.DotDash3 {stroke-dasharray: 3.0,0.9,0.2,0.9; }
@@ -208,12 +214,34 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 /* Fill areas areas are the same as materials, so the can be used to detail drawings, but we use big letters, and there is a masked option, that covers anything behind*/
 /* IMPORTANT NOTE, IN THE UI AND EPset_Annotation, USE THE Z INDEX in your type to define which "layer" annotations appears in. */
 /* ------------------------ SOME BASIC COLORS ----------------------- */
+.MASK { fill: white; stroke: white; stroke-width: var(--t4); }
+.MASK_025 { fill: white; stroke: white; stroke-width: var(--t4); opacity: 0.25;}
+.MASK_050 { fill: white; stroke: white; stroke-width: var(--t4); opacity: 0.50;}
+.MASK_075 { fill: white; stroke: white; stroke-width: var(--t4); opacity: 0.75;}
 .BLANK { fill: white; stroke: black; stroke-width: var(--t4); }
+.BLANK_025 { fill: white; stroke: black; stroke-width: var(--t4); opacity: 0.25;}
+.BLANK_050 { fill: white; stroke: black; stroke-width: var(--t4); opacity: 0.50;}
+.BLANK_075 { fill: white; stroke: black; stroke-width: var(--t4); opacity: 0.75;}
 .RED { fill: red; stroke: black; stroke-width: var(--t4); }
+.RED_025 { fill: red; stroke: black; stroke-width: var(--t4); opacity: 0.25;}
+.RED_050 { fill: red; stroke: black; stroke-width: var(--t4); opacity: 0.50;}
+.RED_075 { fill: red; stroke: black; stroke-width: var(--t4); opacity: 0.75;}
 .BLUE { fill: blue; stroke: black; stroke-width: var(--t4); }
+.BLUE_025 { fill: blue; stroke: black; stroke-width: var(--t4); opacity: 0.25;}
+.BLUE_050 { fill: blue; stroke: black; stroke-width: var(--t4); opacity: 0.50;}
+.BLUE_075 { fill: blue; stroke: black; stroke-width: var(--t4); opacity: 0.75;}
 .GREEN { fill: green; stroke: black; stroke-width: var(--t4); }
+.GREEN_025 { fill: green; stroke: black; stroke-width: var(--t4); opacity: 0.25;}
+.GREEN_050 { fill: green; stroke: black; stroke-width: var(--t4); opacity: 0.50;}
+.GREEN_075 { fill: green; stroke: black; stroke-width: var(--t4); opacity: 0.75;}
 .YELLOW { fill: yellow; stroke: black; stroke-width: var(--t4); }
+.YELLOW_025 { fill: yellow; stroke: black; stroke-width: var(--t4); opacity: 0.25;}
+.YELLOW_050 { fill: yellow; stroke: black; stroke-width: var(--t4); opacity: 0.50;}
+.YELLOW_075 { fill: yellow; stroke: black; stroke-width: var(--t4); opacity: 0.75;}
 .BLACK { fill: black; stroke: black; stroke-width: var(--t4); }
+.BLACK_025 { fill: black; stroke: black; stroke-width: var(--t4); opacity: 0.25;}
+.BLACK_050 { fill: black; stroke: black; stroke-width: var(--t4); opacity: 0.50;}
+.BLACK_075 { fill: black; stroke: black; stroke-width: var(--t4); opacity: 0.75;}
 /* ------------------------ FROM DEFAULT ----------------------- */
 /* ---------------- NOTE: NOT ALL PATTERNS ARE USED, more in patterns_DK.svg ------------------- */
 .DIAGONAL1 { fill: url(#diagonal1); stroke-width: var(--t4); }
@@ -265,8 +293,8 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 .WOODSTRUCTURAL { fill: url(#woodStructural); stroke-width: var(--t5); }
 .WOODSTRUCTURALMASKED { fill: url(#woodStructuralMasked); stroke-width: var(--t5); }
 .WOODSTRUCTURALCOLOR { fill: var(--wood-color); stroke-width: var(--t5); stroke: var(--wood-color); }
-.WOODLAMINATED { fill: url(#woodLaminiated); stroke-width: var(--t5); }
-.WOODLAMINATEDMASKED { fill: url(#woodLaminiatedMasked); stroke-width: var(--t5); }
+.WOODLAMINATED { fill: url(#woodLaminated); stroke-width: var(--t5); }
+.WOODLAMINATEDMASKED { fill: url(#woodLaminatedMasked); stroke-width: var(--t5); }
 .WOODLAMINATEDCOLOR { fill: var(--wood-color); stroke-width: var(--t5); stroke: var(--wood-color); }
 .GYPSUM { fill: none; stroke-width: var(--t3); }
 .GYPSUMMASKED { fill: white; stroke-width: var(--t3); }

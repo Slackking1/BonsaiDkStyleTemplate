@@ -2,10 +2,6 @@ import os
 import re
 
 # Defining CSS variables to replace
-
-
-
-    
 css_variables = {
     # VARIABLES, are added here. This means you can adjust appearance and styling fast, all the following main css can 
         # then be considered relative to each other. Eg. if you change t5 you change all line types, cuts etc. with a slightly thicker
@@ -110,7 +106,7 @@ def process_css_files(default_path, dk_path, output_path, variables):
     default_css_no_duplicates = remove_duplicate_classes(default_css, dk_css)
     
     # Combine the CSS contents, ensuring DK-specific styles come last
-    combined_css = f"/* ---DEFAULT--- */\n{default_css_no_duplicates}\n/* ---DK OVERRIDES--- */\n{dk_css}"
+    combined_css = f"{default_css_no_duplicates}\n\n/* --------------------DK OVERRIDES-------------------- */\n{dk_css}"
     
     # Replace CSS variables with their actual values
     processed_css = replace_css_variables(combined_css, variables)
