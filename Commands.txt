@@ -5,4 +5,4 @@ SVG TO PDF
 SVG and PDF CMD
 [["C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe","path"]]
 
-Arial tekst, scale = 0.003
+Arial tekst, scale = 0.00318

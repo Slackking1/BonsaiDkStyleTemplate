@@ -3,130 +3,102 @@
  * Copyright (C) 2020, 2021 Dion Moult <dion@thinkmoult.com>
  *
  * This file is part of Bonsai.
- *
  * Bonsai is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- *
  * Bonsai is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY, without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
  * You should have received a copy of the GNU General Public License
  * long with Bonsai.  If not, see <http://www.gnu.org/licenses/>.
  */
- 
+* { stroke-linecap: round; stroke-linejoin: round; }
+.material-brick { fill: url(#brick); }
+.material-honeycomb { fill: url(#honeycomb); }
+.PredefinedType-WOOD { fill: url(#wood); stroke: black; stroke-width: 0.5; }
+.PredefinedType-STEEL { fill: url(#steel); stroke: black; stroke-width: 0.5; }
+.PredefinedType-CONCRETE { fill: url(#concrete); stroke: black; stroke-width: 0.5; }
+.PredefinedType-PLASTERBOARD { fill: url(#sand); stroke: black; stroke-width: 0.25; }
+/* --------------------DK OVERRIDES-------------------- */
  /* This is the default stylesheet for Danish technical drawings. Based on BIPS standards, should/could be updated to latest MOLIO standards, please contribute.
  * want to extend it, or make it your own for architectural purpose? ask developers how to do it the best, maybe add a new one with 
  * _arc in the the name. THIS STYLING IS INTENDED TO COMPLY 100% to DK drawing standard, no room for personal preferences.
  * The styling is to be considered WIP, and should be updated as needed. and contributed to the project. 
  * The methods explained in this file in relation to the UI, is pr. 28.09.2024.
  * Since this file is one of the first a front end user might look at, it's commented a lot to explain for beginners and alike.*/
- 
- :root {
-    /* VARIABLES, are added here. This means you can adjust appearance and styling fast, all the following main css can 
-    * then be considered relative to each other. Eg. if you change t5 you change all line types, cuts etc. with a slightly thicker
-    * line than normal, and --green you change for all concrete insitu materials. 
-    * So in many ways this is a configuration file where sized are defined compared to each other, if you want to just change a size
-    * or color, do it here in the beginning, want to dive deep into which exact thickness is used when, modify the variable or statics in main*/
-    
-    /* VARIABLES, DK STANDARD COLORS RELATED TO MATERIALS */
-    /* NOTE, where colors don't relate to materials they are hardcoded */
-    --green: rgb(0, 255, 0); /* Concrete insitu */
-    --cyan: rgb(0, 255, 255); /* Concrete precast */
-    --green-toned: rgb(0, 200, 0); /* Concrete light */
-    --brown-red: rgb(129, 64, 0); /* Masonry */
-    --yellow: rgb(255, 191, 0); /* Insulation soft, The color is actually curry, but the closest one to yellow in the system. */
-    --orange: rgb(255, 128, 0); /* Insulation hard */
-    --gray: rgb(195, 175, 165); /* Expanded clay, eg. leca og letklinker */
-    --brown-dark: rgb(129, 96, 0); /* Wood element, color is actually called curry 3 */
-    --brown: rgb(153, 102, 0); /* Wood, both structural and laminated timber */
-    --red: rgb(255, 0, 0); /* Steel */
-    --brown-light: rgb(189, 173, 126); /* Gypsum, color is actually called curry 4 */
-    --brown-black: rgb(97, 75, 62); /* Terrain */
-    --yellow-toned: rgb(204, 153, 0); /* Filling eg. sand etc. */
-    
-    /* VARIABLES, DK STANDARD LINE-THICKNESS/STROKE-WIDTH */
-    /* for lines we toughly divide with 2 to get proper thickness eg. 0.35mm/2=0.175, final thickness is measured in 1:1 on the printed drawing*/
-    --t1: 0.03px; /* t1 0.06mm = 0.06/2 = 0.03 VERY THIN*/
-    --t2: 0.06px; /* t2 0.12mm = 0.12/2 = 0.06 */
-    --t3: 0.09px; /* t3 0.18mm = 0.18/2 = 0.09 USED for eg. cuts on secondary materials*/
-    --t4: 0.125px; /* t4 0.25mm = 0.25/2 = 0.125 GENERAL LINE TYPE*/
-    --t5: 0.175px; /* t5 0.35mm = 0.35/2 = 0.175 USED for eg. cuts on main materials*/
-    --t6: 0.25px; /* t6 0.50mm = 0.50/2 = 0.25 */
-    --t7: 0.35px; /* t7 0.70mm = 0.70/2 = 0.35 */
-    --t8: 0.5px; /* t8 1.00mm = 1.00/2 = 0.5 VERY THICK*/
-}
-
-* { stroke-linecap: round; stroke-linejoin: round; }
-
+/* preprocessing */
+/* we make the final .css using variables, these are defined in the preprocess.py script, 
+general sizes etc. are defined in that file, in this file hardcoded things can be changed or refences */
 /* FONTS */
 /* Arial is set to comply with DK standards, but can be changed to any font, we make the general size for normal drawings*/
 /* For detailed drawing we adjust the font size to 2.3px, for descriptions text, and dimensions, this can be managed through the UI in typeProduct and EPset_Annotations */
 /* font are scaled with 1.0px*1,15, giving about 2mm text for small and 2,5mm for regular, when printed */
 text, tspan { /* 2.0mm */ fill: black; stroke: none; font-family: 'Arial'; font-size: 2.875px} /* THIS IS USED IN GENERAL */
-path.PredefinedType-TEXTLEADERDOT { marker-end: url(#leader-marker-dot); }
-text.PredefinedType-TEXTLEADER, tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
-text.title, tspan.title { font-size: 8.05px; } /* 7mm, should not be used, very big */
-text.header, tspan.header { font-size: 5.75px; } /* 5mm, should not be used, very big */
-text.large, tspan.large { font-size: 4.025px; } /* 3.5mm, headers etc. */
-text.regular, tspan.regular { font-size: 2.875px; } /* 2.5mm, for all general text on drawing */
-text.small, tspan.small { font-size: 2.3px } /* 2.0mm uses the 1.8 setting in ui, for all general text and explenations on detailed drawing */
+text.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
+tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
+text.title, tspan.title { font-size: 8.05px; } 
+/* 7mm, should not be used, very big */
+text.header, tspan.header { font-size: 5.75px; } 
+/* 5mm, should not be used, very big */
+text.large, tspan.large { font-size: 4.025px; } 
+/* 3.5mm, headers etc. */
+text.regular, tspan.regular { font-size: 2.875px; } 
+/* 2.5mm, for all general text on drawing */
+text.small, tspan.small { font-size: 2.3px } 
+/* 2.0mm uses the 1.8 setting in ui, for all general text and explenations on detailed drawing */
 text.GRID, tspan.GRID { font-size: 2.875px; } /* 2,5mm, size of grid text */
 text.DIMENSION, tspan.DIMENSION { font-size: 2.3px; } /* 2,0mm, size of dimension text */
-
-
-
+text.ELEVATION, tspan.ELEVATION { font-size: 2.875px; } /* 2,5mm, size of elevation text */
+text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section text */
 /* DIFFERENT STUFF */
 /* we don't make standard "fill: black" when cutting elements, either show the element as is, or assign hatch or the material color*/
-.cut { stroke: black; stroke-linecap: 'round'; stroke-width: var(--t5); fill-rule: evenodd; }
-.projection { fill: white; stroke: black; stroke-linecap: 'round'; stroke-width: var(--t3); }
+.cut { stroke: black; stroke-linecap: 'round'; stroke-width: 0.175px; fill-rule: evenodd; }
+.projection { fill: white; stroke: black; stroke-linecap: 'round'; stroke-width: 0.09px; }
 .surface { stroke: none; fill: #fff; fill-rule: evenodd; }
-.annotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: var(--t4); }
-.IfcAnnotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: var(--t4); }
-.IfcGeographicElement { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: var(--t5); }
+.annotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 0.125px; }
+.IfcAnnotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 0.125px; }
+.IfcGeographicElement { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 0.175px; }
 .IfcSpace { fill: none; stroke: none; }
-
 /* LINES */
 /* -------------------- Default lines, but modified------------------------ */
-.PredefinedType-LINEWORK { stroke-width: var(--t4); stroke: black }
-.PredefinedType-LINEWORK.dashed { stroke-width: var(--t4); stroke-dasharray: 3, 2 }
-.PredefinedType-LINEWORK.fine { stroke-width: var(--t2); stroke: #777777; }
-.PredefinedType-LINEWORK.thin { stroke-width: var(--t3); }
-.PredefinedType-LINEWORK.medium { stroke-width: var(--t5); }
-.PredefinedType-LINEWORK.thick { stroke-width: var(--t6); }
-.PredefinedType-LINEWORK.strong { stroke-width: var(--t7); }
+.PredefinedType-LINEWORK { stroke-width: 0.125px; stroke: black }
+.PredefinedType-LINEWORK.dashed { stroke-width: 0.125px; stroke-dasharray: 3, 2 }
+.PredefinedType-LINEWORK.fine { stroke-width: 0.06px; stroke: #777777; }
+.PredefinedType-LINEWORK.thin { stroke-width: 0.09px; }
+.PredefinedType-LINEWORK.medium { stroke-width: 0.175px; }
+.PredefinedType-LINEWORK.thick { stroke-width: 0.25px; }
+.PredefinedType-LINEWORK.strong { stroke-width: 0.35px; }
 /*Defining line thickness for different types of lines, based on root styling, make a class so it can be changed inside EPset_Annotation bonsai*/
-.T1 { stroke-width: var(--t1) }
-.T2 { stroke-width: var(--t2); }
-.T3 { stroke-width: var(--t3); }
-.T4 { stroke-width: var(--t4); }
-.T5 { stroke-width: var(--t5); }
-.T6 { stroke-width: var(--t6); }
-.T7 { stroke-width: var(--t7); }
-.T8 { stroke-width: var(--t8); }
+.T1 { stroke-width: 0.03px }
+.T2 { stroke-width: 0.06px; }
+.T3 { stroke-width: 0.09px; }
+.T4 { stroke-width: 0.125px; }
+.T5 { stroke-width: 0.175px; }
+.T6 { stroke-width: 0.25px; }
+.T7 { stroke-width: 0.35px; }
+.T8 { stroke-width: 0.5px; }
 /*We also define some colors that can be reused across different types of lines*/
 /*In DK standards we can choose to represent different materials in standard colors, related material is written here for context*/
 /*Strokes are not nessesaryli connected to these colors, but we will use them if it makes sense. */
 /* when we are making strokes we name .Scolor*/
-.Sgreen { stroke: var(--green); } /* Concrete insitu */
-.Scyan { stroke: var(--cyan); } /* Concrete precast */
-.SgreenToned { stroke: var(--green-toned); } /* Concrete light */
-.SbrownRed { stroke: var(--brown-red); } /* Masonry */
-.Syellow { stroke: var(--yellow); } /* Insulation soft */
-.Sorange { stroke: var(--orange); } /* Insulation hard */
-.Sgray { stroke: var(--gray); } /* Expanded clay, eg. leca og letklinker */
-.SbrownDark { stroke: var(--brown-dark); } /* Wood element*/
-.Sbrown { stroke: var(--brown); } /* Wood, both structural and laminated timber */
-.Sred { stroke: var(--red); } /* Steel */
-.SbrownLight { stroke: var(--brown-light); } /* Gypsum */
-.SbrownBlack { stroke: var(--brown-black); } /* Terrain */
-.SyellowToned { stroke: var(--yellow-toned); } /* Filling eg. sand etc. */
+.Sgreen { stroke: rgb(0, 255, 0); } /* Concrete insitu */
+.Scyan { stroke: rgb(0, 255, 255); } /* Concrete precast */
+.SgreenToned { stroke: rgb(0, 200, 0); } /* Concrete light */
+.SbrownRed { stroke: rgb(129, 64, 0); } /* Masonry */
+.Syellow { stroke: rgb(255, 191, 0); } /* Insulation soft */
+.Sorange { stroke: rgb(255, 128, 0); } /* Insulation hard */
+.Sgray { stroke: rgb(195, 175, 165); } /* Expanded clay, eg. leca og letklinker */
+.SbrownDark { stroke: rgb(129, 96, 0); } /* Wood element*/
+.Sbrown { stroke: rgb(153, 102, 0); } /* Wood, both structural and laminated timber */
+.Sred { stroke: rgb(255, 0, 0); } /* Steel */
+.SbrownLight { stroke: rgb(189, 173, 126); } /* Gypsum */
+.SbrownBlack { stroke: rgb(97, 75, 62); } /* Terrain */
+.SyellowToned { stroke: rgb(204, 153, 0); } /* Filling eg. sand etc. */
 /*Now we make the standard DK line types. In bonsai these are combined with thickness and color using */
 /* EPset_Annotations, this way we can make typeProducts for the lines the class could be "Cont T4 Cred" A continues thickness4 red line */
-.PredefinedType-LINEWORK.Cont { }
+.PredefinedType-LINEWORK.Cont { stroke-opacity: 1; }
 .PredefinedType-LINEWORK.DotDash1 {stroke-dasharray: 1.7,0.5,0.2,0.5; }
 .PredefinedType-LINEWORK.DotDash2 {stroke-dasharray: 2.2,0.7,0.2,0.7; }
 .PredefinedType-LINEWORK.DotDash3 {stroke-dasharray: 3.0,0.9,0.2,0.9; }
@@ -153,14 +125,13 @@ text.DIMENSION, tspan.DIMENSION { font-size: 2.3px; } /* 2,0mm, size of dimensio
 .PredefinedType-LINEWORK.DashDashTripleDot { stroke-dasharray: 5.2,1.6,5.2,1.6,0.3,1.6,0.3,1.6,0.3,1.6,0.3,1.6; }
 .PredefinedType-LINEWORK.DashDoubleDot {stroke-dasharray: 13,2,0.2,2,0.2,2; }
 .PredefinedType-LINEWORK.Center {stroke-dasharray: 20,1.5,0.2,1.5; }
-.PredefinedType-LINEWORK.Cut { stroke-width: var(--t3); stroke-dasharray: 20,1.5,0.2,1.5; }
-
+.PredefinedType-LINEWORK.Cut { stroke-width: 0.09px; stroke-dasharray: 20,1.5,0.2,1.5; }
 /* Markers, symbols etc. */
 /* ---------------------- DEFAULT TYPES, but modified ---------------------- */
-.PredefinedType-BACKGROUND { stroke: black; stroke-width: var(--t4); }
-.PredefinedType-GRID { marker-start: url(#grid-marker); marker-end: url(#grid-marker); stroke-dasharray: 20.0, 1.5, 1.5, 1.5; stroke-width: var(--t3); }
-.PredefinedType-SECTION { stroke-width: var(--t4); stroke-dasharray: 2.0,1.0; }
-.PredefinedType-SECTIONLEVEL { marker-start: url(#section-level-marker); stroke-width: var(--t4); stroke-dasharray: 2.0,1.0; }
+.PredefinedType-BACKGROUND { stroke: black; stroke-width: 0.125px; }
+.PredefinedType-GRID { marker-start: url(#grid-marker); marker-end: url(#grid-marker); stroke-dasharray: 20.0, 1.5, 1.5, 1.5; stroke-width: 0.09; }
+.PredefinedType-SECTION { stroke-width: 0.125px; stroke-dasharray: 2.0,1.0; }
+.PredefinedType-SECTIONLEVEL { marker-start: url(#section-level-marker); stroke-width: 0.125px; stroke-dasharray: 2.0,1.0; }
 .PredefinedType-PLANLEVEL { marker-end: url(#plan-level-marker); }
 .PredefinedType-DIMENSION { marker-start: url(#dimension-marker-start); marker-end: url(#dimension-marker-end); }
 .PredefinedType-ANGLE { marker-start: url(#angle-marker-start); marker-end: url(#angle-marker-end); }
@@ -172,137 +143,153 @@ text.DIMENSION, tspan.DIMENSION { font-size: 2.3px; } /* 2,0mm, size of dimensio
 .PredefinedType-DIAMETER { marker-start: url(#diameter-marker-start); marker-end: url(#diameter-marker-end); }
 .PredefinedType-STAIRARROW { marker-start: url(#stair-marker-start); marker-end: url(#stair-marker-end); }
 .PredefinedType-BOUNDARY { fill: none; stroke: red; stroke-width: 1; stroke-dasharray: 12, 4, 3, 4, 3, 4; }
-.PredefinedType-SEALANT { fill: url(#crosshatch1); stroke-width: var(--t3); }
+.PredefinedType-SEALANT { fill: url(#crosshatch1); stroke-width: 0.09px; }
 .PredefinedType-FILLAREA { fill: white; stroke: black; }
-.PredefinedType-BREAKLINE { fill: none; stroke: black; stroke-width: var(--t3); marker-mid: url(#breakline-marker); }
+.PredefinedType-BREAKLINE { fill: none; stroke: black; stroke-width: 0.09px; marker-mid: url(#breakline-marker); }
 .PredefinedType-TEXT { fill: black; stroke: none; }
+/* TODO, MAKE A TEXT LEADER WITH A DOT, THAT WORKS */
 path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
-
 /*Symbols*/
 /* These are defined directly in the symbols_xx.svg file, referenced in ifc file using the id under symbols in EPset_Annotation, like before this allows for making TypeProducts. */ 
-
 /* MATERIALS */
 /* Materials are defined on the ifc object or type, and appears when an object is cut. The Name in object material in UI eg. steel is the material used as hatch when cut */
 /* stroke widths defines the edge line thickness of the material, since materials appear when cut, this is the cut-line thickness*/
 /* when materials are cut with a hatch we want black lines, and with a solid fill we want the material color, this is according to DK standards */
 /* in materials we don't include patterns with solid white background, when we cut an element, we still want to see underlying elements, hidden lines or whatever. */
 /* ------------------------ SOME BASIC COLORS ----------------------- */
-.material-blank { fill: white; stroke-width: var(--t4); }
-.material-red { fill: red; stroke-width: var(--t4);}
-.material-blue { fill: blue; stroke-width: var(--t4); }
-.material-green { fill: green; stroke-width: var(--t4); }
-.material-yellow { fill: yellow; stroke-width: var(--t4); }
-.material-black { fill: black; stroke-width: var(--t4); }
+.material-blank { fill: white; stroke-width: 0.125px; }
+.material-red { fill: red; stroke-width: 0.125px;}
+.material-blue { fill: blue; stroke-width: 0.125px; }
+.material-green { fill: green; stroke-width: 0.125px; }
+.material-yellow { fill: yellow; stroke-width: 0.125px; }
+.material-black { fill: black; stroke-width: 0.125px; }
 /* ------------------------ FROM DEFAULT ----------------------- */
-.material-diagonal1 { fill: url(#diagonal1); stroke-width: var(--t4); }
-.material-diagonal2 { fill: url(#diagonal2); stroke-width: var(--t4); }
-.material-diagonal3 { fill: url(#diagonal3); stroke-width: var(--t4); }
-.material-crosshatch1 { fill: url(#crosshatch1); stroke-width: var(--t4); }
-.material-crosshatch2 { fill: url(#crosshatch2); stroke-width: var(--t4); }
-.material-crosshatch3 { fill: url(#crosshatch3); stroke-width: var(--t4); }
-.material-glass { fill: url(#glass); stroke-width: var(--t4); }
-.material-grass { fill: url(#grass); stroke-width: var(--t4); }
-.material-liquid { fill: url(#liquid); stroke-width: var(--t4); }
-.material-concrete { fill: url(#concrete); stroke-width: var(--t5); }
+.material-diagonal1 { fill: url(#diagonal1); stroke-width: 0.125px; }
+.material-diagonal2 { fill: url(#diagonal2); stroke-width: 0.125px; }
+.material-diagonal3 { fill: url(#diagonal3); stroke-width: 0.125px; }
+.material-crosshatch1 { fill: url(#crosshatch1); stroke-width: 0.125px; }
+.material-crosshatch2 { fill: url(#crosshatch2); stroke-width: 0.125px; }
+.material-crosshatch3 { fill: url(#crosshatch3); stroke-width: 0.125px; }
+.material-glass { fill: url(#glass); stroke-width: 0.125px; }
+.material-grass { fill: url(#grass); stroke-width: 0.125px; }
+.material-liquid { fill: url(#liquid); stroke-width: 0.125px; }
+.material-concrete { fill: url(#concrete); stroke-width: 0.175px; }
 /* ------------------------ DK ----------------------- */
-.material-steel { fill: url(#steel); stroke-width: var(--t5); }
-.material-steelColor { fill: var(--red); stroke-width: var(--t5); stroke: var(--red); }
-.material-masonry { fill: url(#masonry); stroke-width: var(--t5); }
-.material-masonryColor { fill: var(--brown-red); stroke-width: var(--t5); stroke: var(--brown-red); }
-.material-earth { fill: url(#earth); stroke-width: var(--t4); }
-.material-earthColor { fill: var(--brown-black); stroke-width: var(--t4); stroke: var(--brown-black); }
-.material-expandedClay { fill: url(#expandedClay); stroke-width: var(--t3); }
-.material-expandedClayColor { fill: var(--gray); stroke-width: var(--t3); stroke: var(--gray); }
-.material-sand { fill: url(#sand); stroke-width: var(--t4); }
-.material-sandColor { fill: var(--yellow-toned); stroke-width: var(--t4); stroke: var(--yellow-toned); }
-.material-concreteInsitu { fill: url(#concreteInsitu); stroke-width: var(--t5); }
-.material-concreteInsituColor { fill: var(--green); stroke-width: var(--t5); stroke: var(--green); }
-.material-concretePrecast { fill: url(#concretePrecast); stroke-width: var(--t5); }
-.material-concretePrecastColor { fill: var(--cyan); stroke-width: var(--t5); stroke: var(--cyan); }
-.material-concreteLight { fill: url(#concreteLight); stroke-width: var(--t5); }
-.material-concreteLightColor { fill: var(--green-toned); stroke-width: var(--t5); stroke: var(--green-toned); }
-.material-insulationSoft { fill: url(#insulationSoft); stroke-width:var(--t3); }
-.material-insulationSoftColor { fill: var(--yellow); stroke-width: var(--t3); stroke: var(--yellow); }
-.material-insulationRigid { fill: url(#insulationRigid); stroke-width: var(--t3); }
-.material-insulationRigidColor { fill: var(--orange); stroke-width: var(--t3); stroke: var(--orange); }
-.material-wood { fill: url(#wood); stroke-width: var(--t5); }
-.material-woodColor { fill: var(--brown-dark); stroke-width: var(--t5); stroke: var(--brown-dark); }
-.material-woodStructural { fill: url(#woodStructural); stroke-width: var(--t5); }
-.material-woodStructuralColor { fill: var(--brown); stroke-width: var(--t5); stroke: var(--brown); }
-.material-woodLaminiated { fill: url(#woodLaminiated); stroke-width: var(--t5); }
-.material-woodLaminiatedColor { fill: var(--brown); stroke-width: var(--t5); stroke: var(--brown); }
-.material-gypsum { fill: none; stroke-width: var(--t3); }
-.material-gypsumColor { fill: var(--brown-light); stroke-width: var(--t3); stroke: var(--brown-light); }
-
+.material-steel { fill: url(#steel); stroke-width: 0.175px; }
+.material-steelColor { fill: rgb(255, 0, 0); stroke-width: 0.175px; stroke: rgb(255, 0, 0); }
+.material-masonry { fill: url(#masonry); stroke-width: 0.175px; }
+.material-masonryColor { fill: rgb(129, 64, 0); stroke-width: 0.175px; stroke: rgb(129, 64, 0); }
+.material-earth { fill: url(#earth); stroke-width: 0.125px; }
+.material-earthColor { fill: rgb(97, 75, 62); stroke-width: 0.125px; stroke: rgb(97, 75, 62); }
+.material-expandedClay { fill: url(#expandedClay); stroke-width: 0.09px; }
+.material-expandedClayColor { fill: rgb(195, 175, 165); stroke-width: 0.09px; stroke: rgb(195, 175, 165); }
+.material-sand { fill: url(#sand); stroke-width: 0.125px; }
+.material-sandColor { fill: rgb(204, 153, 0); stroke-width: 0.125px; stroke: rgb(204, 153, 0); }
+.material-concreteInsitu { fill: url(#concreteInsitu); stroke-width: 0.175px; }
+.material-concreteInsituColor { fill: rgb(0, 255, 0); stroke-width: 0.175px; stroke: rgb(0, 255, 0); }
+.material-concretePrecast { fill: url(#concretePrecast); stroke-width: 0.175px; }
+.material-concretePrecastColor { fill: rgb(0, 255, 255); stroke-width: 0.175px; stroke: rgb(0, 255, 255); }
+.material-concreteLight { fill: url(#concreteLight); stroke-width: 0.175px; }
+.material-concreteLightColor { fill: rgb(0, 200, 0); stroke-width: 0.175px; stroke: rgb(0, 200, 0); }
+.material-insulationSoft { fill: url(#insulationSoft); stroke-width:0.09px; }
+.material-insulationSoftColor { fill: rgb(255, 191, 0); stroke-width: 0.09px; stroke: rgb(255, 191, 0); }
+.material-insulationRigid { fill: url(#insulationRigid); stroke-width: 0.09px; }
+.material-insulationRigidColor { fill: rgb(255, 128, 0); stroke-width: 0.09px; stroke: rgb(255, 128, 0); }
+.material-wood { fill: url(#wood); stroke-width: 0.175px; }
+.material-woodColor { fill: rgb(129, 96, 0); stroke-width: 0.175px; stroke: rgb(129, 96, 0); }
+.material-woodStructural { fill: url(#woodStructural); stroke-width: 0.175px; }
+.material-woodStructuralColor { fill: rgb(153, 102, 0); stroke-width: 0.175px; stroke: rgb(153, 102, 0); }
+.material-woodLaminiated { fill: url(#woodLaminiated); stroke-width: 0.175px; }
+.material-woodLaminiatedColor { fill: rgb(153, 102, 0); stroke-width: 0.175px; stroke: rgb(153, 102, 0); }
+.material-gypsum { fill: none; stroke-width: 0.09px; }
+.material-gypsumColor { fill: rgb(189, 173, 126); stroke-width: 0.09px; stroke: rgb(189, 173, 126); }
 /* FILL_AREA */
 /* classes are define for each Fill area type, class name is added in EPset_Annotation */
 /* Fill areas areas are the same as materials, so the can be used to detail drawings, but we use big letters, and there is a masked option, that covers anything behind*/
 /* IMPORTANT NOTE, IN THE UI AND EPset_Annotation, USE THE Z INDEX in your type to define which "layer" annotations appears in. */
-/* ------------------------ SOME BASIC COLORS ----------------------- */
-.BLANK { fill: white; stroke: black; stroke-width: var(--t4); }
-.RED { fill: red; stroke: black; stroke-width: var(--t4); }
-.BLUE { fill: blue; stroke: black; stroke-width: var(--t4); }
-.GREEN { fill: green; stroke: black; stroke-width: var(--t4); }
-.YELLOW { fill: yellow; stroke: black; stroke-width: var(--t4); }
-.BLACK { fill: black; stroke: black; stroke-width: var(--t4); }
-/* ------------------------ FROM DEFAULT ----------------------- */
+.MASK { fill: white; stroke: white; stroke-width: 0.125px; }
+.MASK_025 { fill: white; stroke: white; stroke-width: 0.125px; opacity: 0.25; }
+.MASK_050 { fill: white; stroke: white; stroke-width: 0.125px; opacity: 0.50; }
+.MASK_075 { fill: white; stroke: white; stroke-width: 0.125px; opacity: 0.75; }
+.BLANK { fill: white; stroke: black; stroke-width: 0.125px; }
+.BLANK_025 { fill: white; stroke: black; stroke-width: 0.125px; opacity: 0.25; }
+.BLANK_050 { fill: white; stroke: black; stroke-width: 0.125px; opacity: 0.50; }
+.BLANK_075 { fill: white; stroke: black; stroke-width: 0.125px; opacity: 0.75; }
+.RED { fill: red; stroke: black; stroke-width: 0.125px; }
+.RED_025 { fill: red; stroke: black; stroke-width: 0.125px; opacity: 0.25; }
+.RED_050 { fill: red; stroke: black; stroke-width: 0.125px; opacity: 0.50; }
+.RED_075 { fill: red; stroke: black; stroke-width: 0.125px; opacity: 0.75; }
+.BLUE { fill: blue; stroke: black; stroke-width: 0.125px; }
+.BLUE_025 { fill: blue; stroke: black; stroke-width: 0.125px; opacity: 0.25; }
+.BLUE_050 { fill: blue; stroke: black; stroke-width: 0.125px; opacity: 0.50; }
+.BLUE_075 { fill: blue; stroke: black; stroke-width: 0.125px; opacity: 0.75; }
+.GREEN { fill: green; stroke: black; stroke-width: 0.125px; }
+.GREEN_025 { fill: green; stroke: black; stroke-width: 0.125px; opacity: 0.25; }
+.GREEN_050 { fill: green; stroke: black; stroke-width: 0.125px; opacity: 0.50; }
+.GREEN_075 { fill: green; stroke: black; stroke-width: 0.125px; opacity: 0.75; }
+.YELLOW { fill: yellow; stroke: black; stroke-width: 0.125px; }
+.YELLOW_025 { fill: yellow; stroke: black; stroke-width: 0.125px; opacity: 0.25; }
+.YELLOW_050 { fill: yellow; stroke: black; stroke-width: 0.125px; opacity: 0.50; }
+.YELLOW_075 { fill: yellow; stroke: black; stroke-width: 0.125px; opacity: 0.75; }
+.BLACK { fill: black; stroke: black; stroke-width: 0.125px; }
+.BLACK_025 { fill: black; stroke: black; stroke-width: 0.125px; opacity: 0.25; }
+.BLACK_050 { fill: black; stroke: black; stroke-width: 0.125px; opacity: 0.50; }
+.BLACK_075 { fill: black; stroke: black; stroke-width: 0.125px; opacity: 0.75; }
 /* ---------------- NOTE: NOT ALL PATTERNS ARE USED, more in patterns_DK.svg ------------------- */
-.DIAGONAL1 { fill: url(#diagonal1); stroke-width: var(--t4); }
-.DIAGONAL2 { fill: url(#diagonal2); stroke-width: var(--t4); }
-.DIAGONAL3 { fill: url(#diagonal3); stroke-width: var(--t4); }
-.CROSSHATCH1 { fill: url(#crosshatch1); stroke-width: var(--t4); }
-.CROSSHATCH2 { fill: url(#crosshatch2); stroke-width: var(--t4); }
-.CROSSHATCH3 { fill: url(#crosshatch3); stroke-width: var(--t4); }
-.GLASS { fill: url(#glass); stroke-width: var(--t4); }
-.GRASS { fill: url(#grass); stroke-width: var(--t4); }
-.LIQUID { fill: url(#liquid); stroke-width: var(--t4); }
-.CONCRETE { fill: url(#concrete); stroke-width: var(--t5); }
-.PredefinedType-STUD { stroke: black; stroke-width: var(--t5); }
-.STUD { stroke: black; stroke-width: var(--t5); }
-/* ------------------------ DK ----------------------- */
-.STEEL { fill: url(#steel); stroke-width: var(--t5); }
-.STEELMASKED { fill: url(#steelMasked); stroke-width: var(--t5); }
-.STEELCOLOR { fill: var(--red); stroke-width: var(--t5); stroke: var(--red); }
-.MASONRY { fill: url(#masonry); stroke-width: var(--t5); }
-.MASONRYMASKED { fill: url(#masonryMasked); stroke-width: var(--t5); } 
-.MASONRYCOLOR { fill: var(--brown-red); stroke-width: var(--t5); stroke: var(--brown-red); }
-.EARTH { fill: url(#earth); stroke-width: var(--t4); }
-.EARTHMASKED { fill: url(#earthMasked); stroke-width: var(--t4); }
-.EARTHCOLOR { fill: var(--brown-black); stroke-width: var(--t4); stroke: var(--brown-black); }
-.EXPANDEDCLAY { fill: url(#expandedClay); stroke-width: var(--t3); }
-.EXPANDEDCLAYMASKED { fill: url(#expandedClayMasked); stroke-width: var(--t3); }
-.EXPANDEDCLAYCOLOR { fill: var(--gray); stroke-width: var(--t3); stroke: var(--gray); }
-.SAND { fill: url(#sand); stroke-width: var(--t4); }
-.SANDMASKED { fill: url(#sandMasked); stroke-width: var(--t4); }
-.SANDCOLOR { fill: var(--yellow-toned); stroke-width: var(--t4); stroke: var(--yellow-toned); }
-.CONCRETEINSITU { fill: url(#concreteInsitu); fill-rule: nonzero; stroke-width: var(--t5); }
-.CONCRETEINSITUMASKED { fill: url(#concreteInsituMasked); stroke-width: var(--t5); }
-.CONCRETEINSITUCOLOR { fill: var(--green); stroke-width: var(--t5); stroke: var(--green); }
-.CONCRETEPRECAST { fill: url(#concretePrecast); stroke-width: var(--t5); }
-.CONCRETEPRECASTMASKED { fill: url(#concretePrecastMasked); stroke-width: var(--t5); }
-.CONCRETEPRECASTCOLOR { fill: var(--cyan); stroke-width: var(--t5); stroke: var(--cyan); }
-.CONCRETELIGHT { fill: url(#concreteLight); stroke-width: var(--t5); }
-.CONCRETELIGHTMASKED { fill: url(#concreteLightMasked); stroke-width: var(--t5); }
-.CONCRETELIGHTCOLOR { fill: var(--green-toned); stroke-width: var(--t5); stroke: var(--green-toned); }
-.INSULATIONSOFT { fill: url(#insulationSoft); stroke-width:var(--t3); }
-.INSULATIONSOFTMASKED { fill: url(#insulationSoftMasked); stroke-width: var(--t3); }
-.INSULATIONSOFTCOLOR { fill: var(--yellow); stroke-width: var(--t3); stroke: var(--yellow); }
-.INSULATIONRIGID { fill: url(#insulationRigid); stroke-width: var(--t3); }
-.INSULATIONRIGIDMASKED { fill: url(#insulationRigidMasked); stroke-width: var(--t3); }
-.INSULATIONRIGIDCOLOR { fill: var(--orange); stroke-width: var(--t3); stroke: var(--orange); }
-.WOOD { fill: url(#wood); stroke-width: var(--t5); }
-.WOODMASKED { fill: url(#woodMasked); stroke-width: var(--t5); }
-.WOODCOLOR { fill: var(--brown-dark); stroke-width: var(--t5); stroke: var(--brown-dark); }
-.WOODSTRUCTURAL { fill: url(#woodStructural); stroke-width: var(--t5); }
-.WOODSTRUCTURALMASKED { fill: url(#woodStructuralMasked); stroke-width: var(--t5); }
-.WOODSTRUCTURALCOLOR { fill: var(--brown); stroke-width: var(--t5); stroke: var(--brown); }
-.WOODLAMINATED { fill: url(#woodLaminiated); stroke-width: var(--t5); }
-.WOODLAMINATEDMASKED { fill: url(#woodLaminiatedMasked); stroke-width: var(--t5); }
-.WOODLAMINATEDCOLOR { fill: var(--brown); stroke-width: var(--t5); stroke: var(--brown); }
-.GYPSUM { fill: none; stroke-width: var(--t3); }
-.GYPSUMMASKED { fill: white; stroke-width: var(--t3); }
-.GYPSUMCOLOR { fill: var(--brown-light); stroke-width: var(--t3); stroke: var(--brown-light); }
-  ]]></style><marker id="eng-dimension-marker-start" markerHeight="14" markerWidth="11" orient="auto" refX="1" refY="7">
+.DIAGONAL1 { fill: url(#diagonal1); stroke-width: 0.125px; }
+.DIAGONAL2 { fill: url(#diagonal2); stroke-width: 0.125px; }
+.DIAGONAL3 { fill: url(#diagonal3); stroke-width: 0.125px; }
+.CROSSHATCH1 { fill: url(#crosshatch1); stroke-width: 0.125px; }
+.CROSSHATCH2 { fill: url(#crosshatch2); stroke-width: 0.125px; }
+.CROSSHATCH3 { fill: url(#crosshatch3); stroke-width: 0.125px; }
+.GLASS { fill: url(#glass); stroke-width: 0.125px; }
+.GRASS { fill: url(#grass); stroke-width: 0.125px; }
+.LIQUID { fill: url(#liquid); stroke-width: 0.125px; }
+.CONCRETE { fill: url(#concrete); stroke-width: 0.175px; }
+.PredefinedType-STUD { stroke: black; stroke-width: 0.175px; }
+.STUD { stroke: black; stroke-width: 0.175px; }
+.STEEL { fill: url(#steel); stroke-width: 0.175px; }
+.STEELMASKED { fill: url(#steelMasked); stroke-width: 0.175px; }
+.STEELCOLOR { fill: rgb(255, 0, 0); stroke-width: 0.175px; stroke: rgb(255, 0, 0); }
+.MASONRY { fill: url(#masonry); stroke-width: 0.175px; }
+.MASONRYMASKED { fill: url(#masonryMasked); stroke-width: 0.175px; } 
+.MASONRYCOLOR { fill: rgb(129, 64, 0); stroke-width: 0.175px; stroke: rgb(129, 64, 0); }
+.EARTH { fill: url(#earth); stroke-width: 0.125px; }
+.EARTHMASKED { fill: url(#earthMasked); stroke-width: 0.125px; }
+.EARTHCOLOR { fill: rgb(97, 75, 62); stroke-width: 0.125px; stroke: rgb(97, 75, 62); }
+.EXPANDEDCLAY { fill: url(#expandedClay); stroke-width: 0.09px; }
+.EXPANDEDCLAYMASKED { fill: url(#expandedClayMasked); stroke-width: 0.09px; }
+.EXPANDEDCLAYCOLOR { fill: rgb(195, 175, 165); stroke-width: 0.09px; stroke: rgb(195, 175, 165); }
+.SAND { fill: url(#sand); stroke-width: 0.125px; }
+.SANDMASKED { fill: url(#sandMasked); stroke-width: 0.125px; }
+.SANDCOLOR { fill: rgb(204, 153, 0); stroke-width: 0.125px; stroke: rgb(204, 153, 0); }
+.CONCRETEINSITU { fill: url(#concreteInsitu); fill-rule: nonzero; stroke-width: 0.175px; }
+.CONCRETEINSITUMASKED { fill: url(#concreteInsituMasked); stroke-width: 0.175px; }
+.CONCRETEINSITUCOLOR { fill: rgb(0, 255, 0); stroke-width: 0.175px; stroke: rgb(0, 255, 0); }
+.CONCRETEPRECAST { fill: url(#concretePrecast); stroke-width: 0.175px; }
+.CONCRETEPRECASTMASKED { fill: url(#concretePrecastMasked); stroke-width: 0.175px; }
+.CONCRETEPRECASTCOLOR { fill: rgb(0, 255, 255); stroke-width: 0.175px; stroke: rgb(0, 255, 255); }
+.CONCRETELIGHT { fill: url(#concreteLight); stroke-width: 0.175px; }
+.CONCRETELIGHTMASKED { fill: url(#concreteLightMasked); stroke-width: 0.175px; }
+.CONCRETELIGHTCOLOR { fill: rgb(0, 200, 0); stroke-width: 0.175px; stroke: rgb(0, 200, 0); }
+.INSULATIONSOFT { fill: url(#insulationSoft); stroke-width:0.09px; }
+.INSULATIONSOFTMASKED { fill: url(#insulationSoftMasked); stroke-width: 0.09px; }
+.INSULATIONSOFTCOLOR { fill: rgb(255, 191, 0); stroke-width: 0.09px; stroke: rgb(255, 191, 0); }
+.INSULATIONRIGID { fill: url(#insulationRigid); stroke-width: 0.09px; }
+.INSULATIONRIGIDMASKED { fill: url(#insulationRigidMasked); stroke-width: 0.09px; }
+.INSULATIONRIGIDCOLOR { fill: rgb(255, 128, 0); stroke-width: 0.09px; stroke: rgb(255, 128, 0); }
+.WOOD { fill: url(#wood); stroke-width: 0.175px; }
+.WOODMASKED { fill: url(#woodMasked); stroke-width: 0.175px; }
+.WOODCOLOR { fill: rgb(129, 96, 0); stroke-width: 0.175px; stroke: rgb(129, 96, 0); }
+.WOODSTRUCTURAL { fill: url(#woodStructural); stroke-width: 0.175px; }
+.WOODSTRUCTURALMASKED { fill: url(#woodStructuralMasked); stroke-width: 0.175px; }
+.WOODSTRUCTURALCOLOR { fill: rgb(153, 102, 0); stroke-width: 0.175px; stroke: rgb(153, 102, 0); }
+.WOODLAMINATED { fill: url(#woodLaminated); stroke-width: 0.175px; }
+.WOODLAMINATEDMASKED { fill: url(#woodLaminatedMasked); stroke-width: 0.175px; }
+.WOODLAMINATEDCOLOR { fill: rgb(153, 102, 0); stroke-width: 0.175px; stroke: rgb(153, 102, 0); }
+.GYPSUM { fill: none; stroke-width: 0.09px; }
+.GYPSUMMASKED { fill: white; stroke-width: 0.09px; }
+.GYPSUMCOLOR { fill: rgb(189, 173, 126); stroke-width: 0.09px; stroke: rgb(189, 173, 126); }]]></style><marker id="eng-dimension-marker-start" markerHeight="14" markerWidth="11" orient="auto" refX="1" refY="7">
         <g>
             <path d="M 11 3.5 L 11 10.5 L 1 7" class="annotation" style="fill:black;" />
             <path d="M 1 0 L 1 14" class="annotation" style="stroke-width:1;" />
@@ -458,30 +445,36 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
         
         <line x1="0" y1="0" x2="3" y2="0" style="stroke: black; stroke-width: 0.175;" />
     </g>
+        <g id="dot-big">
+        <circle r="1.2" fill="black" stroke="black" style="stroke-width: 0.25;" />
+    </g>
     <g id="dot">
-        <circle r="1" fill="black" stroke="black" style="stroke-width: 0.25;" />
+        <circle r="0.7" fill="black" stroke="black" style="stroke-width: 0.25;" />
+    </g>
+        <g id="dot-small">
+        <circle r="0.3" fill="black" stroke="black" style="stroke-width: 0.25;" />
     </g>
     <g id="setout-tag">
-        <circle fill="white" stroke="black" r="2.5" style="stroke-width: 0.5" />
+        <circle fill="white" stroke="black" r="2.5" style="stroke-width: 0.25" />
         <path d="M 0 0 L -2.5 0 A 2.5 2.5 0 0 1 0 -2.5 Z" fill="black" />
         <path d="M 0 0 L 2.5 0 A 2.5 2.5 0 0 1 0 2.5 Z" fill="black" />
         <text x="3" y="-8" class="regular" text-anchor="start" dominant-baseline="auto" data-type="text-template" />
         <text x="3" y="-4" class="regular" text-anchor="start" dominant-baseline="auto" data-type="text-template" />
     </g>
     <g id="setout-point">
-        <circle fill="white" stroke="black" r="2.5" style="stroke-width: 0.5" />
+        <circle fill="white" stroke="black" r="2.5" style="stroke-width: 0.25" />
         <path d="M 0 0 L -2.5 0 A 2.5 2.5 0 0 1 0 -2.5 Z" fill="black" />
         <path d="M 0 0 L 2.5 0 A 2.5 2.5 0 0 1 0 2.5 Z" fill="black" />
     </g>
     <g id="control-point">
-        <path style="fill: white; stroke: black; stroke-width: 0.5;" d="M 2.286165,1.4798666 H -1.0000316e-7 -2.2861651 L -1.1430826,-0.5000101 -1.0000316e-7,-2.479888 1.1430827,-0.5000101 Z" />
-        <circle r="0.5" fill="black" stroke="black" style="stroke-width: 0.25;" />
+        <path style="fill: white; stroke: black; stroke-width: 0.25;" d="M 2.286165,1.4798666 H -1.0000316e-7 -2.2861651 L -1.1430826,-0.5000101 -1.0000316e-7,-2.479888 1.1430827,-0.5000101 Z" />
+        <circle r="0.5" fill="black" stroke="black" style="stroke-width: 0.175;" />
     </g>
     <g id="traverse-point">
-        <path style="fill: white; stroke: black; stroke-width: 0.5;" d="M -2,-2 2,2 M -2,2 2,-2" />
+        <path style="fill: white; stroke: black; stroke-width: 0.25;" d="M -2,-2 2,2 M -2,2 2,-2" />
     </g>
     <g id="spot-elevation">
-        <path style="fill: white; stroke: black; stroke-width: 0.5;" d="M 0,-2 0,2 M -2,0 2,0" />
+        <path style="fill: white; stroke: black; stroke-width: 0.25;" d="M 0,-2 0,2 M -2,0 2,0" />
     </g>
     <g id="north-arrow">
         <circle fill="white" stroke="black" style="stroke-width: 0.25;" r="5" />
@@ -498,7 +491,8 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
     <line x1="1" y1="0" x2="1" y2="1" style="stroke:black; stroke-width:0.12" />
 </pattern>
 <pattern id="steelMasked" width="3" height="1" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
-    <path style="fill: white;" d="M 0 0 3 0 3 1 0 1" /> 
+    <path d="M 0 0 3 0 3 1 0 1" />
+    <rect x="0" y="0" width="3" height="1" style="fill: white" />
     <line x1="0" y1="0" x2="0" y2="1" style="stroke:black; stroke-width:0.12" />
     <line x1="1" y1="0" x2="1" y2="1" style="stroke:black; stroke-width:0.12" />
 </pattern>
@@ -535,13 +529,13 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 <pattern id="expandedClay" width="7.5" height="4.33" patternUnits="userSpaceOnUse"> 
     <path style="fill: none;" d="M 0 0 7.5 0 7.5 4.33 0 4.33" />
     <path d="M 0,2.165 L 1.25,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round" />
-    <path d="M 1.25,2.165 L 2.5,4.33 L 5,4.33 L 6.25,2.165 L 5,0 L 2.5,0 L 1.25,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round" />
+    <path d="M 1.25,2.165 L 2.5,4.33 L 5,4.33 L 6.25,2.165 L 5,0 L 2.5,0 L 1.25,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round;fill: none" />
     <path d="M 6.25,2.165 L 7.5,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round" />
 </pattern>
 <pattern id="expandedClayMasked" width="7.5" height="4.33" patternUnits="userSpaceOnUse"> 
     <path style="fill: white;" d="M 0 0 7.5 0 7.5 4.33 0 4.33" />
     <path d="M 0,2.165 L 1.25,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round" />
-    <path d="M 1.25,2.165 L 2.5,4.33 L 5,4.33 L 6.25,2.165 L 5,0 L 2.5,0 L 1.25,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round" />
+    <path d="M 1.25,2.165 L 2.5,4.33 L 5,4.33 L 6.25,2.165 L 5,0 L 2.5,0 L 1.25,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round;fill: white" />
     <path d="M 6.25,2.165 L 7.5,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round" />
 </pattern>
 <pattern id="wood" width="4" height="4" patternTransform="rotate(90 0 0)" patternUnits="userSpaceOnUse">
@@ -562,7 +556,7 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
     <line x1="1" y1="0" x2="0" y2="1" style="stroke:black; stroke-width:0.125" vector-effect="non-scaling-stroke" />
 </pattern>
 <pattern id="woodStructuralMasked" width="1" height="1" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox">    
-    <rect x="0" y="0" width="1" height="1" style="fill= white" />
+    <rect x="0" y="0" width="1" height="1" style="fill: white" />
     <line x1="0" y1="0" x2="1" y2="1" style="stroke:black; stroke-width:0.125" vector-effect="non-scaling-stroke" />
     <line x1="1" y1="0" x2="0" y2="1" style="stroke:black; stroke-width:0.125" vector-effect="non-scaling-stroke" />
 </pattern>
@@ -571,7 +565,8 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
     <line x1="1" y1="0" x2="1" y2="3" style="stroke:black; stroke-width:0.12" />
 </pattern>
 <pattern id="woodLaminatedMasked" width="3" height="3" patternTransform="rotate(90 0 0)" patternUnits="userSpaceOnUse">
-    <path style="fill: white;" d="M 0 0 3 0 3 3 0 3" />       
+    <path fill="white" style="fill: white;" d="M 0 0 3 0 3 3 0 3" />    
+    <rect x="0" y="0" width="3" height="3" style="fill: white" />   
     <line x1="1" y1="0" x2="1" y2="3" style="stroke:black; stroke-width:0.12" />
 </pattern>
 <pattern id="earth" width="6" height="6" patternTransform="rotate(-45 0 0)" patternUnits="userSpaceOnUse">
@@ -612,12 +607,13 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 </pattern>
 <pattern id="concretePrecast" width="3" height="3" patternUnits="userSpaceOnUse">
     <path style="fill: none;" d="M 0 0 3 0 3 3 0 3" />
-    <rect width="3" height="3" fill="rgb(219, 219, 219)" style="stroke:black; stroke-width:0.12" />
+    <rect width="3" height="3" fill="none" style="stroke:black; stroke-width:0.12" />
 </pattern>
 <pattern id="concretePrecastMasked" width="3" height="3" patternUnits="userSpaceOnUse">
-    <path style="fill: white;" d="M 0 0 3 0 3 3 0 3" />
-    <rect width="3" height="3" fill="rgb(219, 219, 219)" style="stroke:black; stroke-width:0.12" />
+    <path d="M 0 0 3 0 3 3 0 3" />
+    <rect width="3" height="3" fill="white" style="stroke:black; stroke-width:0.12" />
 </pattern>
+
 <pattern id="concreteLight" width="4" height="4" patternUnits="userSpaceOnUse">
     <path style="fill: none;" d="M 0 0 4 0 4 4 0 4" />
     <path style="stroke: black; stroke-width: 0.12; fill: none;" d="M0,0 L2,4 L4,0" />
@@ -746,15 +742,6 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
   <use x="-73169.15625" xlink:href="#elevation-tag" y="-15246.255859375"/>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="-73169.15625" y="-15248.755859375">1</text>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="-73169.15625" y="-15243.755859375">V11_K09_H2_EX_S1_4</text>
-  <line class="GlobalId-2PmMHM9v58hPw2emsTjXrX IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-83280.84375" x2="-60908.02734375" y1="-13886.2294921875" y2="-13886.2294921875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-83280.84375" y="-13886.2294921875">F</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-60908.02734375" y="-13886.2294921875">F</text>
-  <line class="GlobalId-1XytJHawDC3vARcwA4df4K IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-63641.08203125" x2="-63641.08203125" y1="6460.45458984375" y2="-15306.1591796875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-63641.08203125" y="6460.45458984375">05</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-63641.08203125" y="-15306.1591796875">05</text>
-  <line class="GlobalId-1ezythseTCk9d5kLlokVo7 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-62365.578125" x2="-62365.578125" y1="6460.45458984375" y2="-15306.1591796875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-62365.578125" y="6460.45458984375">06</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-62365.578125" y="-15306.1591796875">06</text>
   <line class="GlobalId-0uViTRJV1BK8ahVGnc7Am$ IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-83280.84375" x2="-60908.02734375" y1="5323.09716796875" y2="5323.09716796875"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-83280.84375" y="5323.09716796875">A</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-60908.02734375" y="5323.09716796875">A</text>
@@ -764,18 +751,18 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
   <line class="GlobalId-3Nlj5761rC$gyZetkXM4Dr IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-83280.84375" x2="-60908.02734375" y1="-5386.72900390625" y2="-5386.72900390625"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-83280.84375" y="-5386.72900390625">D</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-60908.02734375" y="-5386.72900390625">D</text>
+  <line class="GlobalId-2PmMHM9v58hPw2emsTjXrX IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-83280.84375" x2="-60908.02734375" y1="-13886.2294921875" y2="-13886.2294921875"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-83280.84375" y="-13886.2294921875">F</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-60908.02734375" y="-13886.2294921875">F</text>
+  <line class="GlobalId-1XytJHawDC3vARcwA4df4K IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-63641.08203125" x2="-63641.08203125" y1="6460.45458984375" y2="-15306.1591796875"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-63641.08203125" y="6460.45458984375">05</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-63641.08203125" y="-15306.1591796875">05</text>
+  <line class="GlobalId-1ezythseTCk9d5kLlokVo7 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-62365.578125" x2="-62365.578125" y1="6460.45458984375" y2="-15306.1591796875"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-62365.578125" y="6460.45458984375">06</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-62365.578125" y="-15306.1591796875">06</text>
   <line class="GlobalId-1VGXB5HdrEYwnuvGz2jKeR IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-83280.84375" x2="-60908.02734375" y1="-7356.228515625" y2="-7356.228515625"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-83280.84375" y="-7356.228515625">E</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-60908.02734375" y="-7356.228515625">E</text>
-  <line class="GlobalId-0MIV47UA922fviIq0JrcX4 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-70171.078125" x2="-70171.078125" y1="6460.45458984375" y2="-15306.1591796875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-70171.078125" y="6460.45458984375">03</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-70171.078125" y="-15306.1591796875">03</text>
-  <line class="GlobalId-0sn9jLp2bBIeHFrvpe6dyp IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-81988.5" x2="-81988.5" y1="6460.45458984375" y2="-15306.1591796875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-81988.5" y="6460.45458984375">01</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-81988.5" y="-15306.1591796875">01</text>
-  <line class="GlobalId-0skss$2M13ePAKlaXUnvVV IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-77204.109375" x2="-77204.109375" y1="6460.45458984375" y2="-15306.1591796875"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-77204.109375" y="6460.45458984375">02</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-77204.109375" y="-15306.1591796875">02</text>
   <line class="GlobalId-1fL1hyrnT1l8yRGD4npZmv IfcAnnotation PredefinedType-SECTION" x1="-77510.796875" x2="-77510.8046875" y1="-4624.6103515625" y2="-10624.611328125"/>
   <use transform="rotate(-90.00007763655904, -77510.796875, -4624.6103515625)" x="-77510.796875" xlink:href="#section-arrow" y="-4624.6103515625"/>
   <use x="-77510.796875" xlink:href="#section-tag" y="-4624.6103515625"/>
@@ -785,12 +772,21 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
   <use x="-77510.8046875" xlink:href="#section-tag" y="-10624.611328125"/>
   <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="-77510.8046875" y="-10627.111328125">1</text>
   <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="-77510.8046875" y="-10622.111328125">V11_K09_H5_EX_S1_1</text>
-  <line class="GlobalId-2bY3hcKtLAzAto8gjbNX5c IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-83280.84375" x2="-60908.02734375" y1="453.2704162597656" y2="453.2704162597656"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-83280.84375" y="453.2704162597656">B</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-60908.02734375" y="453.2704162597656">B</text>
+  <line class="GlobalId-0sn9jLp2bBIeHFrvpe6dyp IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-81988.5" x2="-81988.5" y1="6460.45458984375" y2="-15306.1591796875"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-81988.5" y="6460.45458984375">01</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-81988.5" y="-15306.1591796875">01</text>
+  <line class="GlobalId-0MIV47UA922fviIq0JrcX4 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-70171.078125" x2="-70171.078125" y1="6460.45458984375" y2="-15306.1591796875"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-70171.078125" y="6460.45458984375">03</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-70171.078125" y="-15306.1591796875">03</text>
+  <line class="GlobalId-0skss$2M13ePAKlaXUnvVV IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-77204.109375" x2="-77204.109375" y1="6460.45458984375" y2="-15306.1591796875"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-77204.109375" y="6460.45458984375">02</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-77204.109375" y="-15306.1591796875">02</text>
   <line class="GlobalId-2zX_WUxJjDef_WEV4Nj9XI IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-65608.0859375" x2="-65608.0859375" y1="6460.45458984375" y2="-15306.1591796875"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-65608.0859375" y="6460.45458984375">04</text>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-65608.0859375" y="-15306.1591796875">04</text>
+  <line class="GlobalId-2bY3hcKtLAzAto8gjbNX5c IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-83280.84375" x2="-60908.02734375" y1="453.2704162597656" y2="453.2704162597656"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-83280.84375" y="453.2704162597656">B</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-60908.02734375" y="453.2704162597656">B</text>
   <use transform="rotate(-0.0, -80770.3515625, 25.589487075805664)" x="-80770.3515625" xlink:href="#elevation-arrow" y="25.589487075805664"/>
   <use x="-80770.3515625" xlink:href="#elevation-tag" y="25.589487075805664"/>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="-80770.3515625" y="23.089487075805664">1</text>

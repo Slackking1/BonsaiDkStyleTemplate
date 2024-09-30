@@ -3,50 +3,55 @@
  * Copyright (C) 2020, 2021 Dion Moult <dion@thinkmoult.com>
  *
  * This file is part of Bonsai.
- *
  * Bonsai is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- *
  * Bonsai is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY, without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
  * You should have received a copy of the GNU General Public License
  * long with Bonsai.  If not, see <http://www.gnu.org/licenses/>.
  */
- 
+* { stroke-linecap: round; stroke-linejoin: round; }
+.material-brick { fill: url(#brick); }
+.material-honeycomb { fill: url(#honeycomb); }
+.PredefinedType-WOOD { fill: url(#wood); stroke: black; stroke-width: 0.5; }
+.PredefinedType-STEEL { fill: url(#steel); stroke: black; stroke-width: 0.5; }
+.PredefinedType-CONCRETE { fill: url(#concrete); stroke: black; stroke-width: 0.5; }
+.PredefinedType-PLASTERBOARD { fill: url(#sand); stroke: black; stroke-width: 0.25; }
+/* --------------------DK OVERRIDES-------------------- */
  /* This is the default stylesheet for Danish technical drawings. Based on BIPS standards, should/could be updated to latest MOLIO standards, please contribute.
  * want to extend it, or make it your own for architectural purpose? ask developers how to do it the best, maybe add a new one with 
  * _arc in the the name. THIS STYLING IS INTENDED TO COMPLY 100% to DK drawing standard, no room for personal preferences.
  * The styling is to be considered WIP, and should be updated as needed. and contributed to the project. 
  * The methods explained in this file in relation to the UI, is pr. 28.09.2024.
  * Since this file is one of the first a front end user might look at, it's commented a lot to explain for beginners and alike.*/
- 
 /* preprocessing */
 /* we make the final .css using variables, these are defined in the preprocess.py script, 
 general sizes etc. are defined in that file, in this file hardcoded things can be changed or refences */
-
-
 /* FONTS */
 /* Arial is set to comply with DK standards, but can be changed to any font, we make the general size for normal drawings*/
 /* For detailed drawing we adjust the font size to 2.3px, for descriptions text, and dimensions, this can be managed through the UI in typeProduct and EPset_Annotations */
 /* font are scaled with 1.0px*1,15, giving about 2mm text for small and 2,5mm for regular, when printed */
-* { stroke-linecap: round; stroke-linejoin: round; }
 text, tspan { /* 2.0mm */ fill: black; stroke: none; font-family: 'Arial'; font-size: 2.875px} /* THIS IS USED IN GENERAL */
-text.PredefinedType-TEXTLEADER, tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
-text.title, tspan.title { font-size: 8.05px; } /* 7mm, should not be used, very big */
-text.header, tspan.header { font-size: 5.75px; } /* 5mm, should not be used, very big */
-text.large, tspan.large { font-size: 4.025px; } /* 3.5mm, headers etc. */
-text.regular, tspan.regular { font-size: 2.875px; } /* 2.5mm, for all general text on drawing */
-text.small, tspan.small { font-size: 2.3px } /* 2.0mm uses the 1.8 setting in ui, for all general text and explenations on detailed drawing */
+text.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
+tspan.PredefinedType-TEXTLEADER { fill: black; stroke: none; }
+text.title, tspan.title { font-size: 8.05px; } 
+/* 7mm, should not be used, very big */
+text.header, tspan.header { font-size: 5.75px; } 
+/* 5mm, should not be used, very big */
+text.large, tspan.large { font-size: 4.025px; } 
+/* 3.5mm, headers etc. */
+text.regular, tspan.regular { font-size: 2.875px; } 
+/* 2.5mm, for all general text on drawing */
+text.small, tspan.small { font-size: 2.3px } 
+/* 2.0mm uses the 1.8 setting in ui, for all general text and explenations on detailed drawing */
 text.GRID, tspan.GRID { font-size: 2.875px; } /* 2,5mm, size of grid text */
 text.DIMENSION, tspan.DIMENSION { font-size: 2.3px; } /* 2,0mm, size of dimension text */
 text.ELEVATION, tspan.ELEVATION { font-size: 2.875px; } /* 2,5mm, size of elevation text */
 text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section text */
-
 /* DIFFERENT STUFF */
 /* we don't make standard "fill: black" when cutting elements, either show the element as is, or assign hatch or the material color*/
 .cut { stroke: black; stroke-linecap: 'round'; stroke-width: 0.175px; fill-rule: evenodd; }
@@ -56,7 +61,6 @@ text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section te
 .IfcAnnotation { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 0.125px; }
 .IfcGeographicElement { fill: none; stroke: black; stroke-linecap: 'round'; stroke-width: 0.175px; }
 .IfcSpace { fill: none; stroke: none; }
-
 /* LINES */
 /* -------------------- Default lines, but modified------------------------ */
 .PredefinedType-LINEWORK { stroke-width: 0.125px; stroke: black }
@@ -94,7 +98,7 @@ text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section te
 .SyellowToned { stroke: rgb(204, 153, 0); } /* Filling eg. sand etc. */
 /*Now we make the standard DK line types. In bonsai these are combined with thickness and color using */
 /* EPset_Annotations, this way we can make typeProducts for the lines the class could be "Cont T4 Cred" A continues thickness4 red line */
-.PredefinedType-LINEWORK.Cont { }
+.PredefinedType-LINEWORK.Cont { stroke-opacity: 1; }
 .PredefinedType-LINEWORK.DotDash1 {stroke-dasharray: 1.7,0.5,0.2,0.5; }
 .PredefinedType-LINEWORK.DotDash2 {stroke-dasharray: 2.2,0.7,0.2,0.7; }
 .PredefinedType-LINEWORK.DotDash3 {stroke-dasharray: 3.0,0.9,0.2,0.9; }
@@ -122,7 +126,6 @@ text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section te
 .PredefinedType-LINEWORK.DashDoubleDot {stroke-dasharray: 13,2,0.2,2,0.2,2; }
 .PredefinedType-LINEWORK.Center {stroke-dasharray: 20,1.5,0.2,1.5; }
 .PredefinedType-LINEWORK.Cut { stroke-width: 0.09px; stroke-dasharray: 20,1.5,0.2,1.5; }
-
 /* Markers, symbols etc. */
 /* ---------------------- DEFAULT TYPES, but modified ---------------------- */
 .PredefinedType-BACKGROUND { stroke: black; stroke-width: 0.125px; }
@@ -146,10 +149,8 @@ text.SECTION, tspan.SECTION { font-size: 2.875px; } /* 2,5mm, size of section te
 .PredefinedType-TEXT { fill: black; stroke: none; }
 /* TODO, MAKE A TEXT LEADER WITH A DOT, THAT WORKS */
 path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
-
 /*Symbols*/
 /* These are defined directly in the symbols_xx.svg file, referenced in ifc file using the id under symbols in EPset_Annotation, like before this allows for making TypeProducts. */ 
-
 /* MATERIALS */
 /* Materials are defined on the ifc object or type, and appears when an object is cut. The Name in object material in UI eg. steel is the material used as hatch when cut */
 /* stroke widths defines the edge line thickness of the material, since materials appear when cut, this is the cut-line thickness*/
@@ -202,19 +203,38 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 .material-woodLaminiatedColor { fill: rgb(153, 102, 0); stroke-width: 0.175px; stroke: rgb(153, 102, 0); }
 .material-gypsum { fill: none; stroke-width: 0.09px; }
 .material-gypsumColor { fill: rgb(189, 173, 126); stroke-width: 0.09px; stroke: rgb(189, 173, 126); }
-
 /* FILL_AREA */
 /* classes are define for each Fill area type, class name is added in EPset_Annotation */
 /* Fill areas areas are the same as materials, so the can be used to detail drawings, but we use big letters, and there is a masked option, that covers anything behind*/
 /* IMPORTANT NOTE, IN THE UI AND EPset_Annotation, USE THE Z INDEX in your type to define which "layer" annotations appears in. */
-/* ------------------------ SOME BASIC COLORS ----------------------- */
+.MASK { fill: white; stroke: white; stroke-width: 0.125px; }
+.MASK_025 { fill: white; stroke: white; stroke-width: 0.125px; opacity: 0.25; }
+.MASK_050 { fill: white; stroke: white; stroke-width: 0.125px; opacity: 0.50; }
+.MASK_075 { fill: white; stroke: white; stroke-width: 0.125px; opacity: 0.75; }
 .BLANK { fill: white; stroke: black; stroke-width: 0.125px; }
+.BLANK_025 { fill: white; stroke: black; stroke-width: 0.125px; opacity: 0.25; }
+.BLANK_050 { fill: white; stroke: black; stroke-width: 0.125px; opacity: 0.50; }
+.BLANK_075 { fill: white; stroke: black; stroke-width: 0.125px; opacity: 0.75; }
 .RED { fill: red; stroke: black; stroke-width: 0.125px; }
+.RED_025 { fill: red; stroke: black; stroke-width: 0.125px; opacity: 0.25; }
+.RED_050 { fill: red; stroke: black; stroke-width: 0.125px; opacity: 0.50; }
+.RED_075 { fill: red; stroke: black; stroke-width: 0.125px; opacity: 0.75; }
 .BLUE { fill: blue; stroke: black; stroke-width: 0.125px; }
+.BLUE_025 { fill: blue; stroke: black; stroke-width: 0.125px; opacity: 0.25; }
+.BLUE_050 { fill: blue; stroke: black; stroke-width: 0.125px; opacity: 0.50; }
+.BLUE_075 { fill: blue; stroke: black; stroke-width: 0.125px; opacity: 0.75; }
 .GREEN { fill: green; stroke: black; stroke-width: 0.125px; }
+.GREEN_025 { fill: green; stroke: black; stroke-width: 0.125px; opacity: 0.25; }
+.GREEN_050 { fill: green; stroke: black; stroke-width: 0.125px; opacity: 0.50; }
+.GREEN_075 { fill: green; stroke: black; stroke-width: 0.125px; opacity: 0.75; }
 .YELLOW { fill: yellow; stroke: black; stroke-width: 0.125px; }
+.YELLOW_025 { fill: yellow; stroke: black; stroke-width: 0.125px; opacity: 0.25; }
+.YELLOW_050 { fill: yellow; stroke: black; stroke-width: 0.125px; opacity: 0.50; }
+.YELLOW_075 { fill: yellow; stroke: black; stroke-width: 0.125px; opacity: 0.75; }
 .BLACK { fill: black; stroke: black; stroke-width: 0.125px; }
-/* ------------------------ FROM DEFAULT ----------------------- */
+.BLACK_025 { fill: black; stroke: black; stroke-width: 0.125px; opacity: 0.25; }
+.BLACK_050 { fill: black; stroke: black; stroke-width: 0.125px; opacity: 0.50; }
+.BLACK_075 { fill: black; stroke: black; stroke-width: 0.125px; opacity: 0.75; }
 /* ---------------- NOTE: NOT ALL PATTERNS ARE USED, more in patterns_DK.svg ------------------- */
 .DIAGONAL1 { fill: url(#diagonal1); stroke-width: 0.125px; }
 .DIAGONAL2 { fill: url(#diagonal2); stroke-width: 0.125px; }
@@ -228,7 +248,6 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 .CONCRETE { fill: url(#concrete); stroke-width: 0.175px; }
 .PredefinedType-STUD { stroke: black; stroke-width: 0.175px; }
 .STUD { stroke: black; stroke-width: 0.175px; }
-/* ------------------------ DK ----------------------- */
 .STEEL { fill: url(#steel); stroke-width: 0.175px; }
 .STEELMASKED { fill: url(#steelMasked); stroke-width: 0.175px; }
 .STEELCOLOR { fill: rgb(255, 0, 0); stroke-width: 0.175px; stroke: rgb(255, 0, 0); }
@@ -265,13 +284,12 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 .WOODSTRUCTURAL { fill: url(#woodStructural); stroke-width: 0.175px; }
 .WOODSTRUCTURALMASKED { fill: url(#woodStructuralMasked); stroke-width: 0.175px; }
 .WOODSTRUCTURALCOLOR { fill: rgb(153, 102, 0); stroke-width: 0.175px; stroke: rgb(153, 102, 0); }
-.WOODLAMINATED { fill: url(#woodLaminiated); stroke-width: 0.175px; }
-.WOODLAMINATEDMASKED { fill: url(#woodLaminiatedMasked); stroke-width: 0.175px; }
+.WOODLAMINATED { fill: url(#woodLaminated); stroke-width: 0.175px; }
+.WOODLAMINATEDMASKED { fill: url(#woodLaminatedMasked); stroke-width: 0.175px; }
 .WOODLAMINATEDCOLOR { fill: rgb(153, 102, 0); stroke-width: 0.175px; stroke: rgb(153, 102, 0); }
 .GYPSUM { fill: none; stroke-width: 0.09px; }
 .GYPSUMMASKED { fill: white; stroke-width: 0.09px; }
-.GYPSUMCOLOR { fill: rgb(189, 173, 126); stroke-width: 0.09px; stroke: rgb(189, 173, 126); }
-  ]]></style><marker id="eng-dimension-marker-start" markerHeight="14" markerWidth="11" orient="auto" refX="1" refY="7">
+.GYPSUMCOLOR { fill: rgb(189, 173, 126); stroke-width: 0.09px; stroke: rgb(189, 173, 126); }]]></style><marker id="eng-dimension-marker-start" markerHeight="14" markerWidth="11" orient="auto" refX="1" refY="7">
         <g>
             <path d="M 11 3.5 L 11 10.5 L 1 7" class="annotation" style="fill:black;" />
             <path d="M 1 0 L 1 14" class="annotation" style="stroke-width:1;" />
@@ -473,7 +491,8 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
     <line x1="1" y1="0" x2="1" y2="1" style="stroke:black; stroke-width:0.12" />
 </pattern>
 <pattern id="steelMasked" width="3" height="1" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
-    <path style="fill: white;" d="M 0 0 3 0 3 1 0 1" /> 
+    <path d="M 0 0 3 0 3 1 0 1" />
+    <rect x="0" y="0" width="3" height="1" style="fill: white" />
     <line x1="0" y1="0" x2="0" y2="1" style="stroke:black; stroke-width:0.12" />
     <line x1="1" y1="0" x2="1" y2="1" style="stroke:black; stroke-width:0.12" />
 </pattern>
@@ -510,13 +529,13 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 <pattern id="expandedClay" width="7.5" height="4.33" patternUnits="userSpaceOnUse"> 
     <path style="fill: none;" d="M 0 0 7.5 0 7.5 4.33 0 4.33" />
     <path d="M 0,2.165 L 1.25,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round" />
-    <path d="M 1.25,2.165 L 2.5,4.33 L 5,4.33 L 6.25,2.165 L 5,0 L 2.5,0 L 1.25,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round" />
+    <path d="M 1.25,2.165 L 2.5,4.33 L 5,4.33 L 6.25,2.165 L 5,0 L 2.5,0 L 1.25,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round;fill: none" />
     <path d="M 6.25,2.165 L 7.5,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round" />
 </pattern>
 <pattern id="expandedClayMasked" width="7.5" height="4.33" patternUnits="userSpaceOnUse"> 
     <path style="fill: white;" d="M 0 0 7.5 0 7.5 4.33 0 4.33" />
     <path d="M 0,2.165 L 1.25,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round" />
-    <path d="M 1.25,2.165 L 2.5,4.33 L 5,4.33 L 6.25,2.165 L 5,0 L 2.5,0 L 1.25,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round" />
+    <path d="M 1.25,2.165 L 2.5,4.33 L 5,4.33 L 6.25,2.165 L 5,0 L 2.5,0 L 1.25,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round;fill: white" />
     <path d="M 6.25,2.165 L 7.5,2.165" style="stroke:black;stroke-width:0.12;stroke-linecap:round" />
 </pattern>
 <pattern id="wood" width="4" height="4" patternTransform="rotate(90 0 0)" patternUnits="userSpaceOnUse">
@@ -537,7 +556,7 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
     <line x1="1" y1="0" x2="0" y2="1" style="stroke:black; stroke-width:0.125" vector-effect="non-scaling-stroke" />
 </pattern>
 <pattern id="woodStructuralMasked" width="1" height="1" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox">    
-    <rect x="0" y="0" width="1" height="1" style="fill= white" />
+    <rect x="0" y="0" width="1" height="1" style="fill: white" />
     <line x1="0" y1="0" x2="1" y2="1" style="stroke:black; stroke-width:0.125" vector-effect="non-scaling-stroke" />
     <line x1="1" y1="0" x2="0" y2="1" style="stroke:black; stroke-width:0.125" vector-effect="non-scaling-stroke" />
 </pattern>
@@ -546,7 +565,8 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
     <line x1="1" y1="0" x2="1" y2="3" style="stroke:black; stroke-width:0.12" />
 </pattern>
 <pattern id="woodLaminatedMasked" width="3" height="3" patternTransform="rotate(90 0 0)" patternUnits="userSpaceOnUse">
-    <path style="fill: white;" d="M 0 0 3 0 3 3 0 3" />       
+    <path fill="white" style="fill: white;" d="M 0 0 3 0 3 3 0 3" />    
+    <rect x="0" y="0" width="3" height="3" style="fill: white" />   
     <line x1="1" y1="0" x2="1" y2="3" style="stroke:black; stroke-width:0.12" />
 </pattern>
 <pattern id="earth" width="6" height="6" patternTransform="rotate(-45 0 0)" patternUnits="userSpaceOnUse">
@@ -587,12 +607,13 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 </pattern>
 <pattern id="concretePrecast" width="3" height="3" patternUnits="userSpaceOnUse">
     <path style="fill: none;" d="M 0 0 3 0 3 3 0 3" />
-    <rect width="3" height="3" fill="rgb(219, 219, 219)" style="stroke:black; stroke-width:0.12" />
+    <rect width="3" height="3" fill="none" style="stroke:black; stroke-width:0.12" />
 </pattern>
 <pattern id="concretePrecastMasked" width="3" height="3" patternUnits="userSpaceOnUse">
-    <path style="fill: white;" d="M 0 0 3 0 3 3 0 3" />
-    <rect width="3" height="3" fill="rgb(219, 219, 219)" style="stroke:black; stroke-width:0.12" />
+    <path d="M 0 0 3 0 3 3 0 3" />
+    <rect width="3" height="3" fill="white" style="stroke:black; stroke-width:0.12" />
 </pattern>
+
 <pattern id="concreteLight" width="4" height="4" patternUnits="userSpaceOnUse">
     <path style="fill: none;" d="M 0 0 4 0 4 4 0 4" />
     <path style="stroke: black; stroke-width: 0.12; fill: none;" d="M0,0 L2,4 L4,0" />
@@ -740,33 +761,17 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
             <path d="M85.1619,76.1507 L70.1619,76.1507"/>
             <path d="M70.1619,106.151 L70.1619,76.1507"/>
         </g>
-    <g ifc:guid="3lUwHqGn1C$AOTXlM3NH62" ifc:name="RemBund" class="IfcBeam material-woodStructural cut"><path d="M72.54858911037445,76.15054432641377 L94.66186538338661,76.15054432641377 L94.66186538338661,75.71217302571644 L94.66186538338661,71.65054489265789 L92.27515235543251,71.65054489265789 L70.16187608242035,71.65054489265789 L70.16187608242035,72.08891917358746 L70.16187608242035,76.15054432641377 Z"/></g><g class="cut material-concreteInsitu 0bQWQSnWb1ixTExAMRZ5yf IfcSlab"><path d="M481.26635551452637,76.15063671361317 L90.16185775399208,76.15063671361317 L90.16185775399208,82.53080729733814 L90.16185775399208,86.15063605935906 L481.26635551452637,86.15063605935906 L703.161883354187,86.15063605935906 L703.161883354187,78.37595228444447 L703.161883354187,76.15063671361317 Z"/></g><g class="0tfjAn51n0k92HnJPKtNFx IfcWall material-concreteInsitu cut"><path d="M85.16183868050575,87.13709587569942 L85.16183868050575,76.15067545663227 L79.59800660610199,76.15067545663227 L70.16182839870453,76.15067545663227 L70.16182839870453,87.51788908954371 L70.16182839870453,106.15067590366709 L79.59800660610199,106.15067590366709 L85.16183868050575,106.15067590366709 Z"/></g></g>
+    <g ifc:guid="3lUwHqGn1C$AOTXlM3NH62" ifc:name="RemBund" class="IfcBeam material-woodStructural cut"><path d="M76.60890519618988,76.15054432641377 L94.66186538338661,76.15054432641377 L94.66186538338661,74.96639374982227 L94.66186538338661,71.65054191242565 L88.21483626961708,71.65054191242565 L70.16187608242035,71.65054191242565 L70.16187608242035,72.83469248901714 L70.16187608242035,76.15054432641377 Z"/></g><g class="material-concreteInsitu cut 0bQWQSnWb1ixTExAMRZ5yf IfcSlab"><path d="M481.26635551452637,76.15063671361317 L90.16185775399208,76.15063671361317 L90.16185775399208,82.53080729733814 L90.16185775399208,86.15063605935906 L481.26635551452637,86.15063605935906 L703.161883354187,86.15063605935906 L703.161883354187,78.37595228444447 L703.161883354187,76.15063671361317 Z"/></g><g class="material-concreteInsitu 0tfjAn51n0k92HnJPKtNFx cut IfcWall"><path d="M85.16183868050575,87.13709587569942 L85.16183868050575,76.15067545663227 L79.59800660610199,76.15067545663227 L70.16182839870453,76.15067545663227 L70.16182839870453,87.51788908954371 L70.16182839870453,106.15067590366709 L79.59800660610199,106.15067590366709 L85.16183868050575,106.15067590366709 Z"/></g></g>
   <defs/>
-  <path class="GlobalId-1J09UaEtf9UOnMX$N76$ub IfcAnnotation PredefinedType-TEXTLEADER small" d="M 138.4049028158188 49.467627297748216 L 116.91056191921234 82.5364458967339"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(138.4049072265625, 49.46762466430664) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-1J09UaEtf9UOnMX$N76$ub IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Y8/150 BR, stødzone net. minimum dæklag 25mm</tspan>
-  </text>
-  <path class="GlobalId-2ZWIQ0RNb9o9WYxcTaveeK IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 159.3014373779297 76.15066528320312 L -63.17466354370117 76.15066528320312"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(159.3014373779297, 72.65066528320312) rotate(0.0)">
-    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">Stueplan</tspan>
-    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +435</tspan>
-  </text>
-  <path class="GlobalId-2ZhesYYd9DvvYhPLkP56Ku IfcAnnotation PredefinedType-TEXTLEADER small" d="M 56.216248869895935 63.35466314445842 L 72.83326089382172 79.28365353833546"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(56.216251373291016, 63.35466384887695) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-2ZhesYYd9DvvYhPLkP56Ku IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">2 stk Y12 i toppen</tspan>
-  </text>
-  <line class="GlobalId-1hF0pRKQHDJRnxcDEDPD34 IfcAnnotation PredefinedType-ContT4" x1="70.16178131103516" x2="94.66181945800781" y1="71.65062713623047" y2="76.15050506591797"/>
-  <line class="GlobalId-1hF0pRKQHDJRnxcDEDPD34 IfcAnnotation PredefinedType-ContT4" x1="94.66181945800781" x2="94.66181945800781" y1="76.15050506591797" y2="71.6504898071289"/>
-  <line class="GlobalId-1hF0pRKQHDJRnxcDEDPD34 IfcAnnotation PredefinedType-ContT4" x1="94.66181945800781" x2="70.16188049316406" y1="71.6504898071289" y2="76.15050506591797"/>
   <path class="GlobalId-1akOU9czb2kAJB9lJTaf1z IfcAnnotation PredefinedType-TEXTLEADER small" d="M 56.216248869895935 87.0902883481573 L 72.83326089382172 103.01927883516657"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(56.216251373291016, 87.09028625488281) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-1akOU9czb2kAJB9lJTaf1z IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">2 stk Y12 bunden</tspan>
   </text>
-  <path class="GlobalId-3GRa4hLZv8Wx7IxosqYWvV IfcAnnotation PredefinedType-INSULATIONRIGID" d="M 235.77619791030884 101.1449169028889 L 235.77619791030884 86.14490801807155 L 100.16184821724892 86.14490801807155 L 100.16184821724892 101.1449169028889 L 235.77619791030884 101.1449169028889"/>
   <path class="GlobalId-3QjaPvx2X9TuSZ_VmYkGRS IfcAnnotation PredefinedType-TEXTLEADER small" d="M 55.80836236476898 70.63799310814251 L 69.98001039028168 84.42326063628902"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(55.80836486816406, 70.63799285888672) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-3QjaPvx2X9TuSZ_VmYkGRS IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">C25 svindfri beton, 150x300 bjælke</tspan>
   </text>
+  <path class="GlobalId-3GRa4hLZv8Wx7IxosqYWvV IfcAnnotation PredefinedType- INSULATIONRIGIDMASKED" d="M 235.77619791030884 101.1449169028889 L 235.77619791030884 86.14490801807155 L 100.16184821724892 86.14490801807155 L 100.16184821724892 101.1449169028889 L 235.77619791030884 101.1449169028889"/>
   <use transform="rotate(-90.00000250447816, 859.16455078125, -179.11318969726562)" x="859.16455078125" xlink:href="#elevation-arrow" y="-179.11318969726562"/>
   <use x="859.16455078125" xlink:href="#elevation-tag" y="-179.11318969726562"/>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="859.16455078125" y="-181.61318969726562">1</text>
@@ -777,26 +782,26 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(141.59103393554688, 57.686431884765625) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-22$sHobhvDePpThqzxDsu5 IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">C25 beton, terrændæk</tspan>
   </text>
-  <path class="GlobalId-2HYG3x8x59IeN8MjPj3onQ IfcAnnotation PredefinedType-INSULATIONRIGID" d="M 255.7761788368225 116.14491153847086 L 255.7761788368225 101.1449020017277 L 120.16182839870453 101.1449020017277 L 120.16182839870453 116.14491153847086 L 255.7761788368225 116.14491153847086"/>
-  <path class="GlobalId-073MQysBP4vvztxKe6tvaa IfcAnnotation PredefinedType-SAND" d="M -16.262948513031006 136.17854226719248 L 234.184992313385 136.17854226719248 L 234.184992313385 116.15067828785288 L 30.161821842193604 116.15067828785288 L -16.262948513031006 136.17854226719248"/>
   <path class="GlobalId-29GUTd4UjD5ulL5bw06pMz IfcAnnotation PredefinedType-TEXTLEADER small" d="M 120.11400163173676 40.89363623749126 L 98.61966148018837 80.4479289461266"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(120.11400604248047, 40.89363479614258) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-29GUTd4UjD5ulL5bw06pMz IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">z-binder rustfri Ø6, pr. 400mm</tspan>
   </text>
-  <path class="GlobalId-1z4cdngZH3M9SmfzSmW_Kk IfcAnnotation PredefinedType-EARTH" d="M 216.38771295547485 136.17854822765696 L 216.38771295547485 180.6042741645466 L -3.7902235984802246 180.6042741645466 L -3.7902235984802246 136.17854822765696 L 216.38771295547485 136.17854822765696"/>
+  <path class="GlobalId-073MQysBP4vvztxKe6tvaa IfcAnnotation PredefinedType-SAND SANDMASKED" d="M -16.262948513031006 136.17854226719248 L 234.184992313385 136.17854226719248 L 234.184992313385 116.15067828785288 L 30.161821842193604 116.15067828785288 L -16.262948513031006 136.17854226719248"/>
+  <path class="GlobalId-2HYG3x8x59IeN8MjPj3onQ IfcAnnotation PredefinedType-INSULATIONRIGID INSULATIONRIGIDMASKED" d="M 255.7761788368225 116.14491153847086 L 255.7761788368225 101.1449020017277 L 120.16182839870453 101.1449020017277 L 120.16182839870453 116.14491153847086 L 255.7761788368225 116.14491153847086"/>
+  <path class="GlobalId-1z4cdngZH3M9SmfzSmW_Kk IfcAnnotation PredefinedType- EARTH" d="M 216.38771295547485 136.17854822765696 L 216.38771295547485 180.6042741645466 L -3.7902235984802246 180.6042741645466 L -3.7902235984802246 136.17854822765696 L 216.38771295547485 136.17854822765696"/>
   <use transform="rotate(90.00000250447816, -668.0199584960938, 119.65067291259766)" x="-668.0199584960938" xlink:href="#elevation-arrow" y="119.65067291259766"/>
   <use x="-668.0199584960938" xlink:href="#elevation-tag" y="119.65067291259766"/>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="-668.0199584960938" y="117.15067291259766">1</text>
   <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="-668.0199584960938" y="122.15067291259766">V11_K09_H2_EX_S1_3</text>
   <path class="GlobalId-1F2AqLpuv2yvZcgHzJmyKK IfcAnnotation PredefinedType-BREAKLINE" d="M 58.27957093715668 2.301336418498645 L 79.48971688747406 2.3554097522388795 L 100.6998635828495 2.409483085979114"/>
-  <path class="GlobalId-2KFYi2kCP4GvnHlO0h8HF7 IfcAnnotation PredefinedType-TEXTLEADER small" d="M 122.1449464559555 17.963517795909535 L 94.66177001595497 17.963517795909535"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(122.14495086669922, 17.963518142700195) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-2KFYi2kCP4GvnHlO0h8HF7 IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Træskelet, jf. detalje herom</tspan>
-  </text>
   <path class="GlobalId-0ZmM6u0bL3jutUCe7NvexO IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 161.1671142578125 136.15066528320312 L -63.17466354370117 136.15066528320312"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(161.1671142578125, 132.65066528320312) rotate(0.0)">
     <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">UK Fundament</tspan>
     <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL -165</tspan>
+  </text>
+  <path class="GlobalId-2KFYi2kCP4GvnHlO0h8HF7 IfcAnnotation PredefinedType-TEXTLEADER small" d="M 122.1449464559555 17.963517795909535 L 94.66177001595497 17.963517795909535"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(122.14495086669922, 17.963518142700195) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-2KFYi2kCP4GvnHlO0h8HF7 IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Træskelet, jf. detalje herom</tspan>
   </text>
   <line class="GlobalId-0VVYPgRY1CsRUXeYRy7bR9 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="70.16183471679688" x2="70.16183471679688" y1="163.8922882080078" y2="9.982300758361816"/>
   <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="70.16183471679688" y="163.8922882080078">E</text>
@@ -820,7 +825,23 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
     <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">OK rem</tspan>
     <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +3135</tspan>
   </text>
-  <path class="GlobalId-34SKrHg911UQM$JJvfjpWF IfcAnnotation PredefinedType-EXPANDEDCLAY" d="M 100.16184821724892 101.14490349184382 L 100.16184821724892 86.14490801807155 L 90.16185775399208 76.15051750432362 L 85.16183868050575 76.15051750432362 L 85.16183868050575 106.15067739378321 L 30.161821842193604 106.15067739378321 L 30.161821842193604 116.15067828785288 L 120.16182839870453 116.15067828785288 L 120.16182839870453 101.14490349184382 L 100.16184821724892 101.14490349184382"/>
+  <path class="GlobalId-1J09UaEtf9UOnMX$N76$ub IfcAnnotation PredefinedType-TEXTLEADER small" d="M 138.4049028158188 49.467627297748216 L 116.91056191921234 82.5364458967339"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(138.4049072265625, 49.46762466430664) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-1J09UaEtf9UOnMX$N76$ub IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Y8/150 BR, stødzone net. minimum dæklag 25mm</tspan>
+  </text>
+  <path class="GlobalId-34SKrHg911UQM$JJvfjpWF IfcAnnotation PredefinedType- INSULATIONRIGIDMASKED" d="M 100.16184821724892 101.14490349184382 L 100.16184821724892 86.14490801807155 L 90.16185775399208 76.15051750432362 L 85.16183868050575 76.15051750432362 L 85.16183868050575 106.15067739378321 L 30.161821842193604 106.15067739378321 L 30.161821842193604 116.15067828785288 L 120.16182839870453 116.15067828785288 L 120.16182839870453 101.14490349184382 L 100.16184821724892 101.14490349184382"/>
+  <line class="GlobalId-1hF0pRKQHDJRnxcDEDPD34 IfcAnnotation PredefinedType-ContT4" x1="70.16178131103516" x2="94.66181945800781" y1="71.65062713623047" y2="76.15050506591797"/>
+  <line class="GlobalId-1hF0pRKQHDJRnxcDEDPD34 IfcAnnotation PredefinedType-ContT4" x1="94.66181945800781" x2="94.66181945800781" y1="76.15050506591797" y2="71.6504898071289"/>
+  <line class="GlobalId-1hF0pRKQHDJRnxcDEDPD34 IfcAnnotation PredefinedType-ContT4" x1="94.66181945800781" x2="70.16188049316406" y1="71.6504898071289" y2="76.15050506591797"/>
+  <path class="GlobalId-2ZWIQ0RNb9o9WYxcTaveeK IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 159.3014373779297 76.15066528320312 L -63.17466354370117 76.15066528320312"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(159.3014373779297, 72.65066528320312) rotate(0.0)">
+    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">Stueplan</tspan>
+    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +435</tspan>
+  </text>
+  <path class="GlobalId-2ZhesYYd9DvvYhPLkP56Ku IfcAnnotation PredefinedType-TEXTLEADER small" d="M 56.216248869895935 63.35466314445842 L 72.83326089382172 79.28365353833546"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(56.216251373291016, 63.35466384887695) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-2ZhesYYd9DvvYhPLkP56Ku IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">2 stk Y12 i toppen</tspan>
+  </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(126.94755554199219, 123.1405029296875) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-29RYryy4T4beIWYv7WQyBb IfcAnnotation PredefinedType-TEXT regular" dy="0em" x="0" y="0">Sandpude, middelkomprimering 98%</tspan>
   </text>
