@@ -5,8 +5,8 @@
     <image xlink:href="titleblocks%5CA3_landscape_DK.svg" x="0" y="0" width="420.0" height="297.0" id="image1" />
   </g>
   <g data-type="drawing" data-id="862465" data-drawing="2VM5I8iTj7wAihm29PYZ5h" id="g3" transform="translate(-26.231381,-18.70417)">
-    <image data-type="foreground" xlink:href="..%5Cdrawings%5CStueplan%20fastg%C3%B8relse%20v%C3%A6gge%20Lodrette%20og%20overliggerer.svg" x="30" y="30" width="371.60001" height="233.73199" id="image2" />
-    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="30" y="268.73199" width="50.222462" height="10" id="image3" />
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CStueplan%20fastg%C3%B8relse%20v%C3%A6gge%20Lodrette%20og%20overliggerer.svg" x="30.0" y="29.990000000223517" width="371.6" height="233.75" id="image2" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="30.0" y="268.7419899997765" width="50.222462" height="10" id="image3" />
   </g>
   <g data-type="drawing" data-id="862466" data-drawing="1s5Hi2DJfEjBtTNbvKX7kz" id="g5" transform="translate(371.60001,-15.000001)">
     <image data-type="foreground" xlink:href="..%5Cdrawings%5CANN_NorthArrow.svg" x="30" y="30" width="15.000001" height="15.000001" id="image4" />
@@ -17,8 +17,8 @@
     <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="152.61816" y="52.109703" width="50.222462" height="10" id="image7" />
   </g>
   <g data-type="drawing" data-id="862468" data-drawing="1bRmJpP4r8cxrvj0L4QMQz" id="g10" transform="translate(243.83779,-22.709404)">
-    <image data-type="background" xlink:href="..%5Cdrawings%5CStuen%20ortografi-underlay.png" x="30" y="30" width="139.83817" height="139.83817" id="image8" />
-    <image data-type="foreground" xlink:href="..%5Cdrawings%5CStuen%20ortografi.svg" x="30" y="30" width="139.83817" height="139.83817" id="image9" />
-    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="74.807854" y="110.13551" width="50.222462" height="10" id="image10" />
+    <image data-type="background" xlink:href="..%5Cdrawings%5CStuen%20ortografi-underlay.png" x="30.0" y="57.30999946594238" width="139.84" height="85.22" id="image8" />
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CStuen%20ortografi.svg" x="30.0" y="57.30999946594238" width="139.84" height="85.22" id="image9" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="74.807854" y="82.82551053405761" width="50.222462" height="10" id="image10" />
   </g>
 </svg>
