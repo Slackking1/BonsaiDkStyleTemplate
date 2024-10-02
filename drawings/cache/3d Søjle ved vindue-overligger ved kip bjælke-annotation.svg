@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ifc="http://www.ifcopenshell.org/ns" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" data-scale="1:10" height="53.42430913912468mm" id="root" version="1.1" viewBox="0 0 62.0001494884491 53.42430913912468" width="62.0001494884491mm">
+  <defs/>
+  <use transform="rotate(-85.74960310473591, 1100.1226806640625, 221.82376098632812)" x="1100.1226806640625" xlink:href="#elevation-arrow" y="221.82376098632812"/>
+  <use x="1100.1226806640625" xlink:href="#elevation-tag" y="221.82376098632812"/>
+  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="1100.1226806640625" y="219.32376098632812">1</text>
+  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="1100.1226806640625" y="224.32376098632812">V11_K09_H2_EX_S1_3</text>
+  <line class="GlobalId-0FdU1NwWz7VACHvMQouUHP IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="339.7430725097656" x2="573.6024169921875" y1="343.8085021972656" y2="-1229.5216064453125"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="339.7430725097656" y="343.8085021972656">E</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="573.6024169921875" y="-1229.5216064453125">E</text>
+  <use transform="rotate(8.454531098046843, 1100.1226806640625, 221.82376098632812)" x="1100.1226806640625" xlink:href="#elevation-arrow" y="221.82376098632812"/>
+  <use x="1100.1226806640625" xlink:href="#elevation-tag" y="221.82376098632812"/>
+  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="1100.1226806640625" y="219.32376098632812">1</text>
+  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="1100.1226806640625" y="224.32376098632812">V11_K09_H2_EX_S1_2</text>
+  <line class="GlobalId-3nSQyo0vr5vfQKQGW6rG5r IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1600.729736328125" x2="1834.5892333984375" y1="437.5249328613281" y2="-1135.80517578125"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1600.729736328125" y="437.5249328613281">A</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1834.5892333984375" y="-1135.80517578125">A</text>
+  <line class="GlobalId-39LXDAjeL1xfkqhqQ0yeEk IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1898.5731201171875" x2="-266.1644287109375" y1="-796.876220703125" y2="-957.7594604492188"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1898.5731201171875" y="-796.876220703125">04</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-266.1644287109375" y="-957.7594604492188">04</text>
+  <line class="GlobalId-36aeiMnzrEqhhX9xK6Rgzf IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1116.414794921875" x2="1350.274169921875" y1="401.53070068359375" y2="-1171.7994384765625"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1116.414794921875" y="401.53070068359375">B</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1350.274169921875" y="-1171.7994384765625">B</text>
+  <line class="GlobalId-3OZ2x$8ovDhe_igCMAbH1g IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1777.3616943359375" x2="-387.37591552734375" y1="18.595497131347656" y2="-142.28768920898438"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1777.3616943359375" y="18.595497131347656">02</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-387.37591552734375" y="-142.28768920898438">02</text>
+  <line class="GlobalId-14zhGDf7j0dwWdTn2bjipZ IfcAnnotation PredefinedType-SECTION" x1="671.7218627929688" x2="75.00859832763672" y1="-41.77006530761719" y2="-86.11762237548828"/>
+  <use transform="rotate(-175.7496056092141, 671.7218627929688, -41.77006530761719)" x="671.7218627929688" xlink:href="#section-arrow" y="-41.77006530761719"/>
+  <use x="671.7218627929688" xlink:href="#section-tag" y="-41.77006530761719"/>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="671.7218627929688" y="-44.27006530761719">1</text>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="671.7218627929688" y="-39.27006530761719">V11_K09_H5_EX_S1_1</text>
+  <use transform="rotate(-175.7496056092141, 75.00859832763672, -86.11762237548828)" x="75.00859832763672" xlink:href="#section-arrow" y="-86.11762237548828"/>
+  <use x="75.00859832763672" xlink:href="#section-tag" y="-86.11762237548828"/>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="75.00859832763672" y="-88.61762237548828">1</text>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="75.00859832763672" y="-83.61762237548828">V11_K09_H5_EX_S1_1</text>
+  <line class="GlobalId-3DGAl28tT0Qu4TYCZ_GHFS IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="535.6141357421875" x2="769.473388671875" y1="358.3656311035156" y2="-1214.964599609375"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="535.6141357421875" y="358.3656311035156">D</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="769.473388671875" y="-1214.964599609375">D</text>
+  <line class="GlobalId-1feaeJzq12jAW1cgcVwFDd IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1850.8768310546875" x2="-313.860595703125" y1="-475.99090576171875" y2="-636.8740844726562"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1850.8768310546875" y="-475.99090576171875">03</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-313.860595703125" y="-636.8740844726562">03</text>
+  <line class="GlobalId-2yxCM6VtX6_95nRJVMrcXu IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="826.014404296875" x2="1059.873779296875" y1="379.9481506347656" y2="-1193.3819580078125"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="826.014404296875" y="379.9481506347656">C</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1059.873779296875" y="-1193.3819580078125">C</text>
+  <line class="GlobalId-0Uv22IU255Ffb4u7r5K441 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1727.3511962890625" x2="-437.3863220214844" y1="355.0500183105469" y2="194.1668701171875"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1727.3511962890625" y="355.0500183105469">01</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-437.3863220214844" y="194.1668701171875">01</text>
+  <line class="GlobalId-3Bmkx3t2r9gQGskw9YZ3fr IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-309.6798400878906" x2="-75.82052612304688" y1="295.5433654785156" y2="-1277.7867431640625"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-309.6798400878906" y="295.5433654785156">F</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-75.82052612304688" y="-1277.7867431640625">F</text>
+  <use transform="rotate(94.25042239478793, -339.24169921875, -425.5960388183594)" x="-339.24169921875" xlink:href="#elevation-arrow" y="-425.5960388183594"/>
+  <use x="-339.24169921875" xlink:href="#elevation-tag" y="-425.5960388183594"/>
+  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="-339.24169921875" y="-428.0960388183594">1</text>
+  <text class="ELEVATION" dominant-baseline="middle" text-anchor="middle" x="-339.24169921875" y="-423.0960388183594">V11_K09_H2_EX_S1_4</text>
+  <line class="GlobalId-1drekVN5P5EeJwPssrQJWW IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1932.46630859375" x2="-232.271240234375" y1="-1024.898681640625" y2="-1185.78173828125"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1932.46630859375" y="-1024.898681640625">06</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-232.271240234375" y="-1185.78173828125">06</text>
+  <line class="GlobalId-0hYzIuDuz7b9JPxfjL2nGO IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1919.133544921875" x2="-245.6038055419922" y1="-935.2012939453125" y2="-1096.0843505859375"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1919.133544921875" y="-935.2012939453125">05</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-245.6038055419922" y="-1096.0843505859375">05</text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(274.290771484375, 20.987682342529297) rotate(-19.02825645213708)">
+    <tspan class="GlobalId-0bYmxKoyv2J8ZxSF3Cfkms IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">C18 45x245</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(428.6114807128906, 123.98312377929688) rotate(-107.88259205354129)">
+    <tspan class="GlobalId-2lR5cIj_jBIRVbBkjaKH2w IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">SHS / 80-5.0</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(134.81321716308594, 151.47862243652344) rotate(-19.02825645213708)">
+    <tspan class="GlobalId-2q45xBaPXBWg3f7I4Shxae IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">C18 45x245</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(158.34622192382812, -85.58745574951172) rotate(-19.02825645213708)">
+    <tspan class="GlobalId-2LkUQcd79C1ebfW_gfeHPS IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">C18 45x245</tspan>
+  </text>
+  <line class="GlobalId-31dEp$jo1DXA3PeXPk3kfQ IfcAnnotation PredefinedType-DIMENSION" x1="33.264320373535156" x2="353.2516174316406" y1="182.72962951660156" y2="206.51121520996094"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(193.3320770263672, 193.6231689453125) rotate(4.250430989367167)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">3217</tspan>
+  </text>
+  <line class="GlobalId-31dEp$jo1DXA3PeXPk3kfQ IfcAnnotation PredefinedType-DIMENSION" x1="28.78902244567871" x2="353.25164794921875" y1="55.62586975097656" y2="79.7398910522461"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(191.0944366455078, 66.68562316894531) rotate(4.250401107289547)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">3262</tspan>
+  </text>
+</svg>

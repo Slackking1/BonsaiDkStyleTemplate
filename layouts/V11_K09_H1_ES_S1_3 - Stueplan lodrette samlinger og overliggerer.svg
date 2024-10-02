@@ -1,12 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:ns1="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns2="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" id="root" version="1.1" width="420.0mm" height="297.0mm" viewBox="0 0 420.0 297.0" ns1:docname="V11_K09_H1_ES_S1_3 - Stueplan lodrette samlinger og overliggerer.svg" ns2:version="1.3.2 (091e20e, 2023-11-25, custom)">
   <defs id="defs10" />
-  <ns1:namedview id="namedview10" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" ns2:showpageshadow="2" ns2:pageopacity="0.0" ns2:pagecheckerboard="0" ns2:deskcolor="#d1d1d1" ns2:document-units="mm" ns2:zoom="0.57997487" ns2:cx="915.55691" ns2:cy="844.00209" ns2:window-width="3840" ns2:window-height="2071" ns2:window-x="-9" ns2:window-y="-9" ns2:window-maximized="1" ns2:current-layer="g10" />
+  <ns1:namedview id="namedview10" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" ns2:showpageshadow="2" ns2:pageopacity="0.0" ns2:pagecheckerboard="0" ns2:deskcolor="#d1d1d1" ns2:document-units="mm" ns2:zoom="0.70710678" ns2:cx="793.3738" ns2:cy="-27.577164" ns2:window-width="3840" ns2:window-height="2071" ns2:window-x="-9" ns2:window-y="-9" ns2:window-maximized="1" ns2:current-layer="g10" />
   <g data-type="titleblock" id="g1">
     <image xlink:href="titleblocks%5CA3_landscape_DK.svg" x="0" y="0" width="420.0" height="297.0" id="image1" />
-  </g>
-  <g data-type="drawing" data-id="862465" data-drawing="2VM5I8iTj7wAihm29PYZ5h" id="g3" transform="translate(-26.231381,-18.70417)">
-    <image data-type="foreground" xlink:href="..%5Cdrawings%5CStueplan%20fastg%C3%B8relse%20v%C3%A6gge%20Lodrette%20og%20overliggerer.svg" x="30.0" y="29.990000000223517" width="371.6" height="233.75" id="image2" />
-    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="30.0" y="268.7419899997765" width="50.222462" height="10" id="image3" />
   </g>
   <g data-type="drawing" data-id="862466" data-drawing="1s5Hi2DJfEjBtTNbvKX7kz" id="g5" transform="translate(371.60001,-15.000001)">
     <image data-type="foreground" xlink:href="..%5Cdrawings%5CANN_NorthArrow.svg" x="30" y="30" width="15.000001" height="15.000001" id="image4" />
@@ -16,9 +12,14 @@
     <image data-type="foreground" xlink:href="..%5Cdrawings%5CANN_NoteGeneral.svg" x="30" y="30" width="105.00001" height="44.709679" id="image6" />
     <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="152.61816" y="52.109703" width="50.222462" height="10" id="image7" />
   </g>
-  <g data-type="drawing" data-id="862468" data-drawing="1bRmJpP4r8cxrvj0L4QMQz" id="g10" transform="translate(243.83779,-22.709404)">
-    <image data-type="background" xlink:href="..%5Cdrawings%5CStuen%20ortografi-underlay.png" x="30.0" y="57.30999946594238" width="139.84" height="85.22" id="image8" />
-    <image data-type="foreground" xlink:href="..%5Cdrawings%5CStuen%20ortografi.svg" x="30.0" y="57.30999946594238" width="139.84" height="85.22" id="image9" />
-    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="74.807854" y="82.82551053405761" width="50.222462" height="10" id="image10" />
+  <g data-type="drawing" data-id="862468" data-drawing="1bRmJpP4r8cxrvj0L4QMQz" id="g10" transform="translate(242.34108,-42.309999)">
+    <image data-type="background" xlink:href="..%5Cdrawings%5CStuen%20ortografi-underlay.png" x="30" y="57.309998" width="139.84" height="85.220001" id="image8" />
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CStuen%20ortografi.svg" x="30" y="57.309998" width="139.84" height="85.220001" id="image9" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="72.360458" y="132.53" width="50.222462" height="10" id="image10" />
+  </g>
+  <g data-type="drawing" data-id="1048300" data-drawing="2VM5I8iTj7wAihm29PYZ5h" id="g11" transform="translate(-24.406589,-20.757006)">
+    <image data-type="background" xlink:href="..%5Cdrawings%5CStueplan%20fastg%C3%B8relse%20v%C3%A6gge%20Lodrette%20og%20overliggerer-underlay.png" x="30" y="30" width="371.60001" height="233.7477" id="image2" />
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CStueplan%20fastg%C3%B8relse%20v%C3%A6gge%20Lodrette%20og%20overliggerer.svg" x="30" y="30" width="371.60001" height="233.7477" id="image3" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="30" y="268.74771" width="50.222462" height="10" id="image11" />
   </g>
 </svg>

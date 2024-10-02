@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ifc="http://www.ifcopenshell.org/ns" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" data-scale="1:10" height="26.42318427044412mm" id="root" version="1.1" viewBox="0 0 73.04486036300659 26.42318427044412" width="73.04486036300659mm">
+  <defs/>
+  <line class="GlobalId-0vQBRidfDCVhDZDTsZCDDH IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="17.04547882080078" x2="1849.71923828125" y1="217.53912353515625" y2="-689.8569946289062"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="17.04547882080078" y="217.53912353515625">D</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1849.71923828125" y="-689.8569946289062">D</text>
+  <line class="GlobalId-0jUyeSaHr1Ew7b$wAINBxs IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1194.3487548828125" x2="-54.13335037231445" y1="657.3013916015625" y2="-603.4823608398438"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1194.3487548828125" y="657.3013916015625">02</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-54.13335037231445" y="-603.4823608398438">02</text>
+  <line class="GlobalId-0$QP6CExjAQvWjJp9CqGWQ IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1770.4610595703125" x2="521.9791870117188" y1="372.0558166503906" y2="-888.7281494140625"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1770.4610595703125" y="372.0558166503906">03</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="521.9791870117188" y="-888.7281494140625">03</text>
+  <line class="GlobalId-29qXSMmOPE$Qt1Y_fmxX5H IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="2305.3671875" x2="1056.8843994140625" y1="107.21221160888672" y2="-1153.5712890625"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="2305.3671875" y="107.21221160888672">05</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1056.8843994140625" y="-1153.5712890625">05</text>
+  <line class="GlobalId-2J0Pzs_8P45PZyZDwuL_aF IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-95.92040252685547" x2="1736.7532958984375" y1="103.46013641357422" y2="-803.93603515625"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-95.92040252685547" y="103.46013641357422">E</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1736.7532958984375" y="-803.93603515625">E</text>
+  <line class="GlobalId-3TH2BG5_j429omEiJA4iH1 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-470.4660949707031" x2="1362.207275390625" y1="-274.77606201171875" y2="-1182.17236328125"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-470.4660949707031" y="-274.77606201171875">F</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1362.207275390625" y="-1182.17236328125">F</text>
+  <line class="GlobalId-1Wq5p_lHf08uJEpLxNHqg_ IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="2144.240234375" x2="895.758056640625" y1="186.98974609375" y2="-1073.794189453125"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="2144.240234375" y="186.98974609375">04</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="895.758056640625" y="-1073.794189453125">04</text>
+  <line class="GlobalId-2tG856Xvn0$OMPGAKp2Dlk IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="631.336181640625" x2="2464.010009765625" y1="837.8825073242188" y2="-69.51388549804688"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="631.336181640625" y="837.8825073242188">A</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="2464.010009765625" y="-69.51388549804688">A</text>
+  <line class="GlobalId-3nhQAuxjn92BUPeobAoW6K IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="352.0141296386719" x2="2184.688232421875" y1="555.808349609375" y2="-351.58795166015625"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="352.0141296386719" y="555.808349609375">B</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="2184.688232421875" y="-351.58795166015625">B</text>
+  <line class="GlobalId-38mFQ11NH8DwjUrZj3IUYf IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="184.52980041503906" x2="2017.2037353515625" y1="386.6736755371094" y2="-520.7227172851562"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="184.52980041503906" y="386.6736755371094">C</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="2017.2037353515625" y="-520.7227172851562">C</text>
+  <line class="GlobalId-3bDbSRaN56v9kqAyYZ80aO IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="802.4342651367188" x2="-446.04779052734375" y1="851.3468017578125" y2="-409.43695068359375"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="802.4342651367188" y="851.3468017578125">01</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-446.04779052734375" y="-409.43695068359375">01</text>
+  <line class="GlobalId-08O2fOF6jEhQmMV5u1g09b IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="2409.8505859375" x2="1161.3671875" y1="55.480438232421875" y2="-1205.3031005859375"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="2409.8505859375" y="55.480438232421875">06</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1161.3671875" y="-1205.3031005859375">06</text>
+  <path class="GlobalId-3OK8C4Csv2jwACde_uKg53 IfcAnnotation PredefinedType-TEXTLEADER small" d="M 26.46142765879631 17.116429505140886 L 20.57214230298996 14.473178086073501"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(26.461427688598633, 17.11642837524414) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-3OK8C4Csv2jwACde_uKg53 IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">20mm svagt exspanderende vederlagsbeton </tspan>
+    <tspan class="GlobalId-3OK8C4Csv2jwACde_uKg53 IfcAnnotation PredefinedType-TEXTLEADER small" dy="1em" x="0" y="0">uden efter exspansion</tspan>
+  </text>
+  <path class="GlobalId-1u6NlGWC52qRPi4TNbICD4 IfcAnnotation PredefinedType-TEXTLEADER small" d="M 26.551883667707443 11.698981222899063 L 20.836490392684937 12.049295601637466"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(26.551883697509766, 11.698981285095215) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-1u6NlGWC52qRPi4TNbICD4 IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">PL8x120x120</tspan>
+  </text>
+  <path class="GlobalId-2wfxK0Yk56e8e7zdsGz9cf IfcAnnotation PredefinedType-TEXTLEADER small" d="M 26.719658076763153 24.6062359187914 L 13.21818083524704 15.605380234511001"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(26.71965980529785, 24.60623550415039) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-2wfxK0Yk56e8e7zdsGz9cf IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Fuldt stumpsøm</tspan>
+  </text>
+  <path class="GlobalId-2pKCHqxo1C3hSwyXqSIm$0 IfcAnnotation PredefinedType-TEXTLEADER small" d="M 26.444905996322632 4.132660326750381 L 16.961735486984253 9.512784180433853"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(26.44490623474121, 4.132660388946533) rotate(-0.0)">
+    <tspan class="GlobalId-2pKCHqxo1C3hSwyXqSIm$0 IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">M12 klæbeanker, Hilti HIT-HY 170</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(26.44490623474121, 4.132660388946533) rotate(-0.0)">
+    <tspan class="GlobalId-2pKCHqxo1C3hSwyXqSIm$0 IfcAnnotation PredefinedType-TEXTLEADER small" dy="1em" x="0" y="0">Sættedybde 100mm</tspan>
+  </text>
+</svg>

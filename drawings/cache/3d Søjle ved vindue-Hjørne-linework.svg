@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ifc="http://www.ifcopenshell.org/ns" width="78.039mm" height="78.4203mm" viewBox="0 0 78.039 78.4203">
+    <defs>
+        <marker id="arrowend" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7"/>
+        </marker>
+        <marker id="arrowstart" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="10 0, 0 3.5, 10 7"/>
+        </marker>
+    </defs>
+    <g ifc:name="Elevation 3d S&#248;jle ved vindue-Hj&#248;rne" class="section" ifc:plane="[[1.000000,0.000000,0.000000,0.000000],[0.000000,1.000000,0.000000,0.000000],[0.000000,0.000000,1.000000,0.000000],[0.000000,0.000000,0.000000,1.000000]]" ifc:matrix3="[[100.000001,0.000000,555.490759],[0.000000,100.000001,632.063573],[0.000000,0.000000,1.000000]]">
+        <g id="product-02374753-4c2a-47ef-abf7-88755b0bb51d" class="IfcMechanicalFastener material-steel projection" ifc:name="MechanicalFastener" ifc:guid="02DqTJJ2f7xwltY7LR2xKT">
+            <path d="M39.8056,60.886 L39.8056,61.0608"/>
+            <path d="M40.4052,60.5891 L40.4052,61.076"/>
+            <path d="M40.2774,61.2422 L40.4052,61.076"/>
+            <path d="M39.8596,61.1901 L40.2774,61.2422"/>
+            <path d="M39.8056,61.0608 L39.8596,61.1901"/>
+        </g>
+    <g id="product-7bcc63c5-46b1-459d-87fa-8c5162ac98d8" class="IfcBeam material-woodStructural projection" ifc:name="OverliggerTop" ifc:guid="1xp6F5Hh55dOVwZ55Yh9ZO">
+            <path d="M325.118,-83.5602 L325.118,-100.884"/>
+            <path d="M32.3021,61.4195 L32.3021,44.0954"/>
+            <path d="M325.118,-83.5602 L32.3021,61.4195"/>
+            <path d="M325.118,-100.884 L35.9884,42.2702"/>
+            <path d="M32.3022,44.0954 L32.3021,44.0954"/>
+            <path d="M32.3021,44.0954 L32.3022,44.0953"/>
+            <path d="M322.537,-103.491 L56.0574,28.4491"/>
+            <path d="M49.7905,31.552 L35.9884,38.3858"/>
+            <path d="M325.118,-100.884 L322.537,-103.491"/>
+        </g>
+        <g id="product-6964c2bd-7fef-48d4-b978-51d33e8a3695" class="IfcBeam material-woodStructural projection" ifc:name="RemTop" ifc:guid="1fPCAzV_z8rBbuKTC_YZQL">
+            <path d="M-149.665,-363.879 L18.2493,12.6946"/>
+            <path d="M-149.665,-363.879 L-149.665,-368.379"/>
+            <path d="M38.3187,1.01668 L38.3187,-1.74178"/>
+            <path d="M18.2494,8.1949 L18.2494,10.9534"/>
+            <path d="M-129.596,-378.316 L38.3187,-1.74178"/>
+            <path d="M38.3187,-1.74178 L18.2494,8.1949"/>
+            <path d="M-149.665,-368.379 L18.2494,8.1949"/>
+            <path d="M-149.665,-368.379 L-129.596,-378.316"/>
+        </g>
+        <g id="product-12ceb985-1738-4945-8da8-3606d8bb8876" class="IfcColumn material-steel projection" ifc:name="Column" ifc:guid="0Iphc55pX9HOseDWROkuXs">
+            <path d="M38.8063,190.127 L38.8064,61.3807"/>
+            <path d="M38.8063,190.127 L38.8063,216.796"/>
+            <path d="M28.2536,188.996 L28.2536,60.5132"/>
+            <path d="M28.2536,188.996 L28.2536,215.665"/>
+            <path d="M28.3892,215.971 L32.1175,219.736"/>
+            <path d="M28.2565,215.713 L28.3892,215.971"/>
+            <path d="M28.2536,215.665 L28.2565,215.713"/>
+            <path d="M38.7361,217.019 L38.8063,216.796"/>
+            <path d="M38.4865,217.229 L38.7361,217.019"/>
+            <path d="M33.162,219.866 L38.4865,217.229"/>
+            <path d="M32.7972,219.96 L33.162,219.866"/>
+            <path d="M32.4149,219.912 L32.7972,219.96"/>
+            <path d="M32.1175,219.736 L32.4149,219.912"/>
+        </g>
+        <g id="product-af73791e-8ef4-4a1b-9572-31463d280ec4" class="IfcBeam material-woodStructural projection" ifc:name="OverliggerTop" ifc:guid="2lStaUZlHA6vLoCKOzA0x4">
+            <path d="M-151.223,-146.662 L15.7501,21.9559"/>
+            <path d="M-151.223,-146.662 L-154.909,-144.837"/>
+            <path d="M32.3021,61.1315 L32.2202,61.46"/>
+            <path d="M32.2448,44.0374 L32.2202,44.1359"/>
+            <path d="M-154.909,-127.513 L32.2202,61.46"/>
+            <path d="M-154.909,-144.837 L32.2202,44.1359"/>
+            <path d="M32.2202,44.1359 L32.2202,61.46"/>
+            <path d="M-154.909,-144.837 L-154.909,-127.513"/>
+        </g>
+        <g id="product-b913a710-b0db-4405-b859-c3939e2d07c4" class="IfcBeam material-woodStructural projection" ifc:name="OverliggerFladenTop.022" ifc:guid="2v4wSGiDj41RXPmvEUBGV4">
+            <path d="M-154.827,-127.43 L-154.827,-124.372"/>
+            <path d="M-154.827,-124.372 L32.3019,64.6013"/>
+            <path d="M32.3019,64.6012 L32.3019,64.6013"/>
+            <path d="M32.3019,64.6013 L32.3019,64.6012"/>
+            <path d="M-134.758,-137.49 L15.7501,14.5008"/>
+            <path d="M32.2448,61.3616 L32.3019,61.4193"/>
+            <path d="M-134.758,-137.49 L-135.944,-136.903"/>
+        </g>
+        <g id="product-8da2a4de-66e9-483e-a57f-20d7158cdd72" class="IfcBeam material-woodStructural projection" ifc:name="OverliggerTop" ifc:guid="2DegJUPkb8FgL$8DSLZDro">
+            <path d="M-147.455,-148.528 L15.7501,16.285"/>
+            <path d="M-147.455,-148.528 L-151.141,-146.703"/>
+            <path d="M-151.141,-146.703 L15.7501,21.8326"/>
+            <path d="M-151.141,-146.703 L-151.141,-146.58"/>
+        </g>
+        <g id="product-5afe8abb-238b-4b1e-a97a-8f6c98cd340d" class="IfcColumn material-woodStructural projection" ifc:name="C18 45x245 normalS&#248;jle" ifc:guid="1Q$egx8ujB7gbwZsoOpJGD">
+            <path d="M15.7501,27.2571 L15.7501,7.0897"/>
+        </g>
+        <g id="product-6ddc4057-c1a2-4644-85b0-8032574e12fc" class="IfcBeam material-woodStructural projection" ifc:name="OverliggerTop" ifc:guid="1jt41NmQ96H8MmW39NJXBy">
+            <path d="M322.537,-103.491 L322.537,-103.491"/>
+            <path d="M322.537,-103.491 L56.0574,28.4491"/>
+            <path d="M49.7905,31.552 L35.9884,38.3858"/>
+            <path d="M319.956,-106.097 L56.0574,24.5646"/>
+            <path d="M47.2094,28.9455 L35.9884,34.5013"/>
+            <path d="M322.537,-103.491 L319.956,-106.097"/>
+        </g>
+        <g id="product-762ed230-ea4d-43c7-a546-17f3fc0af86f" class="IfcBeam material-woodStructural projection" ifc:name="OverliggerFladenTop" ifc:guid="1sBj8mwar3nwL65$Fy2lXl">
+            <path d="M32.3019,61.4193 L32.3021,61.4183"/>
+            <path d="M299.755,-67.8205 L299.755,-71.0023"/>
+            <path d="M32.3021,61.4191 L32.3019,61.4193"/>
+            <path d="M32.3019,64.6012 L32.3019,61.4193"/>
+            <path d="M299.755,-67.8205 L32.3019,64.6012"/>
+        </g>
+        <g id="product-cd874d35-7c5f-4d4a-94a5-60887a6e8668" class="IfcColumn material-woodStructural projection" ifc:name="C18 45x245 normalS&#248;jle" ifc:guid="3DXqqrV5zDIfIbO8XwRePe">
+            <path d="M35.9884,26.5015 L35.9882,26.5013"/>
+            <path d="M32.302,28.3264 L32.3022,28.3266"/>
+            <path d="M32.2448,44.0374 L32.3022,44.0954"/>
+            <path d="M18.2496,29.9043 L18.2496,14.1357"/>
+            <path d="M32.3022,28.3266 L35.9884,26.5015"/>
+            <path d="M32.3022,44.0954 L35.9884,42.2703"/>
+            <path d="M35.9884,42.2703 L35.9884,26.5015"/>
+            <path d="M32.3022,44.0954 L32.3022,28.3266"/>
+        </g>
+        <g id="product-730a1a42-f127-4a01-bf8e-46b960eabb67" class="IfcBeam material-woodStructural projection" ifc:name="RemTop" ifc:guid="1p2Xf2yITA0R_EHhbWwhjd">
+            <path d="M18.2493,14.1354 L32.3019,28.3265"/>
+            <path d="M18.2493,10.9534 L18.2493,14.1354"/>
+            <path d="M32.3019,25.1445 L18.2493,10.9534"/>
+            <path d="M437.203,-175.331 L423.15,-189.522"/>
+            <path d="M423.15,-189.522 L38.3187,1.01664"/>
+            <path d="M18.2494,10.9534 L18.2493,10.9534"/>
+            <path d="M32.3019,28.3265 L32.3019,25.1445"/>
+            <path d="M437.203,-172.149 L437.203,-175.331"/>
+            <path d="M437.203,-175.331 L32.3019,25.1445"/>
+            <path d="M437.203,-172.149 L35.9882,26.5013"/>
+            <path d="M32.302,28.3264 L32.3019,28.3265"/>
+        </g>
+        <g id="product-a3f146ac-d4e5-45f3-916a-12eaf62f8545" class="IfcMember material-C18 projection" ifc:name="Member" ifc:guid="2ZyKQirEL5yv5g4khsBuL5">
+            <path d="M47.2092,28.9453 L52.3712,34.1582"/>
+            <path d="M47.2092,28.9456 L47.2092,28.9453"/>
+            <path d="M52.3713,18.3897 L52.3712,18.3897"/>
+            <path d="M56.0574,16.5646 L56.0574,16.5646"/>
+            <path d="M52.3712,34.1582 L56.0574,32.3331"/>
+            <path d="M56.0574,32.3331 L56.0574,16.5646"/>
+            <path d="M56.0574,16.5646 L52.3713,18.3897"/>
+            <path d="M52.3713,18.3897 L52.3712,34.1582"/>
+        </g>
+        </g>
+</svg>
