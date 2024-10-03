@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ifc="http://www.ifcopenshell.org/ns" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" data-scale="1:10" height="122.95061692424203mm" id="root" version="1.1" viewBox="0 0 123.76351356506348 122.95061692424203" width="123.76351356506348mm">
+  <defs/>
+  <line class="GlobalId-0n4uemH2z27OjclH4V3Uj9 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="390.7992248535156" x2="-1455.1143798828125" y1="1229.8529052734375" y2="618.6144409179688"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="390.7992248535156" y="1229.8529052734375">01</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-1455.1143798828125" y="618.6144409179688">01</text>
+  <line class="GlobalId-2swIM2JmP4UhG1HvKhdAB4 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="644.3335571289062" x2="-1201.5799560546875" y1="1014.8435668945312" y2="403.605224609375"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="644.3335571289062" y="1014.8435668945312">02</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-1201.5799560546875" y="403.605224609375">02</text>
+  <line class="GlobalId-2j3YwpMC5BCwGcRI1U$JRN IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1017.0274658203125" x2="-828.8858642578125" y1="698.7811279296875" y2="87.54265594482422"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1017.0274658203125" y="698.7811279296875">03</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-828.8858642578125" y="87.54265594482422">03</text>
+  <line class="GlobalId-2pPvS5OUb7Keb7UCU33TwO IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-682.3823852539062" x2="503.1969909667969" y1="955.243896484375" y2="-50.184364318847656"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-682.3823852539062" y="955.243896484375">D</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="503.1969909667969" y="-50.184364318847656">D</text>
+  <line class="GlobalId-28cVK3YBbEwAxesPGpzUq_ IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-849.4054565429688" x2="336.17401123046875" y1="899.9374389648438" y2="-105.49095916748047"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-849.4054565429688" y="899.9374389648438">E</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="336.17401123046875" y="-105.49095916748047">E</text>
+  <line class="GlobalId-0xow6Sq8v4aevfQswLr98j IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-1403.180908203125" x2="-217.60147094726562" y1="716.5654907226562" y2="-288.86297607421875"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-1403.180908203125" y="716.5654907226562">F</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-217.60147094726562" y="-288.86297607421875">F</text>
+  <line class="GlobalId-0bL2_$7vfBUeL$_PzI8mG9 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1258.82958984375" x2="-587.0835571289062" y1="493.7213439941406" y2="-117.51734161376953"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1258.82958984375" y="493.7213439941406">04</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-587.0835571289062" y="-117.51734161376953">04</text>
+  <line class="GlobalId-31fYbQnqTDCuAUI1CbduC4 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="225.8623046875" x2="1411.44140625" y1="1255.991455078125" y2="250.5631866455078"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="225.8623046875" y="1255.991455078125">A</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1411.44140625" y="250.5631866455078">A</text>
+  <line class="GlobalId-3j66sAkf93zvhHXJYGGapF IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1363.0648193359375" x2="-482.8481750488281" y1="405.3248291015625" y2="-205.91383361816406"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1363.0648193359375" y="405.3248291015625">05</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-482.8481750488281" y="-205.91383361816406">05</text>
+  <line class="GlobalId-2aiOpI2WX7tAYWBfkAx_Eu IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-187.12242126464844" x2="998.4568481445312" y1="1119.239501953125" y2="113.8114242553711"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-187.12242126464844" y="1119.239501953125">B</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="998.4568481445312" y="113.8114242553711">B</text>
+  <line class="GlobalId-1HmxvFnRHFBBVx_aw6zj9X IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="1430.65625" x2="-415.25689697265625" y1="348.00421142578125" y2="-263.23443603515625"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="1430.65625" y="348.00421142578125">06</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-415.25689697265625" y="-263.23443603515625">06</text>
+  <line class="GlobalId-0i8QzK1K5CdwR6UmmLC822 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="-434.7524719238281" x2="750.826904296875" y1="1037.24169921875" y2="31.81341552734375"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="-434.7524719238281" y="1037.24169921875">C</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="750.826904296875" y="31.81341552734375">C</text>
+</svg>

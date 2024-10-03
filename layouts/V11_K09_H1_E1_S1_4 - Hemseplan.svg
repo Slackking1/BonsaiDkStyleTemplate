@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ns1="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns2="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" id="root" version="1.1" width="420.0mm" height="297.0mm" viewBox="0 0 420.0 297.0" ns1:docname="V11_K09_H1_E1_S1_4 - Hemseplan.svg" ns2:version="1.3.2 (091e20e, 2023-11-25, custom)">
+  <defs id="defs11" />
+  <ns1:namedview id="namedview11" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" ns2:showpageshadow="2" ns2:pageopacity="0.0" ns2:pagecheckerboard="0" ns2:deskcolor="#d1d1d1" ns2:document-units="mm" ns2:zoom="1.2564128" ns2:cx="946.345" ns2:cy="489.09083" ns2:window-width="3840" ns2:window-height="2071" ns2:window-x="-9" ns2:window-y="-9" ns2:window-maximized="1" ns2:current-layer="root" />
+  <g data-type="titleblock" id="g1">
+    <image xlink:href="titleblocks%5CA3_landscape_DK.svg" x="0" y="0" width="420.0" height="297.0" id="image1" />
+  </g>
+  <g data-type="drawing" data-id="1135243" data-drawing="1LqheeF5T8bhGFGhS_G5Ac" id="g4" transform="translate(-21.900976,-20.972741)">
+    <image data-type="background" xlink:href="..%5Cdrawings%5CHemseplan-underlay.png" x="30" y="30.004999" width="371.60001" height="233.72" id="image2" />
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CHemseplan.svg" x="30" y="30.004999" width="371.60001" height="233.72" id="image3" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="30" y="268.72699" width="50.222462" height="10" id="image4" />
+  </g>
+  <g data-type="drawing" data-id="1135244" data-drawing="2DJV8Kxs124hcYbjxasB6B" id="g6">
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CANN_NoteGeneral.svg" x="311.60001" y="190.46677" width="105.00001" height="44.709679" id="image5" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="457.91138" y="214.06374" width="50.222462" height="10" id="image6" />
+  </g>
+  <g data-type="drawing" data-id="1135245" data-drawing="1s5Hi2DJfEjBtTNbvKX7kz" id="g8" transform="translate(371.60001,-14.995002)">
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CANN_NorthArrow.svg" x="30" y="30" width="15.000001" height="15.000001" id="image7" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="76.831253" y="27.961763" width="50.222462" height="10" id="image8" />
+  </g>
+  <g data-type="drawing" data-id="1142091" data-drawing="1ElFsBHgr7ov8IuU$uUdZJ" id="g11" transform="translate(246.12903,-20.967742)">
+    <image data-type="background" xlink:href="..%5Cdrawings%5CHemse%20ortografi-underlay.png" x="30" y="30" width="139.83817" height="85.160301" id="image9" />
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CHemse%20ortografi.svg" x="30" y="30" width="139.83817" height="85.160301" id="image10" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="223.28099" y="90.677422" width="50.222462" height="10" id="image11" />
+  </g>
+</svg>

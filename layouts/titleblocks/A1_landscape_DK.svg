@@ -25,15 +25,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.40961653"
-     inkscape:cx="3231.0708"
-     inkscape:cy="848.35444"
+     inkscape:zoom="1.6384661"
+     inkscape:cx="2856.6352"
+     inkscape:cy="1907.5768"
      inkscape:window-width="3840"
      inkscape:window-height="2071"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="variableTextDrawingSpecific" /><defs
+     inkscape:current-layer="g3" /><defs
      id="defs901"><rect
        x="3085.4034"
        y="2047.8402"
@@ -172,8 +172,19 @@
 </style><g
      id="g3"
      transform="translate(631.39749,296.82961)"><g
+       id="identificationNrRevison"
+       transform="translate(-626.75131,-160.92056)"><text
+         id="text2533-7-1"
+         y="169.54903"
+         x="887.05573"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88056px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88056px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke-width:0.265;stroke-dasharray:none"
+           y="169.54903"
+           x="828.74615"
+           id="tspan2531-3-5">{{Identification}}-{{Revision}}</tspan></text></g><g
        id="titleBlockGeometry"
-       transform="translate(1.3346421,-16.49716)">  
+       transform="translate(1.334647,-16.49716)">  
 
    <image
    xlink:href="https://ocplan.dk/images/OCplanLogo.svg"
@@ -195,7 +206,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;line-height:100%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.25;stroke-miterlimit:4;stroke-dasharray:none"
        y="281.72101"
        x="66.587608"
-       id="tspan116524-2-6-8-7-2-3-7">240054 - Nybyg Nybovej 11 - Nybovej 11, 7400 Herning </tspan></text><text
+       id="tspan116524-2-6-8-7-2-3-7">{{Description}} </tspan></text><text
      id="text116526-2-9-2-1-0-1-38-9"
      y="286.69943"
      x="66.556641"
@@ -204,7 +215,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;line-height:100%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.25;stroke-miterlimit:4;stroke-dasharray:none"
        y="286.69943"
        x="66.556641"
-       id="tspan116524-2-6-8-7-2-3-7-70">Annelouise og Mikkel Asmussen - Odinsgade 6, 1., 7400 Herning </tspan></text></g><g
+       id="tspan116524-2-6-8-7-2-3-7-70">{{ValidFrom}}</tspan></text></g><g
    id="variableTekstandLogoCompany"
    transform="translate(7.4083337,1.0583333)">
    <text
@@ -280,12 +291,12 @@
        id="tspan116524-2-6-8">-</tspan></text><text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     x="8.3986607"
-     y="276.27023"
+     x="7.2191787"
+     y="267.48438"
      id="text2529"><tspan
        id="tspan2527"
-       x="8.3986607"
-       y="276.27023"
+       x="7.2191787"
+       y="267.48438"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583px">{{Revision}}</tspan></text><text
      id="text116526-2-9-2-1"
      y="263.23367"
@@ -332,24 +343,6 @@
        x="110.20222"
        y="255.62891"
        id="tspan1">-</tspan></text><text
-     id="text116526-2-9-2-9"
-     y="267.68015"
-     x="8.7688046"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     xml:space="preserve"><tspan
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;line-height:100%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.25;stroke-miterlimit:4;stroke-dasharray:none"
-       y="267.68015"
-       x="8.7688046"
-       id="tspan116524-2-6-8-1">A</tspan></text><text
-     id="text116526-2-9-2-1-0"
-     y="267.68015"
-     x="25.188732"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     xml:space="preserve"><tspan
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;line-height:100%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.25;stroke-miterlimit:4;stroke-dasharray:none"
-       y="267.68015"
-       x="25.188732"
-       id="tspan116524-2-6-8-7-2">-</tspan></text><text
      id="text116526-2-9-2-1-2-3"
      y="267.68015"
      x="42.71743"
@@ -394,7 +387,16 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;line-height:100%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.25;stroke-miterlimit:4;stroke-dasharray:none"
        y="276.28543"
        x="24.659565"
-       id="tspan116524-2-6-8-7-2-3">15.09.2024</tspan></text><text
+       id="tspan116524-2-6-8-7-2-3">{{CreationTime}}</tspan></text><text
+     id="text116526-2-9-2-1-0-1-7"
+     y="267.48438"
+     x="24.271578"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;line-height:100%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.25;stroke-miterlimit:4;stroke-dasharray:none"
+       y="267.48438"
+       x="24.271578"
+       id="tspan116524-2-6-8-7-2-3-8">{{LastRevisionTime}}</tspan></text><text
      id="text116526-2-9-2-1-2-3-1"
      y="276.28543"
      x="42.71743"
@@ -607,13 +609,13 @@
        id="tspan36742-0">{{Name}}</tspan></text><text
      id="text36744-1-5"
      y="304.7265"
-     x="81.434967"
+     x="80.9058"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.371;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.371;stroke-dasharray:none"
        y="304.7265"
-       x="81.434967"
-       id="tspan36742-0-0">A1</tspan></text><text
+       x="80.9058"
+       id="tspan36742-0-0">{{ElectronicFormat}}</tspan></text><text
      id="text2533-6"
      y="301.14441"
      x="23.805992"
@@ -649,7 +651,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;line-height:100%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.25;stroke-miterlimit:4;stroke-dasharray:none"
        y="298.22189"
        x="24.04635"
-       id="tspan116524-2-6-8-7-2-3-2-8-7-8">ES, Stuen</tspan></text><text
+       id="tspan116524-2-6-8-7-2-3-2-8-7-8">{{IntendedUse}}</tspan></text><text
      id="text116526-2-9-2-1-0-1-3-6-6-8-4"
      y="298.81683"
      x="81.217247"
@@ -676,7 +678,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;line-height:100%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.25;stroke-miterlimit:4;stroke-dasharray:none"
        y="295.24509"
        x="81.094261"
-       id="tspan116524-2-6-8-7-2-3-2-85-6">H1, plan</tspan></text><text
+       id="tspan116524-2-6-8-7-2-3-2-85-6">{{Purpose}}</tspan></text><text
      id="text116526-2-9-2-1-0-1-3-1-8-5"
      y="304.20679"
      x="23.946791"
@@ -728,15 +730,4 @@
      id="path116530-3-6-2"
      d="M 13.003989,283.22301 H 197.60973"
      style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.0788562;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></g>
-         </g><g
-       id="identificationNrRevison"
-       transform="translate(-626.75131,-160.92056)"><text
-         id="text2533-7-1"
-         y="169.54903"
-         x="887.05573"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88056px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88056px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke-width:0.265;stroke-dasharray:none"
-           y="169.54903"
-           x="828.74615"
-           id="tspan2531-3-5">{{Identification}}-{{Revision}}</tspan></text></g></g></svg>
+         </g></g></svg>

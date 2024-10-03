@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ifc="http://www.ifcopenshell.org/ns" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" data-scale="1:100" height="233.7186796077193mm" id="root" version="1.1" viewBox="0 0 371.5999984741211 233.7186796077193" width="371.5999984741211mm">
+  <defs/>
+  <line class="GlobalId-2QS4aIom59qxWh1AyA$jme IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="12.541027069091797" x2="236.2692108154297" y1="20.387392044067383" y2="20.387392044067383"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="12.541027069091797" y="20.387392044067383">F</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="236.2692108154297" y="20.387392044067383">F</text>
+  <line class="GlobalId-1TA4PayPbCbPJlwQuOTOhr IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="208.93861389160156" x2="208.93861389160156" y1="223.85421752929688" y2="6.18811559677124"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="208.93861389160156" y="223.85421752929688">05</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="208.93861389160156" y="6.18811559677124">05</text>
+  <line class="GlobalId-0QI4lOhbT9igOpn$WY7Mly IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="12.541027069091797" x2="236.2692108154297" y1="134.5823974609375" y2="134.5823974609375"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="12.541027069091797" y="134.5823974609375">C</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="236.2692108154297" y="134.5823974609375">C</text>
+  <line class="GlobalId-3oWMn9kgH0xvmItNXH2qAS IfcAnnotation PredefinedType-SECTION" x1="125.75199127197266" x2="125.75199127197266" y1="94.15214538574219" y2="76.29200744628906"/>
+  <use transform="rotate(-90.00000250447816, 125.75199127197266, 94.15214538574219)" x="125.75199127197266" xlink:href="#section-arrow" y="94.15214538574219"/>
+  <use x="125.75199127197266" xlink:href="#section-tag" y="94.15214538574219"/>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="125.75199127197266" y="91.65214538574219">1</text>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="125.75199127197266" y="96.65214538574219">V12_K09_H5_EX_S1_2</text>
+  <use transform="rotate(-90.00000250447816, 125.75199127197266, 76.29200744628906)" x="125.75199127197266" xlink:href="#section-arrow" y="76.29200744628906"/>
+  <use x="125.75199127197266" xlink:href="#section-tag" y="76.29200744628906"/>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="125.75199127197266" y="73.79200744628906">1</text>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="125.75199127197266" y="78.79200744628906">V12_K09_H5_EX_S1_2</text>
+  <line class="GlobalId-3uy5VMVSX2m8RwK4qu4k0h IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="12.541027069091797" x2="236.2692108154297" y1="212.48065185546875" y2="212.48065185546875"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="12.541027069091797" y="212.48065185546875">A</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="236.2692108154297" y="212.48065185546875">A</text>
+  <line class="GlobalId-3akBAOBqTAYO4yfsbmiYS6 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="12.541027069091797" x2="236.2692108154297" y1="105.38239288330078" y2="105.38239288330078"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="12.541027069091797" y="105.38239288330078">D</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="236.2692108154297" y="105.38239288330078">D</text>
+  <line class="GlobalId-0yH3CoGOL9ZuzbTTYNnIet IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="12.541027069091797" x2="236.2692108154297" y1="85.6874008178711" y2="85.6874008178711"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="12.541027069091797" y="85.6874008178711">E</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="236.2692108154297" y="85.6874008178711">E</text>
+  <line class="GlobalId-1nhdD5cPz3VQC4xVJzQLv3 IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="25.46438217163086" x2="25.46438217163086" y1="223.85421752929688" y2="6.18811559677124"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="25.46438217163086" y="223.85421752929688">01</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="25.46438217163086" y="6.18811559677124">01</text>
+  <line class="GlobalId-1MeEhCbqX8jg11hy54z9zg IfcAnnotation PredefinedType-SECTION" x1="68.78106689453125" x2="68.78106689453125" y1="94.05520629882812" y2="78.33507537841797"/>
+  <use transform="rotate(-90.00000250447816, 68.78106689453125, 94.05520629882812)" x="68.78106689453125" xlink:href="#section-arrow" y="94.05520629882812"/>
+  <use x="68.78106689453125" xlink:href="#section-tag" y="94.05520629882812"/>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="68.78106689453125" y="91.55520629882812">1</text>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="68.78106689453125" y="96.55520629882812">V11_K09_H5_EX_S1_1</text>
+  <use transform="rotate(-90.00000250447816, 68.78106689453125, 78.33507537841797)" x="68.78106689453125" xlink:href="#section-arrow" y="78.33507537841797"/>
+  <use x="68.78106689453125" xlink:href="#section-tag" y="78.33507537841797"/>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="68.78106689453125" y="75.83507537841797">1</text>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="68.78106689453125" y="80.83507537841797">V11_K09_H5_EX_S1_1</text>
+  <line class="GlobalId-1t2pNrk5zAyRFJs_qN8Nrq IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="73.30833435058594" x2="73.30833435058594" y1="223.85421752929688" y2="6.18811559677124"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="73.30833435058594" y="223.85421752929688">02</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="73.30833435058594" y="6.18811559677124">02</text>
+  <line class="GlobalId-072KQvrtP1YhHyIHrJPclu IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="143.63864135742188" x2="143.63864135742188" y1="223.85421752929688" y2="6.18811559677124"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="143.63864135742188" y="223.85421752929688">03</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="143.63864135742188" y="6.18811559677124">03</text>
+  <line class="GlobalId-16tp6P1Bz5WuSaWLFPF0HP IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="189.2686309814453" x2="189.2686309814453" y1="223.85421752929688" y2="6.18811559677124"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="189.2686309814453" y="223.85421752929688">04</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="189.2686309814453" y="6.18811559677124">04</text>
+  <line class="GlobalId-2qmKcAuLHCqAc3rNNqht0f IfcAnnotation PredefinedType-SECTION" x1="131.7711181640625" x2="131.7711181640625" y1="60.451011657714844" y2="46.23657989501953"/>
+  <use transform="rotate(-90.00000250447816, 131.7711181640625, 60.451011657714844)" x="131.7711181640625" xlink:href="#section-arrow" y="60.451011657714844"/>
+  <use x="131.7711181640625" xlink:href="#section-tag" y="60.451011657714844"/>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="131.7711181640625" y="57.951011657714844">2</text>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="131.7711181640625" y="62.951011657714844">V11_K09_H5_ET_S1_3</text>
+  <use transform="rotate(-90.00000250447816, 131.7711181640625, 46.23657989501953)" x="131.7711181640625" xlink:href="#section-arrow" y="46.23657989501953"/>
+  <use x="131.7711181640625" xlink:href="#section-tag" y="46.23657989501953"/>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="131.7711181640625" y="43.73657989501953">2</text>
+  <text class="SECTION" dominant-baseline="middle" text-anchor="middle" x="131.7711181640625" y="48.73657989501953">V11_K09_H5_ET_S1_3</text>
+  <line class="GlobalId-3skyEGy7b74hPTBxxY37ak IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="12.541027069091797" x2="236.2692108154297" y1="163.78237915039062" y2="163.78237915039062"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="12.541027069091797" y="163.78237915039062">B</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="236.2692108154297" y="163.78237915039062">B</text>
+  <line class="GlobalId-0aVOm3$Ib96eot6b0boVis IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="221.69363403320312" x2="221.69363403320312" y1="223.85421752929688" y2="6.18811559677124"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="221.69363403320312" y="223.85421752929688">06</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="221.69363403320312" y="6.18811559677124">06</text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(256.11834716796875, 121.61228942871094) rotate(-0.0)">
+    <tspan class="GlobalId-1n2al4awj1Svte8KWn3fs8 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Dimensioner er lavet efter hemse bygges efter vægge er beklædt med 1. lag</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(174.091552734375, 120.04489135742188) rotate(-89.999995674289)">
+    <tspan class="GlobalId-0Vtm8hRNT9fxJF7ZPZZ63y IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">C18 45x195</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(256.0928039550781, 109.65602111816406) rotate(-0.0)">
+    <tspan class="GlobalId-0f_ALTC1983x7WpiIqXjQZ IfcAnnotation PredefinedType-TEXT large" dy="0em" x="0" y="0">Fastgørelser hemse/dæk</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(196.99012756347656, 168.2906951904297) rotate(-0.0)">
+    <tspan class="GlobalId-24H08ofej2Guqz8l2DIgV3 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">C18 45x195</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(172.55551147460938, 52.18402099609375) rotate(-0.0)">
+    <tspan class="GlobalId-2$7FHneSb3NA8PkZPaufMx IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">C18 45x195</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(174.2075958251953, 149.18240356445312) rotate(-89.999995674289)">
+    <tspan class="GlobalId-021_tstRr2QgoNHMHf5BdS IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">C18 45x195</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(256.0563049316406, 113.51859283447266) rotate(-0.0)">
+    <tspan class="GlobalId-1$oamoKCP19hu$ncFYIgKQ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Remme på vægge monteres med 5 stk. 5,0x120mm i hver væg søjle</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(256.2244873046875, 117.3659439086914) rotate(-0.0)">
+    <tspan class="GlobalId-2WGl9RrB59J9DERsHYQ1qr IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Bjælker moonteres med BSNN45/138</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(203.0414581298828, 94.94739532470703) rotate(-89.999995674289)">
+    <tspan class="GlobalId-1lzXzWXFX2UAkbRiy722ey IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">C18 45x195</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="211.6688232421875" x2="211.6688232421875" y1="164.6727752685547" y2="169.6229248046875"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(212.6688232421875, 172.6229248046875) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">495</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="211.6688232421875" x2="211.6688232421875" y1="169.6229248046875" y2="175.72293090820312"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(212.6688232421875, 172.6729278564453) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">610</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="211.6688232421875" x2="211.6688232421875" y1="175.72293090820312" y2="181.82293701171875"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(212.6688232421875, 178.77293395996094) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">610</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="211.6688232421875" x2="211.6688232421875" y1="181.82293701171875" y2="187.9228973388672"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(212.6688232421875, 184.8729248046875) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">610</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="211.6688232421875" x2="211.6688232421875" y1="187.9228973388672" y2="194.0229034423828"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(212.6688232421875, 190.972900390625) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">610</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="211.6688232421875" x2="211.6688232421875" y1="194.0229034423828" y2="200.12290954589844"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(212.6688232421875, 197.07290649414062) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">610</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="211.6688232421875" x2="211.6688232421875" y1="200.12290954589844" y2="206.22291564941406"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(212.6688232421875, 203.17291259765625) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">610</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="211.6688232421875" x2="211.6688232421875" y1="206.22291564941406" y2="208.67080688476562"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(212.6688232421875, 211.67080688476562) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">245</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="211.6688232421875" x2="211.6688232421875" y1="208.67080688476562" y2="210.0306396484375"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(212.6688232421875, 213.0306396484375) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">136</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="185.81863403320312" x2="211.66883850097656" y1="192.83221435546875" y2="192.83221435546875"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(198.74374389648438, 191.83221435546875) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">2585</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="185.36863708496094" x2="206.4886474609375" y1="198.27114868164062" y2="198.27114868164062"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(195.92864990234375, 197.27114868164062) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">2112</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="182.47555541992188" x2="182.47555541992188" y1="210.03067016601562" y2="164.67282104492188"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(181.47555541992188, 187.35174560546875) rotate(-90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">4536</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="185.24365234375" x2="206.4886474609375" y1="206.50302124023438" y2="206.50302124023438"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(195.86614990234375, 205.50302124023438) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">2125</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="229.17593383789062" x2="229.17593383789062" y1="20.387392044067383" y2="85.6874008178711"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(230.17593383789062, 53.03739929199219) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">6530</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="229.17593383789062" x2="229.17593383789062" y1="85.6874008178711" y2="105.38239288330078"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(230.17593383789062, 95.53489685058594) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">1969</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="229.17593383789062" x2="229.17593383789062" y1="105.38239288330078" y2="134.5823974609375"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(230.17593383789062, 119.98239135742188) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">2920</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="229.17593383789062" x2="229.17593383789062" y1="134.5823974609375" y2="163.78237915039062"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(230.17593383789062, 149.18238830566406) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">2920</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="229.17593383789062" x2="229.17593383789062" y1="163.78237915039062" y2="212.48065185546875"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(230.17593383789062, 188.1315155029297) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">4870</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="25.46436309814453" x2="73.30833435058594" y1="12.364969253540039" y2="12.364969253540039"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(49.386348724365234, 11.364969253540039) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">4784</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="73.30833435058594" x2="143.63864135742188" y1="12.364969253540039" y2="12.364969253540039"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(108.4734878540039, 11.364969253540039) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">7033</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="143.63864135742188" x2="189.2686309814453" y1="12.364969253540039" y2="12.364969253540039"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(166.45364379882812, 11.364969253540039) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">4563</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="189.2686309814453" x2="208.93861389160156" y1="12.364969253540039" y2="12.364969253540039"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(199.10362243652344, 11.364969253540039) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">1967</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="208.93861389160156" x2="221.69363403320312" y1="12.364969253540039" y2="12.364969253540039"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(215.31613159179688, 11.364969253540039) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">1276</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="195.58462524414062" x2="195.58462524414062" y1="163.05740356445312" y2="135.30740356445312"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(194.58462524414062, 149.18240356445312) rotate(-90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">2775</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="195.670166015625" x2="195.670166015625" y1="133.85739135742188" y2="106.23240661621094"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(194.670166015625, 120.0448989868164) rotate(-90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">2762</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="213.9397430419922" x2="213.9397430419922" y1="104.78240203857422" y2="85.68739318847656"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(212.9397430419922, 95.23489379882812) rotate(-90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">1910</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="191.08193969726562" x2="191.08193969726562" y1="133.73239135742188" y2="106.35739135742188"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(190.08193969726562, 120.04489135742188) rotate(-90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">2738</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="186.05517578125" x2="186.05517578125" y1="133.2823944091797" y2="106.8073959350586"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(185.05517578125, 120.04489135742188) rotate(-90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">2648</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="146.08865356445312" x2="158.75082397460938" y1="142.54666137695312" y2="142.54666137695312"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(152.41973876953125, 141.54666137695312) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">1266</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="159.64364624023438" x2="176.5186309814453" y1="140.1459197998047" y2="140.1459197998047"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(168.08114624023438, 139.1459197998047) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">1687</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="146.5064697265625" x2="151.5064697265625" y1="170.36924743652344" y2="170.36924743652344"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(154.5064697265625, 169.36924743652344) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">500</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="151.5064697265625" x2="157.60646057128906" y1="170.36924743652344" y2="170.36924743652344"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(154.55645751953125, 169.36924743652344) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">610</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="157.60646057128906" x2="163.73867797851562" y1="170.36924743652344" y2="170.36924743652344"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(160.67257690429688, 169.36924743652344) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">613</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="163.73867797851562" x2="169.83868408203125" y1="170.36924743652344" y2="170.36924743652344"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(166.78868103027344, 169.36924743652344) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">610</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="169.83868408203125" x2="175.93865966796875" y1="170.36924743652344" y2="170.36924743652344"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(172.888671875, 169.36924743652344) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">610</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="146.08868408203125" x2="176.5186767578125" y1="160.5032958984375" y2="160.5032958984375"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(161.30368041992188, 159.5032958984375) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">3043</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="182.72865295410156" x2="182.72865295410156" y1="104.78240203857422" y2="85.68740844726562"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(181.72865295410156, 95.23490905761719) rotate(-90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">1909</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="188.591552734375" x2="188.591552734375" y1="85.68739318847656" y2="104.20741271972656"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(189.591552734375, 94.94740295410156) rotate(90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">1852</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="148.73109436035156" x2="148.73109436035156" y1="44.351463317871094" y2="38.2514762878418"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(147.73109436035156, 41.30146789550781) rotate(-90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">610</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="194.2377471923828" x2="194.2377471923828" y1="67.55740356445312" y2="22.837400436401367"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(193.2377471923828, 45.19740295410156) rotate(-90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">4472</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="198.79396057128906" x2="198.79396057128906" y1="67.30738830566406" y2="22.837400436401367"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(197.79396057128906, 45.07239532470703) rotate(-90.00000250447816)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">4447</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="143.99362182617188" x2="187.9436492919922" y1="30.297698974609375" y2="30.297698974609375"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(165.9686279296875, 29.297698974609375) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">4395</tspan>
+  </text>
+  <line class="GlobalId-0CJyzsSdzFUe4jP$GvpyGL IfcAnnotation PredefinedType-DIMENSION" x1="143.5436248779297" x2="188.3936767578125" y1="36.32335662841797" y2="36.32335662841797"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="middle" transform="translate(165.96865844726562, 35.32335662841797) rotate(0.0)">
+    <tspan class="DIMENSION" dy="0em" x="0" y="0">4485</tspan>
+  </text>
+</svg>

@@ -9,8 +9,8 @@
     <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="173.30209" y="56.279144" width="50.222462" height="10" id="image3" />
   </g>
   <g data-type="drawing" data-id="1057019" data-drawing="2ipCnwDLvDHQLbPCUBDfLL" id="g6" transform="translate(-20.000008,-18.38786)">
-    <image data-type="background" xlink:href="..%5Cdrawings%5C3d%20samling%20s%C3%B8jler%20kipbj%C3%A6lke-underlay.png" x="30" y="30" width="190.00002" height="169.99667" id="image4" />
-    <image data-type="foreground" xlink:href="..%5Cdrawings%5C3d%20samling%20s%C3%B8jler%20kipbj%C3%A6lke.svg" x="30" y="30" width="190.00002" height="169.99667" id="image5" />
-    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="30" y="204.99667" width="50.222462" height="10" id="image6" />
+    <image data-type="background" xlink:href="..%5Cdrawings%5C3d%20samling%20s%C3%B8jler%20kipbj%C3%A6lke-underlay.png" x="30.0" y="30.15999999642372" width="190.0" height="169.68" id="image4" />
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5C3d%20samling%20s%C3%B8jler%20kipbj%C3%A6lke.svg" x="30.0" y="30.15999999642372" width="190.0" height="169.68" id="image5" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="30.0" y="204.83667000357627" width="50.222462" height="10" id="image6" />
   </g>
 </svg>

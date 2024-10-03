@@ -18,8 +18,8 @@
     <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="72.360458" y="132.53" width="50.222462" height="10" id="image10" />
   </g>
   <g data-type="drawing" data-id="1048300" data-drawing="2VM5I8iTj7wAihm29PYZ5h" id="g11" transform="translate(-24.406589,-20.757006)">
-    <image data-type="background" xlink:href="..%5Cdrawings%5CStueplan%20fastg%C3%B8relse%20v%C3%A6gge%20Lodrette%20og%20overliggerer-underlay.png" x="30" y="30" width="371.60001" height="233.7477" id="image2" />
-    <image data-type="foreground" xlink:href="..%5Cdrawings%5CStueplan%20fastg%C3%B8relse%20v%C3%A6gge%20Lodrette%20og%20overliggerer.svg" x="30" y="30" width="371.60001" height="233.7477" id="image3" />
-    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="30" y="268.74771" width="50.222462" height="10" id="image11" />
+    <image data-type="background" xlink:href="..%5Cdrawings%5CStueplan%20fastg%C3%B8relse%20v%C3%A6gge%20Lodrette%20og%20overliggerer-underlay.png" x="30.0" y="30.014999999664724" width="371.6" height="233.72" id="image2" />
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CStueplan%20fastg%C3%B8relse%20v%C3%A6gge%20Lodrette%20og%20overliggerer.svg" x="30.0" y="30.014999999664724" width="371.6" height="233.72" id="image3" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="30.0" y="268.73271000033526" width="50.222462" height="10" id="image11" />
   </g>
 </svg>

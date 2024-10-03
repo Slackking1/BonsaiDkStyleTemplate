@@ -353,12 +353,12 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
         </g>
     </marker>
     
-    <marker id="grid-marker" markerHeight="40" markerWidth="40" orient="auto" refX="20" refY="20">
-        <circle cx="20" cy="20" fill="white" stroke="black" r="19" style="stroke-width: 1" />
+    <marker id="grid-marker" markerHeight="60" markerWidth="60" orient="auto" refX="30" refY="30">
+        <circle cx="30" cy="30" fill="white" stroke="black" r="29" style="stroke-width: 1" />
     </marker>
 
-    <marker id="leader-marker" markerHeight="4" markerWidth="7" orient="auto" refX="6" refY="2.0">
-        <path d="M 0 0 L 0 4 L 7 2.0" class="annotation" style="fill:black;" />
+    <marker id="leader-marker" markerHeight="7.5" markerWidth="13.125" orient="auto" refX="11.25" refY="3.75">
+        <path d="M 0 0 L 0 7.5 L 13.125 3.75" class="annotation" style="fill:black;" />
     </marker>
     <marker id="leader-marker-dot" markerHeight="7" markerWidth="10" orient="auto" refX="10" refY="3.5">
         <circle cx="5" cy="3.5" fill="black" stroke="none" r="2" />
@@ -552,8 +552,8 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
 
 <pattern id="woodStructural" width="1" height="1" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox">    
     <rect x="0" y="0" width="1" height="1" style="fill: none" />
-    <line x1="0" y1="0" x2="1" y2="1" style="stroke:black; stroke-width:0.125" vector-effect="non-scaling-stroke" />
-    <line x1="1" y1="0" x2="0" y2="1" style="stroke:black; stroke-width:0.125" vector-effect="non-scaling-stroke" />
+    <line x1="0" y1="0" x2="1" y2="1" style="stroke:black; stroke-width:0.05" vector-effect="non-scaling-stroke" />
+    <line x1="1" y1="0" x2="0" y2="1" style="stroke:black; stroke-width:0.05" vector-effect="non-scaling-stroke" />
 </pattern>
 <pattern id="woodStructuralMasked" width="1" height="1" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox">    
     <rect x="0" y="0" width="1" height="1" style="fill: white" />
@@ -769,22 +769,9 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
             <path d="M79.7114,123.907 L79.7114,119.407"/>
             <path d="M79.7114,119.407 L55.2114,119.407"/>
         </g>
-        <g id="product-24322de5-0d5d-4e66-8358-7a7a88e96fcd" class="IfcMember material-wood projection" ifc:name="I-profil 45x400, normal sp&#230;r byg 1.010" ifc:guid="0aCYtb3LrEPeDOUdg8wM$D">
-            <path d="M251.6,-60.8836 L251.6,-60.8836"/>
-            <path d="M55.1775,114.907 L55.1775,114.907"/>
-            <path d="M69.163,114.907 L69.163,114.907"/>
-            <path d="M69.163,114.907 L69.163,114.907"/>
-            <path d="M251.6,-60.8836 L251.6,-60.8836"/>
-            <path d="M708.177,85.5494 L708.177,85.5494"/>
-            <path d="M708.177,85.5494 L708.177,85.5494"/>
-            <path d="M708.177,78.9026 L708.177,78.9026"/>
-            <path d="M708.177,114.907 L708.177,114.907"/>
-            <path d="M708.177,114.907 L708.177,114.907"/>
-            <path d="M694.26,114.907 L694.26,114.907"/>
-            <path d="M694.26,114.907 L694.26,114.907"/>
-            <path d="M687.613,114.907 L687.613,114.907"/>
-        </g>
         <g id="product-756db0e5-a96a-4bb3-b3dd-936a483e0665" class="IfcMember material-wood projection" ifc:name="I-profil 45x400, normal sp&#230;r byg 1.008" ifc:guid="1rRR3bgMfBixFTasf8FWPb">
+            <path d="M374.711,-190.642 L374.711,-190.642"/>
+            <path d="M374.711,-183.995 L374.711,-183.995"/>
             <path d="M251.6,-60.8836 L251.6,-60.8836"/>
             <path d="M55.1775,114.907 L55.1775,114.907"/>
             <path d="M69.163,114.907 L69.163,114.907"/>
@@ -796,52 +783,13 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
             <path d="M708.177,114.907 L708.177,114.907"/>
             <path d="M708.177,114.907 L708.177,114.907"/>
             <path d="M694.26,114.907 L694.26,114.907"/>
-            <path d="M694.26,114.907 L694.26,114.907"/>
-            <path d="M687.613,114.907 L687.613,114.907"/>
-        </g>
-        <g id="product-467152f2-e003-4d1e-bcec-12220c6087d0" class="IfcMember material-wood projection" ifc:name="I-profil 45x400, normal sp&#230;r byg 1.013" ifc:guid="16SLBou0DD7hpi4Y8CO8VG">
-            <path d="M381.711,-240.917 L226.639,-85.8446"/>
-            <path d="M381.711,-247.563 L223.316,-89.1679"/>
-            <path d="M381.711,-247.563 L381.711,-241.302"/>
-            <path d="M381.711,-240.917 L381.711,-203.961"/>
-            <path d="M381.711,-197.642 L381.711,-203.961"/>
-            <path d="M381.711,-190.995 L251.6,-60.8836"/>
-            <path d="M381.711,-197.642 L248.277,-64.2071"/>
-            <path d="M381.711,-190.995 L381.711,-191.248"/>
-            <path d="M381.711,-197.642 L381.711,-197.642"/>
-            <path d="M55.1774,78.9706 L223.316,-89.1679"/>
-            <path d="M55.1774,85.6173 L55.1774,78.9706"/>
-            <path d="M55.1774,85.6173 L226.639,-85.8446"/>
-            <path d="M223.316,-89.1679 L226.639,-85.8446"/>
-            <path d="M226.639,-85.8446 L248.277,-64.2071"/>
-            <path d="M55.1774,114.907 L55.1774,85.6173"/>
-            <path d="M55.1774,114.907 L69.163,114.907"/>
-            <path d="M69.163,114.907 L75.8098,114.907"/>
-            <path d="M69.163,114.907 L248.277,-64.2071"/>
-            <path d="M248.277,-64.2071 L251.6,-60.8836"/>
-            <path d="M251.6,-60.8836 L75.8098,114.907"/>
-            <path d="M708.177,85.5494 L581.343,-41.2849"/>
-            <path d="M708.177,78.9026 L708.177,85.5494"/>
-            <path d="M708.177,78.9026 L584.666,-44.6083"/>
-            <path d="M708.177,85.5494 L708.177,114.907"/>
-            <path d="M694.26,114.907 L708.177,114.907"/>
-            <path d="M694.26,114.907 L559.706,-19.6475"/>
             <path d="M694.26,114.907 L688.769,114.907"/>
             <path d="M688.769,114.907 L687.613,114.907"/>
-            <path d="M687.613,114.907 L556.382,-16.3241"/>
-            <path d="M381.711,-192.151 L381.711,-197.642"/>
-            <path d="M381.711,-192.151 L381.711,-190.995"/>
-            <path d="M381.711,-190.995 L556.382,-16.3241"/>
-            <path d="M559.706,-19.6475 L556.382,-16.3241"/>
-            <path d="M559.706,-19.6475 L381.711,-197.642"/>
-            <path d="M381.711,-240.917 L581.343,-41.2849"/>
-            <path d="M381.711,-247.563 L381.711,-240.917"/>
-            <path d="M381.711,-247.563 L584.666,-44.6083"/>
-            <path d="M584.666,-44.6083 L581.343,-41.2849"/>
-            <path d="M381.711,-240.917 L381.711,-197.642"/>
-            <path d="M581.343,-41.2849 L559.706,-19.6475"/>
+            <path d="M687.613,114.907 L687.613,114.907"/>
         </g>
         <g id="product-fd18cd1f-2a2a-419d-a731-269cfb15e322" class="IfcMember material-wood projection" ifc:name="I-profil 45x400, normal sp&#230;r byg 1.007" ifc:guid="3z6CqVAYf1dQSn9fpx5UCY">
+            <path d="M374.711,-190.642 L374.711,-190.642"/>
+            <path d="M374.711,-183.995 L374.711,-183.995"/>
             <path d="M251.6,-60.8836 L251.6,-60.8836"/>
             <path d="M55.1775,114.907 L55.1775,114.907"/>
             <path d="M69.163,114.907 L69.163,114.907"/>
@@ -853,16 +801,51 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
             <path d="M708.177,114.907 L708.177,114.907"/>
             <path d="M708.177,114.907 L708.177,114.907"/>
             <path d="M694.26,114.907 L694.26,114.907"/>
-            <path d="M694.26,114.907 L688.769,114.907"/>
-            <path d="M688.769,114.907 L687.613,114.907"/>
+            <path d="M687.613,114.907 L687.613,114.907"/>
+        </g>
+        <g id="product-b22fa1ed-787b-49c4-8ce7-898bf9a6a256" class="IfcMember material-wood projection" ifc:name="I-profil 45x400, normal sp&#230;r byg 1.011" ifc:guid="2oBw7jU7j9n8pdYOlvfg9M">
+            <path d="M374.711,-190.642 L374.711,-190.642"/>
+            <path d="M374.711,-183.995 L374.711,-183.995"/>
+            <path d="M251.6,-60.8836 L251.6,-60.8836"/>
+            <path d="M55.1774,114.907 L55.1774,114.907"/>
+            <path d="M69.163,114.907 L69.163,114.907"/>
+            <path d="M75.8098,114.907 L75.8098,114.907"/>
+            <path d="M69.163,114.907 L69.163,114.907"/>
+            <path d="M251.6,-60.8836 L251.6,-60.8836"/>
+            <path d="M75.8098,114.907 L75.8098,114.907"/>
+            <path d="M708.177,85.5494 L708.177,85.5494"/>
+            <path d="M708.177,85.5494 L708.177,85.5494"/>
+            <path d="M708.177,78.9026 L708.177,78.9026"/>
+            <path d="M708.177,114.907 L708.177,114.907"/>
+            <path d="M708.177,114.907 L708.177,114.907"/>
+            <path d="M694.26,114.907 L694.26,114.907"/>
+            <path d="M694.26,114.907 L694.26,114.907"/>
+            <path d="M688.769,114.907 L688.769,114.907"/>
+            <path d="M687.613,114.907 L687.613,114.907"/>
+        </g>
+        <g id="product-24322de5-0d5d-4e66-8358-7a7a88e96fcd" class="IfcMember material-wood projection" ifc:name="I-profil 45x400, normal sp&#230;r byg 1.010" ifc:guid="0aCYtb3LrEPeDOUdg8wM$D">
+            <path d="M374.711,-190.642 L374.711,-190.642"/>
+            <path d="M374.711,-183.995 L374.711,-183.995"/>
+            <path d="M251.6,-60.8836 L251.6,-60.8836"/>
+            <path d="M55.1775,114.907 L55.1775,114.907"/>
+            <path d="M69.163,114.907 L69.163,114.907"/>
+            <path d="M69.163,114.907 L69.163,114.907"/>
+            <path d="M251.6,-60.8836 L251.6,-60.8836"/>
+            <path d="M708.177,85.5494 L708.177,85.5494"/>
+            <path d="M708.177,85.5494 L708.177,85.5494"/>
+            <path d="M708.177,78.9026 L708.177,78.9026"/>
+            <path d="M708.177,114.907 L708.177,114.907"/>
+            <path d="M708.177,114.907 L708.177,114.907"/>
+            <path d="M694.26,114.907 L694.26,114.907"/>
             <path d="M687.613,114.907 L687.613,114.907"/>
         </g>
         <g id="product-1b42096a-2984-49fd-9b0e-a1655e98b6ae" class="IfcMember material-wood projection" ifc:name="I-profil 45x400, normal sp&#230;r byg 1.012" ifc:guid="0RGWbgAOH9$PiEeMLUcBQk">
             <path d="M226.639,-85.8446 L226.639,-85.8445"/>
             <path d="M223.316,-89.1679 L223.316,-89.1679"/>
-            <path d="M251.6,-60.8836 L251.6,-60.8836"/>
+            <path d="M374.711,-190.642 L374.711,-190.642"/>
+            <path d="M374.711,-183.995 L374.711,-183.995"/>
             <path d="M248.277,-64.2071 L248.277,-64.2071"/>
-            <path d="M381.711,-190.995 L381.711,-190.995"/>
+            <path d="M251.6,-60.8836 L251.6,-60.8836"/>
             <path d="M55.1775,78.9706 L55.1775,78.9706"/>
             <path d="M55.1775,85.6173 L55.1775,85.6173"/>
             <path d="M55.1775,85.6173 L55.1775,85.6173"/>
@@ -880,31 +863,60 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
             <path d="M708.177,114.907 L708.177,114.907"/>
             <path d="M708.177,114.907 L708.177,114.907"/>
             <path d="M694.26,114.907 L694.26,114.907"/>
+            <path d="M694.26,114.907 L688.769,114.907"/>
+            <path d="M688.769,114.907 L687.613,114.907"/>
             <path d="M687.613,114.907 L687.613,114.907"/>
-            <path d="M381.711,-190.995 L381.711,-190.995"/>
-            <path d="M556.382,-16.3241 L556.382,-16.3241"/>
-            <path d="M556.382,-16.3241 L556.382,-16.3241"/>
-            <path d="M559.706,-19.6475 L559.706,-19.6475"/>
             <path d="M381.711,-240.917 L381.711,-240.917"/>
             <path d="M581.343,-41.2849 L581.343,-41.2849"/>
+            <path d="M556.382,-16.3241 L556.382,-16.3241"/>
+            <path d="M556.382,-16.3241 L556.382,-16.3241"/>
+            <path d="M388.711,-183.995 L388.711,-183.995"/>
             <path d="M559.706,-19.6475 L559.706,-19.6475"/>
+            <path d="M559.706,-19.6475 L559.706,-19.6475"/>
+            <path d="M388.711,-215.995 L388.711,-215.995"/>
+            <path d="M388.711,-190.642 L388.711,-190.642"/>
         </g>
-        <g id="product-b22fa1ed-787b-49c4-8ce7-898bf9a6a256" class="IfcMember material-wood projection" ifc:name="I-profil 45x400, normal sp&#230;r byg 1.011" ifc:guid="2oBw7jU7j9n8pdYOlvfg9M">
-            <path d="M251.6,-60.8836 L251.6,-60.8836"/>
-            <path d="M55.1774,114.907 L55.1774,114.907"/>
-            <path d="M69.163,114.907 L69.163,114.907"/>
-            <path d="M75.8098,114.907 L75.8098,114.907"/>
-            <path d="M69.163,114.907 L69.163,114.907"/>
-            <path d="M251.6,-60.8836 L251.6,-60.8836"/>
-            <path d="M75.8098,114.907 L75.8098,114.907"/>
-            <path d="M708.177,85.5494 L708.177,85.5494"/>
-            <path d="M708.177,85.5494 L708.177,85.5494"/>
-            <path d="M708.177,78.9026 L708.177,78.9026"/>
-            <path d="M708.177,114.907 L708.177,114.907"/>
-            <path d="M708.177,114.907 L708.177,114.907"/>
-            <path d="M694.26,114.907 L694.26,114.907"/>
-            <path d="M694.26,114.907 L694.26,114.907"/>
-            <path d="M687.613,114.907 L687.613,114.907"/>
+        <g id="product-467152f2-e003-4d1e-bcec-12220c6087d0" class="IfcMember material-wood projection" ifc:name="I-profil 45x400, normal sp&#230;r byg 1.013" ifc:guid="16SLBou0DD7hpi4Y8CO8VG">
+            <path d="M381.711,-240.917 L226.639,-85.8446"/>
+            <path d="M381.711,-247.563 L223.316,-89.1679"/>
+            <path d="M381.711,-247.563 L381.711,-241.302"/>
+            <path d="M374.711,-215.995 L374.711,-190.642"/>
+            <path d="M381.711,-215.995 L374.711,-215.995"/>
+            <path d="M381.711,-240.917 L381.711,-215.995"/>
+            <path d="M374.711,-190.642 L374.711,-183.995"/>
+            <path d="M374.711,-190.642 L248.277,-64.2071"/>
+            <path d="M374.711,-183.995 L251.6,-60.8836"/>
+            <path d="M55.1774,78.9706 L223.316,-89.1679"/>
+            <path d="M55.1774,85.6173 L55.1774,78.9706"/>
+            <path d="M55.1774,85.6173 L226.639,-85.8446"/>
+            <path d="M223.316,-89.1679 L226.639,-85.8446"/>
+            <path d="M226.639,-85.8446 L248.277,-64.2071"/>
+            <path d="M55.1774,114.907 L55.1774,85.6173"/>
+            <path d="M55.1774,114.907 L69.163,114.907"/>
+            <path d="M69.163,114.907 L75.8098,114.907"/>
+            <path d="M69.163,114.907 L248.277,-64.2071"/>
+            <path d="M248.277,-64.2071 L251.6,-60.8836"/>
+            <path d="M251.6,-60.8836 L75.8098,114.907"/>
+            <path d="M708.177,85.5494 L581.343,-41.2849"/>
+            <path d="M708.177,78.9026 L708.177,85.5494"/>
+            <path d="M708.177,78.9026 L584.666,-44.6083"/>
+            <path d="M708.177,85.5494 L708.177,114.907"/>
+            <path d="M708.177,114.907 L694.26,114.907"/>
+            <path d="M694.26,114.907 L559.706,-19.6475"/>
+            <path d="M694.26,114.907 L687.613,114.907"/>
+            <path d="M687.613,114.907 L556.382,-16.3241"/>
+            <path d="M381.711,-240.917 L581.343,-41.2849"/>
+            <path d="M381.711,-247.563 L381.711,-240.917"/>
+            <path d="M381.711,-247.563 L584.666,-44.6083"/>
+            <path d="M584.666,-44.6083 L581.343,-41.2849"/>
+            <path d="M559.706,-19.6475 L556.382,-16.3241"/>
+            <path d="M388.711,-183.995 L556.382,-16.3241"/>
+            <path d="M388.711,-190.642 L388.711,-183.995"/>
+            <path d="M559.706,-19.6475 L388.711,-190.642"/>
+            <path d="M581.343,-41.2849 L559.706,-19.6475"/>
+            <path d="M381.711,-240.917 L381.711,-215.995"/>
+            <path d="M388.711,-215.995 L381.711,-215.995"/>
+            <path d="M388.711,-190.642 L388.711,-215.995"/>
         </g>
         <g id="product-0cc1f449-00cf-4630-8b5e-7e102b8fb2ea" class="IfcMember material-woodStructural projection" ifc:name="OverVinduerS&#248;jle.003" ifc:guid="0CmVH90Cz6C8jUVX0hZxBg">
             <path d="M79.7114,141.707 L79.7114,141.707"/>
@@ -941,65 +953,65 @@ path.PredefinedType-TEXTLEADER { marker-end: url(#leader-marker); }
         </g>
         </g>
   <defs/>
-  <path class="GlobalId-3LxJY1d2r7M8n4fWcdRxaX IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 193.99998474121094 394.9067687988281 L -1.7881393432617188e-05 394.9067687988281"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(193.99998474121094, 391.4067687988281) rotate(0.0)">
-    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">Stueplan</tspan>
-    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +435</tspan>
-  </text>
-  <path class="GlobalId-2BDlNjwwf4dQybvBVk8MNL IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 193.99998474121094 454.90673828125 L -1.7881393432617188e-05 454.90673828125"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(193.99998474121094, 451.40673828125) rotate(0.0)">
-    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">UK Fundament</tspan>
-    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL -165</tspan>
-  </text>
-  <path class="GlobalId-1SGAnA8V18Zh1h7wVhDjTx IfcAnnotation PredefinedType-FILLAREA WOOD" d="M 53.37746739387512 175.84432471882212 L 53.37746739387512 78.1770366836678 L 55.21138310432434 78.97058908234943 L 55.21138310432434 175.84434856068003 L 53.37746739387512 175.84432471882212"/>
-  <line class="GlobalId-2zSXZsspX44QAqFQzteykZ IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="55.21138381958008" x2="55.21138381958008" y1="182.72491455078125" y2="11.03626537322998"/>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="55.21138381958008" y="182.72491455078125">E</text>
-  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="55.21138381958008" y="11.03626537322998">E</text>
-  <path class="GlobalId-1oemHRnsD1u9yZ7mdmzdu_ IfcAnnotation PredefinedType-FILLAREA WOOD" d="M 53.37746739387512 78.1770366836678 L 144.3505585193634 -12.796055186878553 L 145.64736485481262 -11.499296535145154 L 55.21138310432434 78.93666211854328 L 53.37746739387512 78.1770366836678"/>
-  <path class="GlobalId-3TgzVDoHn0OOY9UCtxfvBB IfcAnnotation PredefinedType-FILLAREA WOODCOLOR" d="M 55.21138310432434 85.61731743499298 L 55.21138310432434 114.90680087696421 L 69.16301846504211 114.90670550953257 L 101.34885981678963 82.72081796418537 L 79.71141934394836 61.0833774913441 L 55.21138310432434 85.61731743499298"/>
+  <path class="GlobalId-1oemHRnsD1u9yZ7mdmzdu_ IfcAnnotation PredefinedType-FILLAREA WOOD" d="M 53.37746739387512 78.25302068482746 L 144.3505585193634 -12.796007503162732 L 145.64726948738098 -11.499248851429334 L 55.21138310432434 79.01264611970295 L 53.37746739387512 78.25302068482746"/>
   <path class="GlobalId-22mBxkQxb5HOylQVarx9m0 IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 179.0495147705078 114.90675354003906 L -14.950525283813477 114.90675354003906"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(179.0495147705078, 111.40675354003906) rotate(0.0)">
     <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">OK rem</tspan>
     <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +3235</tspan>
   </text>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(67.46113586425781, 139.86361694335938) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-0K0bHmNhTArQesGzy4WIuJ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">C18 45x245</tspan>
+  <path class="GlobalId-3TgzVDoHn0OOY9UCtxfvBB IfcAnnotation PredefinedType-FILLAREA WOODCOLOR" d="M 69.16301846504211 114.90670550953257 L 101.34885981678963 82.72081796418537 L 79.71141934394836 61.0833774913441 L 55.21138310432434 85.61731743499298 L 55.21138310432434 114.90680087696421 L 69.16301846504211 114.90670550953257"/>
+  <line class="GlobalId-3YT5tq85nBGfcXLyicDqvy IfcAnnotation PredefinedType-GRID" stroke-dasharray="12.5, 3, 3, 3" x1="55.21138381958008" x2="55.21138381958008" y1="171.8216094970703" y2="16.861976623535156"/>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="55.21138381958008" y="171.8216094970703">E</text>
+  <text class="GRID" dominant-baseline="middle" text-anchor="middle" x="55.21138381958008" y="16.861976623535156">E</text>
+  <path class="GlobalId-2BDlNjwwf4dQybvBVk8MNL IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 193.99998474121094 454.90673828125 L -1.7881393432617188e-05 454.90673828125"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(193.99998474121094, 451.40673828125) rotate(0.0)">
+    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">UK Fundament</tspan>
+    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL -165</tspan>
   </text>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(138.288330078125, 25.695335388183594) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-2ZYWlcdrb1YwnkyVl4imhA IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">I-profil 45x400, normal spær byg 1</tspan>
+  <path class="GlobalId-3LxJY1d2r7M8n4fWcdRxaX IfcAnnotation PredefinedType-SECTIONLEVEL" d="M 193.99998474121094 394.9067687988281 L -1.7881393432617188e-05 394.9067687988281"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(193.99998474121094, 391.4067687988281) rotate(0.0)">
+    <tspan class="SECTIONLEVEL" dy="-1em" x="0" y="0">Stueplan</tspan>
+    <tspan class="SECTIONLEVEL" dy="0em" x="0" y="0">RL +435</tspan>
   </text>
-  <line class="GlobalId-2J9sa3OVzC6ubeL5nnhaOj IfcAnnotation PredefinedType-LINEWORK Cont T4 Sred" x1="75.80989074707031" x2="75.80989074707031" y1="114.90675354003906" y2="105.90673828125"/>
-  <line class="GlobalId-2J9sa3OVzC6ubeL5nnhaOj IfcAnnotation PredefinedType-LINEWORK Cont T4 Sred" x1="75.80989074707031" x2="68.80987548828125" y1="105.90673828125" y2="105.90673828125"/>
-  <line class="GlobalId-2J9sa3OVzC6ubeL5nnhaOj IfcAnnotation PredefinedType-LINEWORK Cont T4 Sred" x1="68.80987548828125" x2="68.80987548828125" y1="105.90673828125" y2="114.90679931640625"/>
-  <line class="GlobalId-2J9sa3OVzC6ubeL5nnhaOj IfcAnnotation PredefinedType-LINEWORK Cont T4 Sred" x1="68.80987548828125" x2="75.80989074707031" y1="114.90679931640625" y2="114.90679931640625"/>
+  <path class="GlobalId-1SGAnA8V18Zh1h7wVhDjTx IfcAnnotation PredefinedType-FILLAREA WOOD" d="M 55.21138310432434 175.84434856068003 L 53.37746739387512 175.84432471882212 L 53.37746739387512 78.1770366836678 L 55.21138310432434 78.97058908234943 L 55.21138310432434 175.84434856068003"/>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(67.46113586425781, 141.0752716064453) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-0zSRmb1jzAY9MsrgyE8avo IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">C18 45x245</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(137.43556213378906, 25.667821884155273) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-0ZlsFiKUn2LeVfQERqe2$L IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">I-profil 45x400, normal spær byg 1</tspan>
+  </text>
+  <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="74.66915130615234" x2="74.66915130615234" y1="119.3813705444336" y2="114.39128875732422"/>
+  <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="70.62957763671875" x2="70.62957763671875" y1="119.4067611694336" y2="114.41670989990234"/>
+  <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="53.37746810913086" x2="59.37746047973633" y1="91.96086883544922" y2="91.96086883544922"/>
+  <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="53.37746810913086" x2="59.37746047973633" y1="83.44207763671875" y2="83.44207763671875"/>
+  <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="53.37746810913086" x2="59.37746047973633" y1="101.08648681640625" y2="101.08648681640625"/>
+  <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="53.37746810913086" x2="59.37746047973633" y1="111.57418823242188" y2="111.57418823242188"/>
   <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="53.37746810913086" x2="53.37746810913086" y1="83.35240936279297" y2="80.58158111572266"/>
   <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="53.37746810913086" x2="59.37746047973633" y1="80.58158111572266" y2="80.58158111572266"/>
-  <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="53.37746810913086" x2="59.37746047973633" y1="111.57418823242188" y2="111.57418823242188"/>
-  <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="53.37746810913086" x2="59.37746047973633" y1="101.08648681640625" y2="101.08648681640625"/>
-  <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="53.37746810913086" x2="59.37746047973633" y1="83.44207763671875" y2="83.44207763671875"/>
-  <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="53.37746810913086" x2="59.37746047973633" y1="91.96086883544922" y2="91.96086883544922"/>
-  <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="70.62957763671875" x2="70.62957763671875" y1="119.4067611694336" y2="114.41670989990234"/>
-  <line class="GlobalId-1GVBnUUd99TPJpvlRE6OF4 IfcAnnotation PredefinedType-LINEWORK Dash10 T4" x1="74.66915130615234" x2="74.66915130615234" y1="119.3813705444336" y2="114.39128875732422"/>
-  <path class="GlobalId-3oj0MzRf5BWfpZnFG0FH4c IfcAnnotation PredefinedType-TEXTLEADER small" d="M 97.21944986376911 111.58431876789439 L 75.72510838508606 111.58431876789439"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(97.21945190429688, 111.58432006835938) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-3oj0MzRf5BWfpZnFG0FH4c IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">1 stk. ABR90 pr. spær, fuldt udsømmet</tspan>
-  </text>
-  <path class="GlobalId-2eaNpqErrCz99yNvKjgpgY IfcAnnotation PredefinedType-TEXTLEADER small" d="M 122.84319996833801 82.72081796418537 L 101.34885981678963 82.72081796418537"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(122.84319305419922, 82.72081756591797) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-2eaNpqErrCz99yNvKjgpgY IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Forstærkning begge sider, føres minimum til bagkant facade </tspan>
-    <tspan class="GlobalId-2eaNpqErrCz99yNvKjgpgY IfcAnnotation PredefinedType-TEXTLEADER small" dy="1em" x="0" y="0">Minimum 8 stk. fastgørelser pr. plade</tspan>
-  </text>
+  <line class="GlobalId-2J9sa3OVzC6ubeL5nnhaOj IfcAnnotation PredefinedType-LINEWORK Cont T4 Sred" x1="75.80989074707031" x2="75.80989074707031" y1="114.90675354003906" y2="105.90673828125"/>
+  <line class="GlobalId-2J9sa3OVzC6ubeL5nnhaOj IfcAnnotation PredefinedType-LINEWORK Cont T4 Sred" x1="75.80989074707031" x2="68.80987548828125" y1="105.90673828125" y2="105.90673828125"/>
+  <line class="GlobalId-2J9sa3OVzC6ubeL5nnhaOj IfcAnnotation PredefinedType-LINEWORK Cont T4 Sred" x1="68.80987548828125" x2="68.80987548828125" y1="105.90673828125" y2="114.90677642822266"/>
+  <line class="GlobalId-2J9sa3OVzC6ubeL5nnhaOj IfcAnnotation PredefinedType-LINEWORK Cont T4 Sred" x1="68.80987548828125" x2="75.80989074707031" y1="114.90677642822266" y2="114.90675354003906"/>
   <path class="GlobalId-1eSvGJyRfFtPn5hecVWbqD IfcAnnotation PredefinedType-TEXTLEADER small" d="M 41.53173565864563 91.40893403779377 L 53.37746739387512 91.40893403779377"/>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="end" transform="translate(41.531734466552734, 91.408935546875) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-1eSvGJyRfFtPn5hecVWbqD IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Plader sømmes i spær </tspan>
     <tspan class="GlobalId-1eSvGJyRfFtPn5hecVWbqD IfcAnnotation PredefinedType-TEXTLEADER small" dy="1em" x="0" y="0">ender minimum 5 stk, pr. spær</tspan>
   </text>
+  <path class="GlobalId-3_4EI0GQn3EBS1D1qrTLmB IfcAnnotation PredefinedType-TEXTLEADER small" d="M 62.63154149055481 37.60262836109508 L 62.603408098220825 68.95114291797985"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(62.63154220581055, 37.60262680053711) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-3_4EI0GQn3EBS1D1qrTLmB IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Sømmes, 3,1x60 pr. 150</tspan>
+  </text>
+  <path class="GlobalId-3oj0MzRf5BWfpZnFG0FH4c IfcAnnotation PredefinedType-TEXTLEADER small" d="M 97.21944986376911 111.58431876789439 L 75.72510838508606 111.58431876789439"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(97.21945190429688, 111.58432006835938) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-3oj0MzRf5BWfpZnFG0FH4c IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">1 stk. ABR90 pr. spær, fuldt udsømmet</tspan>
+  </text>
   <path class="GlobalId-0Wg01uf_z3lOyKlynuEddZ IfcAnnotation PredefinedType-TEXTLEADER small" d="M 86.73542216420174 151.0466228831898 L 55.21138310432434 151.0466228831898"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(86.73542022705078, 151.04661560058594) rotate(-8.537736462515939e-07)">
     <tspan class="GlobalId-0Wg01uf_z3lOyKlynuEddZ IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Vindspærre/undertag. Agapan DWD 600 18mm. Sømmes med 3,1x60 pr. 150mm</tspan>
   </text>
-  <path class="GlobalId-3_4EI0GQn3EBS1D1qrTLmB IfcAnnotation PredefinedType-TEXTLEADER small" d="M 62.63154149055481 37.60262836109508 L 62.603408098220825 68.95114291797985"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(62.63154220581055, 37.60262680053711) rotate(-8.537736462515939e-07)">
-    <tspan class="GlobalId-3_4EI0GQn3EBS1D1qrTLmB IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Sømmes, 3,1x60 pr. 150</tspan>
+  <path class="GlobalId-2eaNpqErrCz99yNvKjgpgY IfcAnnotation PredefinedType-TEXTLEADER small" d="M 122.84319996833801 82.72081796418537 L 101.34885981678963 82.72081796418537"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(122.84319305419922, 82.72081756591797) rotate(-8.537736462515939e-07)">
+    <tspan class="GlobalId-2eaNpqErrCz99yNvKjgpgY IfcAnnotation PredefinedType-TEXTLEADER small" dy="0em" x="0" y="0">Forstærkning begge sider, føres minimum til bagkant facade </tspan>
+    <tspan class="GlobalId-2eaNpqErrCz99yNvKjgpgY IfcAnnotation PredefinedType-TEXTLEADER small" dy="1em" x="0" y="0">Minimum 8 stk. fastgørelser pr. plade</tspan>
   </text>
 </svg>

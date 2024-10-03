@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ns1="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns2="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" id="root" version="1.1" width="420.0mm" height="297.0mm" viewBox="0 0 420.0 297.0" ns1:docname="V11_K09_H1_ET_S1_4 - Tagplan.svg" ns2:version="1.3.2 (091e20e, 2023-11-25, custom)">
+  <defs id="defs8" />
+  <ns1:namedview id="namedview8" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" ns2:showpageshadow="2" ns2:pageopacity="0.0" ns2:pagecheckerboard="0" ns2:deskcolor="#d1d1d1" ns2:document-units="mm" ns2:zoom="1.1697766" ns2:cx="924.96294" ns2:cy="613.36498" ns2:window-width="3840" ns2:window-height="2071" ns2:window-x="-9" ns2:window-y="-9" ns2:window-maximized="1" ns2:current-layer="g11" />
+  <g data-type="titleblock" id="g1">
+    <image xlink:href="titleblocks%5CA3_landscape_DK.svg" x="0" y="0" width="420.0" height="297.0" id="image1" />
+  </g>
+  <g data-type="drawing" data-id="1087239" data-drawing="1gYJPC1q9C4A2533yVQVbe" id="g4" transform="translate(-24.470113,-22.390953)">
+    <image data-type="background" xlink:href="..%5Cdrawings%5CTagplan-underlay.png" x="30.0" y="30.009998999888243" width="371.6" height="233.71" id="image2" />
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CTagplan.svg" x="30.0" y="30.009998999888243" width="371.6" height="233.71" id="image3" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="30.0" y="268.72199000011176" width="50.222462" height="10" id="image4" />
+  </g>
+  <g data-type="drawing" data-id="1087240" data-drawing="2DJV8Kxs124hcYbjxasB6B" id="g6" transform="translate(284.99999,160.73506)">
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CANN_NoteGeneral.svg" x="30" y="30" width="105.00001" height="44.709679" id="image5" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="152.19063" y="53.960083" width="50.222462" height="10" id="image6" />
+  </g>
+  <g data-type="drawing" data-id="1087241" data-drawing="1s5Hi2DJfEjBtTNbvKX7kz" id="g8" transform="translate(371.60001,-16.95315)">
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CANN_NorthArrow.svg" x="30" y="30" width="15.000001" height="15.000001" id="image7" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="85.41478" y="37.5" width="50.222462" height="10" id="image8" />
+  </g>
+  <g data-type="drawing" data-id="1115114" data-drawing="0iHd6F$Jr55g1fT09ezgqa" id="g11" transform="translate(236.36101,-16.95315)">
+    <image data-type="background" xlink:href="..%5Cdrawings%5CTag%20ortografi-underlay.png" x="30" y="30" width="139.83817" height="85.223808" id="image9" />
+    <image data-type="foreground" xlink:href="..%5Cdrawings%5CTag%20ortografi.svg" x="30" y="30" width="139.83817" height="85.223808" id="image10" />
+    <image data-type="view-title" xlink:href="assets%5Cview-title.svg" x="220.65378" y="77.475258" width="50.222462" height="10" id="image11" />
+  </g>
+</svg>
